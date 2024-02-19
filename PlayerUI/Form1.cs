@@ -15,10 +15,10 @@ namespace PlayerUI
         public Form1()
         {
             InitializeComponent();
+            customizeDesign();
             hideSubMenu();
         }
-
-        private void hideSubMenu()
+        private void customizeDesign()
         {
             panelPacientesSubMenu.Visible = false;
             panelPedidosSubMenu.Visible = false;
@@ -28,6 +28,34 @@ namespace PlayerUI
             panelParámetrosSubMenu.Visible = false;
             panelVentasSubMenu.Visible = false;
             panelInstrumentosSubMenu.Visible = false;
+        }
+
+        private void hideSubMenu()
+        {
+            if (panelPacientesSubMenu.Visible == true)
+                panelPacientesSubMenu.Visible = false;
+
+            if (panelPedidosSubMenu.Visible == true)
+                panelPedidosSubMenu.Visible = false;
+
+            if (panelResultadosSubMenu.Visible == true)
+                panelResultadosSubMenu.Visible = false;
+
+            if (panelReactivosSubMenu.Visible == true)
+                panelReactivosSubMenu.Visible = false;
+
+            if (panelUsuariosSubMenu.Visible == true)
+                panelUsuariosSubMenu.Visible = false;
+
+            if (panelParámetrosSubMenu.Visible == true)
+                panelParámetrosSubMenu.Visible = false;
+
+            if (panelVentasSubMenu.Visible == true)
+                panelVentasSubMenu.Visible = false;
+
+            if (panelInstrumentosSubMenu.Visible == true)
+                panelInstrumentosSubMenu.Visible = false;
+
         }
 
         private void showSubMenu(Panel subMenu)
@@ -157,7 +185,7 @@ namespace PlayerUI
             //..
             //your codes
             //..
-            
+
         }
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -221,6 +249,11 @@ namespace PlayerUI
         private void btnParámetros_Click(object sender, EventArgs e)
         {
             showSubMenu(panelParámetrosSubMenu);
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
