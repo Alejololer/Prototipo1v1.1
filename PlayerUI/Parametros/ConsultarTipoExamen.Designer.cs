@@ -1,6 +1,6 @@
-﻿namespace PlayerUI
+﻿namespace PlayerUI.Parametros
 {
-    partial class RegistrarInstrumento
+    partial class ConsultarTipoExamen
     {
         /// <summary>
         /// Required designer variable.
@@ -35,6 +35,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtCantidadInstrumento = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -43,12 +45,12 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.label1.Location = new System.Drawing.Point(283, 31);
+            this.label1.Location = new System.Drawing.Point(263, 31);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(347, 29);
+            this.label1.Size = new System.Drawing.Size(387, 29);
             this.label1.TabIndex = 7;
-            this.label1.Text = "REGISTRAR INTRUMENTOS";
+            this.label1.Text = "CONSULTAR TIPO DE EXAMEN";
             // 
             // btnExit
             // 
@@ -74,21 +76,20 @@
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.LightGray;
-            this.button9.Location = new System.Drawing.Point(651, 434);
+            this.button9.Location = new System.Drawing.Point(651, 432);
             this.button9.Margin = new System.Windows.Forms.Padding(4);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(200, 49);
             this.button9.TabIndex = 15;
-            this.button9.Text = "Registrar";
+            this.button9.Text = "Consultar";
             this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // txtNombreInstrumento
             // 
             this.txtNombreInstrumento.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNombreInstrumento.Location = new System.Drawing.Point(267, 166);
+            this.txtNombreInstrumento.Location = new System.Drawing.Point(267, 136);
             this.txtNombreInstrumento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombreInstrumento.Name = "txtNombreInstrumento";
             this.txtNombreInstrumento.Size = new System.Drawing.Size(584, 22);
@@ -100,18 +101,18 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.LightGray;
-            this.label2.Location = new System.Drawing.Point(48, 167);
+            this.label2.Location = new System.Drawing.Point(48, 137);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(161, 20);
+            this.label2.Size = new System.Drawing.Size(156, 20);
             this.label2.TabIndex = 20;
-            this.label2.Text = "Nombre Instrumento";
+            this.label2.Text = "Nombre de Examen";
             // 
             // txtCantidadInstrumento
             // 
             this.txtCantidadInstrumento.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCantidadInstrumento.Location = new System.Drawing.Point(267, 300);
+            this.txtCantidadInstrumento.Location = new System.Drawing.Point(267, 234);
             this.txtCantidadInstrumento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCantidadInstrumento.Name = "txtCantidadInstrumento";
             this.txtCantidadInstrumento.Size = new System.Drawing.Size(584, 22);
@@ -123,18 +124,40 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.LightGray;
-            this.label3.Location = new System.Drawing.Point(37, 302);
+            this.label3.Location = new System.Drawing.Point(48, 235);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(200, 20);
+            this.label3.Size = new System.Drawing.Size(53, 20);
             this.label3.TabIndex = 22;
-            this.label3.Text = "Cantidad de Instrumentos";
+            this.label3.Text = "AAAA";
             // 
-            // RegistrarInstrumento
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.LightGray;
+            this.label4.Location = new System.Drawing.Point(48, 334);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(79, 20);
+            this.label4.TabIndex = 24;
+            this.label4.Text = "EXAMEN";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(267, 332);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(584, 24);
+            this.comboBox1.TabIndex = 25;
+            // 
+            // ConsultarTipoExamen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(912, 530);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtCantidadInstrumento);
             this.Controls.Add(this.label2);
@@ -144,7 +167,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
-            this.Name = "RegistrarInstrumento";
+            this.Name = "ConsultarTipoExamen";
             this.Text = "Form3";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -159,5 +182,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtCantidadInstrumento;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

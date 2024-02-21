@@ -28,5 +28,10 @@ namespace PlayerUI
 
             // Oculta el formulario actual
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

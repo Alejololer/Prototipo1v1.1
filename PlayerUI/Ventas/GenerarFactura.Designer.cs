@@ -1,6 +1,6 @@
 ﻿namespace PlayerUI.Ventas
 {
-    partial class PrevisualizarFactura
+    partial class GenerarFactura
     {
         /// <summary>
         /// Required designer variable.
@@ -33,7 +33,7 @@
             this.btnConsultarInstrumento = new System.Windows.Forms.Button();
             this.lblNombreInstrumento = new System.Windows.Forms.Label();
             this.dgvConsultarInstrumentos = new System.Windows.Forms.DataGridView();
-            this.cmbxPedidos = new System.Windows.Forms.ComboBox();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultarInstrumentos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,12 +43,12 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.label1.Location = new System.Drawing.Point(278, 25);
+            this.label1.Location = new System.Drawing.Point(285, 25);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(335, 29);
+            this.label1.Size = new System.Drawing.Size(262, 29);
             this.label1.TabIndex = 7;
-            this.label1.Text = "PREVISUALIZAR FACTURA";
+            this.label1.Text = "GENERAR FACTURA";
             // 
             // btnExit
             // 
@@ -74,14 +74,13 @@
             this.btnConsultarInstrumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultarInstrumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultarInstrumento.ForeColor = System.Drawing.Color.LightGray;
-            this.btnConsultarInstrumento.Location = new System.Drawing.Point(650, 434);
+            this.btnConsultarInstrumento.Location = new System.Drawing.Point(657, 434);
             this.btnConsultarInstrumento.Margin = new System.Windows.Forms.Padding(4);
             this.btnConsultarInstrumento.Name = "btnConsultarInstrumento";
             this.btnConsultarInstrumento.Size = new System.Drawing.Size(200, 49);
             this.btnConsultarInstrumento.TabIndex = 15;
-            this.btnConsultarInstrumento.Text = "Generar";
+            this.btnConsultarInstrumento.Text = "Modificar";
             this.btnConsultarInstrumento.UseVisualStyleBackColor = false;
-            this.btnConsultarInstrumento.Click += new System.EventHandler(this.btnConsultarInstrumento_Click);
             // 
             // lblNombreInstrumento
             // 
@@ -89,11 +88,11 @@
             this.lblNombreInstrumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblNombreInstrumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreInstrumento.ForeColor = System.Drawing.Color.LightGray;
-            this.lblNombreInstrumento.Location = new System.Drawing.Point(48, 84);
+            this.lblNombreInstrumento.Location = new System.Drawing.Point(55, 105);
             this.lblNombreInstrumento.Name = "lblNombreInstrumento";
-            this.lblNombreInstrumento.Size = new System.Drawing.Size(163, 20);
+            this.lblNombreInstrumento.Size = new System.Drawing.Size(135, 20);
             this.lblNombreInstrumento.TabIndex = 20;
-            this.lblNombreInstrumento.Text = "Seleccione el pedido";
+            this.lblNombreInstrumento.Text = "Fecha de factura";
             // 
             // dgvConsultarInstrumentos
             // 
@@ -101,31 +100,26 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvConsultarInstrumentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvConsultarInstrumentos.Location = new System.Drawing.Point(52, 146);
+            this.dgvConsultarInstrumentos.Location = new System.Drawing.Point(381, 84);
             this.dgvConsultarInstrumentos.Name = "dgvConsultarInstrumentos";
             this.dgvConsultarInstrumentos.RowHeadersWidth = 51;
             this.dgvConsultarInstrumentos.RowTemplate.Height = 24;
-            this.dgvConsultarInstrumentos.Size = new System.Drawing.Size(798, 260);
+            this.dgvConsultarInstrumentos.Size = new System.Drawing.Size(469, 315);
             this.dgvConsultarInstrumentos.TabIndex = 21;
             // 
-            // cmbxPedidos
+            // monthCalendar1
             // 
-            this.cmbxPedidos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbxPedidos.FormattingEnabled = true;
-            this.cmbxPedidos.Location = new System.Drawing.Point(272, 82);
-            this.cmbxPedidos.Name = "cmbxPedidos";
-            this.cmbxPedidos.Size = new System.Drawing.Size(578, 24);
-            this.cmbxPedidos.TabIndex = 22;
+            this.monthCalendar1.Location = new System.Drawing.Point(59, 176);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 22;
             // 
-            // PrevisualizarFactura
+            // GenerarFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(912, 530);
-            this.Controls.Add(this.cmbxPedidos);
+            this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.dgvConsultarInstrumentos);
             this.Controls.Add(this.lblNombreInstrumento);
             this.Controls.Add(this.btnConsultarInstrumento);
@@ -133,7 +127,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "PrevisualizarFactura";
+            this.Name = "GenerarFactura";
             this.Text = "Form3";
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultarInstrumentos)).EndInit();
             this.ResumeLayout(false);
@@ -147,6 +141,6 @@
         private System.Windows.Forms.Button btnConsultarInstrumento;
         private System.Windows.Forms.Label lblNombreInstrumento;
         private System.Windows.Forms.DataGridView dgvConsultarInstrumentos;
-        private System.Windows.Forms.ComboBox cmbxPedidos;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
     }
 }

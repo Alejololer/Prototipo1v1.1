@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PlayerUI
+namespace PlayerUI.Usuario
 {
-    public partial class Form3 : Form
+    public partial class EliminarUsuario : Form
     {
-        public Form3()
+        public EliminarUsuario()
         {
             InitializeComponent();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }

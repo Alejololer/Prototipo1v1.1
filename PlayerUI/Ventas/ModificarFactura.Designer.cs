@@ -64,6 +64,7 @@
             this.btnExit.TabIndex = 14;
             this.btnExit.Text = "X";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnConsultarInstrumento
             // 
@@ -78,8 +79,9 @@
             this.btnConsultarInstrumento.Name = "btnConsultarInstrumento";
             this.btnConsultarInstrumento.Size = new System.Drawing.Size(200, 49);
             this.btnConsultarInstrumento.TabIndex = 15;
-            this.btnConsultarInstrumento.Text = "Generar";
+            this.btnConsultarInstrumento.Text = "Modificar";
             this.btnConsultarInstrumento.UseVisualStyleBackColor = false;
+            this.btnConsultarInstrumento.Click += new System.EventHandler(this.btnConsultarInstrumento_Click);
             // 
             // lblNombreInstrumento
             // 
@@ -89,9 +91,9 @@
             this.lblNombreInstrumento.ForeColor = System.Drawing.Color.LightGray;
             this.lblNombreInstrumento.Location = new System.Drawing.Point(48, 84);
             this.lblNombreInstrumento.Name = "lblNombreInstrumento";
-            this.lblNombreInstrumento.Size = new System.Drawing.Size(163, 20);
+            this.lblNombreInstrumento.Size = new System.Drawing.Size(165, 20);
             this.lblNombreInstrumento.TabIndex = 20;
-            this.lblNombreInstrumento.Text = "Seleccione el pedido";
+            this.lblNombreInstrumento.Text = "Modificar precio final";
             // 
             // dgvConsultarInstrumentos
             // 
@@ -115,9 +117,9 @@
             this.cmbxPedidos.Items.AddRange(new object[] {
             "Pija",
             "Chocolate"});
-            this.cmbxPedidos.Location = new System.Drawing.Point(272, 82);
+            this.cmbxPedidos.Location = new System.Drawing.Point(264, 82);
             this.cmbxPedidos.Name = "cmbxPedidos";
-            this.cmbxPedidos.Size = new System.Drawing.Size(578, 24);
+            this.cmbxPedidos.Size = new System.Drawing.Size(586, 24);
             this.cmbxPedidos.TabIndex = 22;
             // 
             // ModificarFactura

@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PlayerUI
+namespace PlayerUI.Usuario
 {
-    public partial class Form2 : Form
+    public partial class ConsultarUsuario : Form
     {
-        public Form2()
+        public ConsultarUsuario()
         {
             InitializeComponent();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

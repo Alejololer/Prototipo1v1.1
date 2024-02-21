@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PlayerUI.Ventas
+namespace PlayerUI.Parametros
 {
-    public partial class ModificarFactura : Form
+    public partial class ModificarIVA : Form
     {
-        public ModificarFactura()
+        public ModificarIVA()
         {
             InitializeComponent();
         }
@@ -20,12 +20,6 @@ namespace PlayerUI.Ventas
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void btnConsultarInstrumento_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Error en la generación de la factura");
-            MessageBox.Show("Cantidad del precio invalida");
         }
     }
 }

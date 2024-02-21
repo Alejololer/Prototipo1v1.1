@@ -124,7 +124,7 @@
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(250, 561);
+            this.panelSideMenu.Size = new System.Drawing.Size(250, 600);
             this.panelSideMenu.TabIndex = 0;
             // 
             // panelParámetrosSubMenu
@@ -137,7 +137,7 @@
             this.panelParámetrosSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelParámetrosSubMenu.Location = new System.Drawing.Point(0, 1809);
             this.panelParámetrosSubMenu.Name = "panelParámetrosSubMenu";
-            this.panelParámetrosSubMenu.Size = new System.Drawing.Size(229, 160);
+            this.panelParámetrosSubMenu.Size = new System.Drawing.Size(229, 219);
             this.panelParámetrosSubMenu.TabIndex = 19;
             // 
             // button39
@@ -148,14 +148,15 @@
             this.button39.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
             this.button39.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button39.ForeColor = System.Drawing.Color.Silver;
-            this.button39.Location = new System.Drawing.Point(0, 115);
+            this.button39.Location = new System.Drawing.Point(0, 174);
             this.button39.Name = "button39";
             this.button39.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button39.Size = new System.Drawing.Size(229, 35);
+            this.button39.Size = new System.Drawing.Size(229, 42);
             this.button39.TabIndex = 3;
             this.button39.Text = "Modificar IVA";
             this.button39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button39.UseVisualStyleBackColor = true;
+            this.button39.Click += new System.EventHandler(this.button39_Click);
             // 
             // button35
             // 
@@ -165,14 +166,15 @@
             this.button35.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
             this.button35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button35.ForeColor = System.Drawing.Color.Silver;
-            this.button35.Location = new System.Drawing.Point(0, 80);
+            this.button35.Location = new System.Drawing.Point(0, 129);
             this.button35.Name = "button35";
             this.button35.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button35.Size = new System.Drawing.Size(229, 35);
+            this.button35.Size = new System.Drawing.Size(229, 45);
             this.button35.TabIndex = 2;
             this.button35.Text = "Modificar Precio";
             this.button35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button35.UseVisualStyleBackColor = true;
+            this.button35.Click += new System.EventHandler(this.button35_Click);
             // 
             // button36
             // 
@@ -182,14 +184,15 @@
             this.button36.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
             this.button36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button36.ForeColor = System.Drawing.Color.Silver;
-            this.button36.Location = new System.Drawing.Point(0, 40);
+            this.button36.Location = new System.Drawing.Point(0, 66);
             this.button36.Name = "button36";
             this.button36.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button36.Size = new System.Drawing.Size(229, 40);
+            this.button36.Size = new System.Drawing.Size(229, 63);
             this.button36.TabIndex = 1;
             this.button36.Text = "Consultar Tipos de Examen";
             this.button36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button36.UseVisualStyleBackColor = true;
+            this.button36.Click += new System.EventHandler(this.button36_Click);
             // 
             // button37
             // 
@@ -202,11 +205,12 @@
             this.button37.Location = new System.Drawing.Point(0, 0);
             this.button37.Name = "button37";
             this.button37.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button37.Size = new System.Drawing.Size(229, 40);
+            this.button37.Size = new System.Drawing.Size(229, 66);
             this.button37.TabIndex = 0;
             this.button37.Text = "Registrar Tipo de Examen";
             this.button37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button37.UseVisualStyleBackColor = true;
+            this.button37.Click += new System.EventHandler(this.button37_Click);
             // 
             // btnParámetros
             // 
@@ -257,6 +261,7 @@
             this.button30.Text = "Eliminar Usuario";
             this.button30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button30.UseVisualStyleBackColor = true;
+            this.button30.Click += new System.EventHandler(this.button30_Click);
             // 
             // button31
             // 
@@ -274,6 +279,7 @@
             this.button31.Text = "Modificar Usuario";
             this.button31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button31.UseVisualStyleBackColor = true;
+            this.button31.Click += new System.EventHandler(this.button31_Click);
             // 
             // button32
             // 
@@ -291,6 +297,7 @@
             this.button32.Text = "Consultar Usuarios";
             this.button32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button32.UseVisualStyleBackColor = true;
+            this.button32.Click += new System.EventHandler(this.button32_Click);
             // 
             // button33
             // 
@@ -308,6 +315,7 @@
             this.button33.Text = "Registrar Usuarios";
             this.button33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.button33_Click);
             // 
             // btnUsuarios
             // 
@@ -358,7 +366,7 @@
             this.button14.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button14.Size = new System.Drawing.Size(229, 70);
             this.button14.TabIndex = 7;
-            this.button14.Text = "Consultar Informe de Ventas";
+            this.button14.Text = "Consultar Datos de Venta  del Cliente";
             this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button14.UseVisualStyleBackColor = true;
             this.button14.Click += new System.EventHandler(this.button14_Click);
@@ -379,6 +387,7 @@
             this.button29.Text = "Consultar Informe de Ventas";
             this.button29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button29.UseVisualStyleBackColor = true;
+            this.button29.Click += new System.EventHandler(this.button29_Click);
             // 
             // button23
             // 
@@ -396,6 +405,7 @@
             this.button23.Text = "Anular Factura";
             this.button23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
             // 
             // button24
             // 
@@ -431,6 +441,7 @@
             this.button25.Text = "Generar Factura";
             this.button25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
             // 
             // button26
             // 
@@ -445,9 +456,10 @@
             this.button26.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button26.Size = new System.Drawing.Size(229, 40);
             this.button26.TabIndex = 2;
-            this.button26.Text = "Modificar Precio";
+            this.button26.Text = "Modificar Factura";
             this.button26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
             // 
             // button27
             // 
@@ -687,7 +699,7 @@
             this.btnExit.ForeColor = System.Drawing.Color.Silver;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(0, 1969);
+            this.btnExit.Location = new System.Drawing.Point(0, 2028);
             this.btnExit.Name = "btnExit";
             this.btnExit.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnExit.Size = new System.Drawing.Size(229, 45);
@@ -1069,7 +1081,7 @@
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(250, 0);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(684, 561);
+            this.panelChildForm.Size = new System.Drawing.Size(700, 600);
             this.panelChildForm.TabIndex = 2;
             this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
             // 
@@ -1081,7 +1093,7 @@
             this.pictureBox9.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.InitialImage")));
             this.pictureBox9.Location = new System.Drawing.Point(0, 0);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(684, 561);
+            this.pictureBox9.Size = new System.Drawing.Size(700, 600);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox9.TabIndex = 2;
             this.pictureBox9.TabStop = false;
@@ -1092,11 +1104,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
-            this.ClientSize = new System.Drawing.Size(934, 561);
+            this.ClientSize = new System.Drawing.Size(950, 600);
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panelSideMenu);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(950, 600);

@@ -78,18 +78,6 @@
     <Compile Include="Menu.designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form3.designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
-    </Compile>
     <Compile Include="Pacientes\ActualizarPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +107,30 @@
     </Compile>
     <Compile Include="Pacientes\RegistrarPaciente.Designer.cs">
       <DependentUpon>RegistrarPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parametros\ConsultarTipoExamen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parametros\ConsultarTipoExamen.Designer.cs">
+      <DependentUpon>ConsultarTipoExamen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parametros\ModificarIVA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parametros\ModificarIVA.Designer.cs">
+      <DependentUpon>ModificarIVA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parametros\ModificarPrecio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parametros\ModificarPrecio.Designer.cs">
+      <DependentUpon>ModificarPrecio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parametros\RegistrarTipoExamen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parametros\RegistrarTipoExamen.Designer.cs">
+      <DependentUpon>RegistrarTipoExamen.cs</DependentUpon>
     </Compile>
     <Compile Include="Pedidos\ActualizarPedido.cs">
       <SubType>Form</SubType>
@@ -200,6 +212,60 @@
     <Compile Include="Resultados\RegistrarResul.Designer.cs">
       <DependentUpon>RegistrarResul.cs</DependentUpon>
     </Compile>
+    <Compile Include="Usuario\ConsultarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario\ConsultarUsuario.Designer.cs">
+      <DependentUpon>ConsultarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\EliminarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario\EliminarUsuario.Designer.cs">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\ModificarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario\ModificarUsuario.Designer.cs">
+      <DependentUpon>ModificarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\RegistrarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario\RegistrarUsuario.Designer.cs">
+      <DependentUpon>RegistrarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\AnularFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\AnularFactura.Designer.cs">
+      <DependentUpon>AnularFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\ConsultarDatosVentaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\ConsultarDatosVentaCliente.Designer.cs">
+      <DependentUpon>ConsultarDatosVentaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\ConsultarInformeVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\ConsultarInformeVentas.Designer.cs">
+      <DependentUpon>ConsultarInformeVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\DescargarFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\DescargarFactura.Designer.cs">
+      <DependentUpon>DescargarFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\GenerarFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\GenerarFactura.Designer.cs">
+      <DependentUpon>GenerarFactura.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ventas\ModificarFactura.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -227,12 +293,6 @@
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Pacientes\ActualizarPaciente.resx">
       <DependentUpon>ActualizarPaciente.cs</DependentUpon>
     </EmbeddedResource>
@@ -247,6 +307,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pacientes\RegistrarPaciente.resx">
       <DependentUpon>RegistrarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametros\ConsultarTipoExamen.resx">
+      <DependentUpon>ConsultarTipoExamen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametros\ModificarIVA.resx">
+      <DependentUpon>ModificarIVA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametros\ModificarPrecio.resx">
+      <DependentUpon>ModificarPrecio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametros\RegistrarTipoExamen.resx">
+      <DependentUpon>RegistrarTipoExamen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pedidos\ActualizarPedido.resx">
       <DependentUpon>ActualizarPedido.cs</DependentUpon>
@@ -279,6 +351,33 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reactivos\RegistrarRea.resx">
       <DependentUpon>RegistrarRea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\ConsultarUsuario.resx">
+      <DependentUpon>ConsultarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\EliminarUsuario.resx">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\ModificarUsuario.resx">
+      <DependentUpon>ModificarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\RegistrarUsuario.resx">
+      <DependentUpon>RegistrarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\AnularFactura.resx">
+      <DependentUpon>AnularFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\ConsultarDatosVentaCliente.resx">
+      <DependentUpon>ConsultarDatosVentaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\ConsultarInformeVentas.resx">
+      <DependentUpon>ConsultarInformeVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\DescargarFactura.resx">
+      <DependentUpon>DescargarFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\GenerarFactura.resx">
+      <DependentUpon>GenerarFactura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventas\ModificarFactura.resx">
       <DependentUpon>ModificarFactura.cs</DependentUpon>

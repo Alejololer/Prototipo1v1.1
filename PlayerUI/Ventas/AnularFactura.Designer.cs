@@ -1,6 +1,6 @@
 ﻿namespace PlayerUI.Ventas
 {
-    partial class PrevisualizarFactura
+    partial class AnularFactura
     {
         /// <summary>
         /// Required designer variable.
@@ -43,12 +43,12 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.label1.Location = new System.Drawing.Point(278, 25);
+            this.label1.Location = new System.Drawing.Point(308, 25);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(335, 29);
+            this.label1.Size = new System.Drawing.Size(240, 29);
             this.label1.TabIndex = 7;
-            this.label1.Text = "PREVISUALIZAR FACTURA";
+            this.label1.Text = "ANULAR FACTURA";
             // 
             // btnExit
             // 
@@ -79,9 +79,8 @@
             this.btnConsultarInstrumento.Name = "btnConsultarInstrumento";
             this.btnConsultarInstrumento.Size = new System.Drawing.Size(200, 49);
             this.btnConsultarInstrumento.TabIndex = 15;
-            this.btnConsultarInstrumento.Text = "Generar";
+            this.btnConsultarInstrumento.Text = "Anular";
             this.btnConsultarInstrumento.UseVisualStyleBackColor = false;
-            this.btnConsultarInstrumento.Click += new System.EventHandler(this.btnConsultarInstrumento_Click);
             // 
             // lblNombreInstrumento
             // 
@@ -91,9 +90,9 @@
             this.lblNombreInstrumento.ForeColor = System.Drawing.Color.LightGray;
             this.lblNombreInstrumento.Location = new System.Drawing.Point(48, 84);
             this.lblNombreInstrumento.Name = "lblNombreInstrumento";
-            this.lblNombreInstrumento.Size = new System.Drawing.Size(163, 20);
+            this.lblNombreInstrumento.Size = new System.Drawing.Size(166, 20);
             this.lblNombreInstrumento.TabIndex = 20;
-            this.lblNombreInstrumento.Text = "Seleccione el pedido";
+            this.lblNombreInstrumento.Text = "Seleccione la factura";
             // 
             // dgvConsultarInstrumentos
             // 
@@ -119,7 +118,7 @@
             this.cmbxPedidos.Size = new System.Drawing.Size(578, 24);
             this.cmbxPedidos.TabIndex = 22;
             // 
-            // PrevisualizarFactura
+            // AnularFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -133,7 +132,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "PrevisualizarFactura";
+            this.Name = "AnularFactura";
             this.Text = "Form3";
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultarInstrumentos)).EndInit();
             this.ResumeLayout(false);

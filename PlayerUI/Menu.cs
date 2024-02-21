@@ -9,8 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using PlayerUI.Instrumento;
 using PlayerUI.Pacientes;
+using PlayerUI.Parametros;
 using PlayerUI.Pedidos;
 using PlayerUI.Reactivos;
+using PlayerUI.Usuario;
 using PlayerUI.Ventas;
 
 namespace PlayerUI
@@ -201,7 +203,7 @@ namespace PlayerUI
         }
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
         private Form activeForm = null;
@@ -281,7 +283,7 @@ namespace PlayerUI
 
         private void button14_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new ConsultarDatosVentaCliente());
         }
 
         private void button17_Click(object sender, EventArgs e)
@@ -321,7 +323,68 @@ namespace PlayerUI
 
         private void button24_Click(object sender, EventArgs e)
         {
+            openChildForm(new DescargarFactura());
+        }
 
+        private void button26_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ModificarFactura());
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            openChildForm(new GenerarFactura());
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            openChildForm(new AnularFactura());
+        }
+
+        private void button29_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ConsultarInformeVentas());
+        }
+
+        private void button33_Click(object sender, EventArgs e)
+        {
+            openChildForm(new RegistrarUsuario());
+        }
+
+        private void button32_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ConsultarUsuario());
+        }
+
+        private void button31_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ModificarUsuario());
+        }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+            openChildForm(new EliminarUsuario());
+            
+        }
+
+        private void button37_Click(object sender, EventArgs e)
+        {
+            openChildForm(new RegistrarTipoExamen());
+        }
+
+        private void button36_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ConsultarTipoExamen());
+        }
+
+        private void button35_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ModificarPrecio());
+        }
+
+        private void button39_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ModificarIVA());
         }
     }
 }
