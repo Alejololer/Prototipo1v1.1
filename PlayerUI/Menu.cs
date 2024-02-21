@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PlayerUI
 {
-    public partial class Form1 : Form
+    public partial class Menu : Form
     {
-        public Form1()
+        public Menu()
         {
             InitializeComponent();
             customizeDesign();
@@ -218,7 +218,7 @@ namespace PlayerUI
 
         private void button21_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new RegistrarInstrumento());
         }
 
         private void panelPacientesSubPacientes_Paint(object sender, PaintEventArgs e)
@@ -254,6 +254,27 @@ namespace PlayerUI
         private void pictureBox9_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Form3());
+
+        }
+
+        private void btnPaciente_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelPacientesSubMenu);
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ConsultarInstrumento());
         }
     }
 }
