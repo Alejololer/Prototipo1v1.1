@@ -152,6 +152,48 @@
     <Compile Include="Instrumento\RegistrarInstrumento.Designer.cs">
       <DependentUpon>RegistrarInstrumento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reactivos\ConsultarRea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reactivos\ConsultarRea.Designer.cs">
+      <DependentUpon>ConsultarRea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reactivos\ModificarRea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reactivos\ModificarRea.Designer.cs">
+      <DependentUpon>ModificarRea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reactivos\RegistrarRea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reactivos\RegistrarRea.Designer.cs">
+      <DependentUpon>RegistrarRea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resultados\ConsultarResul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resultados\ConsultarResul.Designer.cs">
+      <DependentUpon>ConsultarResul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resultados\GenerarResul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resultados\GenerarResul.Designer.cs">
+      <DependentUpon>GenerarResul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resultados\ModificarResul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resultados\ModificarResul.Designer.cs">
+      <DependentUpon>ModificarResul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resultados\RegistrarResul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resultados\RegistrarResul.Designer.cs">
+      <DependentUpon>RegistrarResul.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Instrumento\ActualizarInstrumento.resx">
       <DependentUpon>ActualizarInstrumento.cs</DependentUpon>
     </EmbeddedResource>
@@ -208,6 +250,15 @@
     <EmbeddedResource Include="Instrumento\RegistrarInstrumento.resx">
       <DependentUpon>RegistrarInstrumento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reactivos\ConsultarRea.resx">
+      <DependentUpon>ConsultarRea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reactivos\ModificarRea.resx">
+      <DependentUpon>ModificarRea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reactivos\RegistrarRea.resx">
+      <DependentUpon>RegistrarRea.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -232,6 +283,7 @@
   <ItemGroup>
     <None Include="Properties\Imagenes\aS2.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

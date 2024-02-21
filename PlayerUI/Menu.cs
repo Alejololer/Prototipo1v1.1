@@ -7,8 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PlayerUI.Instrumento;
 using PlayerUI.Pacientes;
 using PlayerUI.Pedidos;
+using PlayerUI.Reactivos;
 
 namespace PlayerUI
 {
@@ -222,7 +224,7 @@ namespace PlayerUI
 
         private void button16_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new ModificarRea());
         }
 
         private void button21_Click(object sender, EventArgs e)
@@ -283,7 +285,7 @@ namespace PlayerUI
 
         private void button17_Click(object sender, EventArgs e)
         {
-            openChildForm(new ConsultarInstrumento());
+            openChildForm(new ConsultarRea());
         }
 
         private void button19_Click(object sender, EventArgs e)
@@ -294,6 +296,26 @@ namespace PlayerUI
         private void button11_Click(object sender, EventArgs e)
         {
             openChildForm(new ActualizarPedido());
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            openChildForm(new RegistrarRea());
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ConsultarInstrumento());
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ActualizarInstrumento());
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            openChildForm(new EliminarInstrumento());
         }
     }
 }

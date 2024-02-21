@@ -514,6 +514,7 @@
             this.button22.Text = "Eliminar Instrumentos";
             this.button22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // button15
             // 
@@ -531,6 +532,7 @@
             this.button15.Text = "Actualizar Instrumentos";
             this.button15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button20
             // 
@@ -548,6 +550,7 @@
             this.button20.Text = "Consultar Instrumentos";
             this.button20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // button21
             // 
@@ -651,6 +654,7 @@
             this.button18.Text = "Registrar Reactivo";
             this.button18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // btnReactivos
             // 
