@@ -36,6 +36,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -83,6 +84,66 @@
     <Compile Include="Form3.designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pacientes\ActualizarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pacientes\ActualizarPaciente.Designer.cs">
+      <DependentUpon>ActualizarPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pacientes\ConsultarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pacientes\ConsultarPaciente.Designer.cs">
+      <DependentUpon>ConsultarPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pacientes\DardealtaPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pacientes\DardealtaPaciente.Designer.cs">
+      <DependentUpon>DardealtaPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pacientes\DardebajaPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pacientes\DardebajaPaciente.Designer.cs">
+      <DependentUpon>DardebajaPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pacientes\RegistrarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pacientes\RegistrarPaciente.Designer.cs">
+      <DependentUpon>RegistrarPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\ActualizarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\ActualizarPedido.Designer.cs">
+      <DependentUpon>ActualizarPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\ConsultarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\ConsultarPedido.Designer.cs">
+      <DependentUpon>ConsultarPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\EliminarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\EliminarPedido.Designer.cs">
+      <DependentUpon>EliminarPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\EstadisticaPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\EstadisticaPedido.Designer.cs">
+      <DependentUpon>EstadisticaPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\RegistrarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\RegistrarPedido.Designer.cs">
+      <DependentUpon>RegistrarPedido.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Instrumento\RegistrarInstrumento.cs">
@@ -108,6 +169,36 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pacientes\ActualizarPaciente.resx">
+      <DependentUpon>ActualizarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pacientes\ConsultarPaciente.resx">
+      <DependentUpon>ConsultarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pacientes\DardealtaPaciente.resx">
+      <DependentUpon>DardealtaPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pacientes\DardebajaPaciente.resx">
+      <DependentUpon>DardebajaPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pacientes\RegistrarPaciente.resx">
+      <DependentUpon>RegistrarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\ActualizarPedido.resx">
+      <DependentUpon>ActualizarPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\ConsultarPedido.resx">
+      <DependentUpon>ConsultarPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\EliminarPedido.resx">
+      <DependentUpon>EliminarPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\EstadisticaPedido.resx">
+      <DependentUpon>EstadisticaPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\RegistrarPedido.resx">
+      <DependentUpon>RegistrarPedido.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PlayerUI.Pacientes;
+using PlayerUI.Pedidos;
 
 namespace PlayerUI
 {
@@ -77,7 +79,7 @@ namespace PlayerUI
         #region MediaSubMenu
         private void button2_Click(object sender, EventArgs e)
         {
-            openChildForm(new Form2());
+            openChildForm(new RegistrarPaciente());
             //..
             //your codes
             //..
@@ -85,6 +87,7 @@ namespace PlayerUI
 
         private void button3_Click(object sender, EventArgs e)
         {
+            openChildForm(new ConsultarPaciente());
             //..
             //your codes
             //..
@@ -92,6 +95,7 @@ namespace PlayerUI
 
         private void button4_Click(object sender, EventArgs e)
         {
+            openChildForm(new ActualizarPaciente());
             //..
             //your codes
             //..
@@ -99,6 +103,7 @@ namespace PlayerUI
 
         private void button5_Click(object sender, EventArgs e)
         {
+            openChildForm(new DardealtaPaciente());
             //..
             //your codes
             //..
@@ -113,6 +118,7 @@ namespace PlayerUI
         #region PlayListManagemetSubMenu
         private void button8_Click(object sender, EventArgs e)
         {
+            openChildForm(new RegistrarPedido());
             //..
             //your codes
             //..
@@ -120,6 +126,7 @@ namespace PlayerUI
 
         private void button7_Click(object sender, EventArgs e)
         {
+            openChildForm(new EliminarPedido());
             //..
             //your codes
             //..
@@ -127,6 +134,7 @@ namespace PlayerUI
 
         private void button6_Click(object sender, EventArgs e)
         {
+            openChildForm(new ConsultarPedido());
             //..
             //your codes
             //..
@@ -134,6 +142,7 @@ namespace PlayerUI
 
         private void button1_Click(object sender, EventArgs e)
         {
+            openChildForm(new EstadisticaPedido());
             //..
             //your codes
             //..
@@ -275,6 +284,16 @@ namespace PlayerUI
         private void button17_Click(object sender, EventArgs e)
         {
             openChildForm(new ConsultarInstrumento());
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            openChildForm(new DardebajaPaciente());
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ActualizarPedido());
         }
     }
 }
