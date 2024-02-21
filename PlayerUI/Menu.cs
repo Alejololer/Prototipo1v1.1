@@ -363,7 +363,7 @@ namespace PlayerUI
 
         private void button30_Click(object sender, EventArgs e)
         {
-            openChildForm(new EliminarUsuario());
+          
             
         }
 
