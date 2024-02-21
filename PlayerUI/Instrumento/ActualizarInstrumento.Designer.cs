@@ -59,10 +59,9 @@
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.LightGray;
-            this.btnExit.Location = new System.Drawing.Point(0, 0);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExit.Location = new System.Drawing.Point(12, 12);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(33, 31);
+            this.btnExit.Size = new System.Drawing.Size(25, 25);
             this.btnExit.TabIndex = 14;
             this.btnExit.Text = "X";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -76,10 +75,9 @@
             this.btnActualizarInstrumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActualizarInstrumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizarInstrumento.ForeColor = System.Drawing.Color.LightGray;
-            this.btnActualizarInstrumento.Location = new System.Drawing.Point(650, 432);
-            this.btnActualizarInstrumento.Margin = new System.Windows.Forms.Padding(4);
+            this.btnActualizarInstrumento.Location = new System.Drawing.Point(488, 351);
             this.btnActualizarInstrumento.Name = "btnActualizarInstrumento";
-            this.btnActualizarInstrumento.Size = new System.Drawing.Size(200, 49);
+            this.btnActualizarInstrumento.Size = new System.Drawing.Size(150, 40);
             this.btnActualizarInstrumento.TabIndex = 15;
             this.btnActualizarInstrumento.Text = "Actualizar";
             this.btnActualizarInstrumento.UseVisualStyleBackColor = false;
@@ -90,9 +88,10 @@
             this.txtNombreInstrumento.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNombreInstrumento.Location = new System.Drawing.Point(266, 132);
+            this.txtNombreInstrumento.Location = new System.Drawing.Point(200, 107);
+            this.txtNombreInstrumento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombreInstrumento.Name = "txtNombreInstrumento";
-            this.txtNombreInstrumento.Size = new System.Drawing.Size(584, 22);
+            this.txtNombreInstrumento.Size = new System.Drawing.Size(439, 20);
             this.txtNombreInstrumento.TabIndex = 19;
             // 
             // label2
@@ -101,9 +100,10 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.LightGray;
-            this.label2.Location = new System.Drawing.Point(48, 133);
+            this.label2.Location = new System.Drawing.Point(36, 108);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(161, 20);
+            this.label2.Size = new System.Drawing.Size(136, 17);
             this.label2.TabIndex = 20;
             this.label2.Text = "Nombre Instrumento";
             // 
@@ -112,9 +112,10 @@
             this.txtCantidadEntrada.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCantidadEntrada.Location = new System.Drawing.Point(266, 232);
+            this.txtCantidadEntrada.Location = new System.Drawing.Point(200, 188);
+            this.txtCantidadEntrada.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCantidadEntrada.Name = "txtCantidadEntrada";
-            this.txtCantidadEntrada.Size = new System.Drawing.Size(584, 22);
+            this.txtCantidadEntrada.Size = new System.Drawing.Size(439, 20);
             this.txtCantidadEntrada.TabIndex = 21;
             // 
             // label3
@@ -123,9 +124,10 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.LightGray;
-            this.label3.Location = new System.Drawing.Point(48, 233);
+            this.label3.Location = new System.Drawing.Point(36, 189);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(159, 20);
+            this.label3.Size = new System.Drawing.Size(137, 17);
             this.label3.TabIndex = 22;
             this.label3.Text = "Cantidad de entrada";
             // 
@@ -135,9 +137,10 @@
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.LightGray;
-            this.label4.Location = new System.Drawing.Point(48, 333);
+            this.label4.Location = new System.Drawing.Point(36, 271);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(147, 20);
+            this.label4.Size = new System.Drawing.Size(125, 17);
             this.label4.TabIndex = 24;
             this.label4.Text = "Cantidad de salida";
             // 
@@ -146,17 +149,18 @@
             this.txtCantidadSalida.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCantidadSalida.Location = new System.Drawing.Point(266, 332);
+            this.txtCantidadSalida.Location = new System.Drawing.Point(200, 270);
+            this.txtCantidadSalida.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCantidadSalida.Name = "txtCantidadSalida";
-            this.txtCantidadSalida.Size = new System.Drawing.Size(584, 22);
+            this.txtCantidadSalida.Size = new System.Drawing.Size(439, 20);
             this.txtCantidadSalida.TabIndex = 23;
             // 
             // ActualizarInstrumento
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(912, 530);
+            this.ClientSize = new System.Drawing.Size(684, 431);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtCantidadSalida);
             this.Controls.Add(this.label3);
