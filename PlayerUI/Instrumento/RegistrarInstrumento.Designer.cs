@@ -43,11 +43,12 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.label1.Location = new System.Drawing.Point(269, 20);
+            this.label1.Location = new System.Drawing.Point(359, 25);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 25);
+            this.label1.Size = new System.Drawing.Size(195, 29);
             this.label1.TabIndex = 7;
-            this.label1.Text = "INTRUMENTOS";
+            this.label1.Text = "REGISTRAR INTRUMENTOS";
             // 
             // btnExit
             // 
@@ -141,6 +142,7 @@
             this.Controls.Add(this.button9);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "RegistrarInstrumento";
             this.Text = "Form3";
             this.ResumeLayout(false);

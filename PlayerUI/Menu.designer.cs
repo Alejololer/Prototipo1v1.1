@@ -137,7 +137,7 @@
             this.panelParámetrosSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelParámetrosSubMenu.Location = new System.Drawing.Point(0, 1809);
             this.panelParámetrosSubMenu.Name = "panelParámetrosSubMenu";
-            this.panelParámetrosSubMenu.Size = new System.Drawing.Size(233, 160);
+            this.panelParámetrosSubMenu.Size = new System.Drawing.Size(229, 160);
             this.panelParámetrosSubMenu.TabIndex = 19;
             // 
             // button39
@@ -151,7 +151,7 @@
             this.button39.Location = new System.Drawing.Point(0, 115);
             this.button39.Name = "button39";
             this.button39.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button39.Size = new System.Drawing.Size(233, 35);
+            this.button39.Size = new System.Drawing.Size(229, 35);
             this.button39.TabIndex = 3;
             this.button39.Text = "Modificar IVA";
             this.button39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -168,7 +168,7 @@
             this.button35.Location = new System.Drawing.Point(0, 80);
             this.button35.Name = "button35";
             this.button35.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button35.Size = new System.Drawing.Size(233, 35);
+            this.button35.Size = new System.Drawing.Size(229, 35);
             this.button35.TabIndex = 2;
             this.button35.Text = "Modificar Precio";
             this.button35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -185,7 +185,7 @@
             this.button36.Location = new System.Drawing.Point(0, 40);
             this.button36.Name = "button36";
             this.button36.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button36.Size = new System.Drawing.Size(233, 40);
+            this.button36.Size = new System.Drawing.Size(229, 40);
             this.button36.TabIndex = 1;
             this.button36.Text = "Consultar Tipos de Examen";
             this.button36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -202,7 +202,7 @@
             this.button37.Location = new System.Drawing.Point(0, 0);
             this.button37.Name = "button37";
             this.button37.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button37.Size = new System.Drawing.Size(233, 40);
+            this.button37.Size = new System.Drawing.Size(229, 40);
             this.button37.TabIndex = 0;
             this.button37.Text = "Registrar Tipo de Examen";
             this.button37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -220,7 +220,7 @@
             this.btnParámetros.Location = new System.Drawing.Point(0, 1764);
             this.btnParámetros.Name = "btnParámetros";
             this.btnParámetros.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnParámetros.Size = new System.Drawing.Size(233, 45);
+            this.btnParámetros.Size = new System.Drawing.Size(229, 45);
             this.btnParámetros.TabIndex = 18;
             this.btnParámetros.Text = "     Parámetros";
             this.btnParámetros.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -238,7 +238,7 @@
             this.panelUsuariosSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelUsuariosSubMenu.Location = new System.Drawing.Point(0, 1601);
             this.panelUsuariosSubMenu.Name = "panelUsuariosSubMenu";
-            this.panelUsuariosSubMenu.Size = new System.Drawing.Size(233, 163);
+            this.panelUsuariosSubMenu.Size = new System.Drawing.Size(229, 163);
             this.panelUsuariosSubMenu.TabIndex = 17;
             // 
             // button30
@@ -252,7 +252,7 @@
             this.button30.Location = new System.Drawing.Point(0, 120);
             this.button30.Name = "button30";
             this.button30.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button30.Size = new System.Drawing.Size(233, 37);
+            this.button30.Size = new System.Drawing.Size(229, 37);
             this.button30.TabIndex = 3;
             this.button30.Text = "Eliminar Usuario";
             this.button30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -269,7 +269,7 @@
             this.button31.Location = new System.Drawing.Point(0, 80);
             this.button31.Name = "button31";
             this.button31.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button31.Size = new System.Drawing.Size(233, 40);
+            this.button31.Size = new System.Drawing.Size(229, 40);
             this.button31.TabIndex = 2;
             this.button31.Text = "Modificar Usuario";
             this.button31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -286,7 +286,7 @@
             this.button32.Location = new System.Drawing.Point(0, 40);
             this.button32.Name = "button32";
             this.button32.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button32.Size = new System.Drawing.Size(233, 40);
+            this.button32.Size = new System.Drawing.Size(229, 40);
             this.button32.TabIndex = 1;
             this.button32.Text = "Consultar Usuarios";
             this.button32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -303,7 +303,7 @@
             this.button33.Location = new System.Drawing.Point(0, 0);
             this.button33.Name = "button33";
             this.button33.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button33.Size = new System.Drawing.Size(233, 40);
+            this.button33.Size = new System.Drawing.Size(229, 40);
             this.button33.TabIndex = 0;
             this.button33.Text = "Registrar Usuarios";
             this.button33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -321,7 +321,7 @@
             this.btnUsuarios.Location = new System.Drawing.Point(0, 1556);
             this.btnUsuarios.Name = "btnUsuarios";
             this.btnUsuarios.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnUsuarios.Size = new System.Drawing.Size(233, 45);
+            this.btnUsuarios.Size = new System.Drawing.Size(229, 45);
             this.btnUsuarios.TabIndex = 16;
             this.btnUsuarios.Text = "    Usuarios";
             this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -342,7 +342,7 @@
             this.panelVentasSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelVentasSubMenu.Location = new System.Drawing.Point(0, 1208);
             this.panelVentasSubMenu.Name = "panelVentasSubMenu";
-            this.panelVentasSubMenu.Size = new System.Drawing.Size(233, 348);
+            this.panelVentasSubMenu.Size = new System.Drawing.Size(229, 348);
             this.panelVentasSubMenu.TabIndex = 15;
             // 
             // button14
@@ -356,7 +356,7 @@
             this.button14.Location = new System.Drawing.Point(0, 270);
             this.button14.Name = "button14";
             this.button14.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button14.Size = new System.Drawing.Size(233, 70);
+            this.button14.Size = new System.Drawing.Size(229, 70);
             this.button14.TabIndex = 7;
             this.button14.Text = "Consultar Informe de Ventas";
             this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -374,7 +374,7 @@
             this.button29.Location = new System.Drawing.Point(0, 200);
             this.button29.Name = "button29";
             this.button29.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button29.Size = new System.Drawing.Size(233, 70);
+            this.button29.Size = new System.Drawing.Size(229, 70);
             this.button29.TabIndex = 6;
             this.button29.Text = "Consultar Informe de Ventas";
             this.button29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -391,7 +391,7 @@
             this.button23.Location = new System.Drawing.Point(0, 160);
             this.button23.Name = "button23";
             this.button23.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button23.Size = new System.Drawing.Size(233, 40);
+            this.button23.Size = new System.Drawing.Size(229, 40);
             this.button23.TabIndex = 5;
             this.button23.Text = "Anular Factura";
             this.button23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -408,11 +408,12 @@
             this.button24.Location = new System.Drawing.Point(0, 120);
             this.button24.Name = "button24";
             this.button24.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button24.Size = new System.Drawing.Size(233, 40);
+            this.button24.Size = new System.Drawing.Size(229, 40);
             this.button24.TabIndex = 4;
             this.button24.Text = "Descargar Factura";
             this.button24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
             // button25
             // 
@@ -425,7 +426,7 @@
             this.button25.Location = new System.Drawing.Point(0, 80);
             this.button25.Name = "button25";
             this.button25.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button25.Size = new System.Drawing.Size(233, 40);
+            this.button25.Size = new System.Drawing.Size(229, 40);
             this.button25.TabIndex = 3;
             this.button25.Text = "Generar Factura";
             this.button25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -442,9 +443,9 @@
             this.button26.Location = new System.Drawing.Point(0, 40);
             this.button26.Name = "button26";
             this.button26.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button26.Size = new System.Drawing.Size(233, 40);
+            this.button26.Size = new System.Drawing.Size(229, 40);
             this.button26.TabIndex = 2;
-            this.button26.Text = "Modificar Factura";
+            this.button26.Text = "Modificar Precio";
             this.button26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button26.UseVisualStyleBackColor = true;
             // 
@@ -459,7 +460,7 @@
             this.button27.Location = new System.Drawing.Point(0, 0);
             this.button27.Name = "button27";
             this.button27.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button27.Size = new System.Drawing.Size(233, 40);
+            this.button27.Size = new System.Drawing.Size(229, 40);
             this.button27.TabIndex = 0;
             this.button27.Text = "Previsualizar Factura";
             this.button27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -478,7 +479,7 @@
             this.btnVentas.Location = new System.Drawing.Point(0, 1163);
             this.btnVentas.Name = "btnVentas";
             this.btnVentas.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnVentas.Size = new System.Drawing.Size(233, 45);
+            this.btnVentas.Size = new System.Drawing.Size(229, 45);
             this.btnVentas.TabIndex = 14;
             this.btnVentas.Text = "     Ventas";
             this.btnVentas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -495,7 +496,7 @@
             this.panelInstrumentosSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelInstrumentosSubMenu.Location = new System.Drawing.Point(0, 1004);
             this.panelInstrumentosSubMenu.Name = "panelInstrumentosSubMenu";
-            this.panelInstrumentosSubMenu.Size = new System.Drawing.Size(233, 159);
+            this.panelInstrumentosSubMenu.Size = new System.Drawing.Size(229, 159);
             this.panelInstrumentosSubMenu.TabIndex = 13;
             // 
             // button22
@@ -509,7 +510,7 @@
             this.button22.Location = new System.Drawing.Point(0, 115);
             this.button22.Name = "button22";
             this.button22.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button22.Size = new System.Drawing.Size(233, 35);
+            this.button22.Size = new System.Drawing.Size(229, 35);
             this.button22.TabIndex = 3;
             this.button22.Text = "Eliminar Instrumentos";
             this.button22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -527,7 +528,7 @@
             this.button15.Location = new System.Drawing.Point(0, 80);
             this.button15.Name = "button15";
             this.button15.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button15.Size = new System.Drawing.Size(233, 35);
+            this.button15.Size = new System.Drawing.Size(229, 35);
             this.button15.TabIndex = 2;
             this.button15.Text = "Actualizar Instrumentos";
             this.button15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -545,7 +546,7 @@
             this.button20.Location = new System.Drawing.Point(0, 40);
             this.button20.Name = "button20";
             this.button20.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button20.Size = new System.Drawing.Size(233, 40);
+            this.button20.Size = new System.Drawing.Size(229, 40);
             this.button20.TabIndex = 1;
             this.button20.Text = "Consultar Instrumentos";
             this.button20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -563,7 +564,7 @@
             this.button21.Location = new System.Drawing.Point(0, 0);
             this.button21.Name = "button21";
             this.button21.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button21.Size = new System.Drawing.Size(233, 40);
+            this.button21.Size = new System.Drawing.Size(229, 40);
             this.button21.TabIndex = 0;
             this.button21.Text = "Registrar Instrumento";
             this.button21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -582,7 +583,7 @@
             this.btnInstrumentos.Location = new System.Drawing.Point(0, 959);
             this.btnInstrumentos.Name = "btnInstrumentos";
             this.btnInstrumentos.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnInstrumentos.Size = new System.Drawing.Size(233, 45);
+            this.btnInstrumentos.Size = new System.Drawing.Size(229, 45);
             this.btnInstrumentos.TabIndex = 12;
             this.btnInstrumentos.Text = "      Instrumentos";
             this.btnInstrumentos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -599,7 +600,7 @@
             this.panelReactivosSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelReactivosSubMenu.Location = new System.Drawing.Point(0, 838);
             this.panelReactivosSubMenu.Name = "panelReactivosSubMenu";
-            this.panelReactivosSubMenu.Size = new System.Drawing.Size(233, 121);
+            this.panelReactivosSubMenu.Size = new System.Drawing.Size(229, 121);
             this.panelReactivosSubMenu.TabIndex = 11;
             // 
             // button16
@@ -613,7 +614,7 @@
             this.button16.Location = new System.Drawing.Point(0, 80);
             this.button16.Name = "button16";
             this.button16.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button16.Size = new System.Drawing.Size(233, 35);
+            this.button16.Size = new System.Drawing.Size(229, 35);
             this.button16.TabIndex = 2;
             this.button16.Text = "Actualizar Reactivos";
             this.button16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -631,7 +632,7 @@
             this.button17.Location = new System.Drawing.Point(0, 40);
             this.button17.Name = "button17";
             this.button17.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button17.Size = new System.Drawing.Size(233, 40);
+            this.button17.Size = new System.Drawing.Size(229, 40);
             this.button17.TabIndex = 1;
             this.button17.Text = "Consultar Reactivos";
             this.button17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -649,7 +650,7 @@
             this.button18.Location = new System.Drawing.Point(0, 0);
             this.button18.Name = "button18";
             this.button18.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button18.Size = new System.Drawing.Size(233, 40);
+            this.button18.Size = new System.Drawing.Size(229, 40);
             this.button18.TabIndex = 0;
             this.button18.Text = "Registrar Reactivo";
             this.button18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -668,7 +669,7 @@
             this.btnReactivos.Location = new System.Drawing.Point(0, 793);
             this.btnReactivos.Name = "btnReactivos";
             this.btnReactivos.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnReactivos.Size = new System.Drawing.Size(233, 45);
+            this.btnReactivos.Size = new System.Drawing.Size(229, 45);
             this.btnReactivos.TabIndex = 10;
             this.btnReactivos.Text = "    Reactivos";
             this.btnReactivos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -689,7 +690,7 @@
             this.btnExit.Location = new System.Drawing.Point(0, 1969);
             this.btnExit.Name = "btnExit";
             this.btnExit.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnExit.Size = new System.Drawing.Size(233, 45);
+            this.btnExit.Size = new System.Drawing.Size(229, 45);
             this.btnExit.TabIndex = 9;
             this.btnExit.Text = "  Exit";
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -707,7 +708,7 @@
             this.panelResultadosSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelResultadosSubMenu.Location = new System.Drawing.Point(0, 630);
             this.panelResultadosSubMenu.Name = "panelResultadosSubMenu";
-            this.panelResultadosSubMenu.Size = new System.Drawing.Size(233, 163);
+            this.panelResultadosSubMenu.Size = new System.Drawing.Size(229, 163);
             this.panelResultadosSubMenu.TabIndex = 7;
             // 
             // button9
@@ -721,7 +722,7 @@
             this.button9.Location = new System.Drawing.Point(0, 120);
             this.button9.Name = "button9";
             this.button9.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button9.Size = new System.Drawing.Size(233, 37);
+            this.button9.Size = new System.Drawing.Size(229, 37);
             this.button9.TabIndex = 3;
             this.button9.Text = "Generar Informe";
             this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -738,7 +739,7 @@
             this.button10.Location = new System.Drawing.Point(0, 80);
             this.button10.Name = "button10";
             this.button10.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button10.Size = new System.Drawing.Size(233, 40);
+            this.button10.Size = new System.Drawing.Size(229, 40);
             this.button10.TabIndex = 2;
             this.button10.Text = "Modificar Resultados";
             this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -756,7 +757,7 @@
             this.button12.Location = new System.Drawing.Point(0, 40);
             this.button12.Name = "button12";
             this.button12.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button12.Size = new System.Drawing.Size(233, 40);
+            this.button12.Size = new System.Drawing.Size(229, 40);
             this.button12.TabIndex = 1;
             this.button12.Text = "Consultar Resultados";
             this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -774,7 +775,7 @@
             this.button13.Location = new System.Drawing.Point(0, 0);
             this.button13.Name = "button13";
             this.button13.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button13.Size = new System.Drawing.Size(233, 40);
+            this.button13.Size = new System.Drawing.Size(229, 40);
             this.button13.TabIndex = 0;
             this.button13.Text = "Registrar Resultados";
             this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -793,7 +794,7 @@
             this.btnResultados.Location = new System.Drawing.Point(0, 585);
             this.btnResultados.Name = "btnResultados";
             this.btnResultados.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnResultados.Size = new System.Drawing.Size(233, 45);
+            this.btnResultados.Size = new System.Drawing.Size(229, 45);
             this.btnResultados.TabIndex = 5;
             this.btnResultados.Text = "     Resultados";
             this.btnResultados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -812,7 +813,7 @@
             this.panelPedidosSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelPedidosSubMenu.Location = new System.Drawing.Point(0, 379);
             this.panelPedidosSubMenu.Name = "panelPedidosSubMenu";
-            this.panelPedidosSubMenu.Size = new System.Drawing.Size(233, 206);
+            this.panelPedidosSubMenu.Size = new System.Drawing.Size(229, 206);
             this.panelPedidosSubMenu.TabIndex = 4;
             // 
             // button7
@@ -826,7 +827,7 @@
             this.button7.Location = new System.Drawing.Point(0, 160);
             this.button7.Name = "button7";
             this.button7.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button7.Size = new System.Drawing.Size(233, 40);
+            this.button7.Size = new System.Drawing.Size(229, 40);
             this.button7.TabIndex = 5;
             this.button7.Text = "Eliminar Pedido";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -844,7 +845,7 @@
             this.button11.Location = new System.Drawing.Point(0, 120);
             this.button11.Name = "button11";
             this.button11.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button11.Size = new System.Drawing.Size(233, 40);
+            this.button11.Size = new System.Drawing.Size(229, 40);
             this.button11.TabIndex = 4;
             this.button11.Text = "Actualizar Pedido";
             this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -862,7 +863,7 @@
             this.button1.Location = new System.Drawing.Point(0, 80);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(233, 40);
+            this.button1.Size = new System.Drawing.Size(229, 40);
             this.button1.TabIndex = 3;
             this.button1.Text = "Estadísticas de Pedidos";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -880,7 +881,7 @@
             this.button6.Location = new System.Drawing.Point(0, 40);
             this.button6.Name = "button6";
             this.button6.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button6.Size = new System.Drawing.Size(233, 40);
+            this.button6.Size = new System.Drawing.Size(229, 40);
             this.button6.TabIndex = 2;
             this.button6.Text = "Consultar Pedidos";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -898,7 +899,7 @@
             this.button8.Location = new System.Drawing.Point(0, 0);
             this.button8.Name = "button8";
             this.button8.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button8.Size = new System.Drawing.Size(233, 40);
+            this.button8.Size = new System.Drawing.Size(229, 40);
             this.button8.TabIndex = 0;
             this.button8.Text = "Registrar Pedido";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -917,7 +918,7 @@
             this.btnPedidos.Location = new System.Drawing.Point(0, 334);
             this.btnPedidos.Name = "btnPedidos";
             this.btnPedidos.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnPedidos.Size = new System.Drawing.Size(233, 45);
+            this.btnPedidos.Size = new System.Drawing.Size(229, 45);
             this.btnPedidos.TabIndex = 3;
             this.btnPedidos.Text = "    Pedidos";
             this.btnPedidos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -936,7 +937,7 @@
             this.panelPacientesSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelPacientesSubMenu.Location = new System.Drawing.Point(0, 129);
             this.panelPacientesSubMenu.Name = "panelPacientesSubMenu";
-            this.panelPacientesSubMenu.Size = new System.Drawing.Size(233, 205);
+            this.panelPacientesSubMenu.Size = new System.Drawing.Size(229, 205);
             this.panelPacientesSubMenu.TabIndex = 2;
             this.panelPacientesSubMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPacientesSubPacientes_Paint);
             // 
@@ -951,7 +952,7 @@
             this.button19.Location = new System.Drawing.Point(0, 160);
             this.button19.Name = "button19";
             this.button19.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button19.Size = new System.Drawing.Size(233, 40);
+            this.button19.Size = new System.Drawing.Size(229, 40);
             this.button19.TabIndex = 4;
             this.button19.Text = "Dar de Baja";
             this.button19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -969,7 +970,7 @@
             this.button5.Location = new System.Drawing.Point(0, 120);
             this.button5.Name = "button5";
             this.button5.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(233, 40);
+            this.button5.Size = new System.Drawing.Size(229, 40);
             this.button5.TabIndex = 3;
             this.button5.Text = "Dar de Alta";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -987,7 +988,7 @@
             this.button4.Location = new System.Drawing.Point(0, 80);
             this.button4.Name = "button4";
             this.button4.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(233, 40);
+            this.button4.Size = new System.Drawing.Size(229, 40);
             this.button4.TabIndex = 2;
             this.button4.Text = "Actualizar Paciente";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1005,7 +1006,7 @@
             this.button3.Location = new System.Drawing.Point(0, 40);
             this.button3.Name = "button3";
             this.button3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(233, 40);
+            this.button3.Size = new System.Drawing.Size(229, 40);
             this.button3.TabIndex = 1;
             this.button3.Text = "Consultar Paciente";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1023,7 +1024,7 @@
             this.button2.Location = new System.Drawing.Point(0, 0);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(233, 40);
+            this.button2.Size = new System.Drawing.Size(229, 40);
             this.button2.TabIndex = 0;
             this.button2.Text = "Registrar Paciente";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1042,7 +1043,7 @@
             this.btnPacientes.Location = new System.Drawing.Point(0, 84);
             this.btnPacientes.Name = "btnPacientes";
             this.btnPacientes.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnPacientes.Size = new System.Drawing.Size(233, 45);
+            this.btnPacientes.Size = new System.Drawing.Size(229, 45);
             this.btnPacientes.TabIndex = 1;
             this.btnPacientes.Text = "     Pacientes";
             this.btnPacientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1058,7 +1059,7 @@
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.panelLogo.Size = new System.Drawing.Size(233, 84);
+            this.panelLogo.Size = new System.Drawing.Size(229, 84);
             this.panelLogo.TabIndex = 0;
             // 
             // panelChildForm
@@ -1088,7 +1089,7 @@
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.ClientSize = new System.Drawing.Size(934, 561);

@@ -11,6 +11,7 @@ using PlayerUI.Instrumento;
 using PlayerUI.Pacientes;
 using PlayerUI.Pedidos;
 using PlayerUI.Reactivos;
+using PlayerUI.Ventas;
 
 namespace PlayerUI
 {
@@ -269,7 +270,7 @@ namespace PlayerUI
 
         private void button27_Click(object sender, EventArgs e)
         {
-            openChildForm(new Form3());
+            openChildForm(new PrevisualizarFactura());
 
         }
 
@@ -316,6 +317,11 @@ namespace PlayerUI
         private void button22_Click(object sender, EventArgs e)
         {
             openChildForm(new EliminarInstrumento());
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
