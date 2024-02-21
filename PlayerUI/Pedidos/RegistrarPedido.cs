@@ -38,5 +38,10 @@ namespace PlayerUI.Pedidos
             MessageBox.Show("¡El pedido se ha eliminado correctamente!", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
