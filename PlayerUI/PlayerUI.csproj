@@ -246,12 +246,6 @@
     <Compile Include="Ventas\AnularFactura.Designer.cs">
       <DependentUpon>AnularFactura.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ventas\ConsultarDatosVentaCliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ventas\ConsultarDatosVentaCliente.Designer.cs">
-      <DependentUpon>ConsultarDatosVentaCliente.cs</DependentUpon>
-    </Compile>
     <Compile Include="Ventas\ConsultarInformeVentas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -361,9 +355,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ventas\AnularFactura.resx">
       <DependentUpon>AnularFactura.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ventas\ConsultarDatosVentaCliente.resx">
-      <DependentUpon>ConsultarDatosVentaCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventas\ConsultarInformeVentas.resx">
       <DependentUpon>ConsultarInformeVentas.cs</DependentUpon>

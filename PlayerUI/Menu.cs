@@ -106,13 +106,7 @@ namespace PlayerUI
             //..
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            openChildForm(new DardealtaPaciente());
-            //..
-            //your codes
-            //..
-        }
+
         #endregion
 
         private void btnPlaylist_Click(object sender, EventArgs e)
@@ -131,7 +125,7 @@ namespace PlayerUI
 
         private void button7_Click(object sender, EventArgs e)
         {
-            openChildForm(new EliminarPedido());
+            openChildForm(new EstadisticaPedido());
             //..
             //your codes
             //..
@@ -147,7 +141,7 @@ namespace PlayerUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            openChildForm(new EstadisticaPedido());
+            openChildForm(new ActualizarPedido());
             //..
             //your codes
             //..
@@ -281,24 +275,17 @@ namespace PlayerUI
             showSubMenu(panelPacientesSubMenu);
         }
 
-        private void button14_Click(object sender, EventArgs e)
-        {
-            openChildForm(new ConsultarDatosVentaCliente());
-        }
+
 
         private void button17_Click(object sender, EventArgs e)
         {
             openChildForm(new ConsultarRea());
         }
 
-        private void button19_Click(object sender, EventArgs e)
-        {
-            openChildForm(new DardebajaPaciente());
-        }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            openChildForm(new ActualizarPedido());
+            openChildForm(new EliminarPedido());
         }
 
         private void button18_Click(object sender, EventArgs e)

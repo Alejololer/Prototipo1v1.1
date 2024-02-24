@@ -646,7 +646,7 @@
             this.button7.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button7.Size = new System.Drawing.Size(233, 40);
             this.button7.TabIndex = 5;
-            this.button7.Text = "Eliminar Pedido";
+            this.button7.Text = "Estadísticas de Pedidos";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
@@ -664,7 +664,7 @@
             this.button11.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button11.Size = new System.Drawing.Size(233, 40);
             this.button11.TabIndex = 4;
-            this.button11.Text = "Actualizar Pedido";
+            this.button11.Text = "Eliminar Pedido";
             this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
@@ -682,7 +682,7 @@
             this.button1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button1.Size = new System.Drawing.Size(233, 40);
             this.button1.TabIndex = 3;
-            this.button1.Text = "Estadísticas de Pedidos";
+            this.button1.Text = "Actualizar Pedido";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
