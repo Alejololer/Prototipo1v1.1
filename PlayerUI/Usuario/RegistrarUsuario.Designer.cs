@@ -45,10 +45,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.label1.Location = new System.Drawing.Point(317, 31);
-            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label1.Location = new System.Drawing.Point(238, 25);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(278, 29);
+            this.label1.Size = new System.Drawing.Size(220, 25);
             this.label1.TabIndex = 7;
             this.label1.Text = "REGISTRAR USUARIO";
             // 
@@ -59,10 +59,9 @@
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.LightGray;
-            this.btnExit.Location = new System.Drawing.Point(16, 15);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExit.Location = new System.Drawing.Point(12, 12);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(33, 31);
+            this.btnExit.Size = new System.Drawing.Size(25, 25);
             this.btnExit.TabIndex = 14;
             this.btnExit.Text = "X";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -76,10 +75,9 @@
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.LightGray;
-            this.button9.Location = new System.Drawing.Point(651, 432);
-            this.button9.Margin = new System.Windows.Forms.Padding(4);
+            this.button9.Location = new System.Drawing.Point(488, 351);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(200, 49);
+            this.button9.Size = new System.Drawing.Size(150, 40);
             this.button9.TabIndex = 15;
             this.button9.Text = "Registrar";
             this.button9.UseVisualStyleBackColor = false;
@@ -89,10 +87,10 @@
             this.txtNombreInstrumento.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNombreInstrumento.Location = new System.Drawing.Point(267, 136);
-            this.txtNombreInstrumento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNombreInstrumento.Location = new System.Drawing.Point(200, 110);
+            this.txtNombreInstrumento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombreInstrumento.Name = "txtNombreInstrumento";
-            this.txtNombreInstrumento.Size = new System.Drawing.Size(584, 22);
+            this.txtNombreInstrumento.Size = new System.Drawing.Size(439, 20);
             this.txtNombreInstrumento.TabIndex = 19;
             // 
             // label2
@@ -101,9 +99,10 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.LightGray;
-            this.label2.Location = new System.Drawing.Point(48, 137);
+            this.label2.Location = new System.Drawing.Point(36, 111);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(154, 20);
+            this.label2.Size = new System.Drawing.Size(131, 17);
             this.label2.TabIndex = 20;
             this.label2.Text = "Nombre de Usuario";
             // 
@@ -112,10 +111,10 @@
             this.txtCantidadInstrumento.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCantidadInstrumento.Location = new System.Drawing.Point(267, 234);
-            this.txtCantidadInstrumento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCantidadInstrumento.Location = new System.Drawing.Point(200, 191);
+            this.txtCantidadInstrumento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCantidadInstrumento.Name = "txtCantidadInstrumento";
-            this.txtCantidadInstrumento.Size = new System.Drawing.Size(584, 22);
+            this.txtCantidadInstrumento.Size = new System.Drawing.Size(439, 20);
             this.txtCantidadInstrumento.TabIndex = 21;
             // 
             // label3
@@ -124,9 +123,10 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.LightGray;
-            this.label3.Location = new System.Drawing.Point(48, 235);
+            this.label3.Location = new System.Drawing.Point(36, 191);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 20);
+            this.label3.Size = new System.Drawing.Size(81, 17);
             this.label3.TabIndex = 22;
             this.label3.Text = "Contraseña";
             // 
@@ -136,26 +136,31 @@
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.LightGray;
-            this.label4.Location = new System.Drawing.Point(48, 334);
+            this.label4.Location = new System.Drawing.Point(36, 271);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(127, 20);
+            this.label4.Size = new System.Drawing.Size(109, 17);
             this.label4.TabIndex = 24;
             this.label4.Text = "Tipo de Usuario";
             // 
             // comboBox1
             // 
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(267, 332);
+            this.comboBox1.Location = new System.Drawing.Point(200, 270);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(584, 24);
+            this.comboBox1.Size = new System.Drawing.Size(439, 21);
             this.comboBox1.TabIndex = 25;
             // 
             // RegistrarUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(912, 530);
+            this.ClientSize = new System.Drawing.Size(684, 431);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -166,7 +171,7 @@
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "RegistrarUsuario";
             this.Text = "Form3";
             this.ResumeLayout(false);

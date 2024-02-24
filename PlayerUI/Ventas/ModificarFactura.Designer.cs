@@ -32,9 +32,9 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.btnConsultarInstrumento = new System.Windows.Forms.Button();
             this.lblNombreInstrumento = new System.Windows.Forms.Label();
-            this.dgvConsultarInstrumentos = new System.Windows.Forms.DataGridView();
-            this.cmbxPedidos = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvConsultarInstrumentos)).BeginInit();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -43,10 +43,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.label1.Location = new System.Drawing.Point(278, 25);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(208, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(276, 29);
+            this.label1.Size = new System.Drawing.Size(223, 25);
             this.label1.TabIndex = 7;
             this.label1.Text = "MODIFICAR FACTURA";
             // 
@@ -58,9 +57,8 @@
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.LightGray;
             this.btnExit.Location = new System.Drawing.Point(0, 0);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(33, 31);
+            this.btnExit.Size = new System.Drawing.Size(25, 25);
             this.btnExit.TabIndex = 14;
             this.btnExit.Text = "X";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -74,10 +72,9 @@
             this.btnConsultarInstrumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultarInstrumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultarInstrumento.ForeColor = System.Drawing.Color.LightGray;
-            this.btnConsultarInstrumento.Location = new System.Drawing.Point(650, 434);
-            this.btnConsultarInstrumento.Margin = new System.Windows.Forms.Padding(4);
+            this.btnConsultarInstrumento.Location = new System.Drawing.Point(488, 353);
             this.btnConsultarInstrumento.Name = "btnConsultarInstrumento";
-            this.btnConsultarInstrumento.Size = new System.Drawing.Size(200, 49);
+            this.btnConsultarInstrumento.Size = new System.Drawing.Size(150, 40);
             this.btnConsultarInstrumento.TabIndex = 15;
             this.btnConsultarInstrumento.Text = "Modificar";
             this.btnConsultarInstrumento.UseVisualStyleBackColor = false;
@@ -89,56 +86,67 @@
             this.lblNombreInstrumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblNombreInstrumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreInstrumento.ForeColor = System.Drawing.Color.LightGray;
-            this.lblNombreInstrumento.Location = new System.Drawing.Point(48, 84);
+            this.lblNombreInstrumento.Location = new System.Drawing.Point(36, 235);
+            this.lblNombreInstrumento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombreInstrumento.Name = "lblNombreInstrumento";
-            this.lblNombreInstrumento.Size = new System.Drawing.Size(165, 20);
+            this.lblNombreInstrumento.Size = new System.Drawing.Size(122, 17);
             this.lblNombreInstrumento.TabIndex = 20;
-            this.lblNombreInstrumento.Text = "Modificar precio final";
+            this.lblNombreInstrumento.Text = "Nuevo precio final";
             // 
-            // dgvConsultarInstrumentos
+            // comboBox1
             // 
-            this.dgvConsultarInstrumentos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvConsultarInstrumentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvConsultarInstrumentos.Location = new System.Drawing.Point(52, 146);
-            this.dgvConsultarInstrumentos.Name = "dgvConsultarInstrumentos";
-            this.dgvConsultarInstrumentos.RowHeadersWidth = 51;
-            this.dgvConsultarInstrumentos.RowTemplate.Height = 24;
-            this.dgvConsultarInstrumentos.Size = new System.Drawing.Size(798, 260);
-            this.dgvConsultarInstrumentos.TabIndex = 21;
-            // 
-            // cmbxPedidos
-            // 
-            this.cmbxPedidos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbxPedidos.FormattingEnabled = true;
-            this.cmbxPedidos.Items.AddRange(new object[] {
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
             "Pija",
             "Chocolate"});
-            this.cmbxPedidos.Location = new System.Drawing.Point(264, 82);
-            this.cmbxPedidos.Name = "cmbxPedidos";
-            this.cmbxPedidos.Size = new System.Drawing.Size(586, 24);
-            this.cmbxPedidos.TabIndex = 22;
+            this.comboBox1.Location = new System.Drawing.Point(198, 175);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(440, 21);
+            this.comboBox1.TabIndex = 24;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.LightGray;
+            this.label2.Location = new System.Drawing.Point(36, 175);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(140, 17);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Seleccione la factura";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Location = new System.Drawing.Point(198, 232);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(440, 20);
+            this.textBox1.TabIndex = 25;
             // 
             // ModificarFactura
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(912, 530);
-            this.Controls.Add(this.cmbxPedidos);
-            this.Controls.Add(this.dgvConsultarInstrumentos);
+            this.ClientSize = new System.Drawing.Size(684, 431);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lblNombreInstrumento);
             this.Controls.Add(this.btnConsultarInstrumento);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ModificarFactura";
             this.Text = "Form3";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvConsultarInstrumentos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -149,7 +157,8 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnConsultarInstrumento;
         private System.Windows.Forms.Label lblNombreInstrumento;
-        private System.Windows.Forms.DataGridView dgvConsultarInstrumentos;
-        private System.Windows.Forms.ComboBox cmbxPedidos;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

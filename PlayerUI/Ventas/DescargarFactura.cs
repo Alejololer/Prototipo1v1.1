@@ -21,5 +21,19 @@ namespace PlayerUI.Ventas
         {
             this.Close();
         }
+
+        private void btnConsultarInstrumento_Click(object sender, EventArgs e)
+        {
+            // Enviar un mensaje
+            DialogResult result = MessageBox.Show("¿Está seguro?", "Descargar Factura", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                MessageBox.Show("Factura descargada  correctamente", "Descargar Factura", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+
+            }
+        }
     }
 }

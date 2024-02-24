@@ -21,5 +21,19 @@ namespace PlayerUI.Parametros
         {
             this.Close();
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            // Enviar un mensaje
+            DialogResult result = MessageBox.Show("¿Está seguro?", "Modificar IVA", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                MessageBox.Show("IVA modificado correctamente", "Modificar IVA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+
+            };
+        }
     }
 }

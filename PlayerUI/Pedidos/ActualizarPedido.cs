@@ -34,7 +34,16 @@ namespace PlayerUI.Pedidos
 
         private void button9_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("¡Registro exitoso!", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            // Enviar un mensaje
+            DialogResult result = MessageBox.Show("¿Está seguro?", "Modificar Pedido", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                MessageBox.Show("¨Pedido modificado correctamente", "Modificar Pedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+
+            };
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -29,7 +29,7 @@ namespace PlayerUI
         {
             panelPacientesSubMenu.Visible = false;
             panelPedidosSubMenu.Visible = false;
-            panelResultadosSubMenu.Visible = false;
+            //panelResultadosSubMenu.Visible = false;
             panelReactivosSubMenu.Visible = false;
             panelUsuariosSubMenu.Visible = false;
             panelParámetrosSubMenu.Visible = false;
@@ -45,8 +45,8 @@ namespace PlayerUI
             if (panelPedidosSubMenu.Visible == true)
                 panelPedidosSubMenu.Visible = false;
 
-            if (panelResultadosSubMenu.Visible == true)
-                panelResultadosSubMenu.Visible = false;
+            //if (//panelResultadosSubMenu.Visible == true)
+              //  panelResultadosSubMenu.Visible = false;
 
             if (panelReactivosSubMenu.Visible == true)
                 panelReactivosSubMenu.Visible = false;
@@ -156,7 +156,7 @@ namespace PlayerUI
 
         private void btnTools_Click(object sender, EventArgs e)
         {
-            showSubMenu(panelResultadosSubMenu);
+            //showSubMenu(panelResultadosSubMenu);
         }
         #region ToolsSubMenu
         private void button13_Click(object sender, EventArgs e)
@@ -190,7 +190,7 @@ namespace PlayerUI
 
         private void btnEqualizer_Click(object sender, EventArgs e)
         {
-            showSubMenu(panelResultadosSubMenu);
+            //showSubMenu(panelResultadosSubMenu);
 
         }
 
@@ -358,7 +358,7 @@ namespace PlayerUI
 
         private void button31_Click(object sender, EventArgs e)
         {
-            openChildForm(new ModificarUsuario());
+
         }
 
         private void button30_Click(object sender, EventArgs e)

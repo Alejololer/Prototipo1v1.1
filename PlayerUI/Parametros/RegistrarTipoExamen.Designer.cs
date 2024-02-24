@@ -79,12 +79,13 @@
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.LightGray;
-            this.button9.Location = new System.Drawing.Point(488, 468);
+            this.button9.Location = new System.Drawing.Point(511, 502);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(150, 40);
             this.button9.TabIndex = 15;
             this.button9.Text = "Registrar";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // txtNombreInstrumento
             // 
@@ -92,7 +93,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNombreInstrumento.Location = new System.Drawing.Point(222, 107);
-            this.txtNombreInstrumento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombreInstrumento.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreInstrumento.Name = "txtNombreInstrumento";
             this.txtNombreInstrumento.Size = new System.Drawing.Size(439, 20);
             this.txtNombreInstrumento.TabIndex = 19;
@@ -188,10 +189,13 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(23, 354);
+            this.dataGridView1.Location = new System.Drawing.Point(23, 347);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(638, 89);
+            this.dataGridView1.Size = new System.Drawing.Size(638, 142);
             this.dataGridView1.TabIndex = 45;
             // 
             // RegistrarTipoExamen
@@ -199,7 +203,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(684, 548);
+            this.ClientSize = new System.Drawing.Size(684, 554);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
@@ -213,7 +217,7 @@
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "RegistrarTipoExamen";
             this.Text = "Form3";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

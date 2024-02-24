@@ -24,7 +24,7 @@ namespace PlayerUI
             nombreInstrumento = txtNombreInstrumento.Text;
             if(nombreInstrumento == null || nombreInstrumento == "")
             {
-                MessageBox.Show("Nombre de instrumento inválid");
+                MessageBox.Show("Nombre de instrumento inválido");
             }
             else
             {
@@ -38,6 +38,11 @@ namespace PlayerUI
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dgvConsultarInstrumentos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+                
         }
     }
 }

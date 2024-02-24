@@ -21,5 +21,19 @@ namespace PlayerUI.Parametros
         {
             this.Close();
         }
+
+        private void btnActualizarInstrumento_Click(object sender, EventArgs e)
+        {
+            // Enviar un mensaje
+            DialogResult result = MessageBox.Show("¿Está seguro?", "Eliminar Pedido", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                MessageBox.Show("Pedido eliminado correctamente", "Eliminar Pedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+
+            };
+        }
     }
 }

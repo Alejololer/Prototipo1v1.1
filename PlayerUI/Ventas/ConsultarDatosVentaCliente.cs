@@ -21,5 +21,10 @@ namespace PlayerUI.Ventas
         {
             this.Close();
         }
+
+        private void btnConsultarInstrumento_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

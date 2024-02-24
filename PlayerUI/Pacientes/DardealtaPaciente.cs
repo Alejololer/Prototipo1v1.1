@@ -20,7 +20,7 @@ namespace PlayerUI.Pacientes
         private void button1_Click(object sender, EventArgs e)
         {
             // Enviar un mensaje
-            DialogResult result = MessageBox.Show("¿Está seguro?", "Dar de alta de Pedido", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = MessageBox.Show("¿Está seguro?", "Dar de alta Paciente", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
                 MessageBox.Show("¡Se ha dado de alta al Paciente '  ' exitosamente!", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);

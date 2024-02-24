@@ -28,13 +28,21 @@ namespace PlayerUI.Instrumento
 
         private void btnActualizarInstrumento_Click(object sender, EventArgs e)
         {
-            nombreInstrumento = txtNombreInstrumento.Text;
-            cantidadEntrada = txtCantidadEntrada.Text;
-            cantidadSalida = txtCantidadSalida.Text;
+            // Enviar un mensaje
+            DialogResult result = MessageBox.Show("¿Está seguro?", "Eliminar Instrumento", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                MessageBox.Show("Instrumento eliminado correctamente", "Eliminar Instrumento", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
 
-            MessageBox.Show("Instrumento eliminado correctamente");
-            MessageBox.Show("Nombre de instrumento inválido");
-            MessageBox.Show("Cantidades de entrada y/o salida inválidas");
+            };
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

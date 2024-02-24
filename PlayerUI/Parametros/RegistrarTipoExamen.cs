@@ -21,5 +21,10 @@ namespace PlayerUI.Parametros
         {
             this.Close();  
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Tipo de Examen registrado correctamente", "Registrar Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

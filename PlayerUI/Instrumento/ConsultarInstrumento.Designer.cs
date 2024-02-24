@@ -46,7 +46,7 @@
             this.label1.Location = new System.Drawing.Point(278, 25);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(356, 29);
+            this.label1.Size = new System.Drawing.Size(287, 25);
             this.label1.TabIndex = 7;
             this.label1.Text = "CONSULTAR INTRUMENTOS";
             // 
@@ -87,7 +87,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNombreInstrumento.Location = new System.Drawing.Point(200, 67);
-            this.txtNombreInstrumento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombreInstrumento.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreInstrumento.Name = "txtNombreInstrumento";
             this.txtNombreInstrumento.Size = new System.Drawing.Size(439, 20);
             this.txtNombreInstrumento.TabIndex = 19;
@@ -112,12 +112,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvConsultarInstrumentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvConsultarInstrumentos.Location = new System.Drawing.Point(39, 119);
-            this.dgvConsultarInstrumentos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvConsultarInstrumentos.Margin = new System.Windows.Forms.Padding(2);
             this.dgvConsultarInstrumentos.Name = "dgvConsultarInstrumentos";
             this.dgvConsultarInstrumentos.RowHeadersWidth = 51;
             this.dgvConsultarInstrumentos.RowTemplate.Height = 24;
             this.dgvConsultarInstrumentos.Size = new System.Drawing.Size(598, 211);
             this.dgvConsultarInstrumentos.TabIndex = 21;
+            this.dgvConsultarInstrumentos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvConsultarInstrumentos_CellContentClick);
             // 
             // ConsultarInstrumento
             // 

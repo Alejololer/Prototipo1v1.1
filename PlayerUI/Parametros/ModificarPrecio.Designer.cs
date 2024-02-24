@@ -79,6 +79,7 @@
             this.button9.TabIndex = 15;
             this.button9.Text = "Modificar";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // txtNombreInstrumento
             // 
@@ -86,7 +87,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNombreInstrumento.Location = new System.Drawing.Point(224, 160);
-            this.txtNombreInstrumento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombreInstrumento.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreInstrumento.Name = "txtNombreInstrumento";
             this.txtNombreInstrumento.Size = new System.Drawing.Size(439, 20);
             this.txtNombreInstrumento.TabIndex = 19;
@@ -110,7 +111,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCantidadInstrumento.Location = new System.Drawing.Point(224, 240);
-            this.txtCantidadInstrumento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCantidadInstrumento.Margin = new System.Windows.Forms.Padding(2);
             this.txtCantidadInstrumento.Name = "txtCantidadInstrumento";
             this.txtCantidadInstrumento.Size = new System.Drawing.Size(439, 20);
             this.txtCantidadInstrumento.TabIndex = 21;
@@ -142,7 +143,7 @@
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ModificarPrecio";
             this.Text = "Form3";
             this.ResumeLayout(false);

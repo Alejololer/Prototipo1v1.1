@@ -24,8 +24,16 @@ namespace PlayerUI.Ventas
 
         private void btnConsultarInstrumento_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Error en la generación de la factura");
-            MessageBox.Show("Cantidad del precio invalida");
+            // Enviar un mensaje
+            DialogResult result = MessageBox.Show("¿Está seguro?", "Modificar precio Prefactura", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                MessageBox.Show("Prefactura modificada  correctamente", "Modificar precio Prefactura", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+
+            }
         }
     }
 }

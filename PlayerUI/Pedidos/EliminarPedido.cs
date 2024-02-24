@@ -33,14 +33,12 @@ namespace PlayerUI.Pedidos
             DialogResult result = MessageBox.Show("¿Está seguro?", "Eliminar Pedido", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
-                MessageBox.Show("¡Se ha eliminado el pedido del Paciente '  ' exitosamente!", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Pedido eliminado correctamente", "Eliminar Pedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
 
             }
-
-            this.Close();
         }
     }
 }

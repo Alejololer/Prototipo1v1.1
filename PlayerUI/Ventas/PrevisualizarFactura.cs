@@ -26,8 +26,16 @@ namespace PlayerUI.Ventas
 
         private void btnConsultarInstrumento_Click(object sender, EventArgs e)
         {
-            pedido = cmbxPedidos.Text;
-            MessageBox.Show("Error en la previsualización de la factura");
+            // Enviar un mensaje
+            DialogResult result = MessageBox.Show("¿Está seguro?", "Generar Prefactura", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                MessageBox.Show("Prefactura generada correctamente", "Generar Prefactura", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+
+            };
         }
     }
 }
