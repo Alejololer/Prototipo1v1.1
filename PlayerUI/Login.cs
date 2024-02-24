@@ -1,7 +1,10 @@
-﻿using System;
+﻿using PlayerUI.ConeccionBD;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,26 +15,71 @@ namespace PlayerUI
 {
     public partial class Login : Form
     {
+
+        // Conexión a la base de datos
+        private const string connectionString = "Data Source=TONY;Initial Catalog=Laboratorio;Integrated Security=True;Encrypt=False"; // Reemplaza con tu cadena de conexión
+
         public Login()
         {
             InitializeComponent();
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            // Crea una instancia del nuevo formulario
-            Menu nuevoFormulario = new Menu();
-            nuevoFormulario.FormClosed += (s, args) => this.Show(); // Suscribe al evento FormClosed de Form2
-            // Muestra el nuevo formulario
-            nuevoFormulario.ShowDialog();
+            string usuario = txtUsuario.Text;
+            string contrasena = txtContrasena.Text;
 
-            // Oculta el formulario actual
+            // Validar usuario y contraseña
+            if (ValidarUsuario(usuario, contrasena))
+            {
+                MessageBox.Show("Inicio de sesión exitoso");
+                // Puedes redirigir a otra ventana o realizar otras acciones después de un inicio de sesión exitoso
+            }
+            else
+            {
+                MessageBox.Show("Error: Usuario o contraseña incorrectos");
+            }
+        }
+
+        private bool ValidarUsuario(string usuario, string contrasena)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+
+                    // Consulta SQL para validar el usuario y contraseña
+                    string query = "SELECT COUNT(*) FROM Usuario WHERE userName = @Usuario AND password = @Contrasena";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        // Parámetros para evitar la inyección SQL
+                        command.Parameters.AddWithValue("@Usuario", usuario);
+                        command.Parameters.AddWithValue("@Contrasena", contrasena);
+
+                        int count = (int)command.ExecuteScalar();
+
+                        // Si count es mayor a 0, el usuario y la contraseña son válidos
+                        return count > 0;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error de conexión a la base de datos: " + ex.Message);
+                    return false;
+                }
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

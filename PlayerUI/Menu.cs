@@ -358,7 +358,7 @@ namespace PlayerUI
 
         private void button31_Click(object sender, EventArgs e)
         {
-            openChildForm(new ModificarUsuario());
+
         }
 
         private void button30_Click(object sender, EventArgs e)
