@@ -47,6 +47,7 @@
             this.label1.Size = new System.Drawing.Size(161, 25);
             this.label1.TabIndex = 7;
             this.label1.Text = "MODIFICAR IVA";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnExit
             // 
@@ -71,7 +72,7 @@
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.LightGray;
-            this.button9.Location = new System.Drawing.Point(488, 351);
+            this.button9.Location = new System.Drawing.Point(488, 264);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(150, 40);
             this.button9.TabIndex = 15;
@@ -89,6 +90,7 @@
             this.txtCantidadInstrumento.Name = "txtCantidadInstrumento";
             this.txtCantidadInstrumento.Size = new System.Drawing.Size(439, 20);
             this.txtCantidadInstrumento.TabIndex = 21;
+            this.txtCantidadInstrumento.TextChanged += new System.EventHandler(this.txtCantidadInstrumento_TextChanged);
             // 
             // label3
             // 
@@ -102,13 +104,14 @@
             this.label3.Size = new System.Drawing.Size(115, 17);
             this.label3.TabIndex = 22;
             this.label3.Text = "Nuevo Valor IVA:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // ModificarIVA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(684, 431);
+            this.ClientSize = new System.Drawing.Size(684, 344);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtCantidadInstrumento);
             this.Controls.Add(this.button9);

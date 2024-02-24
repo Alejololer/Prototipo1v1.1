@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PlayerUI.Pacientes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -43,5 +44,15 @@ namespace PlayerUI.Pedidos
         {
 
         }
+
+        private void RegistrarPedido_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+        }
+
     }
 }
