@@ -118,14 +118,15 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.label1.Location = new System.Drawing.Point(204, 61);
+            this.label1.Location = new System.Drawing.Point(173, 61);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(265, 25);
+            this.label1.Size = new System.Drawing.Size(322, 25);
             this.label1.TabIndex = 59;
-            this.label1.Text = "Actualizar Datos del Reactivo";
+            this.label1.Text = "ACTUALIZAR STOCK REACTIVO";
             // 
             // textBox3
             // 
