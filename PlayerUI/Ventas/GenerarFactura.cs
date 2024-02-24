@@ -35,5 +35,10 @@ namespace PlayerUI.Ventas
 
             }
         }
+
+        private void lblNombreInstrumento_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

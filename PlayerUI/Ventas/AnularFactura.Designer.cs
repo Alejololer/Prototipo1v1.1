@@ -43,7 +43,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.label1.Location = new System.Drawing.Point(231, 20);
+            this.label1.Location = new System.Drawing.Point(246, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(192, 25);
             this.label1.TabIndex = 7;
@@ -56,7 +56,7 @@
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.LightGray;
-            this.btnExit.Location = new System.Drawing.Point(0, 0);
+            this.btnExit.Location = new System.Drawing.Point(12, 12);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(25, 25);
             this.btnExit.TabIndex = 14;
@@ -100,7 +100,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvConsultarInstrumentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvConsultarInstrumentos.Location = new System.Drawing.Point(39, 119);
-            this.dgvConsultarInstrumentos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvConsultarInstrumentos.Margin = new System.Windows.Forms.Padding(2);
             this.dgvConsultarInstrumentos.Name = "dgvConsultarInstrumentos";
             this.dgvConsultarInstrumentos.RowHeadersWidth = 51;
             this.dgvConsultarInstrumentos.RowTemplate.Height = 24;
@@ -114,7 +114,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbxPedidos.FormattingEnabled = true;
             this.cmbxPedidos.Location = new System.Drawing.Point(204, 67);
-            this.cmbxPedidos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbxPedidos.Margin = new System.Windows.Forms.Padding(2);
             this.cmbxPedidos.Name = "cmbxPedidos";
             this.cmbxPedidos.Size = new System.Drawing.Size(434, 21);
             this.cmbxPedidos.TabIndex = 22;

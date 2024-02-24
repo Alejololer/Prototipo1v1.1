@@ -40,11 +40,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.label1.Location = new System.Drawing.Point(256, 34);
+            this.label1.Location = new System.Drawing.Point(218, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(186, 25);
+            this.label1.Size = new System.Drawing.Size(232, 25);
             this.label1.TabIndex = 21;
-            this.label1.Text = "Pedidos Pendientes";
+            this.label1.Text = "PEDIDOS PENDIENTES";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnExit

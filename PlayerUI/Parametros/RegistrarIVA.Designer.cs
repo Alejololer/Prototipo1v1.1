@@ -41,7 +41,7 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.LightGray;
-            this.label3.Location = new System.Drawing.Point(104, 190);
+            this.label3.Location = new System.Drawing.Point(49, 162);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 17);
@@ -53,7 +53,7 @@
             this.txtCantidadInstrumento.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCantidadInstrumento.Location = new System.Drawing.Point(200, 190);
+            this.txtCantidadInstrumento.Location = new System.Drawing.Point(196, 162);
             this.txtCantidadInstrumento.Margin = new System.Windows.Forms.Padding(2);
             this.txtCantidadInstrumento.Name = "txtCantidadInstrumento";
             this.txtCantidadInstrumento.Size = new System.Drawing.Size(439, 20);
@@ -73,7 +73,6 @@
             this.button9.TabIndex = 25;
             this.button9.Text = "Registrar";
             this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // btnExit
             // 
@@ -95,7 +94,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.label1.Location = new System.Drawing.Point(268, 25);
+            this.label1.Location = new System.Drawing.Point(262, 25);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(163, 25);

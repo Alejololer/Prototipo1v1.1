@@ -83,17 +83,15 @@
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.label1.Location = new System.Drawing.Point(201, 64);
+            this.label1.Location = new System.Drawing.Point(154, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(266, 25);
+            this.label1.Size = new System.Drawing.Size(361, 25);
             this.label1.TabIndex = 50;
-            this.label1.Text = "Actualizar Datos del Paciente";
+            this.label1.Text = "ACTUALIZAR DATOS DEL PACIENTE";
             // 
             // textBox3
             // 

@@ -40,7 +40,6 @@
             this.button33 = new System.Windows.Forms.Button();
             this.btnUsuarios = new System.Windows.Forms.Button();
             this.panelVentasSubMenu = new System.Windows.Forms.Panel();
-            this.button14 = new System.Windows.Forms.Button();
             this.button29 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
@@ -68,8 +67,6 @@
             this.button8 = new System.Windows.Forms.Button();
             this.btnPedidos = new System.Windows.Forms.Button();
             this.panelPacientesSubMenu = new System.Windows.Forms.Panel();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -122,7 +119,7 @@
             this.panelParámetrosSubMenu.Controls.Add(this.button36);
             this.panelParámetrosSubMenu.Controls.Add(this.button37);
             this.panelParámetrosSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelParámetrosSubMenu.Location = new System.Drawing.Point(0, 1460);
+            this.panelParámetrosSubMenu.Location = new System.Drawing.Point(0, 1354);
             this.panelParámetrosSubMenu.Name = "panelParámetrosSubMenu";
             this.panelParámetrosSubMenu.Size = new System.Drawing.Size(233, 121);
             this.panelParámetrosSubMenu.TabIndex = 19;
@@ -190,7 +187,7 @@
             this.btnParámetros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnParámetros.ForeColor = System.Drawing.Color.Silver;
             this.btnParámetros.Image = ((System.Drawing.Image)(resources.GetObject("btnParámetros.Image")));
-            this.btnParámetros.Location = new System.Drawing.Point(0, 1415);
+            this.btnParámetros.Location = new System.Drawing.Point(0, 1309);
             this.btnParámetros.Name = "btnParámetros";
             this.btnParámetros.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnParámetros.Size = new System.Drawing.Size(233, 45);
@@ -207,7 +204,7 @@
             this.panelUsuariosSubMenu.Controls.Add(this.button32);
             this.panelUsuariosSubMenu.Controls.Add(this.button33);
             this.panelUsuariosSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelUsuariosSubMenu.Location = new System.Drawing.Point(0, 1327);
+            this.panelUsuariosSubMenu.Location = new System.Drawing.Point(0, 1221);
             this.panelUsuariosSubMenu.Name = "panelUsuariosSubMenu";
             this.panelUsuariosSubMenu.Size = new System.Drawing.Size(233, 88);
             this.panelUsuariosSubMenu.TabIndex = 17;
@@ -257,7 +254,7 @@
             this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUsuarios.ForeColor = System.Drawing.Color.Silver;
             this.btnUsuarios.Image = ((System.Drawing.Image)(resources.GetObject("btnUsuarios.Image")));
-            this.btnUsuarios.Location = new System.Drawing.Point(0, 1282);
+            this.btnUsuarios.Location = new System.Drawing.Point(0, 1176);
             this.btnUsuarios.Name = "btnUsuarios";
             this.btnUsuarios.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnUsuarios.Size = new System.Drawing.Size(233, 45);
@@ -271,7 +268,6 @@
             // panelVentasSubMenu
             // 
             this.panelVentasSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.panelVentasSubMenu.Controls.Add(this.button14);
             this.panelVentasSubMenu.Controls.Add(this.button29);
             this.panelVentasSubMenu.Controls.Add(this.button23);
             this.panelVentasSubMenu.Controls.Add(this.button24);
@@ -279,28 +275,10 @@
             this.panelVentasSubMenu.Controls.Add(this.button26);
             this.panelVentasSubMenu.Controls.Add(this.button27);
             this.panelVentasSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelVentasSubMenu.Location = new System.Drawing.Point(0, 1000);
+            this.panelVentasSubMenu.Location = new System.Drawing.Point(0, 930);
             this.panelVentasSubMenu.Name = "panelVentasSubMenu";
-            this.panelVentasSubMenu.Size = new System.Drawing.Size(233, 282);
+            this.panelVentasSubMenu.Size = new System.Drawing.Size(233, 246);
             this.panelVentasSubMenu.TabIndex = 15;
-            // 
-            // button14
-            // 
-            this.button14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.button14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.ForeColor = System.Drawing.Color.Silver;
-            this.button14.Location = new System.Drawing.Point(0, 240);
-            this.button14.Name = "button14";
-            this.button14.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button14.Size = new System.Drawing.Size(233, 40);
-            this.button14.TabIndex = 7;
-            this.button14.Text = "Consultar Datos de Venta  del Cliente";
-            this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button29
             // 
@@ -387,7 +365,7 @@
             this.button26.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button26.Size = new System.Drawing.Size(233, 40);
             this.button26.TabIndex = 2;
-            this.button26.Text = "Modificar Factura";
+            this.button26.Text = "Modificar Precio Venta";
             this.button26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button26.UseVisualStyleBackColor = true;
             this.button26.Click += new System.EventHandler(this.button26_Click);
@@ -405,7 +383,7 @@
             this.button27.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button27.Size = new System.Drawing.Size(233, 40);
             this.button27.TabIndex = 0;
-            this.button27.Text = "Previsualizar Factura";
+            this.button27.Text = "Generar Venta";
             this.button27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button27.UseVisualStyleBackColor = true;
             this.button27.Click += new System.EventHandler(this.button27_Click);
@@ -419,7 +397,7 @@
             this.btnVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVentas.ForeColor = System.Drawing.Color.Silver;
             this.btnVentas.Image = ((System.Drawing.Image)(resources.GetObject("btnVentas.Image")));
-            this.btnVentas.Location = new System.Drawing.Point(0, 955);
+            this.btnVentas.Location = new System.Drawing.Point(0, 885);
             this.btnVentas.Name = "btnVentas";
             this.btnVentas.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnVentas.Size = new System.Drawing.Size(233, 45);
@@ -437,9 +415,9 @@
             this.panelInstrumentosSubMenu.Controls.Add(this.button20);
             this.panelInstrumentosSubMenu.Controls.Add(this.button21);
             this.panelInstrumentosSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelInstrumentosSubMenu.Location = new System.Drawing.Point(0, 796);
+            this.panelInstrumentosSubMenu.Location = new System.Drawing.Point(0, 717);
             this.panelInstrumentosSubMenu.Name = "panelInstrumentosSubMenu";
-            this.panelInstrumentosSubMenu.Size = new System.Drawing.Size(233, 159);
+            this.panelInstrumentosSubMenu.Size = new System.Drawing.Size(233, 168);
             this.panelInstrumentosSubMenu.TabIndex = 13;
             // 
             // button22
@@ -450,7 +428,7 @@
             this.button22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
             this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button22.ForeColor = System.Drawing.Color.Silver;
-            this.button22.Location = new System.Drawing.Point(0, 115);
+            this.button22.Location = new System.Drawing.Point(0, 126);
             this.button22.Name = "button22";
             this.button22.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button22.Size = new System.Drawing.Size(233, 35);
@@ -471,9 +449,9 @@
             this.button15.Location = new System.Drawing.Point(0, 80);
             this.button15.Name = "button15";
             this.button15.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button15.Size = new System.Drawing.Size(233, 35);
+            this.button15.Size = new System.Drawing.Size(233, 46);
             this.button15.TabIndex = 2;
-            this.button15.Text = "Actualizar Instrumentos";
+            this.button15.Text = "Actualizar Stock Instrumentos";
             this.button15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button15.UseVisualStyleBackColor = true;
             this.button15.Click += new System.EventHandler(this.button15_Click);
@@ -523,7 +501,7 @@
             this.btnInstrumentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInstrumentos.ForeColor = System.Drawing.Color.Silver;
             this.btnInstrumentos.Image = ((System.Drawing.Image)(resources.GetObject("btnInstrumentos.Image")));
-            this.btnInstrumentos.Location = new System.Drawing.Point(0, 751);
+            this.btnInstrumentos.Location = new System.Drawing.Point(0, 672);
             this.btnInstrumentos.Name = "btnInstrumentos";
             this.btnInstrumentos.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnInstrumentos.Size = new System.Drawing.Size(233, 45);
@@ -541,7 +519,7 @@
             this.panelReactivosSubMenu.Controls.Add(this.button17);
             this.panelReactivosSubMenu.Controls.Add(this.button18);
             this.panelReactivosSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelReactivosSubMenu.Location = new System.Drawing.Point(0, 630);
+            this.panelReactivosSubMenu.Location = new System.Drawing.Point(0, 551);
             this.panelReactivosSubMenu.Name = "panelReactivosSubMenu";
             this.panelReactivosSubMenu.Size = new System.Drawing.Size(233, 121);
             this.panelReactivosSubMenu.TabIndex = 11;
@@ -559,7 +537,7 @@
             this.button16.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button16.Size = new System.Drawing.Size(233, 35);
             this.button16.TabIndex = 2;
-            this.button16.Text = "Actualizar Reactivos";
+            this.button16.Text = "Actualizar Stock Reactivos";
             this.button16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button16.UseVisualStyleBackColor = true;
             this.button16.Click += new System.EventHandler(this.button16_Click);
@@ -609,7 +587,7 @@
             this.btnReactivos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReactivos.ForeColor = System.Drawing.Color.Silver;
             this.btnReactivos.Image = ((System.Drawing.Image)(resources.GetObject("btnReactivos.Image")));
-            this.btnReactivos.Location = new System.Drawing.Point(0, 585);
+            this.btnReactivos.Location = new System.Drawing.Point(0, 506);
             this.btnReactivos.Name = "btnReactivos";
             this.btnReactivos.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnReactivos.Size = new System.Drawing.Size(233, 45);
@@ -630,7 +608,7 @@
             this.btnExit.ForeColor = System.Drawing.Color.Silver;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(0, 1581);
+            this.btnExit.Location = new System.Drawing.Point(0, 1475);
             this.btnExit.Name = "btnExit";
             this.btnExit.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnExit.Size = new System.Drawing.Size(233, 45);
@@ -650,7 +628,7 @@
             this.panelPedidosSubMenu.Controls.Add(this.button6);
             this.panelPedidosSubMenu.Controls.Add(this.button8);
             this.panelPedidosSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelPedidosSubMenu.Location = new System.Drawing.Point(0, 379);
+            this.panelPedidosSubMenu.Location = new System.Drawing.Point(0, 300);
             this.panelPedidosSubMenu.Name = "panelPedidosSubMenu";
             this.panelPedidosSubMenu.Size = new System.Drawing.Size(233, 206);
             this.panelPedidosSubMenu.TabIndex = 4;
@@ -754,7 +732,7 @@
             this.btnPedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPedidos.ForeColor = System.Drawing.Color.Silver;
             this.btnPedidos.Image = ((System.Drawing.Image)(resources.GetObject("btnPedidos.Image")));
-            this.btnPedidos.Location = new System.Drawing.Point(0, 334);
+            this.btnPedidos.Location = new System.Drawing.Point(0, 255);
             this.btnPedidos.Name = "btnPedidos";
             this.btnPedidos.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnPedidos.Size = new System.Drawing.Size(233, 45);
@@ -768,53 +746,15 @@
             // panelPacientesSubMenu
             // 
             this.panelPacientesSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.panelPacientesSubMenu.Controls.Add(this.button19);
-            this.panelPacientesSubMenu.Controls.Add(this.button5);
             this.panelPacientesSubMenu.Controls.Add(this.button4);
             this.panelPacientesSubMenu.Controls.Add(this.button3);
             this.panelPacientesSubMenu.Controls.Add(this.button2);
             this.panelPacientesSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelPacientesSubMenu.Location = new System.Drawing.Point(0, 129);
             this.panelPacientesSubMenu.Name = "panelPacientesSubMenu";
-            this.panelPacientesSubMenu.Size = new System.Drawing.Size(233, 205);
+            this.panelPacientesSubMenu.Size = new System.Drawing.Size(233, 126);
             this.panelPacientesSubMenu.TabIndex = 2;
             this.panelPacientesSubMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPacientesSubPacientes_Paint);
-            // 
-            // button19
-            // 
-            this.button19.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button19.FlatAppearance.BorderSize = 0;
-            this.button19.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.button19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.ForeColor = System.Drawing.Color.Silver;
-            this.button19.Location = new System.Drawing.Point(0, 160);
-            this.button19.Name = "button19";
-            this.button19.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button19.Size = new System.Drawing.Size(233, 40);
-            this.button19.TabIndex = 4;
-            this.button19.Text = "Dar de Baja";
-            this.button19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button19.UseVisualStyleBackColor = true;
-            this.button19.Click += new System.EventHandler(this.button19_Click);
-            // 
-            // button5
-            // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.Color.Silver;
-            this.button5.Location = new System.Drawing.Point(0, 120);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(233, 40);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "Dar de Alta";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -961,7 +901,6 @@
 
         private System.Windows.Forms.Panel panelSideMenu;
         private System.Windows.Forms.Panel panelPacientesSubMenu;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
@@ -980,7 +919,6 @@
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button btnReactivos;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Panel panelInstrumentosSubMenu;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button20;
@@ -1005,7 +943,6 @@
         private System.Windows.Forms.Button btnParámetros;
         private System.Windows.Forms.Button btnPacientes;
         private System.Windows.Forms.Button btnInstrumentos;
-        private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button22;
     }
 }

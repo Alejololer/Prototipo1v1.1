@@ -45,7 +45,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.label1.Location = new System.Drawing.Point(238, 25);
+            this.label1.Location = new System.Drawing.Point(232, 25);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(220, 25);
@@ -88,7 +88,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNombreInstrumento.Location = new System.Drawing.Point(200, 110);
-            this.txtNombreInstrumento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombreInstrumento.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreInstrumento.Name = "txtNombreInstrumento";
             this.txtNombreInstrumento.Size = new System.Drawing.Size(439, 20);
             this.txtNombreInstrumento.TabIndex = 19;
@@ -112,7 +112,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCantidadInstrumento.Location = new System.Drawing.Point(200, 191);
-            this.txtCantidadInstrumento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCantidadInstrumento.Margin = new System.Windows.Forms.Padding(2);
             this.txtCantidadInstrumento.Name = "txtCantidadInstrumento";
             this.txtCantidadInstrumento.Size = new System.Drawing.Size(439, 20);
             this.txtCantidadInstrumento.TabIndex = 21;
@@ -150,7 +150,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(200, 270);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(439, 21);
             this.comboBox1.TabIndex = 25;
@@ -171,7 +171,7 @@
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "RegistrarUsuario";
             this.Text = "Form3";
             this.ResumeLayout(false);

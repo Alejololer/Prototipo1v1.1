@@ -54,11 +54,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.label1.Location = new System.Drawing.Point(225, 29);
+            this.label1.Location = new System.Drawing.Point(191, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(219, 25);
+            this.label1.Size = new System.Drawing.Size(286, 25);
             this.label1.TabIndex = 24;
-            this.label1.Text = "Estadísticas de Pedidos";
+            this.label1.Text = "ESTADÍSTICAS DE PEDIDOS";
             // 
             // dataGridView1
             // 

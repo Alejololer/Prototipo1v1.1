@@ -43,7 +43,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.label1.Location = new System.Drawing.Point(214, 20);
+            this.label1.Location = new System.Drawing.Point(239, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(207, 25);
             this.label1.TabIndex = 7;
@@ -56,7 +56,7 @@
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.LightGray;
-            this.btnExit.Location = new System.Drawing.Point(0, 0);
+            this.btnExit.Location = new System.Drawing.Point(12, 12);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(25, 25);
             this.btnExit.TabIndex = 14;
@@ -82,8 +82,6 @@
             // 
             // lblNombreInstrumento
             // 
-            this.lblNombreInstrumento.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNombreInstrumento.AutoSize = true;
             this.lblNombreInstrumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblNombreInstrumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -91,9 +89,10 @@
             this.lblNombreInstrumento.Location = new System.Drawing.Point(37, 67);
             this.lblNombreInstrumento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombreInstrumento.Name = "lblNombreInstrumento";
-            this.lblNombreInstrumento.Size = new System.Drawing.Size(269, 17);
+            this.lblNombreInstrumento.Size = new System.Drawing.Size(135, 17);
             this.lblNombreInstrumento.TabIndex = 20;
-            this.lblNombreInstrumento.Text = "Selecciona la previsualización de factura:";
+            this.lblNombreInstrumento.Text = "Seleccione la venta:";
+            this.lblNombreInstrumento.Click += new System.EventHandler(this.lblNombreInstrumento_Click);
             // 
             // dgvConsultarInstrumentos
             // 
@@ -102,7 +101,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvConsultarInstrumentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvConsultarInstrumentos.Location = new System.Drawing.Point(40, 113);
-            this.dgvConsultarInstrumentos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvConsultarInstrumentos.Margin = new System.Windows.Forms.Padding(2);
             this.dgvConsultarInstrumentos.Name = "dgvConsultarInstrumentos";
             this.dgvConsultarInstrumentos.RowHeadersWidth = 51;
             this.dgvConsultarInstrumentos.RowTemplate.Height = 24;
@@ -111,14 +110,13 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Previsualización de Factura 1"});
-            this.comboBox1.Location = new System.Drawing.Point(311, 63);
+            this.comboBox1.Location = new System.Drawing.Point(196, 63);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(332, 21);
+            this.comboBox1.Size = new System.Drawing.Size(447, 21);
             this.comboBox1.TabIndex = 22;
             // 
             // GenerarFactura
