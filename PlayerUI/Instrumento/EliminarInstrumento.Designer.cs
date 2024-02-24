@@ -41,7 +41,7 @@
             this.lblInstrumento.AutoSize = true;
             this.lblInstrumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInstrumento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.lblInstrumento.Location = new System.Drawing.Point(208, 20);
+            this.lblInstrumento.Location = new System.Drawing.Point(216, 20);
             this.lblInstrumento.Name = "lblInstrumento";
             this.lblInstrumento.Size = new System.Drawing.Size(269, 25);
             this.lblInstrumento.TabIndex = 7;

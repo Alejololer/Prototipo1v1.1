@@ -16,7 +16,6 @@ namespace PlayerUI.Pedidos
         public RegistrarPedido()
         {
             InitializeComponent();
-            label1.Visible = false;
         }
 
         private void btnExit_Click(object sender, EventArgs e)

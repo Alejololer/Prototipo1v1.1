@@ -16,5 +16,19 @@ namespace PlayerUI.Parametros
         {
             InitializeComponent();
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            // Enviar un mensaje
+            DialogResult result = MessageBox.Show("¿Está seguro?", "Registrar IVA", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                MessageBox.Show("IVA registrado correctamente", "Registrar IVA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+
+            };
+        }
     }
 }

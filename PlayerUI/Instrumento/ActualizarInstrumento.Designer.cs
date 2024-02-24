@@ -45,12 +45,12 @@
             this.lblInstrumento.AutoSize = true;
             this.lblInstrumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInstrumento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.lblInstrumento.Location = new System.Drawing.Point(218, 25);
+            this.lblInstrumento.Location = new System.Drawing.Point(269, 25);
             this.lblInstrumento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblInstrumento.Name = "lblInstrumento";
-            this.lblInstrumento.Size = new System.Drawing.Size(249, 25);
+            this.lblInstrumento.Size = new System.Drawing.Size(374, 29);
             this.lblInstrumento.TabIndex = 7;
-            this.lblInstrumento.Text = "STOCK INSTRUMENTOS";
+            this.lblInstrumento.Text = "ACTUALIZAR INSTRUMENTOS";
             // 
             // btnExit
             // 
@@ -89,7 +89,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNombreInstrumento.Location = new System.Drawing.Point(200, 107);
-            this.txtNombreInstrumento.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNombreInstrumento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombreInstrumento.Name = "txtNombreInstrumento";
             this.txtNombreInstrumento.Size = new System.Drawing.Size(439, 20);
             this.txtNombreInstrumento.TabIndex = 19;
@@ -113,7 +113,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCantidadEntrada.Location = new System.Drawing.Point(200, 188);
-            this.txtCantidadEntrada.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCantidadEntrada.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCantidadEntrada.Name = "txtCantidadEntrada";
             this.txtCantidadEntrada.Size = new System.Drawing.Size(439, 20);
             this.txtCantidadEntrada.TabIndex = 21;
@@ -150,7 +150,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCantidadSalida.Location = new System.Drawing.Point(200, 270);
-            this.txtCantidadSalida.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCantidadSalida.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCantidadSalida.Name = "txtCantidadSalida";
             this.txtCantidadSalida.Size = new System.Drawing.Size(439, 20);
             this.txtCantidadSalida.TabIndex = 23;

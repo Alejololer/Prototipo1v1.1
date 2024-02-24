@@ -24,7 +24,7 @@ namespace PlayerUI
             InitializeComponent();
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
             string usuario = txtUsuario.Text;
             string contrasena = txtContrasena.Text;
@@ -77,6 +77,9 @@ namespace PlayerUI
             Application.Exit();
         }
 
+        private void button9_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
