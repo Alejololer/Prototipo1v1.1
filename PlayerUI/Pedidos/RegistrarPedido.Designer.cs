@@ -81,7 +81,7 @@
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.LightGray;
-            this.button9.Location = new System.Drawing.Point(457, 882);
+            this.button9.Location = new System.Drawing.Point(457, 939);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(89, 33);
             this.button9.TabIndex = 16;
@@ -132,18 +132,19 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.label6.Location = new System.Drawing.Point(115, 651);
+            this.label6.Location = new System.Drawing.Point(115, 630);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(163, 25);
             this.label6.TabIndex = 32;
             this.label6.Text = "Tipos de exámen";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.panel1.Location = new System.Drawing.Point(120, 638);
+            this.panel1.Location = new System.Drawing.Point(120, 695);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(426, 218);
             this.panel1.TabIndex = 34;
@@ -165,7 +166,7 @@
             // 
             // panel4
             // 
-            this.panel4.Location = new System.Drawing.Point(212, 901);
+            this.panel4.Location = new System.Drawing.Point(212, 958);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(101, 45);
             this.panel4.TabIndex = 40;
@@ -178,7 +179,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.LightGray;
-            this.button1.Location = new System.Drawing.Point(346, 882);
+            this.button1.Location = new System.Drawing.Point(346, 939);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(89, 33);
             this.button1.TabIndex = 46;

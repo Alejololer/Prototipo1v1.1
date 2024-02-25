@@ -66,5 +66,10 @@ namespace PlayerUI.Pedidos
         {
 
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
