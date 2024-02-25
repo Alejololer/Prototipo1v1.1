@@ -34,19 +34,20 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvConsultarInstrumentos = new System.Windows.Forms.DataGridView();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultarInstrumentos)).BeginInit();
             this.SuspendLayout();
             // 
             // cmbxPedidos
             // 
-            this.cmbxPedidos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbxPedidos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbxPedidos.FormattingEnabled = true;
-            this.cmbxPedidos.Location = new System.Drawing.Point(164, 67);
+            this.cmbxPedidos.Location = new System.Drawing.Point(224, 67);
             this.cmbxPedidos.Margin = new System.Windows.Forms.Padding(2);
             this.cmbxPedidos.Name = "cmbxPedidos";
-            this.cmbxPedidos.Size = new System.Drawing.Size(484, 21);
+            this.cmbxPedidos.Size = new System.Drawing.Size(424, 21);
             this.cmbxPedidos.TabIndex = 28;
             // 
             // lblNombreInstrumento
@@ -58,9 +59,9 @@
             this.lblNombreInstrumento.Location = new System.Drawing.Point(11, 71);
             this.lblNombreInstrumento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombreInstrumento.Name = "lblNombreInstrumento";
-            this.lblNombreInstrumento.Size = new System.Drawing.Size(149, 17);
+            this.lblNombreInstrumento.Size = new System.Drawing.Size(209, 17);
             this.lblNombreInstrumento.TabIndex = 26;
-            this.lblNombreInstrumento.Text = "Seleccione el examen:";
+            this.lblNombreInstrumento.Text = "Número de Cédula de Paciente:";
             // 
             // btnConsultarInstrumento
             // 
@@ -70,11 +71,11 @@
             this.btnConsultarInstrumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultarInstrumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultarInstrumento.ForeColor = System.Drawing.Color.LightGray;
-            this.btnConsultarInstrumento.Location = new System.Drawing.Point(498, 429);
+            this.btnConsultarInstrumento.Location = new System.Drawing.Point(498, 499);
             this.btnConsultarInstrumento.Name = "btnConsultarInstrumento";
             this.btnConsultarInstrumento.Size = new System.Drawing.Size(150, 40);
             this.btnConsultarInstrumento.TabIndex = 25;
-            this.btnConsultarInstrumento.Text = "Registrar";
+            this.btnConsultarInstrumento.Text = "Consultar";
             this.btnConsultarInstrumento.UseVisualStyleBackColor = false;
             // 
             // btnExit
@@ -105,24 +106,64 @@
             // 
             // dgvConsultarInstrumentos
             // 
-            this.dgvConsultarInstrumentos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.dgvConsultarInstrumentos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvConsultarInstrumentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvConsultarInstrumentos.Location = new System.Drawing.Point(11, 111);
+            this.dgvConsultarInstrumentos.Location = new System.Drawing.Point(11, 185);
             this.dgvConsultarInstrumentos.Margin = new System.Windows.Forms.Padding(2);
             this.dgvConsultarInstrumentos.Name = "dgvConsultarInstrumentos";
             this.dgvConsultarInstrumentos.RowHeadersWidth = 51;
             this.dgvConsultarInstrumentos.RowTemplate.Height = 24;
-            this.dgvConsultarInstrumentos.Size = new System.Drawing.Size(636, 300);
+            this.dgvConsultarInstrumentos.Size = new System.Drawing.Size(636, 296);
             this.dgvConsultarInstrumentos.TabIndex = 27;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(224, 125);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(424, 21);
+            this.comboBox1.TabIndex = 30;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.LightGray;
+            this.label2.Location = new System.Drawing.Point(93, 129);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(114, 17);
+            this.label2.TabIndex = 29;
+            this.label2.Text = "Tipo de Examen:";
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.LightGray;
+            this.button1.Location = new System.Drawing.Point(314, 499);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(150, 40);
+            this.button1.TabIndex = 31;
+            this.button1.Text = "Registrar";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // RegistrarResul
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(668, 481);
+            this.ClientSize = new System.Drawing.Size(668, 551);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.cmbxPedidos);
             this.Controls.Add(this.dgvConsultarInstrumentos);
             this.Controls.Add(this.lblNombreInstrumento);
@@ -145,5 +186,8 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvConsultarInstrumentos;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
     }
 }
