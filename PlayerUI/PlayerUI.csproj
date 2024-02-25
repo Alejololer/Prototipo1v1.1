@@ -192,6 +192,12 @@
     <Compile Include="Reactivos\ConsultarRea.Designer.cs">
       <DependentUpon>ConsultarRea.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reactivos\EliminarReactivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reactivos\EliminarReactivo.Designer.cs">
+      <DependentUpon>EliminarReactivo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reactivos\ModificarRea.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -340,6 +346,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reactivos\ConsultarRea.resx">
       <DependentUpon>ConsultarRea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reactivos\EliminarReactivo.resx">
+      <DependentUpon>EliminarReactivo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reactivos\ModificarRea.resx">
       <DependentUpon>ModificarRea.cs</DependentUpon>
