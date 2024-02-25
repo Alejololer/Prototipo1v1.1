@@ -43,7 +43,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.label1.Location = new System.Drawing.Point(239, 20);
+            this.label1.Location = new System.Drawing.Point(247, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(207, 25);
             this.label1.TabIndex = 7;
@@ -72,7 +72,7 @@
             this.btnConsultarInstrumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultarInstrumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultarInstrumento.ForeColor = System.Drawing.Color.LightGray;
-            this.btnConsultarInstrumento.Location = new System.Drawing.Point(493, 436);
+            this.btnConsultarInstrumento.Location = new System.Drawing.Point(509, 522);
             this.btnConsultarInstrumento.Name = "btnConsultarInstrumento";
             this.btnConsultarInstrumento.Size = new System.Drawing.Size(150, 40);
             this.btnConsultarInstrumento.TabIndex = 15;
@@ -105,7 +105,7 @@
             this.dgvConsultarInstrumentos.Name = "dgvConsultarInstrumentos";
             this.dgvConsultarInstrumentos.RowHeadersWidth = 51;
             this.dgvConsultarInstrumentos.RowTemplate.Height = 24;
-            this.dgvConsultarInstrumentos.Size = new System.Drawing.Size(603, 294);
+            this.dgvConsultarInstrumentos.Size = new System.Drawing.Size(619, 380);
             this.dgvConsultarInstrumentos.TabIndex = 21;
             // 
             // comboBox1
@@ -114,9 +114,9 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Previsualización de Factura 1"});
-            this.comboBox1.Location = new System.Drawing.Point(196, 63);
+            this.comboBox1.Location = new System.Drawing.Point(177, 63);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(447, 21);
+            this.comboBox1.Size = new System.Drawing.Size(482, 21);
             this.comboBox1.TabIndex = 22;
             // 
             // GenerarFactura
@@ -124,7 +124,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(684, 514);
+            this.ClientSize = new System.Drawing.Size(700, 600);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.dgvConsultarInstrumentos);
             this.Controls.Add(this.lblNombreInstrumento);

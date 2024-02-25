@@ -43,7 +43,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.label1.Location = new System.Drawing.Point(204, 50);
+            this.label1.Location = new System.Drawing.Point(212, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(276, 25);
             this.label1.TabIndex = 7;
@@ -72,7 +72,7 @@
             this.btnConsultarInstrumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultarInstrumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultarInstrumento.ForeColor = System.Drawing.Color.LightGray;
-            this.btnConsultarInstrumento.Location = new System.Drawing.Point(488, 353);
+            this.btnConsultarInstrumento.Location = new System.Drawing.Point(509, 340);
             this.btnConsultarInstrumento.Name = "btnConsultarInstrumento";
             this.btnConsultarInstrumento.Size = new System.Drawing.Size(150, 40);
             this.btnConsultarInstrumento.TabIndex = 15;
@@ -86,7 +86,7 @@
             this.lblNombreInstrumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblNombreInstrumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreInstrumento.ForeColor = System.Drawing.Color.LightGray;
-            this.lblNombreInstrumento.Location = new System.Drawing.Point(41, 237);
+            this.lblNombreInstrumento.Location = new System.Drawing.Point(41, 280);
             this.lblNombreInstrumento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombreInstrumento.Name = "lblNombreInstrumento";
             this.lblNombreInstrumento.Size = new System.Drawing.Size(126, 17);
@@ -102,10 +102,10 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Pija",
             "Chocolate"});
-            this.comboBox1.Location = new System.Drawing.Point(203, 177);
+            this.comboBox1.Location = new System.Drawing.Point(203, 220);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(440, 21);
+            this.comboBox1.Size = new System.Drawing.Size(456, 21);
             this.comboBox1.TabIndex = 24;
             // 
             // label2
@@ -114,7 +114,7 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.LightGray;
-            this.label2.Location = new System.Drawing.Point(41, 177);
+            this.label2.Location = new System.Drawing.Point(41, 220);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(135, 17);
@@ -126,9 +126,9 @@
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(203, 234);
+            this.textBox1.Location = new System.Drawing.Point(203, 277);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(440, 20);
+            this.textBox1.Size = new System.Drawing.Size(456, 20);
             this.textBox1.TabIndex = 25;
             // 
             // ModificarFactura
@@ -136,7 +136,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(684, 431);
+            this.ClientSize = new System.Drawing.Size(700, 600);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label2);

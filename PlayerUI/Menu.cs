@@ -208,6 +208,7 @@ namespace PlayerUI
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
+            childForm.AutoScaleMode = AutoScaleMode.None;
             panelChildForm.Controls.Add(childForm);
             panelChildForm.Tag = childForm;
             childForm.BringToFront();
@@ -372,6 +373,11 @@ namespace PlayerUI
         private void button39_Click(object sender, EventArgs e)
         {
             openChildForm(new ModificarIVA());
+        }
+
+        private void panelLogo_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

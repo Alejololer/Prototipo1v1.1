@@ -79,7 +79,29 @@ namespace PlayerUI
 
         private void button9_Click(object sender, EventArgs e)
         {
+            // Ocultar el formulario actual
+            this.Hide();
 
+            // Crear una instancia del nuevo formulario que quieres mostrar
+            Menu nuevoFormulario = new Menu();
+
+            // Suscribir al evento FormClosed del nuevo formulario
+            nuevoFormulario.FormClosed += NuevoFormulario_FormClosed;
+
+            // Mostrar el nuevo formulario
+            nuevoFormulario.Show();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        // Método para manejar el evento FormClosed del nuevo formulario
+        private void NuevoFormulario_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            // Mostrar nuevamente el formulario original una vez que se cierre el segundo formulario
+            this.Show();
         }
     }
 }

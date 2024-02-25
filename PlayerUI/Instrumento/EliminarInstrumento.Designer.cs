@@ -41,7 +41,7 @@
             this.lblInstrumento.AutoSize = true;
             this.lblInstrumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInstrumento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.lblInstrumento.Location = new System.Drawing.Point(208, 20);
+            this.lblInstrumento.Location = new System.Drawing.Point(216, 20);
             this.lblInstrumento.Name = "lblInstrumento";
             this.lblInstrumento.Size = new System.Drawing.Size(269, 25);
             this.lblInstrumento.TabIndex = 7;
@@ -70,7 +70,7 @@
             this.btnActualizarInstrumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActualizarInstrumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizarInstrumento.ForeColor = System.Drawing.Color.LightGray;
-            this.btnActualizarInstrumento.Location = new System.Drawing.Point(488, 351);
+            this.btnActualizarInstrumento.Location = new System.Drawing.Point(510, 311);
             this.btnActualizarInstrumento.Name = "btnActualizarInstrumento";
             this.btnActualizarInstrumento.Size = new System.Drawing.Size(150, 40);
             this.btnActualizarInstrumento.TabIndex = 15;
@@ -83,10 +83,10 @@
             this.txtCantidadEntrada.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCantidadEntrada.Location = new System.Drawing.Point(200, 188);
+            this.txtCantidadEntrada.Location = new System.Drawing.Point(205, 250);
             this.txtCantidadEntrada.Margin = new System.Windows.Forms.Padding(2);
             this.txtCantidadEntrada.Name = "txtCantidadEntrada";
-            this.txtCantidadEntrada.Size = new System.Drawing.Size(439, 20);
+            this.txtCantidadEntrada.Size = new System.Drawing.Size(455, 20);
             this.txtCantidadEntrada.TabIndex = 21;
             // 
             // label3
@@ -95,7 +95,7 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.LightGray;
-            this.label3.Location = new System.Drawing.Point(36, 189);
+            this.label3.Location = new System.Drawing.Point(41, 251);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(140, 17);
@@ -107,7 +107,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(684, 431);
+            this.ClientSize = new System.Drawing.Size(700, 600);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtCantidadEntrada);
             this.Controls.Add(this.btnActualizarInstrumento);

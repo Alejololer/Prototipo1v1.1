@@ -43,7 +43,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.label1.Location = new System.Drawing.Point(204, 25);
+            this.label1.Location = new System.Drawing.Point(212, 25);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(276, 25);
@@ -73,7 +73,7 @@
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.LightGray;
-            this.button9.Location = new System.Drawing.Point(488, 353);
+            this.button9.Location = new System.Drawing.Point(514, 372);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(150, 40);
             this.button9.TabIndex = 15;
@@ -86,10 +86,10 @@
             this.txtNombreInstrumento.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNombreInstrumento.Location = new System.Drawing.Point(200, 135);
-            this.txtNombreInstrumento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombreInstrumento.Location = new System.Drawing.Point(209, 188);
+            this.txtNombreInstrumento.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreInstrumento.Name = "txtNombreInstrumento";
-            this.txtNombreInstrumento.Size = new System.Drawing.Size(439, 20);
+            this.txtNombreInstrumento.Size = new System.Drawing.Size(455, 20);
             this.txtNombreInstrumento.TabIndex = 19;
             // 
             // label2
@@ -98,7 +98,7 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.LightGray;
-            this.label2.Location = new System.Drawing.Point(36, 136);
+            this.label2.Location = new System.Drawing.Point(45, 189);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(136, 17);
@@ -110,10 +110,10 @@
             this.txtCantidadInstrumento.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCantidadInstrumento.Location = new System.Drawing.Point(200, 244);
-            this.txtCantidadInstrumento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCantidadInstrumento.Location = new System.Drawing.Point(209, 297);
+            this.txtCantidadInstrumento.Margin = new System.Windows.Forms.Padding(2);
             this.txtCantidadInstrumento.Name = "txtCantidadInstrumento";
-            this.txtCantidadInstrumento.Size = new System.Drawing.Size(439, 20);
+            this.txtCantidadInstrumento.Size = new System.Drawing.Size(455, 20);
             this.txtCantidadInstrumento.TabIndex = 21;
             // 
             // label3
@@ -122,7 +122,7 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.LightGray;
-            this.label3.Location = new System.Drawing.Point(28, 245);
+            this.label3.Location = new System.Drawing.Point(37, 298);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(169, 17);
@@ -134,7 +134,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(684, 431);
+            this.ClientSize = new System.Drawing.Size(700, 600);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtCantidadInstrumento);
             this.Controls.Add(this.label2);
@@ -143,7 +143,7 @@
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "RegistrarInstrumento";
             this.Text = "Form3";
             this.ResumeLayout(false);

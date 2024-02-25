@@ -46,7 +46,7 @@
             this.cmbxPedidos.Location = new System.Drawing.Point(164, 67);
             this.cmbxPedidos.Margin = new System.Windows.Forms.Padding(2);
             this.cmbxPedidos.Name = "cmbxPedidos";
-            this.cmbxPedidos.Size = new System.Drawing.Size(484, 21);
+            this.cmbxPedidos.Size = new System.Drawing.Size(516, 21);
             this.cmbxPedidos.TabIndex = 34;
             // 
             // dgvConsultarInstrumentos
@@ -60,7 +60,7 @@
             this.dgvConsultarInstrumentos.Name = "dgvConsultarInstrumentos";
             this.dgvConsultarInstrumentos.RowHeadersWidth = 51;
             this.dgvConsultarInstrumentos.RowTemplate.Height = 24;
-            this.dgvConsultarInstrumentos.Size = new System.Drawing.Size(636, 273);
+            this.dgvConsultarInstrumentos.Size = new System.Drawing.Size(668, 418);
             this.dgvConsultarInstrumentos.TabIndex = 33;
             // 
             // lblNombreInstrumento
@@ -84,7 +84,7 @@
             this.btnConsultarInstrumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultarInstrumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultarInstrumento.ForeColor = System.Drawing.Color.LightGray;
-            this.btnConsultarInstrumento.Location = new System.Drawing.Point(498, 403);
+            this.btnConsultarInstrumento.Location = new System.Drawing.Point(530, 548);
             this.btnConsultarInstrumento.Name = "btnConsultarInstrumento";
             this.btnConsultarInstrumento.Size = new System.Drawing.Size(150, 40);
             this.btnConsultarInstrumento.TabIndex = 31;
@@ -111,7 +111,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.label1.Location = new System.Drawing.Point(140, 20);
+            this.label1.Location = new System.Drawing.Point(156, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(386, 25);
             this.label1.TabIndex = 29;
@@ -122,13 +122,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(668, 455);
+            this.ClientSize = new System.Drawing.Size(700, 600);
             this.Controls.Add(this.cmbxPedidos);
             this.Controls.Add(this.dgvConsultarInstrumentos);
             this.Controls.Add(this.lblNombreInstrumento);
             this.Controls.Add(this.btnConsultarInstrumento);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ModificarResul";
             this.Text = "ModificarResul";
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultarInstrumentos)).EndInit();

@@ -44,7 +44,7 @@
             // 
             this.cmbxPedidos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbxPedidos.FormattingEnabled = true;
-            this.cmbxPedidos.Location = new System.Drawing.Point(224, 67);
+            this.cmbxPedidos.Location = new System.Drawing.Point(256, 67);
             this.cmbxPedidos.Margin = new System.Windows.Forms.Padding(2);
             this.cmbxPedidos.Name = "cmbxPedidos";
             this.cmbxPedidos.Size = new System.Drawing.Size(424, 21);
@@ -71,7 +71,7 @@
             this.btnConsultarInstrumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultarInstrumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultarInstrumento.ForeColor = System.Drawing.Color.LightGray;
-            this.btnConsultarInstrumento.Location = new System.Drawing.Point(498, 499);
+            this.btnConsultarInstrumento.Location = new System.Drawing.Point(529, 513);
             this.btnConsultarInstrumento.Name = "btnConsultarInstrumento";
             this.btnConsultarInstrumento.Size = new System.Drawing.Size(150, 40);
             this.btnConsultarInstrumento.TabIndex = 25;
@@ -98,7 +98,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.label1.Location = new System.Drawing.Point(140, 20);
+            this.label1.Location = new System.Drawing.Point(156, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(388, 25);
             this.label1.TabIndex = 23;
@@ -114,14 +114,14 @@
             this.dgvConsultarInstrumentos.Name = "dgvConsultarInstrumentos";
             this.dgvConsultarInstrumentos.RowHeadersWidth = 51;
             this.dgvConsultarInstrumentos.RowTemplate.Height = 24;
-            this.dgvConsultarInstrumentos.Size = new System.Drawing.Size(636, 296);
+            this.dgvConsultarInstrumentos.Size = new System.Drawing.Size(668, 296);
             this.dgvConsultarInstrumentos.TabIndex = 27;
             // 
             // comboBox1
             // 
             this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(224, 125);
+            this.comboBox1.Location = new System.Drawing.Point(256, 125);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(424, 21);
@@ -148,7 +148,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.LightGray;
-            this.button1.Location = new System.Drawing.Point(314, 499);
+            this.button1.Location = new System.Drawing.Point(345, 513);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(150, 40);
             this.button1.TabIndex = 31;
@@ -160,7 +160,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(668, 551);
+            this.ClientSize = new System.Drawing.Size(700, 600);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label2);
@@ -170,6 +170,7 @@
             this.Controls.Add(this.btnConsultarInstrumento);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegistrarResul";
             this.Text = "RegistrarResul";
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultarInstrumentos)).EndInit();
