@@ -12,7 +12,6 @@ namespace PlayerUI.Ventas
 {
     public partial class PrevisualizarFactura : Form
     {
-        string pedido;
 
         public PrevisualizarFactura()
         {

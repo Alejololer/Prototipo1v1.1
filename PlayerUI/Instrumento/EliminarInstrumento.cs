@@ -12,9 +12,7 @@ namespace PlayerUI.Instrumento
 {
     public partial class EliminarInstrumento : Form
     {
-        string nombreInstrumento;
-        string cantidadEntrada;
-        string cantidadSalida;
+
 
         public EliminarInstrumento()
         {

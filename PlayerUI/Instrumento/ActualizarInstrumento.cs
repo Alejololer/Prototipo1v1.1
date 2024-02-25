@@ -23,9 +23,7 @@ namespace PlayerUI.Instrumento
 
         private void btnActualizarInstrumento_Click(object sender, EventArgs e)
         {
-            nombreInstrumento = txtNombreInstrumento.Text;
-            cantidadEntrada = txtCantidadEntrada.Text;
-            cantidadSalida = txtCantidadSalida.Text;
+
 
             MessageBox.Show("Cantidad de instrumento actualizada correctamente");
             MessageBox.Show("Nombre de instrumento inválido");

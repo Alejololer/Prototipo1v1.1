@@ -347,6 +347,18 @@
     <EmbeddedResource Include="Reactivos\RegistrarRea.resx">
       <DependentUpon>RegistrarRea.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resultados\ConsultarResul.resx">
+      <DependentUpon>ConsultarResul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resultados\GenerarResul.resx">
+      <DependentUpon>GenerarResul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resultados\ModificarResul.resx">
+      <DependentUpon>ModificarResul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resultados\RegistrarResul.resx">
+      <DependentUpon>RegistrarResul.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Usuario\ConsultarUsuario.resx">
       <DependentUpon>ConsultarUsuario.cs</DependentUpon>
     </EmbeddedResource>
