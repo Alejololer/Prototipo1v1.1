@@ -16,6 +16,9 @@ namespace PlayerUI.Pedidos
         public RegistrarPedido()
         {
             InitializeComponent();
+            comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            comboBox1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            comboBox1.AutoCompleteSource = AutoCompleteSource.ListItems;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -54,5 +57,9 @@ namespace PlayerUI.Pedidos
         {
         }
 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
