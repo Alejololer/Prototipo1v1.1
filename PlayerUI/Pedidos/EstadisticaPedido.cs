@@ -15,6 +15,13 @@ namespace PlayerUI.Pedidos
         public EstadisticaPedido()
         {
             InitializeComponent();
+
         }
+
+        private void EstadisticaPedido_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
-}
+}   

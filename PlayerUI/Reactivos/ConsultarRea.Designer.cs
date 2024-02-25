@@ -65,6 +65,7 @@
             this.label4.Size = new System.Drawing.Size(144, 17);
             this.label4.TabIndex = 57;
             this.label4.Text = "Nombre del Reactivo:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label1
             // 
