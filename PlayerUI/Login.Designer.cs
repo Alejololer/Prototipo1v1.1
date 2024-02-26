@@ -36,6 +36,7 @@
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblError = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
@@ -129,12 +130,24 @@
             this.label1.TabIndex = 22;
             this.label1.Text = "Contraseña";
             // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
+            this.lblError.Location = new System.Drawing.Point(191, 331);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(29, 13);
+            this.lblError.TabIndex = 23;
+            this.lblError.Text = "Error";
+            this.lblError.Visible = false;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(684, 431);
+            this.Controls.Add(this.lblError);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtContrasena);
@@ -161,5 +174,6 @@
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblError;
     }
 }
