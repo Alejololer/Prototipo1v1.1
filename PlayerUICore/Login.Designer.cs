@@ -93,8 +93,10 @@
             txtContrasena.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             txtContrasena.MaxLength = 15;
             txtContrasena.Name = "txtContrasena";
+            txtContrasena.PasswordChar = '*';
             txtContrasena.Size = new System.Drawing.Size(408, 26);
             txtContrasena.TabIndex = 17;
+            txtContrasena.TextChanged += txtContrasena_TextChanged;
             // 
             // pictureBox9
             // 
@@ -165,7 +167,7 @@
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             Name = "Login";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            Text = "V";
+            Text = "9";
             Load += Login_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ResumeLayout(false);

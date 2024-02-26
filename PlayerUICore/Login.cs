@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Domain;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 
 namespace PlayerUI
@@ -39,34 +40,34 @@ namespace PlayerUI
         {
             if (txtUsuario.Text != "")
             {
-            
-                    if (txtContrasena.Text != "")
+
+                if (txtContrasena.Text != "")
+                {
+
+                    UserModel user = new UserModel();
+                    var validLogin = user.LoginUser(txtUsuario.Text, txtContrasena.Text);
+                    if (validLogin == true)
                     {
+                        this.Hide();
 
-                            UserModel user = new UserModel();
-                            var validLogin = user.LoginUser(txtUsuario.Text, txtContrasena.Text);
-                            if (validLogin == true)
-                            {
-                                this.Hide();
-                            
-                                // Crear una instancia del nuevo formulario que quieres mostrar
-                                Menu nuevoFormulario = new Menu();
+                        // Crear una instancia del nuevo formulario que quieres mostrar
+                        Menu nuevoFormulario = new Menu();
 
-                                // Suscribir al evento FormClosed del nuevo formulario
-                                nuevoFormulario.FormClosed += NuevoFormulario_FormClosed;
+                        // Suscribir al evento FormClosed del nuevo formulario
+                        nuevoFormulario.FormClosed += NuevoFormulario_FormClosed;
 
-                                // Mostrar el nuevo formulario
-                                nuevoFormulario.Show();
-                            }
-                            else
-                            {
-                                msgError("Nombre de usuario o contraseña incorrectos. Intente de nuevo");
-                                txtContrasena.Clear();
-                                txtUsuario.Clear();
-                            }
-
+                        // Mostrar el nuevo formulario
+                        nuevoFormulario.Show();
                     }
-                    else msgError("Ingrese la contraseña");
+                    else
+                    {
+                        msgError("Nombre de usuario o contraseña incorrectos. Intente de nuevo");
+                        txtContrasena.Clear();
+                        txtUsuario.Clear();
+                    }
+
+                }
+                else msgError("Ingrese la contraseña");
 
             }
             else msgError("Ingrese el nombre de usuario");
@@ -96,6 +97,7 @@ namespace PlayerUI
 
         }
 
+
         private void OnKeyPress(object? sender, KeyPressEventArgs e)
         {
             e.Handled = e.KeyChar switch
@@ -106,6 +108,12 @@ namespace PlayerUI
                 '\b' => false,              // allow backspace
                 _ => true
             };
+
+        }
+
+        private void txtContrasena_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
