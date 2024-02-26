@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\Da
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{B1547360-3E9A-4B8B-BF01-F9FD8FCC1024}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayerUICore", "PlayerUICore\PlayerUICore.csproj", "{3118959C-3459-45B4-A91C-F40B601DFC54}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B1547360-3E9A-4B8B-BF01-F9FD8FCC1024}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1547360-3E9A-4B8B-BF01-F9FD8FCC1024}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1547360-3E9A-4B8B-BF01-F9FD8FCC1024}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3118959C-3459-45B4-A91C-F40B601DFC54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3118959C-3459-45B4-A91C-F40B601DFC54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3118959C-3459-45B4-A91C-F40B601DFC54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3118959C-3459-45B4-A91C-F40B601DFC54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
