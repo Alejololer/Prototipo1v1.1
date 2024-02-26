@@ -63,7 +63,13 @@ namespace PlayerUI.Pacientes
 
             }
 
-
+            PacienteModel user = new PacienteModel();
+            var existe = user.Check(txtCed.Text);
+            if (existe == true)
+            {
+                MessageBox.Show("Un paciente con esta cédula ya está registrado.", "Registro de Paciente", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             DialogResult result = MessageBox.Show("¿Está seguro?", "Registro de Paciente", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
@@ -72,11 +78,11 @@ namespace PlayerUI.Pacientes
                 var validRegister = model.registrarPaciente(cedula,txtNom.Text, txtApe.Text, txtTel.Text, txtDir.Text, txtCorr.Text ,fechaFormateada);
                 if (validRegister)
                 {
-                    MessageBox.Show("Paciente registrado con éxito", "Registro de Paciente", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Paciente registrado con éxito.", "Registro de Paciente", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show("Error en el registro de paciente", "Registro de Paciente", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Error en el registro de paciente.", "Registro de Paciente", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 }
             }

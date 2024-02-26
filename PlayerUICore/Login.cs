@@ -48,7 +48,7 @@ namespace PlayerUI
                             if (validLogin == true)
                             {
                                 this.Hide();
-
+                            
                                 // Crear una instancia del nuevo formulario que quieres mostrar
                                 Menu nuevoFormulario = new Menu();
 
