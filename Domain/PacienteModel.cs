@@ -11,8 +11,8 @@ namespace Domain
     {
         PacienteDAO pacienteDAO = new PacienteDAO();
 
-        public  bool registrarPaciente(int cedula, string nombres, string apellidos, string telefono, string direccion,
-            string correo, DateOnly fechanac)
+        public  bool registrarPaciente(string cedula, string nombres, string apellidos, string telefono, string direccion,
+            string correo, string fechanac)
         {
             return pacienteDAO.registrarPaciente(cedula, nombres, apellidos, telefono, direccion
                 , correo, fechanac);

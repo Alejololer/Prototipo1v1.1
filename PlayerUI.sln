@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerUI", "PlayerUI\PlayerUI.csproj", "{B265B459-B4B6-44BC-BDB1-B401C58DC48F}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{91A870B4-D7E9-4900-9EA5-A6772ED9E671}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{B1547360-3E9A-4B8B-BF01-F9FD8FCC1024}"
@@ -17,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B265B459-B4B6-44BC-BDB1-B401C58DC48F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B265B459-B4B6-44BC-BDB1-B401C58DC48F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B265B459-B4B6-44BC-BDB1-B401C58DC48F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B265B459-B4B6-44BC-BDB1-B401C58DC48F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{91A870B4-D7E9-4900-9EA5-A6772ED9E671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{91A870B4-D7E9-4900-9EA5-A6772ED9E671}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91A870B4-D7E9-4900-9EA5-A6772ED9E671}.Release|Any CPU.ActiveCfg = Release|Any CPU

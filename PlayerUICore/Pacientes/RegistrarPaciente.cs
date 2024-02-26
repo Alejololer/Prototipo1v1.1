@@ -6,9 +6,11 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using Domain;
 
 namespace PlayerUI.Pacientes
 {
@@ -18,34 +20,70 @@ namespace PlayerUI.Pacientes
         {
             InitializeComponent();
             txtCed.KeyPress += OnKeyPressNum;
+            txtTel.KeyPress += OnKeyPressNum;
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            bool formatoValido = ValidarFormatoNombre(txtCed); // Reemplaza textBox1 con el nombre de tu TextBox
-            if (formatoValido)
+            DateTime fechaSeleccionada = dateTimePicker.Value.Date; // Obtener solo la parte de la fecha
+            string fechaFormateada = fechaSeleccionada.ToString("yyyy-MM-dd"); // Formatear la fecha
+
+            //Validar cedula
+            string cedula = txtCed.Text;
+            if (!ValidarCedulaEcuatoriana(cedula))
             {
                 // Realizar acciones si el formato es válido
-                MessageBox.Show("El formato del nombre es válido.", "Formato válido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("La cédula no es válida.", "Formato no válido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
             }
-            else
+
+            //Validar nombres
+            if (!ValidarFormatoNombre(txtNom))
             {
-                // Realizar acciones si el formato no es válido
-                MessageBox.Show("El formato del nombre no es válido.", "Formato inválido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                // Realizar acciones si el formato es válido
+                MessageBox.Show("El formato de los nombres no es válido.", "Formato no válido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
             }
+
+            //Validar apellido
+            if (!ValidarFormatoNombre(txtApe))
+            {
+                // Realizar acciones si el formato es válido
+                MessageBox.Show("El formato de los apellidos no es válido.", "Formato no válido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+
+            }
+            //Validar correo
+            string correo = txtCorr.Text;
+            if (!ValidarCorreo(correo))
+            {
+                // Realizar acciones si el formato es válido
+                MessageBox.Show("El formato del correo no es válido.", "Formato no válido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+
+            }
+
 
 
             DialogResult result = MessageBox.Show("¿Está seguro?", "Registro de Paciente", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
                 PacienteModel model = new PacienteModel();
-                //var valid 
-                //MessageBox.Show("Paciente registrado con éxito", "Registro de Paciente", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                var validRegister = model.registrarPaciente(cedula,txtNom.Text, txtApe.Text, txtTel.Text, txtDir.Text, txtCorr.Text ,fechaFormateada);
+                if (validRegister)
+                {
+                    MessageBox.Show("Paciente registrado con éxito", "Registro de Paciente", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Error en el registro de paciente", "Registro de Paciente", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
             }
             else
             {
             }
-            this.Close();
+            return;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -64,7 +102,7 @@ namespace PlayerUI.Pacientes
             {
                 >= '0' and <= '9' => false, // allow numerics
                 '\b' => false,              // allow backspace
-
+                _ => true
             };
         }
 
@@ -75,7 +113,6 @@ namespace PlayerUI.Pacientes
             string[] partes = textBox.Text.Split(' ');
             if (partes.Length != 2)
             {
-                MessageBox.Show("El formato debe ser 'Nombre Apellido'.", "Formato inválido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
             else
@@ -83,13 +120,64 @@ namespace PlayerUI.Pacientes
                 bool formatoCorrecto = partes.All(part => !string.IsNullOrWhiteSpace(part) && part.All(char.IsLetter));
                 if (!formatoCorrecto)
                 {
-                    MessageBox.Show("El formato debe ser 'Nombre Apellido'.", "Formato inválido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return false;
                 }
             }
             return true;
         }
 
+        public bool ValidarCedulaEcuatoriana(string cedula)
+        {
+            // Verificar longitud
+            if (cedula.Length != 10)
+            {
+                return false;
+            }
 
+            // Verificar que todos los caracteres sean dígitos
+            foreach (char c in cedula)
+            {
+                if (!char.IsDigit(c))
+                {
+                    return false;
+                }
+            }
+
+            // Extraer el dígito verificador
+            int digitoVerificador = int.Parse(cedula.Substring(9, 1));
+
+            // Calcular el dígito verificador esperado
+            int[] coeficientes = { 2, 1, 2, 1, 2, 1, 2, 1, 2 };
+            int suma = 0;
+            for (int i = 0; i < coeficientes.Length; i++)
+            {
+                int valor = int.Parse(cedula.Substring(i, 1)) * coeficientes[i];
+                suma += (valor >= 10) ? valor - 9 : valor;
+            }
+            int residuo = suma % 10;
+            int digitoEsperado = (residuo == 0) ? 0 : 10 - residuo;
+
+            // Comparar con el dígito verificador proporcionado
+            return digitoVerificador == digitoEsperado;
+        }
+
+        public bool ValidarCorreo(string correo)
+        {
+            // Expresión regular para validar la estructura básica de un correo electrónico
+            string patron = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
+
+            // Crear objeto Regex con el patrón
+            Regex regex = new Regex(patron);
+
+            // Verificar si la cadena coincide con el patrón
+            return regex.IsMatch(correo);
+        }
+
+        private void RegistrarPaciente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
+
+
 }

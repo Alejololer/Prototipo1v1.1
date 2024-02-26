@@ -92,6 +92,7 @@
             txtDir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             txtDir.Location = new System.Drawing.Point(308, 348);
             txtDir.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            txtDir.MaxLength = 30;
             txtDir.Name = "txtDir";
             txtDir.Size = new System.Drawing.Size(225, 26);
             txtDir.TabIndex = 40;
@@ -102,6 +103,7 @@
             txtTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             txtTel.Location = new System.Drawing.Point(308, 293);
             txtTel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            txtTel.MaxLength = 10;
             txtTel.Name = "txtTel";
             txtTel.Size = new System.Drawing.Size(225, 26);
             txtTel.TabIndex = 39;
@@ -164,6 +166,7 @@
             txtCed.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             txtCed.Location = new System.Drawing.Point(308, 132);
             txtCed.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            txtCed.MaxLength = 10;
             txtCed.Name = "txtCed";
             txtCed.Size = new System.Drawing.Size(225, 26);
             txtCed.TabIndex = 34;
@@ -174,6 +177,7 @@
             txtApe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             txtApe.Location = new System.Drawing.Point(308, 240);
             txtApe.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            txtApe.MaxLength = 30;
             txtApe.Name = "txtApe";
             txtApe.Size = new System.Drawing.Size(225, 26);
             txtApe.TabIndex = 33;
@@ -184,6 +188,7 @@
             txtNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             txtNom.Location = new System.Drawing.Point(308, 185);
             txtNom.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            txtNom.MaxLength = 30;
             txtNom.Name = "txtNom";
             txtNom.Size = new System.Drawing.Size(225, 26);
             txtNom.TabIndex = 32;
@@ -249,6 +254,7 @@
             txtCorr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             txtCorr.Location = new System.Drawing.Point(308, 404);
             txtCorr.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            txtCorr.MaxLength = 128;
             txtCorr.Name = "txtCorr";
             txtCorr.Size = new System.Drawing.Size(225, 26);
             txtCorr.TabIndex = 46;
@@ -280,6 +286,7 @@
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             Name = "RegistrarPaciente";
             Text = "RegistrarPaciente";
+            Load += RegistrarPaciente_Load;
             ResumeLayout(false);
             PerformLayout();
         }
