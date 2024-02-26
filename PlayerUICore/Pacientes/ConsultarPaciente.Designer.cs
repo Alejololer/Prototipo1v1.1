@@ -52,10 +52,10 @@
             button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             button1.ForeColor = System.Drawing.Color.LightGray;
-            button1.Location = new System.Drawing.Point(641, 705);
-            button1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            button1.Location = new System.Drawing.Point(561, 529);
+            button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             button1.Name = "button1";
-            button1.Size = new System.Drawing.Size(105, 51);
+            button1.Size = new System.Drawing.Size(92, 38);
             button1.TabIndex = 52;
             button1.Text = "Consultar";
             button1.UseVisualStyleBackColor = false;
@@ -68,10 +68,10 @@
             label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             label4.ForeColor = System.Drawing.SystemColors.Control;
-            label4.Location = new System.Drawing.Point(104, 144);
+            label4.Location = new System.Drawing.Point(91, 108);
             label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new System.Drawing.Size(161, 20);
+            label4.Size = new System.Drawing.Size(138, 17);
             label4.TabIndex = 51;
             label4.Text = "Cédula de Identidad:";
             // 
@@ -81,10 +81,10 @@
             label1.AutoSize = true;
             label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             label1.ForeColor = System.Drawing.Color.FromArgb(235, 42, 83);
-            label1.Location = new System.Drawing.Point(269, 33);
-            label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            label1.Location = new System.Drawing.Point(235, 25);
+            label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(287, 29);
+            label1.Size = new System.Drawing.Size(231, 25);
             label1.TabIndex = 50;
             label1.Text = "DATOS DEL PACIENTE";
             label1.Click += label1_Click;
@@ -93,10 +93,10 @@
             // 
             txtCedula.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             txtCedula.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            txtCedula.Location = new System.Drawing.Point(299, 132);
-            txtCedula.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            txtCedula.Location = new System.Drawing.Point(262, 99);
+            txtCedula.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             txtCedula.Name = "txtCedula";
-            txtCedula.Size = new System.Drawing.Size(356, 30);
+            txtCedula.Size = new System.Drawing.Size(312, 26);
             txtCedula.TabIndex = 49;
             // 
             // btnExit
@@ -106,10 +106,10 @@
             btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             btnExit.ForeColor = System.Drawing.Color.LightGray;
-            btnExit.Location = new System.Drawing.Point(16, 19);
-            btnExit.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            btnExit.Location = new System.Drawing.Point(14, 14);
+            btnExit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             btnExit.Name = "btnExit";
-            btnExit.Size = new System.Drawing.Size(33, 39);
+            btnExit.Size = new System.Drawing.Size(29, 29);
             btnExit.TabIndex = 48;
             btnExit.Text = "X";
             btnExit.UseVisualStyleBackColor = true;
@@ -120,33 +120,39 @@
             label2.AutoSize = true;
             label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             label2.ForeColor = System.Drawing.Color.FromArgb(235, 42, 83);
-            label2.Location = new System.Drawing.Point(23, 368);
-            label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            label2.Location = new System.Drawing.Point(20, 276);
+            label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(105, 29);
+            label2.Size = new System.Drawing.Size(81, 25);
             label2.TabIndex = 55;
             label2.Text = "Historial";
             // 
             // dgvPaciente
             // 
+            dgvPaciente.AllowUserToAddRows = false;
+            dgvPaciente.AllowUserToDeleteRows = false;
             dgvPaciente.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             dgvPaciente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvPaciente.Location = new System.Drawing.Point(23, 180);
-            dgvPaciente.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            dgvPaciente.Location = new System.Drawing.Point(20, 135);
+            dgvPaciente.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             dgvPaciente.Name = "dgvPaciente";
+            dgvPaciente.ReadOnly = true;
             dgvPaciente.RowHeadersWidth = 51;
-            dgvPaciente.Size = new System.Drawing.Size(723, 173);
+            dgvPaciente.Size = new System.Drawing.Size(633, 130);
             dgvPaciente.TabIndex = 56;
             // 
             // dataGridView2
             // 
+            dataGridView2.AllowUserToAddRows = false;
+            dataGridView2.AllowUserToDeleteRows = false;
             dataGridView2.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new System.Drawing.Point(23, 468);
-            dataGridView2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            dataGridView2.Location = new System.Drawing.Point(20, 351);
+            dataGridView2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             dataGridView2.Name = "dataGridView2";
+            dataGridView2.ReadOnly = true;
             dataGridView2.RowHeadersWidth = 51;
-            dataGridView2.Size = new System.Drawing.Size(723, 209);
+            dataGridView2.Size = new System.Drawing.Size(633, 157);
             dataGridView2.TabIndex = 57;
             // 
             // label3
@@ -155,28 +161,28 @@
             label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             label3.ForeColor = System.Drawing.SystemColors.Control;
-            label3.Location = new System.Drawing.Point(23, 417);
+            label3.Location = new System.Drawing.Point(20, 313);
             label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(108, 20);
+            label3.Size = new System.Drawing.Size(90, 17);
             label3.TabIndex = 62;
             label3.Text = "Fecha Inicial:";
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new System.Drawing.Point(133, 409);
-            dateTimePicker1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            dateTimePicker1.Location = new System.Drawing.Point(116, 307);
+            dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new System.Drawing.Size(215, 27);
+            dateTimePicker1.Size = new System.Drawing.Size(189, 23);
             dateTimePicker1.TabIndex = 63;
             // 
             // dateTimePicker2
             // 
             dateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
-            dateTimePicker2.Location = new System.Drawing.Point(542, 409);
-            dateTimePicker2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            dateTimePicker2.Location = new System.Drawing.Point(474, 307);
+            dateTimePicker2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new System.Drawing.Size(209, 27);
+            dateTimePicker2.Size = new System.Drawing.Size(183, 23);
             dateTimePicker2.TabIndex = 65;
             // 
             // label5
@@ -186,19 +192,19 @@
             label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             label5.ForeColor = System.Drawing.SystemColors.Control;
-            label5.Location = new System.Drawing.Point(418, 417);
+            label5.Location = new System.Drawing.Point(366, 313);
             label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new System.Drawing.Size(101, 20);
+            label5.Size = new System.Drawing.Size(85, 17);
             label5.TabIndex = 64;
             label5.Text = "Fecha Final:";
             // 
             // ConsultarPaciente
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.FromArgb(32, 30, 45);
-            ClientSize = new System.Drawing.Size(800, 800);
+            ClientSize = new System.Drawing.Size(700, 600);
             Controls.Add(dateTimePicker2);
             Controls.Add(label5);
             Controls.Add(dateTimePicker1);
@@ -212,7 +218,7 @@
             Controls.Add(txtCedula);
             Controls.Add(btnExit);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             Name = "ConsultarPaciente";
             Text = "ConsultarPaciente";
             Load += ConsultarPaciente_Load;

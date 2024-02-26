@@ -16,7 +16,7 @@ namespace PlayerUI.Pacientes
     {
 
         string cedula;
-        SqlConnection coneccion = new SqlConnection("Data Source=TONY;Initial Catalog=Requerimientos;Integrated Security=SSPI");
+        SqlConnection coneccion = new SqlConnection("Data Source=.\\SQLEXPRESS;Initial Catalog=Requerimientos;Integrated Security=SSPI");
 
 
         public ConsultarPaciente()
