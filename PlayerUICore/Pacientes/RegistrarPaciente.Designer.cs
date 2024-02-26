@@ -31,20 +31,20 @@
             label5 = new System.Windows.Forms.Label();
             label6 = new System.Windows.Forms.Label();
             label7 = new System.Windows.Forms.Label();
-            textBox5 = new System.Windows.Forms.TextBox();
-            textBox6 = new System.Windows.Forms.TextBox();
+            txtDir = new System.Windows.Forms.TextBox();
+            txtTel = new System.Windows.Forms.TextBox();
             label4 = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
             label1 = new System.Windows.Forms.Label();
-            textBox3 = new System.Windows.Forms.TextBox();
-            textBox2 = new System.Windows.Forms.TextBox();
-            textBox1 = new System.Windows.Forms.TextBox();
+            txtCed = new System.Windows.Forms.TextBox();
+            txtApe = new System.Windows.Forms.TextBox();
+            txtNom = new System.Windows.Forms.TextBox();
             button9 = new System.Windows.Forms.Button();
             btnExit = new System.Windows.Forms.Button();
-            dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            dateTimePicker = new System.Windows.Forms.DateTimePicker();
             label8 = new System.Windows.Forms.Label();
-            textBox4 = new System.Windows.Forms.TextBox();
+            txtCorr = new System.Windows.Forms.TextBox();
             SuspendLayout();
             // 
             // label5
@@ -86,25 +86,25 @@
             label7.TabIndex = 42;
             label7.Text = "Teléfono:";
             // 
-            // textBox5
+            // txtDir
             // 
-            textBox5.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            textBox5.Location = new System.Drawing.Point(308, 348);
-            textBox5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new System.Drawing.Size(225, 26);
-            textBox5.TabIndex = 40;
+            txtDir.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            txtDir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            txtDir.Location = new System.Drawing.Point(308, 348);
+            txtDir.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            txtDir.Name = "txtDir";
+            txtDir.Size = new System.Drawing.Size(225, 26);
+            txtDir.TabIndex = 40;
             // 
-            // textBox6
+            // txtTel
             // 
-            textBox6.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            textBox6.Location = new System.Drawing.Point(308, 293);
-            textBox6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new System.Drawing.Size(225, 26);
-            textBox6.TabIndex = 39;
+            txtTel.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            txtTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            txtTel.Location = new System.Drawing.Point(308, 293);
+            txtTel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            txtTel.Name = "txtTel";
+            txtTel.Size = new System.Drawing.Size(225, 26);
+            txtTel.TabIndex = 39;
             // 
             // label4
             // 
@@ -158,35 +158,35 @@
             label1.TabIndex = 35;
             label1.Text = "REGISTRAR PACIENTE";
             // 
-            // textBox3
+            // txtCed
             // 
-            textBox3.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            textBox3.Location = new System.Drawing.Point(308, 132);
-            textBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new System.Drawing.Size(225, 26);
-            textBox3.TabIndex = 34;
+            txtCed.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            txtCed.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            txtCed.Location = new System.Drawing.Point(308, 132);
+            txtCed.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            txtCed.Name = "txtCed";
+            txtCed.Size = new System.Drawing.Size(225, 26);
+            txtCed.TabIndex = 34;
             // 
-            // textBox2
+            // txtApe
             // 
-            textBox2.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            textBox2.Location = new System.Drawing.Point(308, 240);
-            textBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new System.Drawing.Size(225, 26);
-            textBox2.TabIndex = 33;
+            txtApe.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            txtApe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            txtApe.Location = new System.Drawing.Point(308, 240);
+            txtApe.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            txtApe.Name = "txtApe";
+            txtApe.Size = new System.Drawing.Size(225, 26);
+            txtApe.TabIndex = 33;
             // 
-            // textBox1
+            // txtNom
             // 
-            textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            textBox1.Location = new System.Drawing.Point(308, 185);
-            textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new System.Drawing.Size(225, 26);
-            textBox1.TabIndex = 32;
+            txtNom.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            txtNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            txtNom.Location = new System.Drawing.Point(308, 185);
+            txtNom.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            txtNom.Name = "txtNom";
+            txtNom.Size = new System.Drawing.Size(225, 26);
+            txtNom.TabIndex = 32;
             // 
             // button9
             // 
@@ -221,13 +221,14 @@
             btnExit.UseVisualStyleBackColor = true;
             btnExit.Click += btnExit_Click;
             // 
-            // dateTimePicker1
+            // dateTimePicker
             // 
-            dateTimePicker1.Location = new System.Drawing.Point(308, 459);
-            dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new System.Drawing.Size(226, 23);
-            dateTimePicker1.TabIndex = 45;
+            dateTimePicker.Location = new System.Drawing.Point(308, 459);
+            dateTimePicker.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            dateTimePicker.Name = "dateTimePicker";
+            dateTimePicker.Size = new System.Drawing.Size(226, 23);
+            dateTimePicker.TabIndex = 45;
+            dateTimePicker.ValueChanged += dateTimePicker1_ValueChanged;
             // 
             // label8
             // 
@@ -242,15 +243,15 @@
             label8.TabIndex = 47;
             label8.Text = "Correo Electrónico:";
             // 
-            // textBox4
+            // txtCorr
             // 
-            textBox4.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            textBox4.Location = new System.Drawing.Point(308, 404);
-            textBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new System.Drawing.Size(225, 26);
-            textBox4.TabIndex = 46;
+            txtCorr.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            txtCorr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            txtCorr.Location = new System.Drawing.Point(308, 404);
+            txtCorr.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            txtCorr.Name = "txtCorr";
+            txtCorr.Size = new System.Drawing.Size(225, 26);
+            txtCorr.TabIndex = 46;
             // 
             // RegistrarPaciente
             // 
@@ -259,20 +260,20 @@
             BackColor = System.Drawing.Color.FromArgb(32, 30, 45);
             ClientSize = new System.Drawing.Size(700, 600);
             Controls.Add(label8);
-            Controls.Add(textBox4);
-            Controls.Add(dateTimePicker1);
+            Controls.Add(txtCorr);
+            Controls.Add(dateTimePicker);
             Controls.Add(label5);
             Controls.Add(label6);
             Controls.Add(label7);
-            Controls.Add(textBox5);
-            Controls.Add(textBox6);
+            Controls.Add(txtDir);
+            Controls.Add(txtTel);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtCed);
+            Controls.Add(txtApe);
+            Controls.Add(txtNom);
             Controls.Add(button9);
             Controls.Add(btnExit);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -288,19 +289,19 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtDir;
+        private System.Windows.Forms.TextBox txtTel;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCed;
+        private System.Windows.Forms.TextBox txtApe;
+        private System.Windows.Forms.TextBox txtNom;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtCorr;
     }
 }

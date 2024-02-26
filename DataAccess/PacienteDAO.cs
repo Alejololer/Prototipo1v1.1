@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace DataAccess
 {
-    internal class PacienteDAO : ConnectionToSQL
+    public class PacienteDAO : ConnectionToSQL
     {
-        public void registrarPaciente(int cedula, string nombres, string apellidos, string telefono, string direccion,
+        public bool registrarPaciente(int cedula, string nombres, string apellidos, string telefono, string direccion,
             string correo, DateOnly fechanac)
         {
             using (var connection = GetConnection())
@@ -27,6 +27,17 @@ namespace DataAccess
                     command.Parameters.AddWithValue("@telefono", telefono);
                     command.Parameters.AddWithValue("@direccion", direccion);
                     command.Parameters.AddWithValue("@fechanac", fechanac);
+                    command.CommandType = System.Data.CommandType.Text;
+                    int filasAfectadas = command.ExecuteNonQuery();
+
+                    if (filasAfectadas > 0)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
                 }
             }
         }

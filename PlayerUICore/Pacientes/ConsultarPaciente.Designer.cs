@@ -68,7 +68,7 @@
             label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             label4.ForeColor = System.Drawing.SystemColors.Control;
-            label4.Location = new System.Drawing.Point(85, 110);
+            label4.Location = new System.Drawing.Point(91, 108);
             label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label4.Name = "label4";
             label4.Size = new System.Drawing.Size(138, 17);
@@ -131,20 +131,20 @@
             // 
             dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new System.Drawing.Point(20, 154);
+            dataGridView1.Location = new System.Drawing.Point(20, 135);
             dataGridView1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new System.Drawing.Size(633, 102);
+            dataGridView1.Size = new System.Drawing.Size(633, 130);
             dataGridView1.TabIndex = 56;
             // 
             // dataGridView2
             // 
             dataGridView2.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new System.Drawing.Point(20, 378);
+            dataGridView2.Location = new System.Drawing.Point(20, 351);
             dataGridView2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             dataGridView2.Name = "dataGridView2";
-            dataGridView2.Size = new System.Drawing.Size(633, 193);
+            dataGridView2.Size = new System.Drawing.Size(633, 157);
             dataGridView2.TabIndex = 57;
             // 
             // label3
@@ -153,7 +153,7 @@
             label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             label3.ForeColor = System.Drawing.SystemColors.Control;
-            label3.Location = new System.Drawing.Point(16, 338);
+            label3.Location = new System.Drawing.Point(20, 313);
             label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label3.Name = "label3";
             label3.Size = new System.Drawing.Size(90, 17);
@@ -162,7 +162,7 @@
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new System.Drawing.Point(112, 332);
+            dateTimePicker1.Location = new System.Drawing.Point(116, 307);
             dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new System.Drawing.Size(189, 23);
@@ -171,7 +171,7 @@
             // dateTimePicker2
             // 
             dateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
-            dateTimePicker2.Location = new System.Drawing.Point(470, 332);
+            dateTimePicker2.Location = new System.Drawing.Point(474, 307);
             dateTimePicker2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             dateTimePicker2.Name = "dateTimePicker2";
             dateTimePicker2.Size = new System.Drawing.Size(183, 23);
@@ -184,7 +184,7 @@
             label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             label5.ForeColor = System.Drawing.SystemColors.Control;
-            label5.Location = new System.Drawing.Point(362, 338);
+            label5.Location = new System.Drawing.Point(366, 313);
             label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label5.Name = "label5";
             label5.Size = new System.Drawing.Size(85, 17);
