@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cmbxPedidos = new System.Windows.Forms.ComboBox();
             this.lblNombreInstrumento = new System.Windows.Forms.Label();
             this.btnConsultarInstrumento = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
@@ -37,18 +36,9 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultarInstrumentos)).BeginInit();
             this.SuspendLayout();
-            // 
-            // cmbxPedidos
-            // 
-            this.cmbxPedidos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbxPedidos.FormattingEnabled = true;
-            this.cmbxPedidos.Location = new System.Drawing.Point(256, 67);
-            this.cmbxPedidos.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbxPedidos.Name = "cmbxPedidos";
-            this.cmbxPedidos.Size = new System.Drawing.Size(424, 21);
-            this.cmbxPedidos.TabIndex = 28;
             // 
             // lblNombreInstrumento
             // 
@@ -155,16 +145,23 @@
             this.button1.Text = "Registrar";
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(256, 68);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(423, 20);
+            this.textBox1.TabIndex = 32;
+            // 
             // RegistrarResul
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(700, 600);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.cmbxPedidos);
             this.Controls.Add(this.dgvConsultarInstrumentos);
             this.Controls.Add(this.lblNombreInstrumento);
             this.Controls.Add(this.btnConsultarInstrumento);
@@ -180,8 +177,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox cmbxPedidos;
         private System.Windows.Forms.Label lblNombreInstrumento;
         private System.Windows.Forms.Button btnConsultarInstrumento;
         private System.Windows.Forms.Button btnExit;
@@ -190,5 +185,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
