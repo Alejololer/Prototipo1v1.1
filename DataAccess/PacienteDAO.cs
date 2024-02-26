@@ -9,6 +9,27 @@ namespace DataAccess
 {
     public class PacienteDAO : ConnectionToSQL
     {
+        public bool Check(string CI)
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "Select * from Pacientes where CIPACIENTE=@CI";
+                    command.Parameters.AddWithValue("@CI", CI);
+                    command.CommandType = System.Data.CommandType.Text;
+                    SqlDataReader reader = command.ExecuteReader();
+                    if (reader.HasRows)
+                    {
+                        return true;
+                    }
+                    else
+                        return false;
+                }
+            }
+        }
         public bool registrarPaciente(string cedula, string nombres, string apellidos, string telefono, string direccion,
             string correo, string fechanac)
         {

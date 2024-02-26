@@ -17,5 +17,10 @@ namespace Domain
             return pacienteDAO.registrarPaciente(cedula, nombres, apellidos, telefono, direccion
                 , correo, fechanac);
         }
+
+        public bool Check(string cedula)
+        {
+            return pacienteDAO.Check(cedula);
+        }
     }
 }
