@@ -1,7 +1,9 @@
-﻿using System;
+﻿using DataAccess;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +14,11 @@ namespace PlayerUI.Pacientes
 {
     public partial class ConsultarPaciente : Form
     {
+
+        string cedula;
+        SqlConnection coneccion = new SqlConnection("Data Source=TONY;Initial Catalog=Requerimientos;Integrated Security=SSPI");
+
+
         public ConsultarPaciente()
         {
             InitializeComponent();
@@ -24,12 +31,102 @@ namespace PlayerUI.Pacientes
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("¡Verificar la Informacón!", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            PacienteDAO pacienteDAO = new PacienteDAO();
+            cedula = txtCedula.Text;
+            if (cedula == "")
+            {
+                MessageBox.Show("Historial no disponible", "Verificar datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else
+            {
+                if (!ValidarCedulaEcuatoriana(cedula))
+                {
+                    MessageBox.Show("Cedula no valida", "Verificar datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+                else
+                {
+                    using (var connection = coneccion)
+                    {
+                        {
+                            connection.Open();
+
+                            var consulta = new SqlCommand();
+                            consulta.CommandText = "SELECT * FROM dbo.PACIENTES WHERE CIPACIENTE = @cedula";
+                            consulta.Parameters.AddWithValue("@cedula", cedula);
+
+                            consulta.Connection = connection;  // Asignar la conexión al SqlCommand
+
+                            SqlDataAdapter adapter = new SqlDataAdapter(consulta);
+
+                            DataTable dt = new DataTable();
+                            adapter.Fill(dt);
+
+                            dgvPaciente.DataSource = dt;
+                        }
+                    }
+
+                }
+            }
+
+
+
+        }
+
+        private void llenarDataGridView()
+        {
+            string consulta = "Select * from dbo.PACIENTES";
+            SqlDataAdapter adapter = new SqlDataAdapter(consulta, coneccion);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            dgvPaciente.DataSource = dt;
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        public bool ValidarCedulaEcuatoriana(string cedula)
+        {
+            // Verificar longitud
+            if (cedula.Length != 10)
+            {
+                return false;
+            }
+
+            // Verificar que todos los caracteres sean dígitos
+            foreach (char c in cedula)
+            {
+                if (!char.IsDigit(c))
+                {
+                    return false;
+                }
+            }
+
+            // Extraer el dígito verificador
+            int digitoVerificador = int.Parse(cedula.Substring(9, 1));
+
+            // Calcular el dígito verificador esperado
+            int[] coeficientes = { 2, 1, 2, 1, 2, 1, 2, 1, 2 };
+            int suma = 0;
+            for (int i = 0; i < coeficientes.Length; i++)
+            {
+                int valor = int.Parse(cedula.Substring(i, 1)) * coeficientes[i];
+                suma += (valor >= 10) ? valor - 9 : valor;
+            }
+            int residuo = suma % 10;
+            int digitoEsperado = (residuo == 0) ? 0 : 10 - residuo;
+
+            // Comparar con el dígito verificador proporcionado
+            return digitoVerificador == digitoEsperado;
+
+        }
+
+        private void ConsultarPaciente_Load(object sender, EventArgs e)
+        {
+            llenarDataGridView();
         }
     }
 }
