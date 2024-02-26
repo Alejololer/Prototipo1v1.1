@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConeccionBD\ConeccionSQL.cs" />
+    <Compile Include="ConeccionBD\Entities\User.cs" />
     <Compile Include="Instrumento\ActualizarInstrumento.cs">
       <SubType>Form</SubType>
     </Compile>

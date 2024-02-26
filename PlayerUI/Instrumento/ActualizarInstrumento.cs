@@ -25,14 +25,19 @@ namespace PlayerUI.Instrumento
         {
 
 
-            MessageBox.Show("Cantidad de instrumento actualizada correctamente");
-            MessageBox.Show("Nombre de instrumento inválido");
-            MessageBox.Show("Cantidades de entrada y/o salida inválidas");
+            
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Cantidad de instrumento actualizada correctamente");
+            MessageBox.Show("Nombre de instrumento inválido");
+            MessageBox.Show("Cantidades de entrada y/o salida inválidas");
         }
     }
 }
