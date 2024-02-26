@@ -39,12 +39,10 @@ namespace PlayerUI
         {
             if (txtUsuario.Text != "")
             {
-                if (txtUsuario.Text.Length < 3)
-                {
+            
                     if (txtContrasena.Text != "")
                     {
-                        if (txtContrasena.Text.Length < 3)
-                        {
+
                             UserModel user = new UserModel();
                             var validLogin = user.LoginUser(txtUsuario.Text, txtContrasena.Text);
                             if (validLogin == true)
@@ -66,12 +64,10 @@ namespace PlayerUI
                                 txtContrasena.Clear();
                                 txtUsuario.Clear();
                             }
-                        }
-                        else msgError("La contraseña debe tener mínimo 3 caracteres!");
+
                     }
                     else msgError("Ingrese la contraseña");
-                }
-                else msgError("El nombre de usuario debe tener mínimo 3 caracteres!");
+
             }
             else msgError("Ingrese el nombre de usuario");
 

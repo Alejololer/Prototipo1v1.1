@@ -28,112 +28,113 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.dgvConsultarInstrumentos = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvConsultarInstrumentos)).BeginInit();
-            this.SuspendLayout();
+            label1 = new System.Windows.Forms.Label();
+            btnExit = new System.Windows.Forms.Button();
+            dgvConsultarInstrumentos = new System.Windows.Forms.DataGridView();
+            button1 = new System.Windows.Forms.Button();
+            label4 = new System.Windows.Forms.Label();
+            textBox3 = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)dgvConsultarInstrumentos).BeginInit();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.label1.Location = new System.Drawing.Point(256, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(189, 25);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "INFORME VENTAS";
+            label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label1.ForeColor = System.Drawing.Color.FromArgb(235, 42, 83);
+            label1.Location = new System.Drawing.Point(241, 23);
+            label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(189, 25);
+            label1.TabIndex = 7;
+            label1.Text = "INFORME VENTAS";
             // 
             // btnExit
             // 
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.Color.LightGray;
-            this.btnExit.Location = new System.Drawing.Point(12, 12);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(25, 25);
-            this.btnExit.TabIndex = 14;
-            this.btnExit.Text = "X";
-            this.btnExit.UseVisualStyleBackColor = true;
+            btnExit.FlatAppearance.BorderSize = 0;
+            btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(235, 42, 83);
+            btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btnExit.ForeColor = System.Drawing.Color.LightGray;
+            btnExit.Location = new System.Drawing.Point(14, 14);
+            btnExit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new System.Drawing.Size(29, 29);
+            btnExit.TabIndex = 14;
+            btnExit.Text = "X";
+            btnExit.UseVisualStyleBackColor = true;
             // 
             // dgvConsultarInstrumentos
             // 
-            this.dgvConsultarInstrumentos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvConsultarInstrumentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvConsultarInstrumentos.Location = new System.Drawing.Point(43, 175);
-            this.dgvConsultarInstrumentos.Margin = new System.Windows.Forms.Padding(2);
-            this.dgvConsultarInstrumentos.Name = "dgvConsultarInstrumentos";
-            this.dgvConsultarInstrumentos.RowHeadersWidth = 51;
-            this.dgvConsultarInstrumentos.RowTemplate.Height = 24;
-            this.dgvConsultarInstrumentos.Size = new System.Drawing.Size(614, 386);
-            this.dgvConsultarInstrumentos.TabIndex = 21;
+            dgvConsultarInstrumentos.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            dgvConsultarInstrumentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvConsultarInstrumentos.Location = new System.Drawing.Point(50, 202);
+            dgvConsultarInstrumentos.Margin = new System.Windows.Forms.Padding(2);
+            dgvConsultarInstrumentos.Name = "dgvConsultarInstrumentos";
+            dgvConsultarInstrumentos.RowHeadersWidth = 51;
+            dgvConsultarInstrumentos.RowTemplate.Height = 24;
+            dgvConsultarInstrumentos.Size = new System.Drawing.Size(599, 353);
+            dgvConsultarInstrumentos.TabIndex = 21;
             // 
             // button1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.LightGray;
-            this.button1.Location = new System.Drawing.Point(578, 119);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(79, 33);
-            this.button1.TabIndex = 64;
-            this.button1.Text = "Consultar";
-            this.button1.UseVisualStyleBackColor = false;
+            button1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            button1.BackColor = System.Drawing.Color.FromArgb(235, 42, 83);
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            button1.ForeColor = System.Drawing.Color.LightGray;
+            button1.Location = new System.Drawing.Point(557, 137);
+            button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button1.Name = "button1";
+            button1.Size = new System.Drawing.Size(92, 38);
+            button1.TabIndex = 64;
+            button1.Text = "Consultar";
+            button1.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(40, 82);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(149, 17);
-            this.label4.TabIndex = 63;
-            this.label4.Text = "Mes y año (mm/aaaa):";
+            label4.AutoSize = true;
+            label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label4.ForeColor = System.Drawing.SystemColors.Control;
+            label4.Location = new System.Drawing.Point(47, 95);
+            label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(149, 17);
+            label4.TabIndex = 63;
+            label4.Text = "Mes y año (mm/aaaa):";
             // 
             // textBox3
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(205, 73);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(452, 26);
-            this.textBox3.TabIndex = 62;
+            textBox3.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            textBox3.Location = new System.Drawing.Point(239, 84);
+            textBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new System.Drawing.Size(410, 26);
+            textBox3.TabIndex = 62;
             // 
             // ConsultarInformeVentas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(700, 600);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.dgvConsultarInstrumentos);
-            this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "ConsultarInformeVentas";
-            this.Text = "Form3";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvConsultarInstrumentos)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.Color.FromArgb(32, 30, 45);
+            ClientSize = new System.Drawing.Size(700, 600);
+            Controls.Add(button1);
+            Controls.Add(label4);
+            Controls.Add(textBox3);
+            Controls.Add(dgvConsultarInstrumentos);
+            Controls.Add(btnExit);
+            Controls.Add(label1);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Name = "ConsultarInformeVentas";
+            Text = "Form3";
+            ((System.ComponentModel.ISupportInitialize)dgvConsultarInstrumentos).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

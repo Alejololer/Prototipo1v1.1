@@ -22,7 +22,7 @@ namespace PlayerUI
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Close();  
+            this.Close();
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -30,7 +30,7 @@ namespace PlayerUI
             nombreInsrumento = txtNombreInstrumento.Text;
             cantidadInstrumento = txtCantidadInstrumento.Text;
 
-            if(nombreInsrumento != null || nombreInsrumento != "")
+            if (nombreInsrumento != null || nombreInsrumento != "")
             {
                 MessageBox.Show("Instrumento registrado con exito");
             }
@@ -46,6 +46,11 @@ namespace PlayerUI
             {
                 MessageBox.Show("Cantidad de instrumento invalido");
             }
+
+        }
+
+        private void RegistrarInstrumento_Load(object sender, EventArgs e)
+        {
 
         }
     }

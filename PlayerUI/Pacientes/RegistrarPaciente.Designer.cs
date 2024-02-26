@@ -31,20 +31,20 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtDir = new System.Windows.Forms.TextBox();
+            this.txtTel = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCed = new System.Windows.Forms.TextBox();
+            this.TxtAp = new System.Windows.Forms.TextBox();
+            this.txtNom = new System.Windows.Forms.TextBox();
             this.button9 = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtFechaNac = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtCor = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label5
@@ -86,25 +86,25 @@
             this.label7.TabIndex = 42;
             this.label7.Text = "Teléfono:";
             // 
-            // textBox5
+            // txtDir
             // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtDir.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(264, 302);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(294, 26);
-            this.textBox5.TabIndex = 40;
+            this.txtDir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDir.Location = new System.Drawing.Point(264, 302);
+            this.txtDir.Name = "txtDir";
+            this.txtDir.Size = new System.Drawing.Size(294, 26);
+            this.txtDir.TabIndex = 40;
             // 
-            // textBox6
+            // txtTel
             // 
-            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtTel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(264, 254);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(294, 26);
-            this.textBox6.TabIndex = 39;
+            this.txtTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTel.Location = new System.Drawing.Point(264, 254);
+            this.txtTel.Name = "txtTel";
+            this.txtTel.Size = new System.Drawing.Size(294, 26);
+            this.txtTel.TabIndex = 39;
             // 
             // label4
             // 
@@ -157,35 +157,35 @@
             this.label1.TabIndex = 35;
             this.label1.Text = "REGISTRAR PACIENTE";
             // 
-            // textBox3
+            // txtCed
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtCed.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(264, 114);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(294, 26);
-            this.textBox3.TabIndex = 34;
+            this.txtCed.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCed.Location = new System.Drawing.Point(264, 114);
+            this.txtCed.Name = "txtCed";
+            this.txtCed.Size = new System.Drawing.Size(294, 26);
+            this.txtCed.TabIndex = 34;
             // 
-            // textBox2
+            // TxtAp
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.TxtAp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(264, 208);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(294, 26);
-            this.textBox2.TabIndex = 33;
+            this.TxtAp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtAp.Location = new System.Drawing.Point(264, 208);
+            this.TxtAp.Name = "TxtAp";
+            this.TxtAp.Size = new System.Drawing.Size(294, 26);
+            this.TxtAp.TabIndex = 33;
             // 
-            // textBox1
+            // txtNom
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtNom.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(264, 160);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(294, 26);
-            this.textBox1.TabIndex = 32;
+            this.txtNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNom.Location = new System.Drawing.Point(264, 160);
+            this.txtNom.Name = "txtNom";
+            this.txtNom.Size = new System.Drawing.Size(294, 26);
+            this.txtNom.TabIndex = 32;
             // 
             // button9
             // 
@@ -218,12 +218,12 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // dateTimePicker1
+            // txtFechaNac
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(264, 398);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(294, 20);
-            this.dateTimePicker1.TabIndex = 45;
+            this.txtFechaNac.Location = new System.Drawing.Point(264, 398);
+            this.txtFechaNac.Name = "txtFechaNac";
+            this.txtFechaNac.Size = new System.Drawing.Size(294, 20);
+            this.txtFechaNac.TabIndex = 45;
             // 
             // label8
             // 
@@ -238,15 +238,15 @@
             this.label8.TabIndex = 47;
             this.label8.Text = "Correo Electrónico:";
             // 
-            // textBox4
+            // txtCor
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtCor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(264, 350);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(294, 26);
-            this.textBox4.TabIndex = 46;
+            this.txtCor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCor.Location = new System.Drawing.Point(264, 350);
+            this.txtCor.Name = "txtCor";
+            this.txtCor.Size = new System.Drawing.Size(294, 26);
+            this.txtCor.TabIndex = 46;
             // 
             // RegistrarPaciente
             // 
@@ -255,25 +255,26 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(700, 600);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.txtCor);
+            this.Controls.Add(this.txtFechaNac);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtDir);
+            this.Controls.Add(this.txtTel);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCed);
+            this.Controls.Add(this.TxtAp);
+            this.Controls.Add(this.txtNom);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.btnExit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegistrarPaciente";
             this.Text = "RegistrarPaciente";
+            this.Load += new System.EventHandler(this.RegistrarPaciente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,19 +285,19 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtDir;
+        private System.Windows.Forms.TextBox txtTel;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCed;
+        private System.Windows.Forms.TextBox TxtAp;
+        private System.Windows.Forms.TextBox txtNom;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker txtFechaNac;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtCor;
     }
 }

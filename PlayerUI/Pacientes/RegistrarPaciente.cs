@@ -15,6 +15,7 @@ namespace PlayerUI.Pacientes
         public RegistrarPaciente()
         {
             InitializeComponent();
+
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -34,6 +35,32 @@ namespace PlayerUI.Pacientes
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void RegistrarPaciente_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OnKeyPress(object? sender, KeyPressEventArgs e)
+        {
+            // allow numerics
+            if (e.KeyChar >= '0' && e.KeyChar <= '9')
+                return;
+
+            // allow lowercase characters
+            if (e.KeyChar >= 'a' && e.KeyChar <= 'z')
+                return;
+
+            // allow uppercase characters
+            if (e.KeyChar >= 'A' && e.KeyChar <= 'Z')
+                return;
+
+            // allow backspace and other special characters in the string
+            if ("\b".Contains(e.KeyChar))
+                return;
+
+            e.Handled = true;
         }
     }
 }

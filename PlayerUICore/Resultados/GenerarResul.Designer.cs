@@ -28,131 +28,131 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cmbxPedidos = new System.Windows.Forms.ComboBox();
-            this.dgvConsultarInstrumentos = new System.Windows.Forms.DataGridView();
-            this.lblNombreInstrumento = new System.Windows.Forms.Label();
-            this.btnConsultarInstrumento = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvConsultarInstrumentos)).BeginInit();
-            this.SuspendLayout();
+            cmbxPedidos = new System.Windows.Forms.ComboBox();
+            dgvConsultarInstrumentos = new System.Windows.Forms.DataGridView();
+            lblNombreInstrumento = new System.Windows.Forms.Label();
+            btnConsultarInstrumento = new System.Windows.Forms.Button();
+            btnExit = new System.Windows.Forms.Button();
+            label1 = new System.Windows.Forms.Label();
+            button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)dgvConsultarInstrumentos).BeginInit();
+            SuspendLayout();
             // 
             // cmbxPedidos
             // 
-            this.cmbxPedidos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbxPedidos.FormattingEnabled = true;
-            this.cmbxPedidos.Location = new System.Drawing.Point(164, 67);
-            this.cmbxPedidos.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbxPedidos.Name = "cmbxPedidos";
-            this.cmbxPedidos.Size = new System.Drawing.Size(516, 21);
-            this.cmbxPedidos.TabIndex = 34;
+            cmbxPedidos.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            cmbxPedidos.FormattingEnabled = true;
+            cmbxPedidos.Location = new System.Drawing.Point(191, 77);
+            cmbxPedidos.Margin = new System.Windows.Forms.Padding(2);
+            cmbxPedidos.Name = "cmbxPedidos";
+            cmbxPedidos.Size = new System.Drawing.Size(484, 23);
+            cmbxPedidos.TabIndex = 34;
             // 
             // dgvConsultarInstrumentos
             // 
-            this.dgvConsultarInstrumentos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvConsultarInstrumentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvConsultarInstrumentos.Location = new System.Drawing.Point(11, 111);
-            this.dgvConsultarInstrumentos.Margin = new System.Windows.Forms.Padding(2);
-            this.dgvConsultarInstrumentos.Name = "dgvConsultarInstrumentos";
-            this.dgvConsultarInstrumentos.RowHeadersWidth = 51;
-            this.dgvConsultarInstrumentos.RowTemplate.Height = 24;
-            this.dgvConsultarInstrumentos.Size = new System.Drawing.Size(668, 419);
-            this.dgvConsultarInstrumentos.TabIndex = 33;
+            dgvConsultarInstrumentos.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            dgvConsultarInstrumentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvConsultarInstrumentos.Location = new System.Drawing.Point(13, 128);
+            dgvConsultarInstrumentos.Margin = new System.Windows.Forms.Padding(2);
+            dgvConsultarInstrumentos.Name = "dgvConsultarInstrumentos";
+            dgvConsultarInstrumentos.RowHeadersWidth = 51;
+            dgvConsultarInstrumentos.RowTemplate.Height = 24;
+            dgvConsultarInstrumentos.Size = new System.Drawing.Size(662, 391);
+            dgvConsultarInstrumentos.TabIndex = 33;
             // 
             // lblNombreInstrumento
             // 
-            this.lblNombreInstrumento.AutoSize = true;
-            this.lblNombreInstrumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblNombreInstrumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreInstrumento.ForeColor = System.Drawing.Color.LightGray;
-            this.lblNombreInstrumento.Location = new System.Drawing.Point(11, 71);
-            this.lblNombreInstrumento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblNombreInstrumento.Name = "lblNombreInstrumento";
-            this.lblNombreInstrumento.Size = new System.Drawing.Size(149, 17);
-            this.lblNombreInstrumento.TabIndex = 32;
-            this.lblNombreInstrumento.Text = "Seleccione el examen:";
+            lblNombreInstrumento.AutoSize = true;
+            lblNombreInstrumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            lblNombreInstrumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            lblNombreInstrumento.ForeColor = System.Drawing.Color.LightGray;
+            lblNombreInstrumento.Location = new System.Drawing.Point(13, 82);
+            lblNombreInstrumento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            lblNombreInstrumento.Name = "lblNombreInstrumento";
+            lblNombreInstrumento.Size = new System.Drawing.Size(149, 17);
+            lblNombreInstrumento.TabIndex = 32;
+            lblNombreInstrumento.Text = "Seleccione el examen:";
             // 
             // btnConsultarInstrumento
             // 
-            this.btnConsultarInstrumento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnConsultarInstrumento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.btnConsultarInstrumento.FlatAppearance.BorderSize = 0;
-            this.btnConsultarInstrumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConsultarInstrumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultarInstrumento.ForeColor = System.Drawing.Color.LightGray;
-            this.btnConsultarInstrumento.Location = new System.Drawing.Point(530, 548);
-            this.btnConsultarInstrumento.Name = "btnConsultarInstrumento";
-            this.btnConsultarInstrumento.Size = new System.Drawing.Size(150, 40);
-            this.btnConsultarInstrumento.TabIndex = 31;
-            this.btnConsultarInstrumento.Text = "Generar";
-            this.btnConsultarInstrumento.UseVisualStyleBackColor = false;
+            btnConsultarInstrumento.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
+            btnConsultarInstrumento.BackColor = System.Drawing.Color.FromArgb(235, 42, 83);
+            btnConsultarInstrumento.FlatAppearance.BorderSize = 0;
+            btnConsultarInstrumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnConsultarInstrumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btnConsultarInstrumento.ForeColor = System.Drawing.Color.LightGray;
+            btnConsultarInstrumento.Location = new System.Drawing.Point(501, 540);
+            btnConsultarInstrumento.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnConsultarInstrumento.Name = "btnConsultarInstrumento";
+            btnConsultarInstrumento.Size = new System.Drawing.Size(175, 46);
+            btnConsultarInstrumento.TabIndex = 31;
+            btnConsultarInstrumento.Text = "Generar";
+            btnConsultarInstrumento.UseVisualStyleBackColor = false;
             // 
             // btnExit
             // 
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.Color.LightGray;
-            this.btnExit.Location = new System.Drawing.Point(12, 12);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(25, 25);
-            this.btnExit.TabIndex = 30;
-            this.btnExit.Text = "X";
-            this.btnExit.UseVisualStyleBackColor = true;
+            btnExit.FlatAppearance.BorderSize = 0;
+            btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(235, 42, 83);
+            btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btnExit.ForeColor = System.Drawing.Color.LightGray;
+            btnExit.Location = new System.Drawing.Point(14, 14);
+            btnExit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new System.Drawing.Size(29, 29);
+            btnExit.TabIndex = 30;
+            btnExit.Text = "X";
+            btnExit.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.label1.Location = new System.Drawing.Point(118, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(465, 25);
-            this.label1.TabIndex = 29;
-            this.label1.Text = "GENERAR INFORME RESULTADOS DE EXAMEN";
+            label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label1.ForeColor = System.Drawing.Color.FromArgb(235, 42, 83);
+            label1.Location = new System.Drawing.Point(118, 23);
+            label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(465, 25);
+            label1.TabIndex = 29;
+            label1.Text = "GENERAR INFORME RESULTADOS DE EXAMEN";
             // 
             // button1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.LightGray;
-            this.button1.Location = new System.Drawing.Point(344, 548);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 40);
-            this.button1.TabIndex = 35;
-            this.button1.Text = "Imprimir";
-            this.button1.UseVisualStyleBackColor = false;
+            button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
+            button1.BackColor = System.Drawing.Color.FromArgb(235, 42, 83);
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            button1.ForeColor = System.Drawing.Color.LightGray;
+            button1.Location = new System.Drawing.Point(284, 540);
+            button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button1.Name = "button1";
+            button1.Size = new System.Drawing.Size(175, 46);
+            button1.TabIndex = 35;
+            button1.Text = "Imprimir";
+            button1.UseVisualStyleBackColor = false;
             // 
             // GenerarResul
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(700, 600);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.cmbxPedidos);
-            this.Controls.Add(this.dgvConsultarInstrumentos);
-            this.Controls.Add(this.lblNombreInstrumento);
-            this.Controls.Add(this.btnConsultarInstrumento);
-            this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "GenerarResul";
-            this.Text = "GenerarResul";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvConsultarInstrumentos)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.Color.FromArgb(32, 30, 45);
+            ClientSize = new System.Drawing.Size(700, 600);
+            Controls.Add(button1);
+            Controls.Add(cmbxPedidos);
+            Controls.Add(dgvConsultarInstrumentos);
+            Controls.Add(lblNombreInstrumento);
+            Controls.Add(btnConsultarInstrumento);
+            Controls.Add(btnExit);
+            Controls.Add(label1);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Name = "GenerarResul";
+            Text = "GenerarResul";
+            ((System.ComponentModel.ISupportInitialize)dgvConsultarInstrumentos).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

@@ -15,6 +15,9 @@ namespace PlayerUI.Pacientes
         public ActualizarPaciente()
         {
             InitializeComponent();
+            txtNom.ReadOnly = true;
+            txtApell.ReadOnly = true;
+            txtFeNac.ReadOnly = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -36,6 +39,16 @@ namespace PlayerUI.Pacientes
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ActualizarPaciente_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

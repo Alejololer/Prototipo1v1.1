@@ -28,95 +28,96 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtCantidadEntrada = new System.Windows.Forms.TextBox();
-            this.btnActualizarInstrumento = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.lblInstrumento = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            label3 = new System.Windows.Forms.Label();
+            txtCantidadEntrada = new System.Windows.Forms.TextBox();
+            btnActualizarInstrumento = new System.Windows.Forms.Button();
+            btnExit = new System.Windows.Forms.Button();
+            lblInstrumento = new System.Windows.Forms.Label();
+            SuspendLayout();
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.LightGray;
-            this.label3.Location = new System.Drawing.Point(41, 251);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 17);
-            this.label3.TabIndex = 27;
-            this.label3.Text = "Nombre Reactivo:";
+            label3.AutoSize = true;
+            label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label3.ForeColor = System.Drawing.Color.LightGray;
+            label3.Location = new System.Drawing.Point(48, 290);
+            label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(121, 17);
+            label3.TabIndex = 27;
+            label3.Text = "Nombre Reactivo:";
             // 
             // txtCantidadEntrada
             // 
-            this.txtCantidadEntrada.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCantidadEntrada.Location = new System.Drawing.Point(205, 250);
-            this.txtCantidadEntrada.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCantidadEntrada.Name = "txtCantidadEntrada";
-            this.txtCantidadEntrada.Size = new System.Drawing.Size(455, 20);
-            this.txtCantidadEntrada.TabIndex = 26;
+            txtCantidadEntrada.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            txtCantidadEntrada.Location = new System.Drawing.Point(239, 288);
+            txtCantidadEntrada.Margin = new System.Windows.Forms.Padding(2);
+            txtCantidadEntrada.Name = "txtCantidadEntrada";
+            txtCantidadEntrada.Size = new System.Drawing.Size(413, 23);
+            txtCantidadEntrada.TabIndex = 26;
             // 
             // btnActualizarInstrumento
             // 
-            this.btnActualizarInstrumento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnActualizarInstrumento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.btnActualizarInstrumento.FlatAppearance.BorderSize = 0;
-            this.btnActualizarInstrumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnActualizarInstrumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizarInstrumento.ForeColor = System.Drawing.Color.LightGray;
-            this.btnActualizarInstrumento.Location = new System.Drawing.Point(510, 311);
-            this.btnActualizarInstrumento.Name = "btnActualizarInstrumento";
-            this.btnActualizarInstrumento.Size = new System.Drawing.Size(150, 40);
-            this.btnActualizarInstrumento.TabIndex = 25;
-            this.btnActualizarInstrumento.Text = "Eliminar";
-            this.btnActualizarInstrumento.UseVisualStyleBackColor = false;
+            btnActualizarInstrumento.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
+            btnActualizarInstrumento.BackColor = System.Drawing.Color.FromArgb(235, 42, 83);
+            btnActualizarInstrumento.FlatAppearance.BorderSize = 0;
+            btnActualizarInstrumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnActualizarInstrumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btnActualizarInstrumento.ForeColor = System.Drawing.Color.LightGray;
+            btnActualizarInstrumento.Location = new System.Drawing.Point(477, 346);
+            btnActualizarInstrumento.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnActualizarInstrumento.Name = "btnActualizarInstrumento";
+            btnActualizarInstrumento.Size = new System.Drawing.Size(175, 46);
+            btnActualizarInstrumento.TabIndex = 25;
+            btnActualizarInstrumento.Text = "Eliminar";
+            btnActualizarInstrumento.UseVisualStyleBackColor = false;
             // 
             // btnExit
             // 
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.Color.LightGray;
-            this.btnExit.Location = new System.Drawing.Point(12, 12);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(25, 25);
-            this.btnExit.TabIndex = 24;
-            this.btnExit.Text = "X";
-            this.btnExit.UseVisualStyleBackColor = true;
+            btnExit.FlatAppearance.BorderSize = 0;
+            btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(235, 42, 83);
+            btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btnExit.ForeColor = System.Drawing.Color.LightGray;
+            btnExit.Location = new System.Drawing.Point(14, 14);
+            btnExit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new System.Drawing.Size(29, 29);
+            btnExit.TabIndex = 24;
+            btnExit.Text = "X";
+            btnExit.UseVisualStyleBackColor = true;
             // 
             // lblInstrumento
             // 
-            this.lblInstrumento.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lblInstrumento.AutoSize = true;
-            this.lblInstrumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInstrumento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.lblInstrumento.Location = new System.Drawing.Point(216, 20);
-            this.lblInstrumento.Name = "lblInstrumento";
-            this.lblInstrumento.Size = new System.Drawing.Size(226, 25);
-            this.lblInstrumento.TabIndex = 23;
-            this.lblInstrumento.Text = "ELIMINAR REACTIVOS";
+            lblInstrumento.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            lblInstrumento.AutoSize = true;
+            lblInstrumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            lblInstrumento.ForeColor = System.Drawing.Color.FromArgb(235, 42, 83);
+            lblInstrumento.Location = new System.Drawing.Point(237, 23);
+            lblInstrumento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            lblInstrumento.Name = "lblInstrumento";
+            lblInstrumento.Size = new System.Drawing.Size(226, 25);
+            lblInstrumento.TabIndex = 23;
+            lblInstrumento.Text = "ELIMINAR REACTIVOS";
             // 
             // EliminarReactivo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(700, 600);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtCantidadEntrada);
-            this.Controls.Add(this.btnActualizarInstrumento);
-            this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.lblInstrumento);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "EliminarReactivo";
-            this.Text = "EliminarReactivo";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.Color.FromArgb(32, 30, 45);
+            ClientSize = new System.Drawing.Size(700, 600);
+            Controls.Add(label3);
+            Controls.Add(txtCantidadEntrada);
+            Controls.Add(btnActualizarInstrumento);
+            Controls.Add(btnExit);
+            Controls.Add(lblInstrumento);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Name = "EliminarReactivo";
+            Text = "EliminarReactivo";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
