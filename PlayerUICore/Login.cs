@@ -24,6 +24,9 @@ namespace PlayerUI
         public Login()
         {
             InitializeComponent();
+            txtContrasena.KeyPress += OnKeyPress;
+            txtUsuario.KeyPress += OnKeyPress;
+
         }
 
 
@@ -36,34 +39,42 @@ namespace PlayerUI
         {
             if (txtUsuario.Text != "")
             {
-                if (txtContrasena.Text != "")
+                if (txtUsuario.Text.Length < 3)
                 {
-                    UserModel user = new UserModel();
-                    var validLogin = user.LoginUser(txtUsuario.Text, txtContrasena.Text);
-                    if (validLogin == true)
+                    if (txtContrasena.Text != "")
                     {
-                        this.Hide();
+                        if (txtContrasena.Text.Length < 3)
+                        {
+                            UserModel user = new UserModel();
+                            var validLogin = user.LoginUser(txtUsuario.Text, txtContrasena.Text);
+                            if (validLogin == true)
+                            {
+                                this.Hide();
 
-                        // Crear una instancia del nuevo formulario que quieres mostrar
-                        Menu nuevoFormulario = new Menu();
+                                // Crear una instancia del nuevo formulario que quieres mostrar
+                                Menu nuevoFormulario = new Menu();
 
-                        // Suscribir al evento FormClosed del nuevo formulario
-                        nuevoFormulario.FormClosed += NuevoFormulario_FormClosed;
+                                // Suscribir al evento FormClosed del nuevo formulario
+                                nuevoFormulario.FormClosed += NuevoFormulario_FormClosed;
 
-                        // Mostrar el nuevo formulario
-                        nuevoFormulario.Show();
+                                // Mostrar el nuevo formulario
+                                nuevoFormulario.Show();
+                            }
+                            else
+                            {
+                                msgError("Nombre de usuario o contraseña incorrectos. Intente de nuevo");
+                                txtContrasena.Clear();
+                                txtUsuario.Clear();
+                            }
+                        }
+                        else msgError("La contraseña debe tener mínimo 3 caracteres!");
                     }
-                    else
-                    {
-                        msgError("Nombre de usuario o contraseña incorrectos. Intente de nuevo");
-                        txtContrasena.Clear();
-                        txtUsuario.Clear(); 
-                    } 
+                    else msgError("Ingrese la contraseña");
                 }
-                else msgError("Ingrese la contraseña");
+                else msgError("El nombre de usuario debe tener mínimo 3 caracteres!");
             }
             else msgError("Ingrese el nombre de usuario");
-            
+
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -82,6 +93,23 @@ namespace PlayerUI
         {
             lblError.Text = msg;
             lblError.Visible = true;
+        }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OnKeyPress(object? sender, KeyPressEventArgs e)
+        {
+            e.Handled = e.KeyChar switch
+            {
+                >= '0' and <= '9' => false, // allow numerics
+                >= 'a' and <= 'z' => false, // allow lowercase characters
+                >= 'A' and <= 'Z' => false, // allow uppercase characters
+                '\b' => false,              // allow backspace
+                _ => true
+            };
         }
     }
 }
