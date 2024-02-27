@@ -29,6 +29,27 @@ namespace DataAccess
                 }
             }
         }
+        public bool checkUsuario(string username)
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "Select * from Users where NOMBREUSER=@user";
+                    command.Parameters.AddWithValue("@user", username);
+                    command.CommandType = System.Data.CommandType.Text;
+                    SqlDataReader reader = command.ExecuteReader();
+                    if (reader.HasRows)
+                    {
+                        return true;
+                    }
+                    else
+                        return false;
+                }
+            }
+        }
 
     }
 }
