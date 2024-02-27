@@ -154,6 +154,7 @@
             button1.TabIndex = 25;
             button1.Text = "Editar";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // ConsultarUsuario
             // 

@@ -1,5 +1,7 @@
 ﻿using DataAccess;
+using DataAccess.Entities;
 using Domain;
+using PlayerUICore.Usuario;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,13 +19,13 @@ namespace PlayerUI.Usuario
     public partial class ConsultarUsuario : Form
     {
         string nombreUsuario;
-        
+
 
         public ConsultarUsuario()
         {
             InitializeComponent();
             txtNombreUsuario.KeyPress += OnKeyPress;
-            
+
         }
         private void ConsultarUsuario_Load(object sender, EventArgs e)
         {
@@ -107,7 +109,7 @@ namespace PlayerUI.Usuario
 
             if (string.IsNullOrWhiteSpace(nombreUsuario))
             {
-                MessageBox.Show("Por favor, ingrese un nombre de usuario.", "Verificar datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                llenarDataGridView();
                 return;
             }
 
@@ -144,7 +146,7 @@ namespace PlayerUI.Usuario
                         dgvUsuarios.Columns[3].Width = 250;
 
                     }
-                } 
+                }
             }
             catch (Exception ex)
             {
@@ -174,6 +176,30 @@ namespace PlayerUI.Usuario
                 _ => true
             };
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (dgvUsuarios.SelectedRows.Count > 0)
+            {
+                // Obtener el nombre del usuario seleccionado (ajusta esto según tu estructura de datos)
+                int idUsuario = Convert.ToInt32(dgvUsuarios.SelectedRows[0].Cells["IDUSER"].Value);
+                UserModel userModel = new UserModel();
+                User user = userModel.ObtenerUserUsername(idUsuario);
+                Editar_Usuario editar_Usuario = new Editar_Usuario(user);
+                editar_Usuario.FormClosed += FormularioSecundario_Cerrado;
+                editar_Usuario.ShowDialog();
+
+            }
+            else
+            {
+                MessageBox.Show("Seleccione una fila antes de intentar editar usuario.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void FormularioSecundario_Cerrado(object sender, FormClosedEventArgs e)
+        {
+            llenarDataGridView();
         }
     }
 }

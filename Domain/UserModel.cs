@@ -1,5 +1,6 @@
 ﻿
 using DataAccess;
+using DataAccess.Entities;
 
 namespace Domain
 {
@@ -24,6 +25,16 @@ namespace Domain
         public bool EliminarUsuario(string username)
         {
             return userDAO.EliminarUsuario(username);
+        }
+
+        public User ObtenerUserUsername(int IDUSER)
+        {
+            return userDAO.ObtenerUserUsername(IDUSER);
+        }
+
+        public void ActualizarUser(int iduser, string username, string contrasena)
+        {
+            userDAO.actualizarUsuario(iduser, username, contrasena);
         }
     }
 
