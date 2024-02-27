@@ -1,4 +1,5 @@
 ﻿using DataAccess;
+using Domain;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,11 +17,13 @@ namespace PlayerUI.Usuario
     public partial class ConsultarUsuario : Form
     {
         string nombreUsuario;
-        SqlConnection coneccion = new SqlConnection("Data Source=TONY;Initial Catalog=Requerimientos;Integrated Security=SSPI");
+        
 
         public ConsultarUsuario()
         {
             InitializeComponent();
+            txtNombreUsuario.KeyPress += OnKeyPress;
+            
         }
         private void ConsultarUsuario_Load(object sender, EventArgs e)
         {
@@ -32,7 +35,7 @@ namespace PlayerUI.Usuario
             if (dgvUsuarios.SelectedRows.Count > 0)
             {
                 // Obtener el nombre del usuario seleccionado (ajusta esto según tu estructura de datos)
-                string nombreUsuario = dgvUsuarios.SelectedRows[0].Cells["NombreUsuario"].Value.ToString();
+                string nombreUsuario = dgvUsuarios.SelectedRows[0].Cells["NOMBREUSER"].Value.ToString();
 
                 // Mostrar mensaje de confirmación
                 DialogResult result = MessageBox.Show($"¿Está seguro de que desea eliminar al usuario '{nombreUsuario}'?", "Eliminar Usuario", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -40,7 +43,17 @@ namespace PlayerUI.Usuario
                 // Verificar la respuesta del usuario
                 if (result == DialogResult.Yes)
                 {
-                    EliminarUsuario();
+                    UserModel userModel = new UserModel();
+                    if (userModel.EliminarUsuario(nombreUsuario))
+                    {
+                        MessageBox.Show("Usuario eliminado correctamente!", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        // Cerrar el formulario actual
+                        llenarDataGridView();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error al eliminar usuario!", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
             else
@@ -50,61 +63,42 @@ namespace PlayerUI.Usuario
         }
 
 
-        private void EliminarUsuario()
-        {
-            try
-            {
-                using (var connection = coneccion)
-                {
-                    connection.Open();
 
-                    using (var consulta = new SqlCommand("DELETE FROM PACIENTES WHERE NOMBREUSER = @Nombre", connection))
-                    {
-                        consulta.Parameters.AddWithValue("@Nombre", nombreUsuario);
-
-                        int filasAfectadas = consulta.ExecuteNonQuery();
-
-                        if (filasAfectadas > 0)
-                        {
-                            MessageBox.Show("Usuario eliminado exitosamente.", "Eliminación Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            consultarUsuarios(); // Método para actualizar la lista de usuarios en el DataGridView
-                        }
-                        else
-                        {
-                            MessageBox.Show("No se pudo encontrar el usuario para eliminar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error al intentar eliminar el usuario: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
 
         private void consultarUsuarios()
         {
-            using (var connection = coneccion)
-            using (var consulta = new SqlCommand("SELECT * FROM Users WHERE NOMBREUSER = @user", connection))
+            string connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=Requerimientos;Integrated Security=SSPI";
+            using (var connection = new SqlConnection(connectionString))
             {
-                connection.Open();
-
-                consulta.Parameters.AddWithValue("@user", nombreUsuario);
-
-                using (SqlDataAdapter adapter = new SqlDataAdapter(consulta))
+                using (var consulta = new SqlCommand("SELECT * FROM Users WHERE NOMBREUSER = @user", connection))
                 {
-                    DataTable dt = new DataTable();
-                    adapter.Fill(dt);
+                    consulta.Parameters.AddWithValue("@user", nombreUsuario);
 
-                    dgvUsuarios.DataSource = dt;
+                    connection.Open();
 
-                    if (dt.Rows.Count == 0)
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(consulta))
                     {
-                        MessageBox.Show("No se encontraron usuarios con ese nombre.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        DataTable dt = new DataTable();
+                        adapter.Fill(dt);
+                        dgvUsuarios.DataSource = dt;
+                        //Formato
+                        dgvUsuarios.Columns[0].HeaderText = "ID";
+                        dgvUsuarios.Columns[0].Width = 50;
+                        dgvUsuarios.Columns[1].HeaderText = "Nombre de Usuario";
+                        dgvUsuarios.Columns[1].Width = 150;
+                        dgvUsuarios.Columns[2].HeaderText = "Contraseña";
+                        dgvUsuarios.Columns[3].HeaderText = "Tipo de Usuario";
+                        dgvUsuarios.Columns[3].Width = 250;
+
+                        if (dt.Rows.Count == 0)
+                        {
+                            MessageBox.Show("No se encontraron usuarios con ese nombre.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
                     }
                 }
             }
         }
+
 
 
         private void btnConsultar_Click(object sender, EventArgs e)
@@ -130,15 +124,27 @@ namespace PlayerUI.Usuario
         {
             try
             {
+                string connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=Requerimientos;Integrated Security=SSPI";
                 string consulta = "SELECT * FROM dbo.USERS";
 
-                using (var connection = coneccion)
-                using (SqlDataAdapter adapter = new SqlDataAdapter(consulta, connection))
+                using (var connection = new SqlConnection(connectionString))
                 {
-                    DataTable dt = new DataTable();
-                    adapter.Fill(dt);
-                    dgvUsuarios.DataSource = dt;
-                }
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(consulta, connection))
+                    {
+                        DataTable dt = new DataTable();
+                        adapter.Fill(dt);
+                        dgvUsuarios.DataSource = dt;
+                        //Formato
+                        dgvUsuarios.Columns[0].HeaderText = "ID";
+                        dgvUsuarios.Columns[0].Width = 50;
+                        dgvUsuarios.Columns[1].HeaderText = "Nombre de Usuario";
+                        dgvUsuarios.Columns[1].Width = 150;
+                        dgvUsuarios.Columns[2].HeaderText = "Contraseña";
+                        dgvUsuarios.Columns[3].HeaderText = "Tipo de Usuario";
+                        dgvUsuarios.Columns[3].Width = 250;
+
+                    }
+                } 
             }
             catch (Exception ex)
             {
@@ -155,6 +161,19 @@ namespace PlayerUI.Usuario
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void OnKeyPress(object? sender, KeyPressEventArgs e)
+        {
+            e.Handled = e.KeyChar switch
+            {
+                >= '0' and <= '9' => false, // allow numerics
+                >= 'a' and <= 'z' => false, // allow lowercase characters
+                >= 'A' and <= 'Z' => false, // allow uppercase characters
+                '\b' => false,              // allow backspace
+                _ => true
+            };
+
         }
     }
 }

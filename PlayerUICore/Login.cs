@@ -56,6 +56,9 @@ namespace PlayerUI
                         // Suscribir al evento FormClosed del nuevo formulario
                         nuevoFormulario.FormClosed += NuevoFormulario_FormClosed;
 
+                        txtContrasena.Text = "";
+                        txtUsuario.Text = "";
+
                         // Mostrar el nuevo formulario
                         nuevoFormulario.Show();
                     }

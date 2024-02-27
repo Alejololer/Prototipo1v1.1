@@ -51,5 +51,55 @@ namespace DataAccess
             }
         }
 
+        public bool RegistrarUsuario(string nombreusuario, string contrasena, string tipousuario)
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "Insert into USERS(NOMBREUSER, CLAVEUSER, TIPOUSER) VALUES (@nombreuser, @claveuser, @tipouser)";
+                    command.Parameters.AddWithValue("@nombreuser", nombreusuario);
+                    command.Parameters.AddWithValue("@claveuser", contrasena);
+                    command.Parameters.AddWithValue("@tipouser", tipousuario);
+                    int filasAfectadas = command.ExecuteNonQuery();
+
+                    if (filasAfectadas > 0)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+        }
+
+        public bool EliminarUsuario(string nombreusuario)
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "DELETE FROM USERS WHERE NOMBREUSER = @nombreuser";
+                    command.Parameters.AddWithValue("@nombreuser", nombreusuario);
+                    int filasAfectadas = command.ExecuteNonQuery();
+
+                    if (filasAfectadas > 0)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+        }
+
     }
 }

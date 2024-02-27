@@ -188,5 +188,10 @@ namespace PlayerUI.Pacientes
         {
 
         }
+
+        private void RegistrarPaciente_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

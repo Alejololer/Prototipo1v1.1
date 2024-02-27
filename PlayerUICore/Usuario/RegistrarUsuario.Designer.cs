@@ -31,9 +31,9 @@
             label1 = new System.Windows.Forms.Label();
             btnExit = new System.Windows.Forms.Button();
             button9 = new System.Windows.Forms.Button();
-            txtNombreInstrumento = new System.Windows.Forms.TextBox();
+            txtNom = new System.Windows.Forms.TextBox();
             label2 = new System.Windows.Forms.Label();
-            txtCantidadInstrumento = new System.Windows.Forms.TextBox();
+            txtCon = new System.Windows.Forms.TextBox();
             label3 = new System.Windows.Forms.Label();
             label4 = new System.Windows.Forms.Label();
             comboBox1 = new System.Windows.Forms.ComboBox();
@@ -83,15 +83,17 @@
             button9.TabIndex = 15;
             button9.Text = "Registrar";
             button9.UseVisualStyleBackColor = false;
+            button9.Click += button9_Click;
             // 
-            // txtNombreInstrumento
+            // txtNom
             // 
-            txtNombreInstrumento.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            txtNombreInstrumento.Location = new System.Drawing.Point(239, 196);
-            txtNombreInstrumento.Margin = new System.Windows.Forms.Padding(2);
-            txtNombreInstrumento.Name = "txtNombreInstrumento";
-            txtNombreInstrumento.Size = new System.Drawing.Size(413, 23);
-            txtNombreInstrumento.TabIndex = 19;
+            txtNom.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            txtNom.Location = new System.Drawing.Point(239, 196);
+            txtNom.Margin = new System.Windows.Forms.Padding(2);
+            txtNom.MaxLength = 15;
+            txtNom.Name = "txtNom";
+            txtNom.Size = new System.Drawing.Size(413, 23);
+            txtNom.TabIndex = 19;
             // 
             // label2
             // 
@@ -106,14 +108,15 @@
             label2.TabIndex = 20;
             label2.Text = "Nombre de Usuario";
             // 
-            // txtCantidadInstrumento
+            // txtCon
             // 
-            txtCantidadInstrumento.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            txtCantidadInstrumento.Location = new System.Drawing.Point(239, 290);
-            txtCantidadInstrumento.Margin = new System.Windows.Forms.Padding(2);
-            txtCantidadInstrumento.Name = "txtCantidadInstrumento";
-            txtCantidadInstrumento.Size = new System.Drawing.Size(413, 23);
-            txtCantidadInstrumento.TabIndex = 21;
+            txtCon.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            txtCon.Location = new System.Drawing.Point(239, 290);
+            txtCon.Margin = new System.Windows.Forms.Padding(2);
+            txtCon.MaxLength = 15;
+            txtCon.Name = "txtCon";
+            txtCon.Size = new System.Drawing.Size(413, 23);
+            txtCon.TabIndex = 21;
             // 
             // label3
             // 
@@ -145,6 +148,7 @@
             // 
             comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Jefe de laboratorio", "Asistente de laboratorio" });
             comboBox1.Location = new System.Drawing.Point(239, 381);
             comboBox1.Margin = new System.Windows.Forms.Padding(2);
             comboBox1.Name = "comboBox1";
@@ -160,16 +164,17 @@
             Controls.Add(comboBox1);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(txtCantidadInstrumento);
+            Controls.Add(txtCon);
             Controls.Add(label2);
-            Controls.Add(txtNombreInstrumento);
+            Controls.Add(txtNom);
             Controls.Add(button9);
             Controls.Add(btnExit);
             Controls.Add(label1);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            Margin = new System.Windows.Forms.Padding(5);
             Name = "RegistrarUsuario";
             Text = "Form3";
+            Load += RegistrarUsuario_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -178,9 +183,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.TextBox txtNombreInstrumento;
+        private System.Windows.Forms.TextBox txtNom;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtCantidadInstrumento;
+        private System.Windows.Forms.TextBox txtCon;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBox1;
