@@ -141,9 +141,10 @@
             Controls.Add(btnExit);
             Controls.Add(label1);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            Margin = new System.Windows.Forms.Padding(5);
             Name = "ModificarPrecio";
             Text = "Form3";
+            Load += ModificarPrecio_Load;
             ResumeLayout(false);
             PerformLayout();
         }

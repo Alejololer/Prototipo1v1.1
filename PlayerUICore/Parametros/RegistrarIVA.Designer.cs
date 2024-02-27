@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             label3 = new System.Windows.Forms.Label();
-            txtCantidadInstrumento = new System.Windows.Forms.TextBox();
+            txtIVA = new System.Windows.Forms.TextBox();
             button9 = new System.Windows.Forms.Button();
             btnExit = new System.Windows.Forms.Button();
             label1 = new System.Windows.Forms.Label();
@@ -48,14 +48,14 @@
             label3.TabIndex = 27;
             label3.Text = "Valor IVA:";
             // 
-            // txtCantidadInstrumento
+            // txtIVA
             // 
-            txtCantidadInstrumento.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            txtCantidadInstrumento.Location = new System.Drawing.Point(229, 283);
-            txtCantidadInstrumento.Margin = new System.Windows.Forms.Padding(2);
-            txtCantidadInstrumento.Name = "txtCantidadInstrumento";
-            txtCantidadInstrumento.Size = new System.Drawing.Size(413, 23);
-            txtCantidadInstrumento.TabIndex = 26;
+            txtIVA.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            txtIVA.Location = new System.Drawing.Point(229, 283);
+            txtIVA.Margin = new System.Windows.Forms.Padding(2);
+            txtIVA.Name = "txtIVA";
+            txtIVA.Size = new System.Drawing.Size(413, 23);
+            txtIVA.TabIndex = 26;
             // 
             // button9
             // 
@@ -72,6 +72,7 @@
             button9.TabIndex = 25;
             button9.Text = "Registrar";
             button9.UseVisualStyleBackColor = false;
+            button9.Click += button9_Click;
             // 
             // btnExit
             // 
@@ -108,7 +109,7 @@
             BackColor = System.Drawing.Color.FromArgb(32, 30, 45);
             ClientSize = new System.Drawing.Size(700, 600);
             Controls.Add(label3);
-            Controls.Add(txtCantidadInstrumento);
+            Controls.Add(txtIVA);
             Controls.Add(button9);
             Controls.Add(btnExit);
             Controls.Add(label1);
@@ -123,7 +124,7 @@
         #endregion
 
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtCantidadInstrumento;
+        private System.Windows.Forms.TextBox txtIVA;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label1;

@@ -35,5 +35,10 @@ namespace PlayerUI.Parametros
 
             };
         }
+
+        private void ModificarPrecio_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

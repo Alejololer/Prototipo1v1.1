@@ -46,7 +46,7 @@ namespace PlayerUI
                 panelPedidosSubMenu.Visible = false;
 
             //if (//panelResultadosSubMenu.Visible == true)
-              //  panelResultadosSubMenu.Visible = false;
+            //  panelResultadosSubMenu.Visible = false;
 
             if (panelReactivosSubMenu.Visible == true)
                 panelReactivosSubMenu.Visible = false;
@@ -351,8 +351,8 @@ namespace PlayerUI
 
         private void button30_Click(object sender, EventArgs e)
         {
-          
-            
+
+
         }
 
         private void button37_Click(object sender, EventArgs e)
@@ -378,6 +378,11 @@ namespace PlayerUI
         private void panelLogo_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            openChildForm(new RegistrarIVA());
         }
     }
 }

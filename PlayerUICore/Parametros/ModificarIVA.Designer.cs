@@ -31,10 +31,10 @@
             label1 = new System.Windows.Forms.Label();
             btnExit = new System.Windows.Forms.Button();
             button9 = new System.Windows.Forms.Button();
-            txtCantidadInstrumento = new System.Windows.Forms.TextBox();
+            txtIVANew = new System.Windows.Forms.TextBox();
             label3 = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
-            textBox1 = new System.Windows.Forms.TextBox();
+            txtIVA = new System.Windows.Forms.TextBox();
             SuspendLayout();
             // 
             // label1
@@ -84,15 +84,16 @@
             button9.UseVisualStyleBackColor = false;
             button9.Click += button9_Click;
             // 
-            // txtCantidadInstrumento
+            // txtIVANew
             // 
-            txtCantidadInstrumento.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            txtCantidadInstrumento.Location = new System.Drawing.Point(229, 316);
-            txtCantidadInstrumento.Margin = new System.Windows.Forms.Padding(2);
-            txtCantidadInstrumento.Name = "txtCantidadInstrumento";
-            txtCantidadInstrumento.Size = new System.Drawing.Size(413, 23);
-            txtCantidadInstrumento.TabIndex = 21;
-            txtCantidadInstrumento.TextChanged += txtCantidadInstrumento_TextChanged;
+            txtIVANew.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            txtIVANew.Location = new System.Drawing.Point(229, 316);
+            txtIVANew.Margin = new System.Windows.Forms.Padding(2);
+            txtIVANew.MaxLength = 2;
+            txtIVANew.Name = "txtIVANew";
+            txtIVANew.Size = new System.Drawing.Size(413, 23);
+            txtIVANew.TabIndex = 21;
+            txtIVANew.TextChanged += txtCantidadInstrumento_TextChanged;
             // 
             // label3
             // 
@@ -121,14 +122,14 @@
             label2.TabIndex = 24;
             label2.Text = "Valor actual IVA:";
             // 
-            // textBox1
+            // txtIVA
             // 
-            textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            textBox1.Location = new System.Drawing.Point(229, 245);
-            textBox1.Margin = new System.Windows.Forms.Padding(2);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new System.Drawing.Size(413, 23);
-            textBox1.TabIndex = 23;
+            txtIVA.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            txtIVA.Location = new System.Drawing.Point(229, 245);
+            txtIVA.Margin = new System.Windows.Forms.Padding(2);
+            txtIVA.Name = "txtIVA";
+            txtIVA.Size = new System.Drawing.Size(413, 23);
+            txtIVA.TabIndex = 23;
             // 
             // ModificarIVA
             // 
@@ -137,16 +138,17 @@
             BackColor = System.Drawing.Color.FromArgb(32, 30, 45);
             ClientSize = new System.Drawing.Size(700, 600);
             Controls.Add(label2);
-            Controls.Add(textBox1);
+            Controls.Add(txtIVA);
             Controls.Add(label3);
-            Controls.Add(txtCantidadInstrumento);
+            Controls.Add(txtIVANew);
             Controls.Add(button9);
             Controls.Add(btnExit);
             Controls.Add(label1);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            Margin = new System.Windows.Forms.Padding(5);
             Name = "ModificarIVA";
             Text = "Form3";
+            Load += ModificarIVA_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -155,9 +157,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.TextBox txtCantidadInstrumento;
+        private System.Windows.Forms.TextBox txtIVANew;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtIVA;
     }
 }
