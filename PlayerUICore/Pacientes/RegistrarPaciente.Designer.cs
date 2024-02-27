@@ -286,7 +286,6 @@
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             Name = "RegistrarPaciente";
             Text = "RegistrarPaciente";
-            Load += RegistrarPaciente_Load;
             ResumeLayout(false);
             PerformLayout();
         }

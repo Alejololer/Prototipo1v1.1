@@ -179,10 +179,7 @@ namespace PlayerUI.Pacientes
             return regex.IsMatch(correo);
         }
 
-        private void RegistrarPaciente_Load(object sender, EventArgs e)
-        {
 
-        }
     }
 
 
