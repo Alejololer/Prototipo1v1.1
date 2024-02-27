@@ -189,6 +189,4 @@ namespace PlayerUI.Pacientes
 
         }
     }
-
-
 }
