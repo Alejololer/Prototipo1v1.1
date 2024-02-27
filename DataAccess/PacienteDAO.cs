@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataAccess.Entities;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -57,6 +58,56 @@ namespace DataAccess
                     {
                         return false;
                     }
+                }
+            }
+        }
+
+        public Paciente ObtenerPacienteCI(string CIPaciente)
+        {
+            Paciente paciente = null;
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "SELECT * FROM Pacientes WHERE CIPACIENTE = @cedula";
+                    command.Parameters.AddWithValue("@cedula", CIPaciente);
+                    using(SqlDataReader reader = command.ExecuteReader())
+                    {
+                        if(reader.Read())
+                        {
+                            paciente = new Paciente
+                            (
+                                reader.GetString(0),
+                                reader.GetString(1),
+                                reader.GetString(2),
+                                reader.GetString(3),
+                                reader.GetString(4),
+                                reader.GetString(5),
+                                reader.GetDateTime(6).ToString("yyyy-MM-dd")
+                            );
+                        }
+                    }
+                }
+            }
+            return paciente;
+        }
+
+        public void actualizarPaciente(string cedula, string telefono, string correo , string direccion)
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "UPDATE Pacientes set TELEFONOPACIENTE = @telefono, CORREOPACIENTE = @correo, DIRECCIONPACIENTE = @direccion WHERE CIPACIENTE = @cedula";
+                    command.Parameters.AddWithValue("@cedula", cedula);
+                    command.Parameters.AddWithValue("@telefono", telefono);
+                    command.Parameters.AddWithValue("@correo", correo);
+                    command.Parameters.AddWithValue("@direccion", direccion);
+                    command.ExecuteNonQuery();
                 }
             }
         }

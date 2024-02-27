@@ -75,7 +75,7 @@ namespace PlayerUI.Pacientes
             if (result == DialogResult.Yes)
             {
                 PacienteModel model = new PacienteModel();
-                var validRegister = model.registrarPaciente(cedula,txtNom.Text, txtApe.Text, txtTel.Text, txtDir.Text, txtCorr.Text ,fechaFormateada);
+                var validRegister = model.registrarPaciente(cedula, txtNom.Text, txtApe.Text, txtTel.Text, txtDir.Text, txtCorr.Text, fechaFormateada);
                 if (validRegister)
                 {
                     MessageBox.Show("Paciente registrado con éxito.", "Registro de Paciente", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -180,6 +180,11 @@ namespace PlayerUI.Pacientes
         }
 
         private void RegistrarPaciente_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCed_TextChanged(object sender, EventArgs e)
         {
 
         }

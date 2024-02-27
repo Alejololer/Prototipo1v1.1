@@ -170,6 +170,7 @@
             txtCed.Name = "txtCed";
             txtCed.Size = new System.Drawing.Size(225, 26);
             txtCed.TabIndex = 34;
+            txtCed.TextChanged += txtCed_TextChanged;
             // 
             // txtApe
             // 

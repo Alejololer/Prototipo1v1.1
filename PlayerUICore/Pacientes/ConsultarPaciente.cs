@@ -1,4 +1,5 @@
 ﻿using DataAccess;
+using Domain;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,19 +34,22 @@ namespace PlayerUI.Pacientes
         {
             PacienteDAO pacienteDAO = new PacienteDAO();
             cedula = txtCedula.Text;
-            if (cedula == "")
+  
+            if (!ValidarCedulaEcuatoriana(cedula))
             {
-                MessageBox.Show("Historial no disponible", "Verificar datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Cedula no valida", "Verificar datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            PacienteModel pacientemod = new PacienteModel();
+
+            if (!pacientemod.Check(txtCedula.Text))
+            {
+                MessageBox.Show("Paciente no encontrado", "Buscar Paciente", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
 
             }
             else
-            {
-                if (!ValidarCedulaEcuatoriana(cedula))
-                {
-                    MessageBox.Show("Cedula no valida", "Verificar datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-                else
                 {
                     using (var connection = coneccion)
                     {
@@ -64,11 +68,12 @@ namespace PlayerUI.Pacientes
                             adapter.Fill(dt);
 
                             dgvPaciente.DataSource = dt;
+                            MessageBox.Show("Historial no disponible", "Verificar datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                         }
                     }
 
                 }
-            }
 
 
 
