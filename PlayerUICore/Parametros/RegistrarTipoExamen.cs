@@ -167,7 +167,10 @@ namespace PlayerUI.Parametros
                 else
                     parametroTipoExamenModel.registrarParTipoExamenNull(tipoExamen.Id, txtNomPar.Text);
                 MessageBox.Show("Parámetro registrado correctamente!", "Registrar Parámetro de Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                txtNomPar.Text = "";
+                txtvalMax.Text = "";
+                txtValMin.Text = "";
+                txtUn.Text = "";
             }
         }
     }

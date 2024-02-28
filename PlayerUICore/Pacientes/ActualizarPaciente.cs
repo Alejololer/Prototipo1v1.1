@@ -15,6 +15,7 @@ namespace PlayerUI.Pacientes
 {
     public partial class ActualizarPaciente : Form
     {
+        Paciente paciente = null;
         public ActualizarPaciente()
         {
             InitializeComponent();
@@ -28,7 +29,11 @@ namespace PlayerUI.Pacientes
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            if(paciente == null) {
+                // Realizar acciones si el formato es válido
+                MessageBox.Show("Primero consulte un paciente!", "Actualizar Paciente", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
             
             //Validar correo
             string correo = txtCorr.Text;
@@ -78,7 +83,7 @@ namespace PlayerUI.Pacientes
                 return;
             }
 
-            Paciente paciente = new Paciente();
+            paciente = new Paciente();
             paciente = pacientemod.obtenerPacienteCI(cedula);
             txtNom.Text = paciente.nombresPaciente;
             txtApe.Text = paciente.apellidosPaciente;

@@ -21,9 +21,14 @@ namespace Domain
             return tipoExamenDOA.GetTipoExamen(nombre);
         }
 
-        public bool RegistrarTipoExamen(string nombre, decimal costo)
+        public void RegistrarTipoExamen(string nombre, decimal costo)
         {
-            return tipoExamenDOA.RegistrarTipoExamen(nombre, costo);
+            tipoExamenDOA.RegistrarTipoExamen(nombre, costo);
+        }
+
+        public void ActualizarPrecioTipoExamen(string nombre, decimal costo)
+        {
+            tipoExamenDOA.ActualizarPrecioTipoExamen(nombre, costo);
         }
     }
 }

@@ -40,7 +40,7 @@ namespace DataAccess
                 using (var command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "Insert into Pacientes(CIPACIENTE, NOMBRESPACIENTE, APELLIDOSPACIENTE, TELEFONOPACIENTE, CORREOPACIENTE, DIRECCIONPACIENTE, FECHANACPACIENTE) values (@cedula, @nombres, @apellidos, @telefono, @direccion, @correo, @fechanac)";
+                    command.CommandText = "Insert into Pacientes(CIPACIENTE, NOMBRESPACIENTE, APELLIDOSPACIENTE, TELEFONOPACIENTE, CORREOPACIENTE, DIRECCIONPACIENTE, FECHANACPACIENTE) values (@cedula, @nombres, @apellidos, @telefono, @correo, @direccion, @fechanac)";
                     command.Parameters.AddWithValue("@cedula", cedula);
                     command.Parameters.AddWithValue("@nombres", nombres);
                     command.Parameters.AddWithValue("@apellidos", apellidos);

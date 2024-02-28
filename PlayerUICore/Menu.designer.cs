@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             panelSideMenu = new System.Windows.Forms.Panel();
             panelParámetrosSubMenu = new System.Windows.Forms.Panel();
+            button9 = new System.Windows.Forms.Button();
+            button5 = new System.Windows.Forms.Button();
             button39 = new System.Windows.Forms.Button();
             button36 = new System.Windows.Forms.Button();
             button37 = new System.Windows.Forms.Button();
@@ -74,7 +76,6 @@
             panelLogo = new System.Windows.Forms.Panel();
             panelChildForm = new System.Windows.Forms.Panel();
             pictureBox9 = new System.Windows.Forms.PictureBox();
-            button5 = new System.Windows.Forms.Button();
             panelSideMenu.SuspendLayout();
             panelParámetrosSubMenu.SuspendLayout();
             panelUsuariosSubMenu.SuspendLayout();
@@ -116,6 +117,7 @@
             // panelParámetrosSubMenu
             // 
             panelParámetrosSubMenu.BackColor = System.Drawing.Color.FromArgb(35, 32, 39);
+            panelParámetrosSubMenu.Controls.Add(button9);
             panelParámetrosSubMenu.Controls.Add(button5);
             panelParámetrosSubMenu.Controls.Add(button39);
             panelParámetrosSubMenu.Controls.Add(button36);
@@ -123,8 +125,44 @@
             panelParámetrosSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             panelParámetrosSubMenu.Location = new System.Drawing.Point(0, 1354);
             panelParámetrosSubMenu.Name = "panelParámetrosSubMenu";
-            panelParámetrosSubMenu.Size = new System.Drawing.Size(233, 156);
+            panelParámetrosSubMenu.Size = new System.Drawing.Size(233, 206);
             panelParámetrosSubMenu.TabIndex = 19;
+            // 
+            // button9
+            // 
+            button9.Dock = System.Windows.Forms.DockStyle.Top;
+            button9.FlatAppearance.BorderSize = 0;
+            button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
+            button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
+            button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button9.ForeColor = System.Drawing.Color.Silver;
+            button9.Location = new System.Drawing.Point(0, 161);
+            button9.Name = "button9";
+            button9.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            button9.Size = new System.Drawing.Size(233, 40);
+            button9.TabIndex = 5;
+            button9.Text = "Registrar IVA";
+            button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click_1;
+            // 
+            // button5
+            // 
+            button5.Dock = System.Windows.Forms.DockStyle.Top;
+            button5.FlatAppearance.BorderSize = 0;
+            button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
+            button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
+            button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button5.ForeColor = System.Drawing.Color.Silver;
+            button5.Location = new System.Drawing.Point(0, 126);
+            button5.Name = "button5";
+            button5.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            button5.Size = new System.Drawing.Size(233, 35);
+            button5.TabIndex = 4;
+            button5.Text = "Modificar IVA";
+            button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button39
             // 
@@ -137,9 +175,9 @@
             button39.Location = new System.Drawing.Point(0, 80);
             button39.Name = "button39";
             button39.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button39.Size = new System.Drawing.Size(233, 35);
+            button39.Size = new System.Drawing.Size(233, 46);
             button39.TabIndex = 3;
-            button39.Text = "Modificar IVA";
+            button39.Text = "Modificar Precio Tipo de Examen";
             button39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button39.UseVisualStyleBackColor = true;
             button39.Click += button39_Click;
@@ -610,7 +648,7 @@
             btnExit.ForeColor = System.Drawing.Color.Silver;
             btnExit.Image = (System.Drawing.Image)resources.GetObject("btnExit.Image");
             btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnExit.Location = new System.Drawing.Point(0, 1510);
+            btnExit.Location = new System.Drawing.Point(0, 1560);
             btnExit.Name = "btnExit";
             btnExit.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             btnExit.Size = new System.Drawing.Size(233, 45);
@@ -869,24 +907,6 @@
             pictureBox9.TabStop = false;
             pictureBox9.Click += pictureBox9_Click;
             // 
-            // button5
-            // 
-            button5.Dock = System.Windows.Forms.DockStyle.Top;
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
-            button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
-            button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button5.ForeColor = System.Drawing.Color.Silver;
-            button5.Location = new System.Drawing.Point(0, 115);
-            button5.Name = "button5";
-            button5.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button5.Size = new System.Drawing.Size(233, 35);
-            button5.TabIndex = 4;
-            button5.Text = "RegistrarIVA";
-            button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button5.UseVisualStyleBackColor = true;
-            button5.Click += button5_Click;
-            // 
             // Menu
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -965,6 +985,7 @@
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button9;
     }
 }
 

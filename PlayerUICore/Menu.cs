@@ -372,7 +372,7 @@ namespace PlayerUI
 
         private void button39_Click(object sender, EventArgs e)
         {
-            openChildForm(new ModificarIVA());
+            openChildForm(new ModificarPrecio());
         }
 
         private void panelLogo_Paint(object sender, PaintEventArgs e)
@@ -381,6 +381,11 @@ namespace PlayerUI
         }
 
         private void button5_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ModificarIVA());
+        }
+
+        private void button9_Click_1(object sender, EventArgs e)
         {
             openChildForm(new RegistrarIVA());
         }

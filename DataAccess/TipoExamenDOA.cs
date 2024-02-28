@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace DataAccess
 {
@@ -59,7 +60,7 @@ namespace DataAccess
             return tipoExamen;
         }
 
-        public bool RegistrarTipoExamen(string nombre, decimal costo)
+        public void RegistrarTipoExamen(string nombre, decimal costo)
         {
             using (var connection = GetConnection())
             {
@@ -71,16 +72,24 @@ namespace DataAccess
                     command.Parameters.AddWithValue("@nombre", nombre);
                     command.Parameters.AddWithValue("@costo", costo);
                     command.CommandType = System.Data.CommandType.Text;
-                    int filasAfectadas = command.ExecuteNonQuery();
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
 
-                    if (filasAfectadas > 0)
-                    {
-                        return true;
-                    }
-                    else
-                    {
-                        return false;
-                    }
+        public void ActualizarPrecioTipoExamen(string nombre, decimal costo)
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "UPDATE TIPOSEXAMEN SET COSTOTIPOEXAMEN=@costo where NOMBRETIPOEXAMEN=@nombre";
+                    command.Parameters.AddWithValue("@nombre", nombre);
+                    command.Parameters.AddWithValue("@costo", costo);
+                    command.CommandType = System.Data.CommandType.Text;
+                    command.ExecuteNonQuery();
 
                 }
             }
