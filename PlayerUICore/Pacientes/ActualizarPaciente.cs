@@ -34,7 +34,13 @@ namespace PlayerUI.Pacientes
                 MessageBox.Show("Primero consulte un paciente!", "Actualizar Paciente", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            
+
+            if (!ValidarFormatoDireccion(txtDir))
+            {
+                MessageBox.Show("El formato de la dirección no es válida.", "Formato no válido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
             //Validar correo
             string correo = txtCorr.Text;
             if (!ValidarCorreo(correo))
@@ -43,6 +49,8 @@ namespace PlayerUI.Pacientes
                 MessageBox.Show("El formato del correo no es válido.", "Formato no válido", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
+
+
 
             // Enviar un mensaje
             DialogResult result = MessageBox.Show("¿Está seguro?", "Actualizar información", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -129,6 +137,24 @@ namespace PlayerUI.Pacientes
             return digitoVerificador == digitoEsperado;
         }
 
+        private bool ValidarFormatoDireccion(System.Windows.Forms.TextBox textBox)
+        {
+            // Dividir la dirección en palabras
+            string[] partes = textBox.Text.Split(' ');
+
+            // Verificar si hay al menos una palabra
+            if (partes.Length == 0)
+            {
+                return false;
+            }
+
+            // Verificar que cada palabra comience con mayúscula
+            bool formatoCorrecto = partes.All(part =>
+                !string.IsNullOrWhiteSpace(part) &&
+                char.IsUpper(part[0]));
+
+            return formatoCorrecto;
+        }
         public bool ValidarCorreo(string correo)
         {
             // Expresión regular para validar la estructura básica de un correo electrónico

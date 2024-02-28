@@ -55,6 +55,13 @@ namespace PlayerUI.Pacientes
                 return;
 
             }
+
+            if (!ValidarFormatoDireccion(txtDir))
+            {
+                // Realizar acciones si el formato es válido
+                MessageBox.Show("El formato de la dirección no es válido.", "Formato no válido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
             //Validar correo
             string correo = txtCorr.Text;
             if (!ValidarCorreo(correo))
@@ -133,7 +140,10 @@ namespace PlayerUI.Pacientes
             }
             else
             {
-                bool formatoCorrecto = partes.All(part => !string.IsNullOrWhiteSpace(part) && part.All(char.IsLetter));
+                bool formatoCorrecto = partes.All(part =>
+                    !string.IsNullOrWhiteSpace(part) &&
+                    part.All(char.IsLetter) &&
+                    char.IsUpper(part[0])); // Verificar si la primera letra es mayúscula
                 if (!formatoCorrecto)
                 {
                     return false;
@@ -141,6 +151,27 @@ namespace PlayerUI.Pacientes
             }
             return true;
         }
+
+        private bool ValidarFormatoDireccion(System.Windows.Forms.TextBox textBox)
+        {
+            // Dividir la dirección en palabras
+            string[] partes = textBox.Text.Split(' ');
+
+            // Verificar si hay al menos una palabra
+            if (partes.Length == 0)
+            {
+                return false;
+            }
+
+            // Verificar que cada palabra comience con mayúscula
+            bool formatoCorrecto = partes.All(part =>
+                !string.IsNullOrWhiteSpace(part) &&
+                char.IsUpper(part[0]));
+
+            return formatoCorrecto;
+        }
+
+
 
         public bool ValidarCedulaEcuatoriana(string cedula)
         {
