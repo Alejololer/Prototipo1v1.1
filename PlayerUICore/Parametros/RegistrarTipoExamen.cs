@@ -136,12 +136,17 @@ namespace PlayerUI.Parametros
             }
             if (txtvalMax.Text == "" && txtValMin.Text != "")
             {
-                MessageBox.Show("Si registra un valor mínimo, registre un valor máximo!", "Registrar Parámetro de Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Si registra un valor mínimo, registre un valor máximo!", "Registrar Parámetro de Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             if (txtvalMax.Text != "" && txtValMin.Text == "")
             {
-                MessageBox.Show("Si registra un valor máximo, registre un valor mínimo!", "Registrar Parámetro de Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Si registra un valor máximo, registre un valor mínimo!", "Registrar Parámetro de Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (float.Parse(txtvalMax.Text) <= float.Parse(txtValMin.Text))
+            {
+                MessageBox.Show("El valor máximo debe ser mayor al valor mínimo!", "Registrar Parámetro de Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             if (txtNomPar.Text == "")
