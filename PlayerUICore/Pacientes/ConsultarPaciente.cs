@@ -86,6 +86,12 @@ namespace PlayerUI.Pacientes
             DataTable dt = new DataTable();
             adapter.Fill(dt);
             dgvPaciente.DataSource = dt;
+            dgvPaciente.Columns[0].HeaderText = "Cédula de Identidad";
+            dgvPaciente.Columns[1].HeaderText = "Nombres";
+            dgvPaciente.Columns[1].Width = 150;
+            dgvPaciente.Columns[2].HeaderText = "Apellidos";
+            dgvPaciente.Columns[3].HeaderText = "Teléfono";
+            dgvPaciente.Columns[3].Width = 250;
         }
 
         private void label1_Click(object sender, EventArgs e)
