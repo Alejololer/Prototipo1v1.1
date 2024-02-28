@@ -28,12 +28,11 @@ namespace PlayerUICore.Usuario
 
         private void button1_Click(object sender, EventArgs e)
         {
-
             DialogResult result = MessageBox.Show("¿Está seguro?", "Actualizar Usuario", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
                 UserModel userModel = new UserModel();
-                if (userModel.CheckUsuario(txtNom.Text))
+                if (user.nombreUsuario != txtNom.Text && userModel.CheckUsuario(txtNom.Text))
                 {
                     MessageBox.Show("Este nombre de usuario ya esta en uso!", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
