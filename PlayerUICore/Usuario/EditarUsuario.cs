@@ -33,7 +33,8 @@ namespace PlayerUICore.Usuario
             if (result == DialogResult.Yes)
             {
                 UserModel userModel = new UserModel();
-                if(userModel.CheckUsuario(txtNom.Text)) {
+                if (userModel.CheckUsuario(txtNom.Text))
+                {
                     MessageBox.Show("Este nombre de usuario ya esta en uso!", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -47,6 +48,9 @@ namespace PlayerUICore.Usuario
             this.Close();
         }
 
+        private void Editar_Usuario_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }

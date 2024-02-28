@@ -21,6 +21,8 @@ namespace PlayerUI.Pacientes
             InitializeComponent();
             txtCed.KeyPress += OnKeyPressNum;
             txtTel.KeyPress += OnKeyPressNum;
+            txtNom.KeyPress += OnKeyPress;
+            txtApe.KeyPress += OnKeyPress;
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -110,6 +112,14 @@ namespace PlayerUI.Pacientes
                 '\b' => false,              // allow backspace
                 _ => true
             };
+        }
+
+        private void OnKeyPress(object? sender, KeyPressEventArgs e)
+        {
+            e.Handled = !(char.IsLetter(e.KeyChar) || char.IsWhiteSpace(e.KeyChar) || e.KeyChar == '-' || e.KeyChar == '\b' ||
+                          e.KeyChar == 'á' || e.KeyChar == 'é' || e.KeyChar == 'í' || e.KeyChar == 'ó' || e.KeyChar == 'ú' ||
+                          e.KeyChar == 'Á' || e.KeyChar == 'É' || e.KeyChar == 'Í' || e.KeyChar == 'Ó' || e.KeyChar == 'Ú' ||
+                          e.KeyChar == 'ñ' || e.KeyChar == 'Ñ');
         }
 
 

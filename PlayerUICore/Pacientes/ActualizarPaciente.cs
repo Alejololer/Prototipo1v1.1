@@ -45,7 +45,7 @@ namespace PlayerUI.Pacientes
             {
                 PacienteModel pacienteModel = new PacienteModel();
                 pacienteModel.actualizarPaciente(txtCed.Text, txtTel.Text, correo, txtDir.Text);
-                MessageBox.Show("Información de Paciente actualizada correctamente", "Eliminación de Pedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Información de Paciente actualizada correctamente", "Actualizar Paciente", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

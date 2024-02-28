@@ -175,6 +175,7 @@
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             Name = "Editar_Usuario";
             Text = "Editar_Usuario";
+            Load += Editar_Usuario_Load;
             ResumeLayout(false);
             PerformLayout();
         }
