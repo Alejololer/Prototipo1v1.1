@@ -127,11 +127,31 @@ namespace PlayerUI.Parametros
             return decimal.TryParse(texto, out _);
         }
 
+        private bool EsNumeroDecimalValido(string texto)
+        {
+            // Verificar si el texto está vacío
+            if (string.IsNullOrWhiteSpace(texto))
+                return false;
+
+            // Verificar si el texto representa un número decimal válido
+            return decimal.TryParse(texto, out _);
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             if(tipoExamen ==null)
             {
                 MessageBox.Show("Primero registra el tipo de examen!", "Registrar Parámetro de Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (!EsNumeroDecimalValido(txtValMin.Text))
+            {
+                MessageBox.Show("Valor mínimo no válido!", "Registrar Parámetro de Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (!EsNumeroDecimalValido(txtvalMax.Text))
+            {
+                MessageBox.Show("Valor máximo no válido!", "Registrar Parámetro de Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
             if (txtvalMax.Text == "" && txtValMin.Text != "")
@@ -144,7 +164,7 @@ namespace PlayerUI.Parametros
                 MessageBox.Show("Si registra un valor máximo, registre un valor mínimo!", "Registrar Parámetro de Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if (float.Parse(txtvalMax.Text) <= float.Parse(txtValMin.Text))
+                if (float.Parse(txtvalMax.Text) <= float.Parse(txtValMin.Text))
             {
                 MessageBox.Show("El valor máximo debe ser mayor al valor mínimo!", "Registrar Parámetro de Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;

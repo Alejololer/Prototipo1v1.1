@@ -34,21 +34,22 @@ namespace PlayerUI.Parametros
 
         }
 
-        private void obtenerPrecio()
+        private bool obtenerPrecio()
         {
             if (txtNomTipo.Text.Length <= 1)
             {
                 MessageBox.Show("Nombre de Tipo de examen inválido!", "Modificar precio Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
+                return false;
             }
             TipoExamenModel model = new TipoExamenModel();
             if (!model.Check(txtNomTipo.Text))
             {
                 MessageBox.Show("Tipo de examen no encontrado!", "Modificar precio Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
+                return false;
             }
             tipoExamen = model.GetTipoExamen(txtNomTipo.Text);
             txtValor.Text = tipoExamen.costoTipoExamen.ToString("#.##");
+            return true;
         }
         private void llenarDataGridView()
         {
@@ -96,7 +97,8 @@ namespace PlayerUI.Parametros
 
         private void button2_Click(object sender, EventArgs e)
         {
-            obtenerPrecio();
+            if(!obtenerPrecio())
+                return;
             llenarDataGridView();
         }
 

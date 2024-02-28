@@ -88,11 +88,14 @@
             // 
             // dgvTipoExamen
             // 
+            dgvTipoExamen.AllowUserToAddRows = false;
+            dgvTipoExamen.AllowUserToDeleteRows = false;
             dgvTipoExamen.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             dgvTipoExamen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvTipoExamen.Location = new System.Drawing.Point(34, 218);
             dgvTipoExamen.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             dgvTipoExamen.Name = "dgvTipoExamen";
+            dgvTipoExamen.ReadOnly = true;
             dgvTipoExamen.Size = new System.Drawing.Size(618, 270);
             dgvTipoExamen.TabIndex = 27;
             // 
