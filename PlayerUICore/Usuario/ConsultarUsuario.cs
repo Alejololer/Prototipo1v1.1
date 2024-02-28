@@ -19,7 +19,11 @@ namespace PlayerUI.Usuario
     public partial class ConsultarUsuario : Form
     {
         string nombreUsuario;
+<<<<<<< HEAD
 
+=======
+        SqlConnection coneccion = new SqlConnection("Data Source=.\\SQLEXPRESS;Initial Catalog=Requerimientos;Integrated Security=SSPI");
+>>>>>>> cambios
 
         public ConsultarUsuario()
         {
@@ -105,7 +109,7 @@ namespace PlayerUI.Usuario
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
-            nombreUsuario = txtNombreUsuario.Text.Trim();
+            nombreUsuario = txtNombreUsuario.Text;
 
             if (string.IsNullOrWhiteSpace(nombreUsuario))
             {
