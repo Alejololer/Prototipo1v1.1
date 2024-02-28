@@ -21,7 +21,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_B38ABA3C54AF460280EE09AF6D0A20A8"
+        "MsmKey" = "8:_5DA3562352AC41C59C3D61E04B71A0F7"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -43,6 +43,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -59,6 +75,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -167,7 +191,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Grupo2SetupPrototipo2"
         "ProductCode" = "8:{F04470A9-BD83-46C8-8351-7D2AFE7FE6F9}"
-        "PackageCode" = "8:{992B08CD-D2FE-4DF8-B623-ABE7565420EC}"
+        "PackageCode" = "8:{B0CE4E59-1F32-490E-A783-3B97DFFC12E8}"
         "UpgradeCode" = "8:{25E9A456-2D8E-4F11-904A-0FBA3EAE7DA8}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
@@ -295,7 +319,7 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_B38ABA3C54AF460280EE09AF6D0A20A8"
+            "Target" = "8:_5DA3562352AC41C59C3D61E04B71A0F7"
             "Folder" = "8:_A1C6ED8467A04144B5D7807A908C0416"
             "WorkingFolder" = "8:_67E9753079D14B34950E0E8D11E7ED51"
             "Icon" = "8:_25F24B6FBF59490F9C4D94191143CF61"
@@ -309,7 +333,7 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_B38ABA3C54AF460280EE09AF6D0A20A8"
+            "Target" = "8:_5DA3562352AC41C59C3D61E04B71A0F7"
             "Folder" = "8:_DEADF0A3CBCA4A4F9D80E286C150DBA8"
             "WorkingFolder" = "8:_67E9753079D14B34950E0E8D11E7ED51"
             "Icon" = "8:_25F24B6FBF59490F9C4D94191143CF61"
@@ -714,7 +738,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_B38ABA3C54AF460280EE09AF6D0A20A8"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_5DA3562352AC41C59C3D61E04B71A0F7"
             {
             "SourcePath" = "8:..\\PlayerUICore\\obj\\Debug\\net8.0-windows\\apphost.exe"
             "TargetName" = "8:"

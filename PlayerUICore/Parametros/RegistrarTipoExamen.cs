@@ -130,8 +130,8 @@ namespace PlayerUI.Parametros
         private bool EsNumeroDecimalValido(string texto)
         {
             // Verificar si el texto está vacío
-            if (string.IsNullOrWhiteSpace(texto))
-                return false;
+            if (texto == "")
+                return true;
 
             // Verificar si el texto representa un número decimal válido
             return decimal.TryParse(texto, out _);
@@ -164,10 +164,13 @@ namespace PlayerUI.Parametros
                 MessageBox.Show("Si registra un valor máximo, registre un valor mínimo!", "Registrar Parámetro de Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-                if (float.Parse(txtvalMax.Text) <= float.Parse(txtValMin.Text))
+            if (txtvalMax.Text != "")
             {
-                MessageBox.Show("El valor máximo debe ser mayor al valor mínimo!", "Registrar Parámetro de Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                if (float.Parse(txtvalMax.Text) <= float.Parse(txtValMin.Text))
+                {
+                    MessageBox.Show("El valor máximo debe ser mayor al valor mínimo!", "Registrar Parámetro de Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
             }
             if (txtNomPar.Text == "")
             {
