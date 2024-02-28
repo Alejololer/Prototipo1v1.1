@@ -8,19 +8,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace PlayerUI.Usuario
 {
     public partial class RegistrarUsuario : Form
     {
+        private bool mostrarTexto = false;
         public RegistrarUsuario()
         {
+
             InitializeComponent();
             txtCon.KeyPress += OnKeyPress;
             txtNom.KeyPress += OnKeyPress;
             comboBox1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             comboBox1.AutoCompleteSource = AutoCompleteSource.ListItems;
             comboBox1.Validating += comboBox1_Validating; // Conectar el evento Validating
+            btnMostrar.MouseDown += buttonMostrar_MouseDown;
+            btnMostrar.MouseUp += buttonMostrar_MouseUp;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -77,7 +82,7 @@ namespace PlayerUI.Usuario
 
         private void comboBox1_Validating(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            ComboBox comboBox = (ComboBox)sender;
+            System.Windows.Forms.ComboBox comboBox = (System.Windows.Forms.ComboBox)sender;
 
             // Verificar si el texto ingresado coincide con alguna de las opciones de la ComboBox
             if (!comboBox.Items.Contains(comboBox.Text))
@@ -85,6 +90,31 @@ namespace PlayerUI.Usuario
                 // Si el texto no coincide con ninguna opción, mostrar un mensaje de error
                 MessageBox.Show("Por favor, seleccione una opción válida de la lista de tipos de usuario.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 e.Cancel = true; // Cancelar el evento de validación para evitar que la ComboBox pierda el foco
+            }
+        }
+
+
+        private void buttonMostrar_MouseDown(object sender, MouseEventArgs e)
+        {
+            mostrarTexto = true; // Mostrar el texto
+            MostrarOcultarTexto();
+        }
+
+        private void buttonMostrar_MouseUp(object sender, MouseEventArgs e)
+        {
+            mostrarTexto = false; // Ocultar el texto
+            MostrarOcultarTexto();
+        }
+
+        private void MostrarOcultarTexto()
+        {
+            if (mostrarTexto)
+            {
+                txtCon.PasswordChar = '\0'; // Mostrar el texto sin enmascarar
+            }
+            else
+            {
+                txtCon.PasswordChar = '*'; // Enmascarar el texto
             }
         }
     }

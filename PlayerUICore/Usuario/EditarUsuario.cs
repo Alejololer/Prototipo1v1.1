@@ -14,6 +14,8 @@ namespace PlayerUICore.Usuario
 {
     public partial class Editar_Usuario : Form
     {
+        private bool mostrarTexto = false;
+
         private User user;
         public Editar_Usuario(User user)
         {
@@ -24,6 +26,8 @@ namespace PlayerUICore.Usuario
             txtCon.Text = user.claveUsuario;
             txtTipo.Text = user.tipoUsuario;
             txtTipo.ReadOnly = true;
+            btnMostrar.MouseDown += buttonMostrar_MouseDown;
+            btnMostrar.MouseUp += buttonMostrar_MouseUp;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -50,6 +54,30 @@ namespace PlayerUICore.Usuario
         private void Editar_Usuario_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonMostrar_MouseDown(object sender, MouseEventArgs e)
+        {
+            mostrarTexto = true; // Mostrar el texto
+            MostrarOcultarTexto();
+        }
+
+        private void buttonMostrar_MouseUp(object sender, MouseEventArgs e)
+        {
+            mostrarTexto = false; // Ocultar el texto
+            MostrarOcultarTexto();
+        }
+
+        private void MostrarOcultarTexto()
+        {
+            if (mostrarTexto)
+            {
+                txtCon.PasswordChar = '\0'; // Mostrar el texto sin enmascarar
+            }
+            else
+            {
+                txtCon.PasswordChar = '*'; // Enmascarar el texto
+            }
         }
     }
 }

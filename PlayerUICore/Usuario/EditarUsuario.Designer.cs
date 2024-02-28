@@ -37,6 +37,7 @@
             label1 = new System.Windows.Forms.Label();
             btnExit = new System.Windows.Forms.Button();
             txtTipo = new System.Windows.Forms.TextBox();
+            btnMostrar = new System.Windows.Forms.Button();
             SuspendLayout();
             // 
             // label7
@@ -86,7 +87,8 @@
             txtCon.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             txtCon.MaxLength = 30;
             txtCon.Name = "txtCon";
-            txtCon.Size = new System.Drawing.Size(365, 26);
+            txtCon.PasswordChar = '*';
+            txtCon.Size = new System.Drawing.Size(253, 26);
             txtCon.TabIndex = 78;
             // 
             // txtNom
@@ -157,12 +159,29 @@
             txtTipo.Size = new System.Drawing.Size(365, 26);
             txtTipo.TabIndex = 81;
             // 
+            // btnMostrar
+            // 
+            btnMostrar.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
+            btnMostrar.BackColor = System.Drawing.Color.FromArgb(235, 42, 83);
+            btnMostrar.FlatAppearance.BorderSize = 0;
+            btnMostrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnMostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btnMostrar.ForeColor = System.Drawing.Color.LightGray;
+            btnMostrar.Location = new System.Drawing.Point(492, 252);
+            btnMostrar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnMostrar.Name = "btnMostrar";
+            btnMostrar.Size = new System.Drawing.Size(104, 26);
+            btnMostrar.TabIndex = 84;
+            btnMostrar.Text = "Mostrar";
+            btnMostrar.UseVisualStyleBackColor = false;
+            // 
             // Editar_Usuario
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.FromArgb(32, 30, 45);
             ClientSize = new System.Drawing.Size(700, 600);
+            Controls.Add(btnMostrar);
             Controls.Add(label7);
             Controls.Add(txtTipo);
             Controls.Add(label9);
@@ -190,5 +209,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.TextBox txtTipo;
+        private System.Windows.Forms.Button btnMostrar;
     }
 }

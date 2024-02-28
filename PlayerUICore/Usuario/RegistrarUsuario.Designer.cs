@@ -37,6 +37,7 @@
             label3 = new System.Windows.Forms.Label();
             label4 = new System.Windows.Forms.Label();
             comboBox1 = new System.Windows.Forms.ComboBox();
+            btnMostrar = new System.Windows.Forms.Button();
             SuspendLayout();
             // 
             // label1
@@ -115,7 +116,8 @@
             txtCon.Margin = new System.Windows.Forms.Padding(2);
             txtCon.MaxLength = 15;
             txtCon.Name = "txtCon";
-            txtCon.Size = new System.Drawing.Size(413, 23);
+            txtCon.PasswordChar = '*';
+            txtCon.Size = new System.Drawing.Size(341, 23);
             txtCon.TabIndex = 21;
             // 
             // label3
@@ -155,12 +157,29 @@
             comboBox1.Size = new System.Drawing.Size(413, 23);
             comboBox1.TabIndex = 25;
             // 
+            // btnMostrar
+            // 
+            btnMostrar.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
+            btnMostrar.BackColor = System.Drawing.Color.FromArgb(235, 42, 83);
+            btnMostrar.FlatAppearance.BorderSize = 0;
+            btnMostrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnMostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btnMostrar.ForeColor = System.Drawing.Color.LightGray;
+            btnMostrar.Location = new System.Drawing.Point(586, 281);
+            btnMostrar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnMostrar.Name = "btnMostrar";
+            btnMostrar.Size = new System.Drawing.Size(66, 32);
+            btnMostrar.TabIndex = 26;
+            btnMostrar.Text = "Mostrar";
+            btnMostrar.UseVisualStyleBackColor = false;
+            // 
             // RegistrarUsuario
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.FromArgb(32, 30, 45);
             ClientSize = new System.Drawing.Size(700, 600);
+            Controls.Add(btnMostrar);
             Controls.Add(comboBox1);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -189,5 +208,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btnMostrar;
     }
 }

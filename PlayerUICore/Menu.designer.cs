@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             panelSideMenu = new System.Windows.Forms.Panel();
             panelParámetrosSubMenu = new System.Windows.Forms.Panel();
-            button9 = new System.Windows.Forms.Button();
             button5 = new System.Windows.Forms.Button();
             button39 = new System.Windows.Forms.Button();
             button36 = new System.Windows.Forms.Button();
@@ -75,6 +74,7 @@
             panelLogo = new System.Windows.Forms.Panel();
             panelChildForm = new System.Windows.Forms.Panel();
             pictureBox9 = new System.Windows.Forms.PictureBox();
+            button9 = new System.Windows.Forms.Button();
             panelSideMenu.SuspendLayout();
             panelParámetrosSubMenu.SuspendLayout();
             panelUsuariosSubMenu.SuspendLayout();
@@ -126,24 +126,6 @@
             panelParámetrosSubMenu.Name = "panelParámetrosSubMenu";
             panelParámetrosSubMenu.Size = new System.Drawing.Size(233, 206);
             panelParámetrosSubMenu.TabIndex = 19;
-            // 
-            // button9
-            // 
-            button9.Dock = System.Windows.Forms.DockStyle.Top;
-            button9.FlatAppearance.BorderSize = 0;
-            button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
-            button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
-            button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button9.ForeColor = System.Drawing.Color.Silver;
-            button9.Location = new System.Drawing.Point(0, 161);
-            button9.Name = "button9";
-            button9.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button9.Size = new System.Drawing.Size(233, 40);
-            button9.TabIndex = 5;
-            button9.Text = "Registrar IVA";
-            button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button9.UseVisualStyleBackColor = true;
-            button9.Click += button9_Click_1;
             // 
             // button5
             // 
@@ -632,7 +614,7 @@
             btnExit.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             btnExit.Size = new System.Drawing.Size(233, 45);
             btnExit.TabIndex = 9;
-            btnExit.Text = "  Exit";
+            btnExit.Text = "  Cerrar Sesión";
             btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             btnExit.UseVisualStyleBackColor = true;
@@ -885,6 +867,24 @@
             pictureBox9.TabIndex = 2;
             pictureBox9.TabStop = false;
             pictureBox9.Click += pictureBox9_Click;
+            // 
+            // button9
+            // 
+            button9.Dock = System.Windows.Forms.DockStyle.Top;
+            button9.FlatAppearance.BorderSize = 0;
+            button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
+            button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
+            button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button9.ForeColor = System.Drawing.Color.Silver;
+            button9.Location = new System.Drawing.Point(0, 161);
+            button9.Name = "button9";
+            button9.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            button9.Size = new System.Drawing.Size(233, 40);
+            button9.TabIndex = 5;
+            button9.Text = "Registrar IVA";
+            button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click_1;
             // 
             // Menu
             // 
