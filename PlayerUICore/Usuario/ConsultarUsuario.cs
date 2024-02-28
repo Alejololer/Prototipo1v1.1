@@ -19,11 +19,7 @@ namespace PlayerUI.Usuario
     public partial class ConsultarUsuario : Form
     {
         string nombreUsuario;
-<<<<<<< HEAD
 
-=======
-        SqlConnection coneccion = new SqlConnection("Data Source=.\\SQLEXPRESS;Initial Catalog=Requerimientos;Integrated Security=SSPI");
->>>>>>> cambios
 
         public ConsultarUsuario()
         {
