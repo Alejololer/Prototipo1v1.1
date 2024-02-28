@@ -71,15 +71,18 @@ namespace PlayerUI.Parametros
                         {
                             DataTable dt = new DataTable();
                             adapter.Fill(dt);
+                            //formato
                             dgvTipoExamen.DataSource = dt;
-                            /*Formato
-                            dgvUsuarios.Columns[0].HeaderText = "ID";
-                            dgvUsuarios.Columns[0].Width = 50;
-                            dgvUsuarios.Columns[1].HeaderText = "Nombre de Usuario";
-                            dgvUsuarios.Columns[1].Width = 150;
-                            dgvUsuarios.Columns[2].HeaderText = "Contraseña";
-                            dgvUsuarios.Columns[3].HeaderText = "Tipo de Usuario";
-                            dgvUsuarios.Columns[3].Width = 250;*/
+                            dgvTipoExamen.Columns[0].HeaderText = "ID";
+                            dgvTipoExamen.Columns[0].Width = 500;
+                            dgvTipoExamen.Columns[1].HeaderText = "Nombre";
+                            dgvTipoExamen.Columns[1].Width = 100;
+                            dgvTipoExamen.Columns[2].HeaderText = "Minimo";
+                            dgvTipoExamen.Columns[2].Width = 50;
+                            dgvTipoExamen.Columns[3].HeaderText = "Maximo";
+                            dgvTipoExamen.Columns[3].Width = 50;
+                            dgvTipoExamen.Columns[4].HeaderText = "Unidad";
+                            dgvTipoExamen.Columns[4].Width = 50;
 
                             if (dt.Rows.Count == 0)
                             {

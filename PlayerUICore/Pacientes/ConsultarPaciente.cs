@@ -87,11 +87,19 @@ namespace PlayerUI.Pacientes
             adapter.Fill(dt);
             dgvPaciente.DataSource = dt;
             dgvPaciente.Columns[0].HeaderText = "Cédula de Identidad";
+            dgvPaciente.Columns[0].Width = 100;
             dgvPaciente.Columns[1].HeaderText = "Nombres";
             dgvPaciente.Columns[1].Width = 150;
             dgvPaciente.Columns[2].HeaderText = "Apellidos";
+            dgvPaciente.Columns[2].Width = 150;
             dgvPaciente.Columns[3].HeaderText = "Teléfono";
-            dgvPaciente.Columns[3].Width = 250;
+            dgvPaciente.Columns[3].Width = 100;
+            dgvPaciente.Columns[4].HeaderText = "Correo";
+            dgvPaciente.Columns[4].Width = 150;
+            dgvPaciente.Columns[5].HeaderText = "Dirección";
+            dgvPaciente.Columns[5].Width = 150;
+            dgvPaciente.Columns[6].HeaderText = "Fecha de nacimiento";
+            dgvPaciente.Columns[6].Width = 100;
         }
 
         private void label1_Click(object sender, EventArgs e)
