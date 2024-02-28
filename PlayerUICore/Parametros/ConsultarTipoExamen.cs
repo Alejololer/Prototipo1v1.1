@@ -79,9 +79,9 @@ namespace PlayerUI.Parametros
                             dgvTipoExamen.Columns[1].HeaderText = "Nombre";
                             dgvTipoExamen.Columns[1].Width = 100;
                             dgvTipoExamen.Columns[2].HeaderText = "Minimo Rango Normal";
-                            dgvTipoExamen.Columns[2].Width = 200;
+                            dgvTipoExamen.Columns[2].Width = 175;
                             dgvTipoExamen.Columns[3].HeaderText = "Maximo Rango Normal";
-                            dgvTipoExamen.Columns[3].Width = 200;
+                            dgvTipoExamen.Columns[3].Width = 175;
                             dgvTipoExamen.Columns[4].HeaderText = "Unidad";
                             dgvTipoExamen.Columns[4].Width = 100;
 

@@ -95,7 +95,7 @@ namespace PlayerUI.Pacientes
             dgvPaciente.Columns[3].HeaderText = "Teléfono";
             dgvPaciente.Columns[3].Width = 100;
             dgvPaciente.Columns[4].HeaderText = "Correo";
-            dgvPaciente.Columns[4].Width = 150;
+            dgvPaciente.Columns[4].Width = 200;
             dgvPaciente.Columns[5].HeaderText = "Dirección";
             dgvPaciente.Columns[5].Width = 150;
             dgvPaciente.Columns[6].HeaderText = "Fecha de nacimiento";
