@@ -112,6 +112,7 @@
             label2.Size = new System.Drawing.Size(191, 17);
             label2.TabIndex = 26;
             label2.Text = "Nombre del Tipo de Examen:";
+            label2.Click += label2_Click;
             // 
             // txtNomTipo
             // 

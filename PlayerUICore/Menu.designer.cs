@@ -232,8 +232,7 @@
             btnParámetros.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             btnParámetros.Size = new System.Drawing.Size(233, 45);
             btnParámetros.TabIndex = 18;
-            btnParámetros.Text = "     Parámetros";
-            btnParámetros.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnParámetros.Text = "    Adm. del Sistema";
             btnParámetros.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             btnParámetros.UseVisualStyleBackColor = true;
             btnParámetros.Click += btnParámetros_Click;

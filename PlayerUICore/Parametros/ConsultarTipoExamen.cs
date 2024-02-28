@@ -74,7 +74,7 @@ namespace PlayerUI.Parametros
                             //formato
                             dgvTipoExamen.DataSource = dt;
                             dgvTipoExamen.Columns[0].HeaderText = "ID";
-                            dgvTipoExamen.Columns[0].Width = 500;
+                            dgvTipoExamen.Columns[0].Width = 50;
                             dgvTipoExamen.Columns[1].HeaderText = "Nombre";
                             dgvTipoExamen.Columns[1].Width = 100;
                             dgvTipoExamen.Columns[2].HeaderText = "Minimo";
@@ -100,7 +100,7 @@ namespace PlayerUI.Parametros
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if(!obtenerPrecio())
+            if (!obtenerPrecio())
                 return;
             llenarDataGridView();
         }
@@ -120,6 +120,11 @@ namespace PlayerUI.Parametros
         }
 
         private void dgvTipoExamen_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
