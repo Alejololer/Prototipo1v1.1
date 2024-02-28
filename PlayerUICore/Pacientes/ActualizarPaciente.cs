@@ -35,9 +35,10 @@ namespace PlayerUI.Pacientes
                 return;
             }
 
-            if (!ValidarFormatoDireccion(txtDir))
+            if (!EsNumeroValido(txtTel.Text))
             {
-                MessageBox.Show("El formato de la dirección no es válida.", "Formato no válido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                // Realizar acciones si el formato es válido
+                MessageBox.Show("El formato del teléfono no es válido.", "Formato no válido", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
 
@@ -137,23 +138,16 @@ namespace PlayerUI.Pacientes
             return digitoVerificador == digitoEsperado;
         }
 
-        private bool ValidarFormatoDireccion(System.Windows.Forms.TextBox textBox)
+        public bool EsNumeroValido(string numero)
         {
-            // Dividir la dirección en palabras
-            string[] partes = textBox.Text.Split(' ');
+            // Expresión regular para validar números de teléfono móviles en Ecuador: 09X-XXXX-XXX o 099X-XXX-XXX
+            string patronMovil = @"^(09\d{2})-(\d{4})-(\d{3})$|^(099\d{1})-(\d{3})-(\d{3})$";
 
-            // Verificar si hay al menos una palabra
-            if (partes.Length == 0)
-            {
-                return false;
-            }
+            // Expresión regular para validar números de teléfono fijos en Ecuador: 0X-XXX-XXXX
+            string patronLineaFija = @"^(0\d{1})-(\d{3})-(\d{4})$";
 
-            // Verificar que cada palabra comience con mayúscula
-            bool formatoCorrecto = partes.All(part =>
-                !string.IsNullOrWhiteSpace(part) &&
-                char.IsUpper(part[0]));
-
-            return formatoCorrecto;
+            // Verificar si el número coincide con alguna de las expresiones regulares
+            return Regex.IsMatch(numero, patronMovil) || Regex.IsMatch(numero, patronLineaFija);
         }
         public bool ValidarCorreo(string correo)
         {
