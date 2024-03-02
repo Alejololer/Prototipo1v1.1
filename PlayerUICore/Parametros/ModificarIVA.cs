@@ -29,11 +29,12 @@ namespace PlayerUI.Parametros
 
         private void button9_Click(object sender, EventArgs e)
         {
+
             // Enviar un mensaje
             DialogResult result = MessageBox.Show("¿Está seguro?", "Modificar IVA", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
-                IVAModel model = new IVAModel();
+                IVAModel model = new IVAModel();    
                 model.registrarIVA(int.Parse(txtIVANew.Text));
                 MessageBox.Show("IVA modificado correctamente", "Modificar IVA", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 getIVA();
@@ -82,7 +83,6 @@ namespace PlayerUI.Parametros
             if(iva == null)
             {
                 MessageBox.Show("Primero debe registrar un valor de IVA!", "Modificar IVA", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Close();
                 return;
             }
 

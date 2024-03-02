@@ -57,7 +57,7 @@ namespace PlayerUI.Pacientes
                 return;
 
             }
-            if (!EsNumeroValido(txtTel.Text))
+            if (txtTel.Text.Length <= 8)
             {
                 // Realizar acciones si el formato es válido
                 MessageBox.Show("El formato del teléfono no es válido.", "Formato no válido", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -155,17 +155,6 @@ namespace PlayerUI.Pacientes
         }
 
 
-        public bool EsNumeroValido(string numero)
-        {
-            // Expresión regular para validar números de teléfono móviles en Ecuador: 09X-XXXX-XXX o 099X-XXX-XXX
-            string patronMovil = @"^(09\d{2})-(\d{4})-(\d{3})$|^(099\d{1})-(\d{3})-(\d{3})$";
-
-            // Expresión regular para validar números de teléfono fijos en Ecuador: 0X-XXX-XXXX
-            string patronLineaFija = @"^(0\d{1})-(\d{3})-(\d{4})$";
-
-            // Verificar si el número coincide con alguna de las expresiones regulares
-            return Regex.IsMatch(numero, patronMovil) || Regex.IsMatch(numero, patronLineaFija);
-        }
 
         public bool ValidarCedulaEcuatoriana(string cedula)
         {
