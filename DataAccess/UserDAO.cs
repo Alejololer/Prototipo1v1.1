@@ -131,7 +131,7 @@ namespace DataAccess
             return user;
         }
 
-        public void actualizarUsuario(int iduser, string username, string contrasena)
+        public void actualizarUsuario(int iduser, string contrasena)
         {
             using (var connection = GetConnection())
             {
@@ -139,9 +139,8 @@ namespace DataAccess
                 using (var command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "UPDATE USERS set NOMBREUSER = @username, CLAVEUSER = @contrasena WHERE IDUSER = @id";
+                    command.CommandText = "UPDATE USERS set CLAVEUSER = @contrasena WHERE IDUSER = @id";
                     command.Parameters.AddWithValue("@id", iduser);
-                    command.Parameters.AddWithValue("@username", username);
                     command.Parameters.AddWithValue("@contrasena", contrasena);
                     command.ExecuteNonQuery();
                 }

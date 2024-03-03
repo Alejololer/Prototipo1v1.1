@@ -18,5 +18,6 @@ namespace DataAccess.Entities
             this.nombreTipoExamen = nombreTipoExamen;
             this.costoTipoExamen = costoTipoExamen;
         }
+
     }
 }

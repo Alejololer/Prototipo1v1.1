@@ -30,18 +30,27 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             panelSideMenu = new System.Windows.Forms.Panel();
-            panelParámetrosSubMenu = new System.Windows.Forms.Panel();
+            panel2 = new System.Windows.Forms.Panel();
+            button28 = new System.Windows.Forms.Button();
+            button29 = new System.Windows.Forms.Button();
+            button9 = new System.Windows.Forms.Button();
+            panel1 = new System.Windows.Forms.Panel();
+            button19 = new System.Windows.Forms.Button();
+            button24 = new System.Windows.Forms.Button();
             button5 = new System.Windows.Forms.Button();
+            panelParámetrosSubMenu = new System.Windows.Forms.Panel();
             button39 = new System.Windows.Forms.Button();
             button36 = new System.Windows.Forms.Button();
             button37 = new System.Windows.Forms.Button();
             btnParámetros = new System.Windows.Forms.Button();
             panelUsuariosSubMenu = new System.Windows.Forms.Panel();
+            button14 = new System.Windows.Forms.Button();
+            button13 = new System.Windows.Forms.Button();
+            button12 = new System.Windows.Forms.Button();
             button32 = new System.Windows.Forms.Button();
             button33 = new System.Windows.Forms.Button();
             btnUsuarios = new System.Windows.Forms.Button();
             panelVentasSubMenu = new System.Windows.Forms.Panel();
-            button29 = new System.Windows.Forms.Button();
             button23 = new System.Windows.Forms.Button();
             button25 = new System.Windows.Forms.Button();
             button26 = new System.Windows.Forms.Button();
@@ -54,6 +63,7 @@
             button21 = new System.Windows.Forms.Button();
             btnInstrumentos = new System.Windows.Forms.Button();
             panelReactivosSubMenu = new System.Windows.Forms.Panel();
+            button10 = new System.Windows.Forms.Button();
             button16 = new System.Windows.Forms.Button();
             button17 = new System.Windows.Forms.Button();
             button18 = new System.Windows.Forms.Button();
@@ -62,7 +72,6 @@
             panelPedidosSubMenu = new System.Windows.Forms.Panel();
             button7 = new System.Windows.Forms.Button();
             button11 = new System.Windows.Forms.Button();
-            button1 = new System.Windows.Forms.Button();
             button6 = new System.Windows.Forms.Button();
             button8 = new System.Windows.Forms.Button();
             btnPedidos = new System.Windows.Forms.Button();
@@ -74,8 +83,9 @@
             panelLogo = new System.Windows.Forms.Panel();
             panelChildForm = new System.Windows.Forms.Panel();
             pictureBox9 = new System.Windows.Forms.PictureBox();
-            button9 = new System.Windows.Forms.Button();
             panelSideMenu.SuspendLayout();
+            panel2.SuspendLayout();
+            panel1.SuspendLayout();
             panelParámetrosSubMenu.SuspendLayout();
             panelUsuariosSubMenu.SuspendLayout();
             panelVentasSubMenu.SuspendLayout();
@@ -91,6 +101,10 @@
             // 
             panelSideMenu.AutoScroll = true;
             panelSideMenu.BackColor = System.Drawing.Color.FromArgb(11, 7, 17);
+            panelSideMenu.Controls.Add(panel2);
+            panelSideMenu.Controls.Add(button9);
+            panelSideMenu.Controls.Add(panel1);
+            panelSideMenu.Controls.Add(button5);
             panelSideMenu.Controls.Add(panelParámetrosSubMenu);
             panelSideMenu.Controls.Add(btnParámetros);
             panelSideMenu.Controls.Add(panelUsuariosSubMenu);
@@ -113,37 +127,149 @@
             panelSideMenu.Size = new System.Drawing.Size(250, 600);
             panelSideMenu.TabIndex = 0;
             // 
-            // panelParámetrosSubMenu
+            // panel2
             // 
-            panelParámetrosSubMenu.BackColor = System.Drawing.Color.FromArgb(35, 32, 39);
-            panelParámetrosSubMenu.Controls.Add(button9);
-            panelParámetrosSubMenu.Controls.Add(button5);
-            panelParámetrosSubMenu.Controls.Add(button39);
-            panelParámetrosSubMenu.Controls.Add(button36);
-            panelParámetrosSubMenu.Controls.Add(button37);
-            panelParámetrosSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            panelParámetrosSubMenu.Location = new System.Drawing.Point(0, 1315);
-            panelParámetrosSubMenu.Name = "panelParámetrosSubMenu";
-            panelParámetrosSubMenu.Size = new System.Drawing.Size(233, 206);
-            panelParámetrosSubMenu.TabIndex = 19;
+            panel2.BackColor = System.Drawing.Color.FromArgb(35, 32, 39);
+            panel2.Controls.Add(button28);
+            panel2.Controls.Add(button29);
+            panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            panel2.Location = new System.Drawing.Point(0, 1711);
+            panel2.Name = "panel2";
+            panel2.Size = new System.Drawing.Size(233, 89);
+            panel2.TabIndex = 23;
+            // 
+            // button28
+            // 
+            button28.Dock = System.Windows.Forms.DockStyle.Top;
+            button28.FlatAppearance.BorderSize = 0;
+            button28.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
+            button28.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
+            button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button28.ForeColor = System.Drawing.Color.Silver;
+            button28.Location = new System.Drawing.Point(0, 40);
+            button28.Name = "button28";
+            button28.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            button28.Size = new System.Drawing.Size(233, 40);
+            button28.TabIndex = 1;
+            button28.Text = "Actualizar IVA";
+            button28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button28.UseVisualStyleBackColor = true;
+            button28.Click += button28_Click;
+            // 
+            // button29
+            // 
+            button29.Dock = System.Windows.Forms.DockStyle.Top;
+            button29.FlatAppearance.BorderSize = 0;
+            button29.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
+            button29.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
+            button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button29.ForeColor = System.Drawing.Color.Silver;
+            button29.Location = new System.Drawing.Point(0, 0);
+            button29.Name = "button29";
+            button29.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            button29.Size = new System.Drawing.Size(233, 40);
+            button29.TabIndex = 0;
+            button29.Text = "Registrar IVA";
+            button29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button29.UseVisualStyleBackColor = true;
+            button29.Click += button29_Click_1;
+            // 
+            // button9
+            // 
+            button9.Dock = System.Windows.Forms.DockStyle.Top;
+            button9.FlatAppearance.BorderSize = 0;
+            button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(23, 21, 32);
+            button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(24, 22, 34);
+            button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button9.ForeColor = System.Drawing.Color.Silver;
+            button9.Image = (System.Drawing.Image)resources.GetObject("button9.Image");
+            button9.Location = new System.Drawing.Point(0, 1666);
+            button9.Name = "button9";
+            button9.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            button9.Size = new System.Drawing.Size(233, 45);
+            button9.TabIndex = 22;
+            button9.Text = "    Parámetros";
+            button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click_2;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = System.Drawing.Color.FromArgb(35, 32, 39);
+            panel1.Controls.Add(button19);
+            panel1.Controls.Add(button24);
+            panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            panel1.Location = new System.Drawing.Point(0, 1577);
+            panel1.Name = "panel1";
+            panel1.Size = new System.Drawing.Size(233, 89);
+            panel1.TabIndex = 21;
+            // 
+            // button19
+            // 
+            button19.Dock = System.Windows.Forms.DockStyle.Top;
+            button19.FlatAppearance.BorderSize = 0;
+            button19.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
+            button19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
+            button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button19.ForeColor = System.Drawing.Color.Silver;
+            button19.Location = new System.Drawing.Point(0, 40);
+            button19.Name = "button19";
+            button19.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            button19.Size = new System.Drawing.Size(233, 40);
+            button19.TabIndex = 1;
+            button19.Text = "Consultar Usuarios";
+            button19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button19.UseVisualStyleBackColor = true;
+            button19.Click += button19_Click;
+            // 
+            // button24
+            // 
+            button24.Dock = System.Windows.Forms.DockStyle.Top;
+            button24.FlatAppearance.BorderSize = 0;
+            button24.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
+            button24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
+            button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button24.ForeColor = System.Drawing.Color.Silver;
+            button24.Location = new System.Drawing.Point(0, 0);
+            button24.Name = "button24";
+            button24.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            button24.Size = new System.Drawing.Size(233, 40);
+            button24.TabIndex = 0;
+            button24.Text = "Registrar Usuario";
+            button24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button24.UseVisualStyleBackColor = true;
+            button24.Click += button24_Click_1;
             // 
             // button5
             // 
             button5.Dock = System.Windows.Forms.DockStyle.Top;
             button5.FlatAppearance.BorderSize = 0;
-            button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
-            button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
+            button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(23, 21, 32);
+            button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(24, 22, 34);
             button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button5.ForeColor = System.Drawing.Color.Silver;
-            button5.Location = new System.Drawing.Point(0, 126);
+            button5.Image = (System.Drawing.Image)resources.GetObject("button5.Image");
+            button5.Location = new System.Drawing.Point(0, 1532);
             button5.Name = "button5";
-            button5.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button5.Size = new System.Drawing.Size(233, 35);
-            button5.TabIndex = 4;
-            button5.Text = "Modificar IVA";
-            button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button5.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            button5.Size = new System.Drawing.Size(233, 45);
+            button5.TabIndex = 20;
+            button5.Text = "    Usuarios";
+            button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             button5.UseVisualStyleBackColor = true;
-            button5.Click += button5_Click;
+            button5.Click += button5_Click_1;
+            // 
+            // panelParámetrosSubMenu
+            // 
+            panelParámetrosSubMenu.BackColor = System.Drawing.Color.FromArgb(35, 32, 39);
+            panelParámetrosSubMenu.Controls.Add(button39);
+            panelParámetrosSubMenu.Controls.Add(button36);
+            panelParámetrosSubMenu.Controls.Add(button37);
+            panelParámetrosSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            panelParámetrosSubMenu.Location = new System.Drawing.Point(0, 1398);
+            panelParámetrosSubMenu.Name = "panelParámetrosSubMenu";
+            panelParámetrosSubMenu.Size = new System.Drawing.Size(233, 134);
+            panelParámetrosSubMenu.TabIndex = 19;
             // 
             // button39
             // 
@@ -208,12 +334,12 @@
             btnParámetros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btnParámetros.ForeColor = System.Drawing.Color.Silver;
             btnParámetros.Image = (System.Drawing.Image)resources.GetObject("btnParámetros.Image");
-            btnParámetros.Location = new System.Drawing.Point(0, 1270);
+            btnParámetros.Location = new System.Drawing.Point(0, 1353);
             btnParámetros.Name = "btnParámetros";
             btnParámetros.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             btnParámetros.Size = new System.Drawing.Size(233, 45);
             btnParámetros.TabIndex = 18;
-            btnParámetros.Text = "    Adm. del Sistema";
+            btnParámetros.Text = "    Tipos de Examen";
             btnParámetros.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             btnParámetros.UseVisualStyleBackColor = true;
             btnParámetros.Click += btnParámetros_Click;
@@ -221,13 +347,70 @@
             // panelUsuariosSubMenu
             // 
             panelUsuariosSubMenu.BackColor = System.Drawing.Color.FromArgb(35, 32, 39);
+            panelUsuariosSubMenu.Controls.Add(button14);
+            panelUsuariosSubMenu.Controls.Add(button13);
+            panelUsuariosSubMenu.Controls.Add(button12);
             panelUsuariosSubMenu.Controls.Add(button32);
             panelUsuariosSubMenu.Controls.Add(button33);
             panelUsuariosSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            panelUsuariosSubMenu.Location = new System.Drawing.Point(0, 1182);
+            panelUsuariosSubMenu.Location = new System.Drawing.Point(0, 1146);
             panelUsuariosSubMenu.Name = "panelUsuariosSubMenu";
-            panelUsuariosSubMenu.Size = new System.Drawing.Size(233, 88);
+            panelUsuariosSubMenu.Size = new System.Drawing.Size(233, 207);
             panelUsuariosSubMenu.TabIndex = 17;
+            // 
+            // button14
+            // 
+            button14.Dock = System.Windows.Forms.DockStyle.Top;
+            button14.FlatAppearance.BorderSize = 0;
+            button14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
+            button14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
+            button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button14.ForeColor = System.Drawing.Color.Silver;
+            button14.Location = new System.Drawing.Point(0, 160);
+            button14.Name = "button14";
+            button14.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            button14.Size = new System.Drawing.Size(233, 40);
+            button14.TabIndex = 4;
+            button14.Text = "Consultar Informe de Ventas";
+            button14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button14.UseVisualStyleBackColor = true;
+            button14.Click += button14_Click;
+            // 
+            // button13
+            // 
+            button13.Dock = System.Windows.Forms.DockStyle.Top;
+            button13.FlatAppearance.BorderSize = 0;
+            button13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
+            button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
+            button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button13.ForeColor = System.Drawing.Color.Silver;
+            button13.Location = new System.Drawing.Point(0, 120);
+            button13.Name = "button13";
+            button13.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            button13.Size = new System.Drawing.Size(233, 40);
+            button13.TabIndex = 3;
+            button13.Text = "Anular Factura";
+            button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button13.UseVisualStyleBackColor = true;
+            button13.Click += button13_Click_1;
+            // 
+            // button12
+            // 
+            button12.Dock = System.Windows.Forms.DockStyle.Top;
+            button12.FlatAppearance.BorderSize = 0;
+            button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
+            button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
+            button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button12.ForeColor = System.Drawing.Color.Silver;
+            button12.Location = new System.Drawing.Point(0, 80);
+            button12.Name = "button12";
+            button12.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            button12.Size = new System.Drawing.Size(233, 40);
+            button12.TabIndex = 2;
+            button12.Text = "Generar Factura";
+            button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button12.UseVisualStyleBackColor = true;
+            button12.Click += button12_Click_1;
             // 
             // button32
             // 
@@ -242,7 +425,7 @@
             button32.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             button32.Size = new System.Drawing.Size(233, 40);
             button32.TabIndex = 1;
-            button32.Text = "Consultar Usuarios";
+            button32.Text = "Actualizar Total Venta";
             button32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button32.UseVisualStyleBackColor = true;
             button32.Click += button32_Click;
@@ -260,7 +443,7 @@
             button33.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             button33.Size = new System.Drawing.Size(233, 40);
             button33.TabIndex = 0;
-            button33.Text = "Registrar Usuarios";
+            button33.Text = "Registrar Venta";
             button33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button33.UseVisualStyleBackColor = true;
             button33.Click += button33_Click;
@@ -274,12 +457,12 @@
             btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btnUsuarios.ForeColor = System.Drawing.Color.Silver;
             btnUsuarios.Image = (System.Drawing.Image)resources.GetObject("btnUsuarios.Image");
-            btnUsuarios.Location = new System.Drawing.Point(0, 1137);
+            btnUsuarios.Location = new System.Drawing.Point(0, 1101);
             btnUsuarios.Name = "btnUsuarios";
             btnUsuarios.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             btnUsuarios.Size = new System.Drawing.Size(233, 45);
             btnUsuarios.TabIndex = 16;
-            btnUsuarios.Text = "    Usuarios";
+            btnUsuarios.Text = "    Ventas y Facturación";
             btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             btnUsuarios.UseVisualStyleBackColor = true;
@@ -288,34 +471,15 @@
             // panelVentasSubMenu
             // 
             panelVentasSubMenu.BackColor = System.Drawing.Color.FromArgb(35, 32, 39);
-            panelVentasSubMenu.Controls.Add(button29);
             panelVentasSubMenu.Controls.Add(button23);
             panelVentasSubMenu.Controls.Add(button25);
             panelVentasSubMenu.Controls.Add(button26);
             panelVentasSubMenu.Controls.Add(button27);
             panelVentasSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            panelVentasSubMenu.Location = new System.Drawing.Point(0, 930);
+            panelVentasSubMenu.Location = new System.Drawing.Point(0, 933);
             panelVentasSubMenu.Name = "panelVentasSubMenu";
-            panelVentasSubMenu.Size = new System.Drawing.Size(233, 207);
+            panelVentasSubMenu.Size = new System.Drawing.Size(233, 168);
             panelVentasSubMenu.TabIndex = 15;
-            // 
-            // button29
-            // 
-            button29.Dock = System.Windows.Forms.DockStyle.Top;
-            button29.FlatAppearance.BorderSize = 0;
-            button29.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
-            button29.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
-            button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button29.ForeColor = System.Drawing.Color.Silver;
-            button29.Location = new System.Drawing.Point(0, 160);
-            button29.Name = "button29";
-            button29.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button29.Size = new System.Drawing.Size(233, 40);
-            button29.TabIndex = 6;
-            button29.Text = "Consultar Informe de Ventas";
-            button29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button29.UseVisualStyleBackColor = true;
-            button29.Click += button29_Click;
             // 
             // button23
             // 
@@ -330,7 +494,7 @@
             button23.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             button23.Size = new System.Drawing.Size(233, 40);
             button23.TabIndex = 5;
-            button23.Text = "Anular Factura";
+            button23.Text = "Eliminar Instrumento";
             button23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button23.UseVisualStyleBackColor = true;
             button23.Click += button23_Click;
@@ -348,7 +512,7 @@
             button25.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             button25.Size = new System.Drawing.Size(233, 40);
             button25.TabIndex = 3;
-            button25.Text = "Generar Factura";
+            button25.Text = "Actualizar Stock Instrumento";
             button25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button25.UseVisualStyleBackColor = true;
             button25.Click += button25_Click;
@@ -366,7 +530,7 @@
             button26.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             button26.Size = new System.Drawing.Size(233, 40);
             button26.TabIndex = 2;
-            button26.Text = "Modificar Precio Venta";
+            button26.Text = "Consultar Instrumento";
             button26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button26.UseVisualStyleBackColor = true;
             button26.Click += button26_Click;
@@ -384,7 +548,7 @@
             button27.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             button27.Size = new System.Drawing.Size(233, 40);
             button27.TabIndex = 0;
-            button27.Text = "Generar Venta";
+            button27.Text = "Registrar Instrumento";
             button27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button27.UseVisualStyleBackColor = true;
             button27.Click += button27_Click;
@@ -398,12 +562,12 @@
             btnVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btnVentas.ForeColor = System.Drawing.Color.Silver;
             btnVentas.Image = (System.Drawing.Image)resources.GetObject("btnVentas.Image");
-            btnVentas.Location = new System.Drawing.Point(0, 885);
+            btnVentas.Location = new System.Drawing.Point(0, 888);
             btnVentas.Name = "btnVentas";
             btnVentas.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             btnVentas.Size = new System.Drawing.Size(233, 45);
             btnVentas.TabIndex = 14;
-            btnVentas.Text = "     Ventas";
+            btnVentas.Text = "    Instrumentos";
             btnVentas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             btnVentas.UseVisualStyleBackColor = true;
             btnVentas.Click += btnVentas_Click;
@@ -416,7 +580,7 @@
             panelInstrumentosSubMenu.Controls.Add(button20);
             panelInstrumentosSubMenu.Controls.Add(button21);
             panelInstrumentosSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            panelInstrumentosSubMenu.Location = new System.Drawing.Point(0, 717);
+            panelInstrumentosSubMenu.Location = new System.Drawing.Point(0, 720);
             panelInstrumentosSubMenu.Name = "panelInstrumentosSubMenu";
             panelInstrumentosSubMenu.Size = new System.Drawing.Size(233, 168);
             panelInstrumentosSubMenu.TabIndex = 13;
@@ -434,7 +598,7 @@
             button22.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             button22.Size = new System.Drawing.Size(233, 35);
             button22.TabIndex = 3;
-            button22.Text = "Eliminar Instrumentos";
+            button22.Text = "Eliminar Reactivo";
             button22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button22.UseVisualStyleBackColor = true;
             button22.Click += button22_Click;
@@ -452,7 +616,7 @@
             button15.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             button15.Size = new System.Drawing.Size(233, 46);
             button15.TabIndex = 2;
-            button15.Text = "Actualizar Stock Instrumentos";
+            button15.Text = "Actualizar Stock Reactivo";
             button15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button15.UseVisualStyleBackColor = true;
             button15.Click += button15_Click;
@@ -470,7 +634,7 @@
             button20.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             button20.Size = new System.Drawing.Size(233, 40);
             button20.TabIndex = 1;
-            button20.Text = "Consultar Instrumentos";
+            button20.Text = "Consultar Reactivo";
             button20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button20.UseVisualStyleBackColor = true;
             button20.Click += button20_Click;
@@ -488,7 +652,7 @@
             button21.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             button21.Size = new System.Drawing.Size(233, 40);
             button21.TabIndex = 0;
-            button21.Text = "Registrar Instrumento";
+            button21.Text = "Registrar Reactivo";
             button21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button21.UseVisualStyleBackColor = true;
             button21.Click += button21_Click;
@@ -502,12 +666,12 @@
             btnInstrumentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btnInstrumentos.ForeColor = System.Drawing.Color.Silver;
             btnInstrumentos.Image = (System.Drawing.Image)resources.GetObject("btnInstrumentos.Image");
-            btnInstrumentos.Location = new System.Drawing.Point(0, 672);
+            btnInstrumentos.Location = new System.Drawing.Point(0, 675);
             btnInstrumentos.Name = "btnInstrumentos";
             btnInstrumentos.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             btnInstrumentos.Size = new System.Drawing.Size(233, 45);
             btnInstrumentos.TabIndex = 12;
-            btnInstrumentos.Text = "      Instrumentos";
+            btnInstrumentos.Text = "    Reactivos";
             btnInstrumentos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnInstrumentos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             btnInstrumentos.UseVisualStyleBackColor = true;
@@ -516,14 +680,33 @@
             // panelReactivosSubMenu
             // 
             panelReactivosSubMenu.BackColor = System.Drawing.Color.FromArgb(35, 32, 39);
+            panelReactivosSubMenu.Controls.Add(button10);
             panelReactivosSubMenu.Controls.Add(button16);
             panelReactivosSubMenu.Controls.Add(button17);
             panelReactivosSubMenu.Controls.Add(button18);
             panelReactivosSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            panelReactivosSubMenu.Location = new System.Drawing.Point(0, 551);
+            panelReactivosSubMenu.Location = new System.Drawing.Point(0, 515);
             panelReactivosSubMenu.Name = "panelReactivosSubMenu";
-            panelReactivosSubMenu.Size = new System.Drawing.Size(233, 121);
+            panelReactivosSubMenu.Size = new System.Drawing.Size(233, 160);
             panelReactivosSubMenu.TabIndex = 11;
+            // 
+            // button10
+            // 
+            button10.Dock = System.Windows.Forms.DockStyle.Top;
+            button10.FlatAppearance.BorderSize = 0;
+            button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
+            button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
+            button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button10.ForeColor = System.Drawing.Color.Silver;
+            button10.Location = new System.Drawing.Point(0, 115);
+            button10.Name = "button10";
+            button10.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            button10.Size = new System.Drawing.Size(233, 35);
+            button10.TabIndex = 3;
+            button10.Text = "Generar Informe Resultado";
+            button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button10.UseVisualStyleBackColor = true;
+            button10.Click += button10_Click_1;
             // 
             // button16
             // 
@@ -538,7 +721,7 @@
             button16.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             button16.Size = new System.Drawing.Size(233, 35);
             button16.TabIndex = 2;
-            button16.Text = "Actualizar Stock Reactivos";
+            button16.Text = "Actualizar Resultado";
             button16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button16.UseVisualStyleBackColor = true;
             button16.Click += button16_Click;
@@ -556,7 +739,7 @@
             button17.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             button17.Size = new System.Drawing.Size(233, 40);
             button17.TabIndex = 1;
-            button17.Text = "Consultar Reactivos";
+            button17.Text = "Consultar Resultado";
             button17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button17.UseVisualStyleBackColor = true;
             button17.Click += button17_Click;
@@ -574,7 +757,7 @@
             button18.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             button18.Size = new System.Drawing.Size(233, 40);
             button18.TabIndex = 0;
-            button18.Text = "Registrar Reactivo";
+            button18.Text = "Registrar Resultado";
             button18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button18.UseVisualStyleBackColor = true;
             button18.Click += button18_Click;
@@ -588,12 +771,12 @@
             btnReactivos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btnReactivos.ForeColor = System.Drawing.Color.Silver;
             btnReactivos.Image = (System.Drawing.Image)resources.GetObject("btnReactivos.Image");
-            btnReactivos.Location = new System.Drawing.Point(0, 506);
+            btnReactivos.Location = new System.Drawing.Point(0, 470);
             btnReactivos.Name = "btnReactivos";
             btnReactivos.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             btnReactivos.Size = new System.Drawing.Size(233, 45);
             btnReactivos.TabIndex = 10;
-            btnReactivos.Text = "    Reactivos";
+            btnReactivos.Text = "    Resultados";
             btnReactivos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnReactivos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             btnReactivos.UseVisualStyleBackColor = true;
@@ -609,7 +792,7 @@
             btnExit.ForeColor = System.Drawing.Color.Silver;
             btnExit.Image = (System.Drawing.Image)resources.GetObject("btnExit.Image");
             btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnExit.Location = new System.Drawing.Point(0, 1521);
+            btnExit.Location = new System.Drawing.Point(0, 1800);
             btnExit.Name = "btnExit";
             btnExit.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             btnExit.Size = new System.Drawing.Size(233, 45);
@@ -625,13 +808,12 @@
             panelPedidosSubMenu.BackColor = System.Drawing.Color.FromArgb(35, 32, 39);
             panelPedidosSubMenu.Controls.Add(button7);
             panelPedidosSubMenu.Controls.Add(button11);
-            panelPedidosSubMenu.Controls.Add(button1);
             panelPedidosSubMenu.Controls.Add(button6);
             panelPedidosSubMenu.Controls.Add(button8);
             panelPedidosSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             panelPedidosSubMenu.Location = new System.Drawing.Point(0, 300);
             panelPedidosSubMenu.Name = "panelPedidosSubMenu";
-            panelPedidosSubMenu.Size = new System.Drawing.Size(233, 206);
+            panelPedidosSubMenu.Size = new System.Drawing.Size(233, 170);
             panelPedidosSubMenu.TabIndex = 4;
             // 
             // button7
@@ -642,7 +824,7 @@
             button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
             button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button7.ForeColor = System.Drawing.Color.Silver;
-            button7.Location = new System.Drawing.Point(0, 160);
+            button7.Location = new System.Drawing.Point(0, 120);
             button7.Name = "button7";
             button7.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             button7.Size = new System.Drawing.Size(233, 40);
@@ -660,7 +842,7 @@
             button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
             button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button11.ForeColor = System.Drawing.Color.Silver;
-            button11.Location = new System.Drawing.Point(0, 120);
+            button11.Location = new System.Drawing.Point(0, 80);
             button11.Name = "button11";
             button11.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             button11.Size = new System.Drawing.Size(233, 40);
@@ -669,24 +851,6 @@
             button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button11.UseVisualStyleBackColor = true;
             button11.Click += button11_Click;
-            // 
-            // button1
-            // 
-            button1.Dock = System.Windows.Forms.DockStyle.Top;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
-            button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
-            button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button1.ForeColor = System.Drawing.Color.Silver;
-            button1.Location = new System.Drawing.Point(0, 80);
-            button1.Name = "button1";
-            button1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button1.Size = new System.Drawing.Size(233, 40);
-            button1.TabIndex = 3;
-            button1.Text = "Actualizar Pedido";
-            button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
             // 
             // button6
             // 
@@ -868,24 +1032,6 @@
             pictureBox9.TabStop = false;
             pictureBox9.Click += pictureBox9_Click;
             // 
-            // button9
-            // 
-            button9.Dock = System.Windows.Forms.DockStyle.Top;
-            button9.FlatAppearance.BorderSize = 0;
-            button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
-            button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
-            button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button9.ForeColor = System.Drawing.Color.Silver;
-            button9.Location = new System.Drawing.Point(0, 161);
-            button9.Name = "button9";
-            button9.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button9.Size = new System.Drawing.Size(233, 40);
-            button9.TabIndex = 5;
-            button9.Text = "Registrar IVA";
-            button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button9.UseVisualStyleBackColor = true;
-            button9.Click += button9_Click_1;
-            // 
             // Menu
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -904,6 +1050,8 @@
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "AmatreSis";
             panelSideMenu.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            panel1.ResumeLayout(false);
             panelParámetrosSubMenu.ResumeLayout(false);
             panelUsuariosSubMenu.ResumeLayout(false);
             panelVentasSubMenu.ResumeLayout(false);
@@ -924,7 +1072,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panelPedidosSubMenu;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button btnPedidos;
@@ -952,7 +1099,6 @@
         private System.Windows.Forms.Button button32;
         private System.Windows.Forms.Button button33;
         private System.Windows.Forms.Button btnUsuarios;
-        private System.Windows.Forms.Button button29;
         private System.Windows.Forms.Panel panelParámetrosSubMenu;
         private System.Windows.Forms.Button button39;
         private System.Windows.Forms.Button button36;
@@ -962,8 +1108,18 @@
         private System.Windows.Forms.Button btnInstrumentos;
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button28;
+        private System.Windows.Forms.Button button29;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button24;
     }
 }
 

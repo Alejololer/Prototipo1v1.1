@@ -23,6 +23,7 @@ namespace PlayerUICore.Usuario
             this.StartPosition = FormStartPosition.CenterScreen;
             this.user = user;
             txtNom.Text = user.nombreUsuario;
+            txtNom.ReadOnly = true;
             txtCon.Text = user.claveUsuario;
             txtTipo.Text = user.tipoUsuario;
             txtTipo.ReadOnly = true;
@@ -36,12 +37,8 @@ namespace PlayerUICore.Usuario
             if (result == DialogResult.Yes)
             {
                 UserModel userModel = new UserModel();
-                if (user.nombreUsuario != txtNom.Text && userModel.CheckUsuario(txtNom.Text))
-                {
-                    MessageBox.Show("Este nombre de usuario ya esta en uso!", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-                userModel.ActualizarUser(user.Id, txtNom.Text, txtCon.Text);
+                
+                userModel.ActualizarUser(user.Id, txtCon.Text);
                 MessageBox.Show("Usuario editado correctamente!", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }

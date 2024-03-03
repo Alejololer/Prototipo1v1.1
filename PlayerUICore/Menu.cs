@@ -12,6 +12,7 @@ using PlayerUI.Pacientes;
 using PlayerUI.Parametros;
 using PlayerUI.Pedidos;
 using PlayerUI.Reactivos;
+using PlayerUI.Resultados;
 using PlayerUI.Usuario;
 using PlayerUI.Ventas;
 
@@ -29,12 +30,13 @@ namespace PlayerUI
         {
             panelPacientesSubMenu.Visible = false;
             panelPedidosSubMenu.Visible = false;
-            //panelResultadosSubMenu.Visible = false;
             panelReactivosSubMenu.Visible = false;
             panelUsuariosSubMenu.Visible = false;
             panelParámetrosSubMenu.Visible = false;
             panelVentasSubMenu.Visible = false;
             panelInstrumentosSubMenu.Visible = false;
+            panel1.Visible= false;
+            panel2.Visible= false;
         }
 
         private void hideSubMenu()
@@ -222,12 +224,12 @@ namespace PlayerUI
 
         private void button16_Click(object sender, EventArgs e)
         {
-            openChildForm(new ModificarRea());
+            openChildForm(new ModificarResul());
         }
 
         private void button21_Click(object sender, EventArgs e)
         {
-            openChildForm(new RegistrarInstrumento());
+            openChildForm(new RegistrarRea());
         }
 
         private void panelPacientesSubPacientes_Paint(object sender, PaintEventArgs e)
@@ -267,7 +269,7 @@ namespace PlayerUI
 
         private void button27_Click(object sender, EventArgs e)
         {
-            openChildForm(new PrevisualizarFactura());
+            openChildForm(new RegistrarInstrumento());
 
         }
 
@@ -280,7 +282,7 @@ namespace PlayerUI
 
         private void button17_Click(object sender, EventArgs e)
         {
-            openChildForm(new ConsultarRea());
+            openChildForm(new ConsultarResul());
         }
 
 
@@ -291,22 +293,22 @@ namespace PlayerUI
 
         private void button18_Click(object sender, EventArgs e)
         {
-            openChildForm(new RegistrarRea());
+            openChildForm(new RegistrarResul());
         }
 
         private void button20_Click(object sender, EventArgs e)
         {
-            openChildForm(new ConsultarInstrumento());
+            openChildForm(new ConsultarRea());
         }
 
         private void button15_Click(object sender, EventArgs e)
         {
-            openChildForm(new ActualizarInstrumento());
+            openChildForm(new ModificarRea());
         }
 
         private void button22_Click(object sender, EventArgs e)
         {
-            openChildForm(new EliminarInstrumento());
+            openChildForm(new EliminarReactivo());
         }
 
         private void button24_Click(object sender, EventArgs e)
@@ -316,17 +318,17 @@ namespace PlayerUI
 
         private void button26_Click(object sender, EventArgs e)
         {
-            openChildForm(new ModificarFactura());
+            openChildForm(new ConsultarInstrumento());
         }
 
         private void button25_Click(object sender, EventArgs e)
         {
-            openChildForm(new GenerarFactura());
+            openChildForm(new ActualizarInstrumento());
         }
 
         private void button23_Click(object sender, EventArgs e)
         {
-            openChildForm(new AnularFactura());
+            openChildForm(new EliminarInstrumento());
         }
 
         private void button29_Click(object sender, EventArgs e)
@@ -336,12 +338,12 @@ namespace PlayerUI
 
         private void button33_Click(object sender, EventArgs e)
         {
-            openChildForm(new RegistrarUsuario());
+            openChildForm(new PrevisualizarFactura());
         }
 
         private void button32_Click(object sender, EventArgs e)
         {
-            openChildForm(new ConsultarUsuario());
+            openChildForm(new ModificarFactura());
         }
 
         private void button31_Click(object sender, EventArgs e)
@@ -388,6 +390,56 @@ namespace PlayerUI
         private void button9_Click_1(object sender, EventArgs e)
         {
             openChildForm(new RegistrarIVA());
+        }
+
+        private void button10_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new GenerarResul());
+        }
+
+        private void button12_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new GenerarFactura());
+        }
+
+        private void button13_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new AnularFactura());
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ConsultarInformeVentas());
+        }
+
+        private void button24_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new RegistrarUsuario());
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ConsultarUsuario());
+        }
+
+        private void button29_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new RegistrarIVA());
+        }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ModificarIVA());
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            showSubMenu(panel1);
+        }
+
+        private void button9_Click_2(object sender, EventArgs e)
+        {
+            showSubMenu(panel2);
         }
     }
 }

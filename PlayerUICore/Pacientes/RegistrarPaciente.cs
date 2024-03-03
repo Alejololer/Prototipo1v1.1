@@ -50,7 +50,7 @@ namespace PlayerUI.Pacientes
             }
 
             //Validar apellido
-            if (!ValidarFormatoNombre(txtApe))
+            if (!ValidarFormatoApe(txtApe))
             {
                 // Realizar acciones si el formato es válido
                 MessageBox.Show("El formato de los apellidos no es válido.", "Formato no válido", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -97,10 +97,6 @@ namespace PlayerUI.Pacientes
 
                 }
             }
-            else
-            {
-            }
-            return;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -154,6 +150,27 @@ namespace PlayerUI.Pacientes
             return true;
         }
 
+        private bool ValidarFormatoApe(System.Windows.Forms.TextBox textBox)
+        {
+            // Verificar si el texto está en el formato "Nombre Apellido1 Apellido2 Apellido3"
+            string[] partes = textBox.Text.Split(' ');
+            if (partes.Length < 2 || partes.Length > 4)
+            {
+                return false;
+            }
+            else
+            {
+                bool formatoCorrecto = partes.All(part =>
+                    !string.IsNullOrWhiteSpace(part) &&
+                    part.All(char.IsLetter) &&
+                    char.IsUpper(part[0])); // Verificar si la primera letra es mayúscula
+                if (!formatoCorrecto)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
 
 
         public bool ValidarCedulaEcuatoriana(string cedula)

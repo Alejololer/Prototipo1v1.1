@@ -30,5 +30,11 @@ namespace Domain
         {
             tipoExamenDOA.ActualizarPrecioTipoExamen(nombre, costo);
         }
+
+        public List<TipoExamen> ObtenerTiposExamen()
+        {
+            return tipoExamenDOA.ObtenerTiposExamen();
+        }
+
     }
 }

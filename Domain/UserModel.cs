@@ -32,9 +32,9 @@ namespace Domain
             return userDAO.ObtenerUserUsername(IDUSER);
         }
 
-        public void ActualizarUser(int iduser, string username, string contrasena)
+        public void ActualizarUser(int iduser, string contrasena)
         {
-            userDAO.actualizarUsuario(iduser, username, contrasena);
+            userDAO.actualizarUsuario(iduser, contrasena);
         }
     }
 

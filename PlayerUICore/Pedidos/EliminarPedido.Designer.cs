@@ -31,7 +31,7 @@
             button1 = new System.Windows.Forms.Button();
             label4 = new System.Windows.Forms.Label();
             label1 = new System.Windows.Forms.Label();
-            textBox3 = new System.Windows.Forms.TextBox();
+            txtCI = new System.Windows.Forms.TextBox();
             btnExit = new System.Windows.Forms.Button();
             SuspendLayout();
             // 
@@ -59,7 +59,7 @@
             label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             label4.ForeColor = System.Drawing.SystemColors.Control;
-            label4.Location = new System.Drawing.Point(13, 300);
+            label4.Location = new System.Drawing.Point(39, 299);
             label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label4.Name = "label4";
             label4.Size = new System.Drawing.Size(278, 17);
@@ -80,15 +80,16 @@
             label1.Text = "ELIMINAR PEDIDO";
             label1.Click += label1_Click;
             // 
-            // textBox3
+            // txtCI
             // 
-            textBox3.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            textBox3.Location = new System.Drawing.Point(356, 290);
-            textBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new System.Drawing.Size(302, 26);
-            textBox3.TabIndex = 59;
+            txtCI.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            txtCI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            txtCI.Location = new System.Drawing.Point(323, 290);
+            txtCI.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            txtCI.MaxLength = 10;
+            txtCI.Name = "txtCI";
+            txtCI.Size = new System.Drawing.Size(335, 26);
+            txtCI.TabIndex = 59;
             // 
             // btnExit
             // 
@@ -115,12 +116,13 @@
             Controls.Add(button1);
             Controls.Add(label4);
             Controls.Add(label1);
-            Controls.Add(textBox3);
+            Controls.Add(txtCI);
             Controls.Add(btnExit);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             Name = "EliminarPedido";
             Text = "EliminarPedido";
+            Load += EliminarPedido_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -130,7 +132,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtCI;
         private System.Windows.Forms.Button btnExit;
     }
 }

@@ -94,5 +94,32 @@ namespace DataAccess
                 }
             }
         }
+
+        public List<TipoExamen> ObtenerTiposExamen()
+        {
+            List<TipoExamen> TiposExamen = null;
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "SELECT * FROM TIPOSEXAMEN";
+                    command.CommandType = System.Data.CommandType.Text;
+                    SqlDataReader reader = command.ExecuteReader();
+                    TiposExamen = new List<TipoExamen>();
+                    while (reader.Read())
+                    {
+                        
+                        TipoExamen tipo = new TipoExamen(reader.GetInt32(0), reader.GetString(1), reader.GetDecimal(2));
+                        TiposExamen.Add(tipo);
+                    }
+
+                }
+            }
+            return TiposExamen;
+        }
+
+
     }
 }
