@@ -37,7 +37,7 @@ namespace PlayerUI.Pacientes
   
             if (!ValidarCedulaEcuatoriana(cedula))
             {
-                MessageBox.Show("Cedula no valida", "Verificar datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("La cédula no es válida.", "Verificar datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
 

@@ -141,13 +141,6 @@ namespace PlayerUI
             //..
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            openChildForm(new ActualizarPedido());
-            //..
-            //your codes
-            //..
-        }
         #endregion
 
         private void btnTools_Click(object sender, EventArgs e)
@@ -338,7 +331,7 @@ namespace PlayerUI
 
         private void button33_Click(object sender, EventArgs e)
         {
-            openChildForm(new PrevisualizarFactura());
+            openChildForm(new RegistrarVenta());
         }
 
         private void button32_Click(object sender, EventArgs e)

@@ -191,16 +191,6 @@ namespace PlayerUI.Pedidos
             Reset();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("¡El pedido se ha agregado correctamente!", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("¡El pedido se ha eliminado correctamente!", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-        }
 
         private void label8_Click(object sender, EventArgs e)
         {
@@ -447,6 +437,7 @@ namespace PlayerUI.Pedidos
                     MessageBox.Show("Seleccione una fila antes de intentar eliminar un tipo de examen.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
+
         }
 
         private void llenarDGV()

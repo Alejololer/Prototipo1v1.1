@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataAccess.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,10 +11,10 @@ using System.Windows.Forms;
 
 namespace PlayerUI.Ventas
 {
-    public partial class PrevisualizarFactura : Form
+    public partial class RegistrarVenta : Form
     {
-
-        public PrevisualizarFactura()
+        Pedido pedido += null;
+        public RegistrarVenta()
         {
             InitializeComponent();
         }

@@ -59,7 +59,7 @@
             label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             label4.ForeColor = System.Drawing.SystemColors.Control;
-            label4.Location = new System.Drawing.Point(39, 299);
+            label4.Location = new System.Drawing.Point(14, 299);
             label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label4.Name = "label4";
             label4.Size = new System.Drawing.Size(278, 17);

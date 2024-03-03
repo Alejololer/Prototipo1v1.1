@@ -95,6 +95,7 @@
             txtCedula.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             txtCedula.Location = new System.Drawing.Point(262, 99);
             txtCedula.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            txtCedula.MaxLength = 10;
             txtCedula.Name = "txtCedula";
             txtCedula.Size = new System.Drawing.Size(312, 26);
             txtCedula.TabIndex = 49;

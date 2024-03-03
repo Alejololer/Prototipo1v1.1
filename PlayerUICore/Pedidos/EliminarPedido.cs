@@ -81,6 +81,12 @@ namespace PlayerUI.Pedidos
                 MessageBox.Show("La cédula no es válida.", "Formato no válido", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
+            PacienteModel paciente = new PacienteModel();
+            if(paciente.Check(txtCI.Text))
+            {
+                MessageBox.Show("Paciente no encontrado!", "Registrar Pedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
             PedidoModel pedidoModel = new PedidoModel();
             if (!pedidoModel.Check(txtCI.Text))
             {

@@ -93,6 +93,12 @@ namespace PlayerUI.Pedidos
                 MessageBox.Show("La cédula no es válida.", "Formato no válido", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
+            PacienteModel paciente = new PacienteModel();
+            if (!paciente.Check(txtCI.Text))
+            {
+                MessageBox.Show("Paciente no encontrado!", "Registrar Pedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
             PedidoModel pedidoModel = new PedidoModel();
             if (!pedidoModel.Check(txtCI.Text))
             {
@@ -163,6 +169,11 @@ namespace PlayerUI.Pedidos
             {
                 if (dataGridView1.SelectedRows.Count > 0)
                 {
+                    if(examenes.Count == 1)
+                    {
+                        MessageBox.Show("¡El pedido debe tener al menos un tipo de examen!", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
                     // Obtener la primera fila seleccionada (suponiendo que solo permites la selección de una sola fila)
                     DataGridViewRow filaSeleccionada = dataGridView1.SelectedRows[0];
 

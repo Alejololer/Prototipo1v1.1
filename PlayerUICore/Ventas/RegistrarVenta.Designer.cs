@@ -1,6 +1,6 @@
 ﻿namespace PlayerUI.Ventas
 {
-    partial class PrevisualizarFactura
+    partial class RegistrarVenta
     {
         /// <summary>
         /// Required designer variable.
@@ -33,7 +33,8 @@
             btnConsultarInstrumento = new System.Windows.Forms.Button();
             lblNombreInstrumento = new System.Windows.Forms.Label();
             dgvConsultarInstrumentos = new System.Windows.Forms.DataGridView();
-            cmbxPedidos = new System.Windows.Forms.ComboBox();
+            textBox1 = new System.Windows.Forms.TextBox();
+            button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)dgvConsultarInstrumentos).BeginInit();
             SuspendLayout();
             // 
@@ -74,10 +75,10 @@
             btnConsultarInstrumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btnConsultarInstrumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             btnConsultarInstrumento.ForeColor = System.Drawing.Color.LightGray;
-            btnConsultarInstrumento.Location = new System.Drawing.Point(471, 510);
+            btnConsultarInstrumento.Location = new System.Drawing.Point(508, 510);
             btnConsultarInstrumento.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             btnConsultarInstrumento.Name = "btnConsultarInstrumento";
-            btnConsultarInstrumento.Size = new System.Drawing.Size(175, 46);
+            btnConsultarInstrumento.Size = new System.Drawing.Size(138, 46);
             btnConsultarInstrumento.TabIndex = 15;
             btnConsultarInstrumento.Text = "Generar";
             btnConsultarInstrumento.UseVisualStyleBackColor = false;
@@ -89,12 +90,12 @@
             lblNombreInstrumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             lblNombreInstrumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             lblNombreInstrumento.ForeColor = System.Drawing.Color.LightGray;
-            lblNombreInstrumento.Location = new System.Drawing.Point(42, 78);
+            lblNombreInstrumento.Location = new System.Drawing.Point(42, 83);
             lblNombreInstrumento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             lblNombreInstrumento.Name = "lblNombreInstrumento";
-            lblNombreInstrumento.Size = new System.Drawing.Size(143, 17);
+            lblNombreInstrumento.Size = new System.Drawing.Size(192, 17);
             lblNombreInstrumento.TabIndex = 20;
-            lblNombreInstrumento.Text = "Seleccione el pedido:";
+            lblNombreInstrumento.Text = "Ingrese el número de cédula:";
             // 
             // dgvConsultarInstrumentos
             // 
@@ -108,23 +109,38 @@
             dgvConsultarInstrumentos.Size = new System.Drawing.Size(599, 346);
             dgvConsultarInstrumentos.TabIndex = 21;
             // 
-            // cmbxPedidos
+            // textBox1
             // 
-            cmbxPedidos.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            cmbxPedidos.FormattingEnabled = true;
-            cmbxPedidos.Location = new System.Drawing.Point(238, 77);
-            cmbxPedidos.Margin = new System.Windows.Forms.Padding(2);
-            cmbxPedidos.Name = "cmbxPedidos";
-            cmbxPedidos.Size = new System.Drawing.Size(407, 23);
-            cmbxPedidos.TabIndex = 22;
+            textBox1.Location = new System.Drawing.Point(239, 77);
+            textBox1.MaxLength = 10;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new System.Drawing.Size(262, 23);
+            textBox1.TabIndex = 22;
             // 
-            // PrevisualizarFactura
+            // button1
+            // 
+            button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
+            button1.BackColor = System.Drawing.Color.FromArgb(235, 42, 83);
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            button1.ForeColor = System.Drawing.Color.LightGray;
+            button1.Location = new System.Drawing.Point(508, 63);
+            button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button1.Name = "button1";
+            button1.Size = new System.Drawing.Size(137, 37);
+            button1.TabIndex = 23;
+            button1.Text = "Consultar";
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // RegistrarVenta
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.FromArgb(32, 30, 45);
             ClientSize = new System.Drawing.Size(700, 600);
-            Controls.Add(cmbxPedidos);
+            Controls.Add(button1);
+            Controls.Add(textBox1);
             Controls.Add(dgvConsultarInstrumentos);
             Controls.Add(lblNombreInstrumento);
             Controls.Add(btnConsultarInstrumento);
@@ -132,8 +148,9 @@
             Controls.Add(label1);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            Name = "PrevisualizarFactura";
+            Name = "RegistrarVenta";
             Text = "Form3";
+            Load += this.RegistrarVenta_Load;
             ((System.ComponentModel.ISupportInitialize)dgvConsultarInstrumentos).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -145,6 +162,7 @@
         private System.Windows.Forms.Button btnConsultarInstrumento;
         private System.Windows.Forms.Label lblNombreInstrumento;
         private System.Windows.Forms.DataGridView dgvConsultarInstrumentos;
-        private System.Windows.Forms.ComboBox cmbxPedidos;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
     }
 }
