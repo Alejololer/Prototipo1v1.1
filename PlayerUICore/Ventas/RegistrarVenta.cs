@@ -13,7 +13,7 @@ namespace PlayerUI.Ventas
 {
     public partial class RegistrarVenta : Form
     {
-        Pedido pedido += null;
+        Pedido pedido = null;
         public RegistrarVenta()
         {
             InitializeComponent();
