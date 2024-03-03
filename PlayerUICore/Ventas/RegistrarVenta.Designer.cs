@@ -150,7 +150,6 @@
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             Name = "RegistrarVenta";
             Text = "Form3";
-            Load += this.RegistrarVenta_Load;
             ((System.ComponentModel.ISupportInitialize)dgvConsultarInstrumentos).EndInit();
             ResumeLayout(false);
             PerformLayout();
