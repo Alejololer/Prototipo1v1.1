@@ -15,13 +15,14 @@ namespace PlayerUI.Parametros
     public partial class ModificarPrecio : Form
     {
         TipoExamen tipoExamen = null;
-        public ModificarPrecio()
+        public ModificarPrecio(TipoExamen tm)
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
             txtValor.ReadOnly = true;
-            txtNomTipo.KeyPress += OnKeyPress;
             txtNuevoValor.KeyPress += OnKeyPressNum;
-
+            tipoExamen = tm;
+            obtenerPrecio();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -31,11 +32,6 @@ namespace PlayerUI.Parametros
 
         private void button9_Click(object sender, EventArgs e)
         {
-            if(tipoExamen == null)
-            {
-                MessageBox.Show("Primero consulte un Tipo de Examen!", "Modificar precio Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
             if(!EsPrecioValido(txtNuevoValor.Text)) {
                 MessageBox.Show("Nuevo costo de Tipo de examen inválido!", "Modificar precio Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
@@ -44,7 +40,7 @@ namespace PlayerUI.Parametros
             if (result == DialogResult.Yes)
             {
                 TipoExamenModel model = new TipoExamenModel();
-                model.ActualizarPrecioTipoExamen(txtNomTipo.Text, decimal.Parse(txtNuevoValor.Text));
+                model.ActualizarPrecioTipoExamen(tipoExamen.nombreTipoExamen, decimal.Parse(txtNuevoValor.Text));
                 MessageBox.Show("Costo de Tipo de Examen modificado correctamente", "Modificar precio Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtNuevoValor.Text = "";
                 obtenerPrecio();
@@ -64,21 +60,6 @@ namespace PlayerUI.Parametros
         {
             obtenerPrecio();
             
-        }
-
-        private void OnKeyPress(object? sender, KeyPressEventArgs e)
-        {
-            e.Handled = e.KeyChar switch
-            {
-                >= '0' and <= '9' => false, // allow numerics
-                >= 'a' and <= 'z' => false, // allow lowercase characters
-                >= 'A' and <= 'Z' => false, // allow uppercase characters
-                '\b' => false,              // allow backspace
-                '-' => false,
-                '/' => false,
-                _ => true
-            };
-
         }
 
         private void OnKeyPressNum(object? sender, KeyPressEventArgs e)
@@ -123,18 +104,12 @@ namespace PlayerUI.Parametros
 
         private void obtenerPrecio()
         {
-            if(txtNomTipo.Text.Length <= 1)
-            {
-                MessageBox.Show("Nombre de Tipo de examen inválido!", "Modificar precio Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
             TipoExamenModel model = new TipoExamenModel();
-            if (!model.Check(txtNomTipo.Text))
+            if (!model.Check(tipoExamen.nombreTipoExamen))
             {
                 MessageBox.Show("Tipo de examen no encontrado!", "Modificar precio Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            tipoExamen = model.GetTipoExamen(txtNomTipo.Text);
             txtValor.Text = tipoExamen.costoTipoExamen.ToString("#.##");
         }
     }

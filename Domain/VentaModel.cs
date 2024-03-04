@@ -25,5 +25,9 @@ namespace Domain
             ventaDAO.registrarVenta(venta);
         }
 
+        public void registrarVentaMod(Venta venta, decimal mod)
+        {
+            ventaDAO.registrarVenta(venta, mod);
+        }
     }
 }

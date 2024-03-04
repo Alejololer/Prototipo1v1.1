@@ -1,5 +1,6 @@
 ﻿using DataAccess.Entities;
 using Domain;
+using PlayerUICore.Parametros;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,9 +21,7 @@ namespace PlayerUI.Parametros
             InitializeComponent();
             txtNomTipo.KeyPress += OnKeyPress;
             txtCostoTipo.KeyPress += OnKeyPressNum;
-            txtNomPar.KeyPress += OnKeyPress;
-            txtvalMax.KeyPress += OnKeyPressNum;
-            txtValMin.KeyPress += OnKeyPressNum;
+            
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -32,13 +31,12 @@ namespace PlayerUI.Parametros
 
         private void button9_Click(object sender, EventArgs e)
         {
-            string NombreTipo = txtNomPar.Text;
             if (txtNomTipo.Text.Length <= 1)
             {
                 MessageBox.Show("Nombre de Tipo de examen inválido!", "Registrar Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            if (txtCostoTipo.Text=="" || !EsPrecioValido(txtCostoTipo.Text))
+            if (txtCostoTipo.Text == "" || !EsPrecioValido(txtCostoTipo.Text))
             {
                 MessageBox.Show("Costo de Tipo de examen inválido!", "Registrar Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
@@ -56,6 +54,8 @@ namespace PlayerUI.Parametros
                 tipoExamen = model.GetTipoExamen(txtNomTipo.Text);
                 MessageBox.Show("Tipo de Examen registrado correctamente", "Registrar Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            ParámetrosTipoExamen a = new ParámetrosTipoExamen(tipoExamen);
+            a.Show();
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
@@ -127,79 +127,11 @@ namespace PlayerUI.Parametros
             return decimal.TryParse(texto, out _);
         }
 
-        private bool EsNumeroDecimalValido(string texto)
-        {
-            // Verificar si el texto está vacío
-            if (texto == "")
-                return true;
 
-            // Verificar si el texto representa un número decimal válido
-            return decimal.TryParse(texto, out _);
-        }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void label5_Click(object sender, EventArgs e)
         {
-            if(tipoExamen ==null)
-            {
-                MessageBox.Show("Primero registre el tipo de examen!", "Registrar Parámetro de Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-            if (!EsNumeroDecimalValido(txtValMin.Text))
-            {
-                MessageBox.Show("Valor mínimo no válido!", "Registrar Parámetro de Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-            if (!EsNumeroDecimalValido(txtvalMax.Text))
-            {
-                MessageBox.Show("Valor máximo no válido!", "Registrar Parámetro de Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-            if (txtvalMax.Text == "" && txtValMin.Text != "")
-            {
-                MessageBox.Show("Si registra un valor mínimo, registre un valor máximo!", "Registrar Parámetro de Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if (txtvalMax.Text != "" && txtValMin.Text == "")
-            {
-                MessageBox.Show("Si registra un valor máximo, registre un valor mínimo!", "Registrar Parámetro de Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if (txtvalMax.Text != "")
-            {
-                if (float.Parse(txtvalMax.Text) <= float.Parse(txtValMin.Text))
-                {
-                    MessageBox.Show("El valor máximo debe ser mayor al valor mínimo!", "Registrar Parámetro de Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-            }
-            if (txtNomPar.Text == "")
-            {
-                MessageBox.Show("Nombre de parámetro inválido!", "Registrar Parámetro de Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-            if (txtNomPar.Text == "")
-            {
-                MessageBox.Show("Nombre de parámetro inválido!", "Registrar Parámetro de Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-            DialogResult result = MessageBox.Show("¿Está seguro?", "Registrar Parámetro de Tipo de Examen", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
-            {
-                ParametroTipoExamenModel parametroTipoExamenModel = new ParametroTipoExamenModel();
-                if (txtvalMax.Text != "" && txtValMin.Text != "" && txtUn.Text != "")
-                    parametroTipoExamenModel.registrarParTipoExamen(tipoExamen.Id, txtNomPar.Text, float.Parse(txtValMin.Text), float.Parse(txtvalMax.Text), txtUn.Text.Trim());
-                else if (txtvalMax.Text != "" && txtValMin.Text != "")
-                    parametroTipoExamenModel.registrarParTipoExamenRango(tipoExamen.Id, txtNomPar.Text, float.Parse(txtValMin.Text), float.Parse(txtvalMax.Text));
-                else if (txtUn.Text != "")
-                    parametroTipoExamenModel.registrarParTipoExamenUnidad(tipoExamen.Id, txtNomPar.Text, txtUn.Text.Trim());
-                else
-                    parametroTipoExamenModel.registrarParTipoExamenNull(tipoExamen.Id, txtNomPar.Text);
-                MessageBox.Show("Parámetro registrado correctamente!", "Registrar Parámetro de Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txtNomPar.Text = "";
-                txtvalMax.Text = "";
-                txtValMin.Text = "";
-                txtUn.Text = "";
-            }
+
         }
     }
 }

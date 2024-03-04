@@ -46,6 +46,8 @@
             txtApe = new System.Windows.Forms.TextBox();
             txtNom = new System.Windows.Forms.TextBox();
             button2 = new System.Windows.Forms.Button();
+            textBox1 = new System.Windows.Forms.TextBox();
+            label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -86,7 +88,7 @@
             btnConsultarInstrumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btnConsultarInstrumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             btnConsultarInstrumento.ForeColor = System.Drawing.Color.LightGray;
-            btnConsultarInstrumento.Location = new System.Drawing.Point(510, 519);
+            btnConsultarInstrumento.Location = new System.Drawing.Point(511, 542);
             btnConsultarInstrumento.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             btnConsultarInstrumento.Name = "btnConsultarInstrumento";
             btnConsultarInstrumento.Size = new System.Drawing.Size(138, 46);
@@ -114,7 +116,7 @@
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new System.Drawing.Point(42, 180);
+            dataGridView1.Location = new System.Drawing.Point(42, 155);
             dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
@@ -150,7 +152,7 @@
             // 
             // txtTotalIVA
             // 
-            txtTotalIVA.Location = new System.Drawing.Point(220, 478);
+            txtTotalIVA.Location = new System.Drawing.Point(220, 446);
             txtTotalIVA.MaxLength = 10;
             txtTotalIVA.Name = "txtTotalIVA";
             txtTotalIVA.Size = new System.Drawing.Size(428, 23);
@@ -162,7 +164,7 @@
             label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             label2.ForeColor = System.Drawing.Color.LightGray;
-            label2.Location = new System.Drawing.Point(51, 484);
+            label2.Location = new System.Drawing.Point(51, 452);
             label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label2.Name = "label2";
             label2.Size = new System.Drawing.Size(154, 17);
@@ -171,7 +173,7 @@
             // 
             // txtTotalNoIVA
             // 
-            txtTotalNoIVA.Location = new System.Drawing.Point(220, 378);
+            txtTotalNoIVA.Location = new System.Drawing.Point(220, 350);
             txtTotalNoIVA.MaxLength = 10;
             txtTotalNoIVA.Name = "txtTotalNoIVA";
             txtTotalNoIVA.Size = new System.Drawing.Size(428, 23);
@@ -183,7 +185,7 @@
             label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             label3.ForeColor = System.Drawing.Color.LightGray;
-            label3.Location = new System.Drawing.Point(52, 384);
+            label3.Location = new System.Drawing.Point(51, 356);
             label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label3.Name = "label3";
             label3.Size = new System.Drawing.Size(146, 17);
@@ -192,7 +194,7 @@
             // 
             // txtIVA
             // 
-            txtIVA.Location = new System.Drawing.Point(220, 428);
+            txtIVA.Location = new System.Drawing.Point(220, 398);
             txtIVA.MaxLength = 10;
             txtIVA.Name = "txtIVA";
             txtIVA.Size = new System.Drawing.Size(428, 23);
@@ -204,7 +206,7 @@
             IVA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             IVA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             IVA.ForeColor = System.Drawing.Color.LightGray;
-            IVA.Location = new System.Drawing.Point(51, 434);
+            IVA.Location = new System.Drawing.Point(51, 404);
             IVA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             IVA.Name = "IVA";
             IVA.Size = new System.Drawing.Size(88, 17);
@@ -218,7 +220,7 @@
             label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             label10.ForeColor = System.Drawing.SystemColors.Control;
-            label10.Location = new System.Drawing.Point(42, 137);
+            label10.Location = new System.Drawing.Point(42, 121);
             label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label10.Name = "label10";
             label10.Size = new System.Drawing.Size(69, 17);
@@ -232,7 +234,7 @@
             label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             label9.ForeColor = System.Drawing.SystemColors.Control;
-            label9.Location = new System.Drawing.Point(312, 137);
+            label9.Location = new System.Drawing.Point(312, 121);
             label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label9.Name = "label9";
             label9.Size = new System.Drawing.Size(69, 17);
@@ -243,7 +245,7 @@
             // 
             txtApe.Anchor = System.Windows.Forms.AnchorStyles.None;
             txtApe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            txtApe.Location = new System.Drawing.Point(387, 132);
+            txtApe.Location = new System.Drawing.Point(387, 116);
             txtApe.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             txtApe.MaxLength = 30;
             txtApe.Name = "txtApe";
@@ -254,7 +256,7 @@
             // 
             txtNom.Anchor = System.Windows.Forms.AnchorStyles.None;
             txtNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            txtNom.Location = new System.Drawing.Point(117, 132);
+            txtNom.Location = new System.Drawing.Point(117, 116);
             txtNom.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             txtNom.MaxLength = 30;
             txtNom.Name = "txtNom";
@@ -269,7 +271,7 @@
             button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             button2.ForeColor = System.Drawing.Color.LightGray;
-            button2.Location = new System.Drawing.Point(42, 519);
+            button2.Location = new System.Drawing.Point(43, 542);
             button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             button2.Name = "button2";
             button2.Size = new System.Drawing.Size(138, 46);
@@ -278,12 +280,35 @@
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
-            // RegistrarVenta
+            // textBox1
+            // 
+            textBox1.Location = new System.Drawing.Point(220, 494);
+            textBox1.MaxLength = 10;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new System.Drawing.Size(428, 23);
+            textBox1.TabIndex = 58;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label4.ForeColor = System.Drawing.Color.LightGray;
+            label4.Location = new System.Drawing.Point(51, 500);
+            label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(170, 17);
+            label4.TabIndex = 57;
+            label4.Text = "Total Venta (Modificable):";
+            // 
+            // GenerarVenta
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.FromArgb(32, 30, 45);
             ClientSize = new System.Drawing.Size(700, 600);
+            Controls.Add(textBox1);
+            Controls.Add(label4);
             Controls.Add(button2);
             Controls.Add(label10);
             Controls.Add(label9);
@@ -304,7 +329,7 @@
             Controls.Add(label1);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            Name = "RegistrarVenta";
+            Name = "GenerarVenta";
             Text = "Form3";
             Load += RegistrarVenta_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
@@ -331,5 +356,7 @@
         private System.Windows.Forms.TextBox txtApe;
         private System.Windows.Forms.TextBox txtNom;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label4;
     }
 }

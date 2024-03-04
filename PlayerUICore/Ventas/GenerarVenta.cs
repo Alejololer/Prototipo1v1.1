@@ -22,15 +22,51 @@ namespace PlayerUI.Ventas
         public GenerarVenta()
         {
             InitializeComponent();
-            txtCI.KeyPress += OnKeyPressNum;
+            txtCI.KeyPress += OnKeyPressCed;
             txtNom.ReadOnly = true;
             txtApe.ReadOnly = true;
             txtTotalIVA.ReadOnly = true;
             txtTotalNoIVA.ReadOnly = true;
             txtIVA.ReadOnly = true;
+            textBox1.KeyPress += OnKeyPressNum;
             IVAModel model = new IVAModel();
             iva = model.getIVA();
             IVA.Text = "IVA VENTA (" + iva.valor.ToString() + "%):";
+        }
+
+        private bool EsPrecioValido(string texto)
+        {
+
+            // Verificar si el texto contiene solo dígitos y un solo punto
+            bool puntoEncontrado = false;
+            foreach (char caracter in texto)
+            {
+                if (caracter == '.')
+                {
+                    // Permitir solo un punto en la cadena
+                    if (puntoEncontrado)
+                        return false;
+                    puntoEncontrado = true;
+                }
+                else if (!char.IsDigit(caracter))
+                {
+                    // Permitir solo dígitos y un punto en la cadena
+                    return false;
+                }
+            }
+
+            // Verificar si el texto representa un número válido
+            return decimal.TryParse(texto, out _);
+        }
+
+        private void OnKeyPressCed(object? sender, KeyPressEventArgs e)
+        {
+            e.Handled = e.KeyChar switch
+            {
+                >= '0' and <= '9' => false, // allow numerics
+                '\b' => false,              // allow backspace
+                _ => true
+            };
         }
 
         private void OnKeyPressNum(object? sender, KeyPressEventArgs e)
@@ -39,6 +75,7 @@ namespace PlayerUI.Ventas
             {
                 >= '0' and <= '9' => false, // allow numerics
                 '\b' => false,              // allow backspace
+                '.' => false,
                 _ => true
             };
         }
@@ -101,8 +138,21 @@ namespace PlayerUI.Ventas
             if (result == DialogResult.Yes)
             {
                 VentaModel model = new VentaModel();
-                model.registrarVenta(venta);
-                MessageBox.Show("Venta generada correctamente", "Generar Venta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (textBox1.Text != "" && !EsPrecioValido(textBox1.Text))
+                {
+                    MessageBox.Show("Nuevo total no váldio", "Generar Venta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+                if(textBox1.Text != "")
+                {
+                    MessageBox.Show("Venta generada correctamente", "Generar Venta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    model.registrarVentaMod(venta, decimal.Parse(textBox1.Text));
+                }
+                else {
+                    model.registrarVenta(venta);
+                    MessageBox.Show("Venta generada correctamente", "Generar Venta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                Reset();
             }
             else
             {
@@ -173,6 +223,7 @@ namespace PlayerUI.Ventas
 
         private void Reset()
         {
+            textBox1.Text = "";
             txtCI.Text = "";
             txtApe.Text = "";
             txtNom.Text = "";

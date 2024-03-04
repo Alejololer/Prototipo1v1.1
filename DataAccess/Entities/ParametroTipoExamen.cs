@@ -15,9 +15,12 @@ namespace DataAccess.Entities
         public float maxParametro { get; set;}
         public string unidad {  get; set;}
 
-        public ParametroTipoExamen(int ID)
+        public ParametroTipoExamen(string nombreParametro, float minParametro, float maxParametro, string unidad)
         {
-            Id = ID;
+            this.nombreParametro = nombreParametro;
+            this.minParametro = minParametro;
+            this.maxParametro = maxParametro;
+            this.unidad = unidad;
         }
     }
 }

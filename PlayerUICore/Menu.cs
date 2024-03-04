@@ -323,10 +323,7 @@ namespace PlayerUI
             openChildForm(new EliminarReactivo());
         }
 
-        private void button24_Click(object sender, EventArgs e)
-        {
-            openChildForm(new DescargarFactura());
-        }
+
 
         private void button26_Click(object sender, EventArgs e)
         {
@@ -353,17 +350,7 @@ namespace PlayerUI
             openChildForm(new GenerarVenta());
         }
 
-        private void button32_Click(object sender, EventArgs e)
-        {
-            if(usuario.tipoUsuario == "Jefe de laboratorio") {
-                openChildForm(new ModificarFactura());
-            }
-            else
-            {
-                MessageBox.Show("Solo el Jefe de laboratorio puede acceder a esta sección", "Usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            }
-        }
 
         private void button31_Click(object sender, EventArgs e)
         {
@@ -386,15 +373,6 @@ namespace PlayerUI
             openChildForm(new ConsultarTipoExamen());
         }
 
-        private void button35_Click(object sender, EventArgs e)
-        {
-            openChildForm(new ModificarPrecio());
-        }
-
-        private void button39_Click(object sender, EventArgs e)
-        {
-            openChildForm(new ModificarPrecio());
-        }
 
         private void panelLogo_Paint(object sender, PaintEventArgs e)
         {
@@ -418,7 +396,7 @@ namespace PlayerUI
 
         private void button12_Click_1(object sender, EventArgs e)
         {
-            openChildForm(new GenerarFactura());
+            openChildForm(new ConsultarVentas());
         }
 
         private void button13_Click_1(object sender, EventArgs e)

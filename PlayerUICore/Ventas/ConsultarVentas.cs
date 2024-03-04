@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PlayerUI.Ventas
 {
-    public partial class GenerarFactura : Form
+    public partial class ConsultarVentas : Form
     {
-        public GenerarFactura()
+        public ConsultarVentas()
         {
             InitializeComponent();
         }

@@ -31,11 +31,11 @@ namespace DataAccess
                     if (result != null && result != DBNull.Value)
                     {
                         // Convierte el resultado a decimal
-                        totalNoIva = Convert.ToDecimal(result);
+                        totalNoIva = Math.Round(Convert.ToDecimal(result), 2);
                     }
                 }
-                ivaPedido = totalNoIva * IVA / 100;
-                totalIva = totalNoIva + ivaPedido;
+                ivaPedido = Math.Round(totalNoIva * IVA / 100, 2);
+                totalIva = Math.Round(totalNoIva + ivaPedido, 2);
                 venta = new Venta(idpedido, cedula, totalNoIva, totalIva, ivaPedido);
                 
             }
@@ -77,6 +77,26 @@ namespace DataAccess
                     command.Parameters.AddWithValue("@idPedido", venta.idPedido);
                     command.Parameters.AddWithValue("@ciPaciente", venta.CIPaciente);
                     command.Parameters.AddWithValue("@precioVenta", venta.precioFinalIVA);
+                    command.ExecuteReader();
+                }
+            }
+        }
+
+        public void registrarVenta(Venta venta, decimal totalmod)
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.Connection = connection;
+                    command.CommandText = "INSERT INTO VENTAS(IDPEDIDO, CIPACIENTE, PRECIOTOTALVENTA, PRECIOFINALVENTA) VALUES (@idPedido, @ciPaciente, @precioVenta, @precioMod)";
+                    command.Parameters.AddWithValue("@idPedido", venta.idPedido);
+                    command.Parameters.AddWithValue("@ciPaciente", venta.CIPaciente);
+                    command.Parameters.AddWithValue("@precioVenta", venta.precioFinalIVA);
+                    command.Parameters.AddWithValue("@precioMod", totalmod);
+
                     command.ExecuteReader();
                 }
             }

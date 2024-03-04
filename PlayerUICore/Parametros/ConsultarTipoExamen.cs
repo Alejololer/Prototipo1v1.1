@@ -20,8 +20,8 @@ namespace PlayerUI.Parametros
         public ConsultarTipoExamen()
         {
             InitializeComponent();
-            txtValor.ReadOnly = true;
             txtNomTipo.KeyPress += OnKeyPress;
+            llenarDataGridViewTodo();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -49,10 +49,89 @@ namespace PlayerUI.Parametros
                 return false;
             }
             tipoExamen = model.GetTipoExamen(txtNomTipo.Text);
-            txtValor.Text = tipoExamen.costoTipoExamen.ToString("#.##");
             return true;
         }
-        private void llenarDataGridView()
+        private void llenarDataGridViewTodo()
+        {
+            try
+            {
+                string connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=Requerimientos;Integrated Security=SSPI";
+                string query = "SELECT * FROM TIPOSEXAMEN";
+                using (var connection = new SqlConnection(connectionString))
+                {
+                    using (var consulta = new SqlCommand(query, connection))
+                    {
+                        connection.Open();
+
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(consulta))
+                        {
+                            DataTable dt = new DataTable();
+                            adapter.Fill(dt);
+                            //formato
+                            dataGridView1.DataSource = dt;
+                            dataGridView1.Columns[0].HeaderText = "ID";
+                            dataGridView1.Columns[0].Width = 50;
+                            dataGridView1.Columns[1].HeaderText = "Nombre";
+                            dataGridView1.Columns[1].Width = 400;
+                            dataGridView1.Columns[2].HeaderText = "Costo";
+                            dataGridView1.Columns[2].Width = 150;
+                            dataGridView1.Columns[2].DefaultCellStyle.Format = "N2";
+
+                            if (dt.Rows.Count == 0)
+                            {
+                                MessageBox.Show("No se encontraron parámetros para este tipo de examen!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al llenar el DataGridView: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void llenarDataGridView1(string nombreTipo)
+        {
+            try
+            {
+                string connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=Requerimientos;Integrated Security=SSPI";
+                string query = "SELECT * FROM TIPOSEXAMEN WHERE NOMBRETIPOEXAMEN = @nombreTipo";
+                using (var connection = new SqlConnection(connectionString))
+                {
+                    using (var consulta = new SqlCommand(query, connection))
+                    {
+                        consulta.Parameters.AddWithValue("@nombreTipo", nombreTipo);
+
+                        connection.Open();
+
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(consulta))
+                        {
+                            DataTable dt = new DataTable();
+                            adapter.Fill(dt);
+                            //formato
+                            dataGridView1.DataSource = dt;
+                            dataGridView1.Columns[0].HeaderText = "ID";
+                            dataGridView1.Columns[0].Width = 50;
+                            dataGridView1.Columns[1].HeaderText = "Nombre";
+                            dataGridView1.Columns[1].Width = 400;
+                            dataGridView1.Columns[2].HeaderText = "Costo";
+                            dataGridView1.Columns[2].Width = 150;
+                            dataGridView1.Columns[2].DefaultCellStyle.Format = "N2";
+
+                            if (dt.Rows.Count == 0)
+                            {
+                                MessageBox.Show("No se encontraron parámetros para este tipo de examen!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al llenar el DataGridView: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void llenarDataGridView2()
         {
             try
             {
@@ -101,9 +180,24 @@ namespace PlayerUI.Parametros
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (!obtenerPrecio())
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                DataGridViewRow filaSeleccionada = dataGridView1.SelectedRows[0];
+                DataGridViewCell celda = filaSeleccionada.Cells[0];
+                DataGridViewCell celda1 = filaSeleccionada.Cells[1];
+                DataGridViewCell celda2 = filaSeleccionada.Cells[2];
+                int id = (int)celda.Value;
+                string nombre = (string)celda1.Value;
+                decimal costo = (decimal)celda2.Value;
+                tipoExamen = new TipoExamen(id, nombre, costo);
+                llenarDataGridView2();
+            }
+            else
+            {
+                MessageBox.Show("Primero debe seleccionar un tipo de examen!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
-            llenarDataGridView();
+            }
+
         }
 
         private void OnKeyPress(object? sender, KeyPressEventArgs e)
@@ -116,6 +210,7 @@ namespace PlayerUI.Parametros
                 '\b' => false,              // allow backspace
                 '-' => false,
                 '/' => false,
+                ' ' => false,
                 _ => true
             };
         }
@@ -130,6 +225,41 @@ namespace PlayerUI.Parametros
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dgvTipoExamen_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (obtenerPrecio())
+            {
+                llenarDataGridView1(txtNomTipo.Text);
+            }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                DataGridViewRow filaSeleccionada = dataGridView1.SelectedRows[0];
+                DataGridViewCell celda = filaSeleccionada.Cells[0];
+                DataGridViewCell celda1 = filaSeleccionada.Cells[1];
+                DataGridViewCell celda2 = filaSeleccionada.Cells[2];
+                int id = (int)celda.Value;
+                string nombre = (string)celda1.Value;
+                decimal costo = (decimal)celda2.Value;
+                tipoExamen = new TipoExamen(id, nombre, costo);
+                ModificarPrecio modificarPrecio = new ModificarPrecio(tipoExamen);
+                modificarPrecio.Show();
+            }
+            else
+            {
+                MessageBox.Show("Primero debe seleccionar un tipo de examen!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
         }
     }
 }
