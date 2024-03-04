@@ -28,50 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            cmbxPedidos = new System.Windows.Forms.ComboBox();
             dgvConsultarInstrumentos = new System.Windows.Forms.DataGridView();
-            lblNombreInstrumento = new System.Windows.Forms.Label();
             btnConsultarInstrumento = new System.Windows.Forms.Button();
             btnExit = new System.Windows.Forms.Button();
             label1 = new System.Windows.Forms.Label();
             button1 = new System.Windows.Forms.Button();
+            textBox1 = new System.Windows.Forms.TextBox();
+            comboBox1 = new System.Windows.Forms.ComboBox();
+            label2 = new System.Windows.Forms.Label();
+            lblNombreInstrumento = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)dgvConsultarInstrumentos).BeginInit();
             SuspendLayout();
-            // 
-            // cmbxPedidos
-            // 
-            cmbxPedidos.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            cmbxPedidos.FormattingEnabled = true;
-            cmbxPedidos.Location = new System.Drawing.Point(191, 77);
-            cmbxPedidos.Margin = new System.Windows.Forms.Padding(2);
-            cmbxPedidos.Name = "cmbxPedidos";
-            cmbxPedidos.Size = new System.Drawing.Size(484, 23);
-            cmbxPedidos.TabIndex = 34;
             // 
             // dgvConsultarInstrumentos
             // 
             dgvConsultarInstrumentos.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             dgvConsultarInstrumentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvConsultarInstrumentos.Location = new System.Drawing.Point(13, 128);
+            dgvConsultarInstrumentos.Location = new System.Drawing.Point(13, 189);
             dgvConsultarInstrumentos.Margin = new System.Windows.Forms.Padding(2);
             dgvConsultarInstrumentos.Name = "dgvConsultarInstrumentos";
             dgvConsultarInstrumentos.RowHeadersWidth = 51;
             dgvConsultarInstrumentos.RowTemplate.Height = 24;
-            dgvConsultarInstrumentos.Size = new System.Drawing.Size(662, 391);
+            dgvConsultarInstrumentos.Size = new System.Drawing.Size(662, 330);
             dgvConsultarInstrumentos.TabIndex = 33;
-            // 
-            // lblNombreInstrumento
-            // 
-            lblNombreInstrumento.AutoSize = true;
-            lblNombreInstrumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            lblNombreInstrumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            lblNombreInstrumento.ForeColor = System.Drawing.Color.LightGray;
-            lblNombreInstrumento.Location = new System.Drawing.Point(13, 82);
-            lblNombreInstrumento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            lblNombreInstrumento.Name = "lblNombreInstrumento";
-            lblNombreInstrumento.Size = new System.Drawing.Size(149, 17);
-            lblNombreInstrumento.TabIndex = 32;
-            lblNombreInstrumento.Text = "Seleccione el examen:";
             // 
             // btnConsultarInstrumento
             // 
@@ -133,16 +112,62 @@
             button1.Text = "Imprimir";
             button1.UseVisualStyleBackColor = false;
             // 
+            // textBox1
+            // 
+            textBox1.Location = new System.Drawing.Point(231, 74);
+            textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new System.Drawing.Size(445, 23);
+            textBox1.TabIndex = 39;
+            // 
+            // comboBox1
+            // 
+            comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new System.Drawing.Point(231, 136);
+            comboBox1.Margin = new System.Windows.Forms.Padding(2);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new System.Drawing.Size(447, 23);
+            comboBox1.TabIndex = 38;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label2.ForeColor = System.Drawing.Color.LightGray;
+            label2.Location = new System.Drawing.Point(17, 142);
+            label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(114, 17);
+            label2.TabIndex = 37;
+            label2.Text = "Tipo de Examen:";
+            // 
+            // lblNombreInstrumento
+            // 
+            lblNombreInstrumento.AutoSize = true;
+            lblNombreInstrumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            lblNombreInstrumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            lblNombreInstrumento.ForeColor = System.Drawing.Color.LightGray;
+            lblNombreInstrumento.Location = new System.Drawing.Point(16, 80);
+            lblNombreInstrumento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            lblNombreInstrumento.Name = "lblNombreInstrumento";
+            lblNombreInstrumento.Size = new System.Drawing.Size(209, 17);
+            lblNombreInstrumento.TabIndex = 36;
+            lblNombreInstrumento.Text = "Número de Cédula de Paciente:";
+            // 
             // GenerarResul
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.FromArgb(32, 30, 45);
             ClientSize = new System.Drawing.Size(700, 600);
-            Controls.Add(button1);
-            Controls.Add(cmbxPedidos);
-            Controls.Add(dgvConsultarInstrumentos);
+            Controls.Add(textBox1);
+            Controls.Add(comboBox1);
+            Controls.Add(label2);
             Controls.Add(lblNombreInstrumento);
+            Controls.Add(button1);
+            Controls.Add(dgvConsultarInstrumentos);
             Controls.Add(btnConsultarInstrumento);
             Controls.Add(btnExit);
             Controls.Add(label1);
@@ -156,13 +181,14 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox cmbxPedidos;
         private System.Windows.Forms.DataGridView dgvConsultarInstrumentos;
-        private System.Windows.Forms.Label lblNombreInstrumento;
         private System.Windows.Forms.Button btnConsultarInstrumento;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblNombreInstrumento;
     }
 }
