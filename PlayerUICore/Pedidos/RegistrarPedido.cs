@@ -212,6 +212,12 @@ namespace PlayerUI.Pedidos
                 MessageBox.Show("La cédula no es válida.", "Formato no válido", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
+            PacienteModel tp = new PacienteModel();
+            if (!tp.Check(txtCI.Text))
+            {
+                MessageBox.Show("Paciente no encontrado", "Registrar Pedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
             PedidoModel temp = new PedidoModel();
             if (temp.Check(cedula))
             {
@@ -219,8 +225,7 @@ namespace PlayerUI.Pedidos
                 MessageBox.Show("Ya existe un pedido pendiente para este paciente!", "Registrar Pedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            PacienteModel pacienteModel = new PacienteModel();
-            paciente = pacienteModel.obtenerPacienteCI(txtCI.Text);
+            paciente = tp.obtenerPacienteCI(txtCI.Text);
             if (paciente != null)
             {
                 txtCI.ReadOnly = true;
@@ -350,6 +355,11 @@ namespace PlayerUI.Pedidos
 
                     }
                 }
+                // Desactiva la interacción del usuario con el DateTimePicker
+                dateTimePicker1.Enabled = false;
+                // Configura el TextBox encima del DateTimePicker, poner despues de obtener
+                textBox1.ReadOnly = true;
+                textBox1.BackColor = SystemColors.Control; // Cambia el color de fondo si es necesario
                 txtNom.ReadOnly = true;
                 txtApe.ReadOnly = true;
                 txtCorr.ReadOnly = true;

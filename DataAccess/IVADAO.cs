@@ -27,8 +27,7 @@ namespace DataAccess
                         {
                             iva = new IVA
                             (
-                                reader.GetInt32(1),
-                                reader.GetDateTime(2).ToString("yyyy-MM-dd")
+                                reader.GetInt32(1)
                             );
                         }
                     }

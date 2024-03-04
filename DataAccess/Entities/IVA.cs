@@ -11,10 +11,9 @@ namespace DataAccess.Entities
         public int valor { get; set; }
         public string fecha { get; set; }
 
-        public IVA(int valor, string fecha)
+        public IVA(int valor)
         {
             this.valor = valor;
-            this.fecha = fecha;
         }
     }
 }

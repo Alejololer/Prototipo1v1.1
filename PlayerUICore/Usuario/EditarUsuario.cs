@@ -5,8 +5,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -19,6 +21,7 @@ namespace PlayerUICore.Usuario
         private User user;
         public Editar_Usuario(User user)
         {
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("es-ES");
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
             this.user = user;
@@ -27,13 +30,44 @@ namespace PlayerUICore.Usuario
             txtCon.Text = user.claveUsuario;
             txtTipo.Text = user.tipoUsuario;
             txtTipo.ReadOnly = true;
+            txtCon.KeyPress += OnKeyPress;
             btnMostrar.MouseDown += buttonMostrar_MouseDown;
             btnMostrar.MouseUp += buttonMostrar_MouseUp;
         }
 
+        private bool ContieneCaracterEspecial(string texto)
+        {
+            // Lista de caracteres especiales permitidos
+            char[] caracteresEspeciales = { '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '+', '=', '[', ']', '{', '}', ':', ';', ',', '.', '/', '?', '|', '\\', '<', '>', '`', '~', '\'', '\"', ' ' };
+
+            // Verificar si el texto contiene al menos un carácter especial
+            return texto.Any(c => caracteresEspeciales.Contains(c));
+        }
+
+        private void OnKeyPress(object? sender, KeyPressEventArgs e)
+        {
+            bool isSpecialChar = e.KeyChar switch
+            {
+                >= '0' and <= '9' => false, // allow numerics
+                >= 'a' and <= 'z' => false, // allow lowercase characters
+                >= 'A' and <= 'Z' => false, // allow uppercase characters
+                '\b' => false,              // allow backspace
+                '!' or '@' or '#' or '$' or '%' or '^' or '&' or '*' or '(' or ')' or '-' or '_' or '+' or '=' or '[' or ']' or '{' or '}' or ':' or ';' or ',' or '.' or '/' or '?' or '|' or '\\' or '<' or '>' or '`' or '~' or '\'' or '\"' or ' ' => false, // allow special characters
+
+                _ => true
+            };
+
+            e.Handled = isSpecialChar;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("¿Está seguro?", "Actualizar Usuario", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (!ContieneCaracterEspecial(txtCon.Text))
+            {
+                MessageBox.Show("La contraseña debe contener al menos un carácter especial!", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            DialogResult result = MessageBox.Show("¿Está seguro?", "Actualizar Usuario", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
                 UserModel userModel = new UserModel();

@@ -104,16 +104,20 @@ namespace PlayerUI
 
         private void OnKeyPress(object? sender, KeyPressEventArgs e)
         {
-            e.Handled = e.KeyChar switch
+            bool isSpecialChar = e.KeyChar switch
             {
                 >= '0' and <= '9' => false, // allow numerics
                 >= 'a' and <= 'z' => false, // allow lowercase characters
                 >= 'A' and <= 'Z' => false, // allow uppercase characters
                 '\b' => false,              // allow backspace
+                '!' or '@' or '#' or '$' or '%' or '^' or '&' or '*' or '(' or ')' or '-' or '_' or '+' or '=' or '[' or ']' or '{' or '}' or ':' or ';' or ',' or '.' or '/' or '?' or '|' or '\\' or '<' or '>' or '`' or '~' or '\'' or '\"' or ' ' => false, // allow special characters
+
                 _ => true
             };
 
+            e.Handled = isSpecialChar;
         }
+
 
         private void txtContrasena_TextChanged(object sender, EventArgs e)
         {
