@@ -62,9 +62,9 @@ namespace PlayerUICore.Usuario
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (!ContieneCaracterEspecial(txtCon.Text))
+            if (txtNom.Text.Length <= 3 || !ContieneCaracterEspecial(txtCon.Text))
             {
-                MessageBox.Show("La contraseña debe contener al menos un carácter especial!", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Ingrese una contraseña válida!", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
             DialogResult result = MessageBox.Show("¿Está seguro?", "Actualizar Usuario", MessageBoxButtons.YesNo);

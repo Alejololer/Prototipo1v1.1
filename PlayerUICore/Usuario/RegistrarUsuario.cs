@@ -38,6 +38,15 @@ namespace PlayerUI.Usuario
 
         }
 
+        private bool ContieneCaracterEspecial(string texto)
+        {
+            // Lista de caracteres especiales permitidos
+            char[] caracteresEspeciales = { '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '+', '=', '[', ']', '{', '}', ':', ';', ',', '.', '/', '?', '|', '\\', '<', '>', '`', '~', '\'', '\"', ' ' };
+
+            // Verificar si el texto contiene al menos un carácter especial
+            return texto.Any(c => caracteresEspeciales.Contains(c));
+        }
+
         private void OnKeyPress(object? sender, KeyPressEventArgs e)
         {
             bool isSpecialChar = e.KeyChar switch
@@ -61,7 +70,7 @@ namespace PlayerUI.Usuario
                 MessageBox.Show("Ingrese un nombre de usuario válido!", "Registro de Usuario", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if (txtNom.Text.Length<=3)
+            if (txtNom.Text.Length<=3||!ContieneCaracterEspecial(txtCon.Text))
             {
                 MessageBox.Show("Ingrese una contraseña válida!", "Registro de Usuario", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
