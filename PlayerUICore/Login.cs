@@ -12,13 +12,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Domain;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using DataAccess.Entities;
 
 
 namespace PlayerUI
 {
     public partial class Login : Form
     {
-
+        User user = null;
         // Conexión a la base de datos
         private const string connectionString = "Data Source=TONY;Initial Catalog=Laboratorio;Integrated Security=True;Encrypt=False"; // Reemplaza con tu cadena de conexión
 
@@ -44,14 +45,14 @@ namespace PlayerUI
                 if (txtContrasena.Text != "")
                 {
 
-                    UserModel user = new UserModel();
-                    var validLogin = user.LoginUser(txtUsuario.Text, txtContrasena.Text);
-                    if (validLogin == true)
+                    UserModel userModel = new UserModel();
+                    user = userModel.LoginUser(txtUsuario.Text, txtContrasena.Text);
+                    if (user !=null)
                     {
                         this.Hide();
 
                         // Crear una instancia del nuevo formulario que quieres mostrar
-                        Menu nuevoFormulario = new Menu();
+                        Menu nuevoFormulario = new Menu(user);
 
                         // Suscribir al evento FormClosed del nuevo formulario
                         nuevoFormulario.FormClosed += NuevoFormulario_FormClosed;

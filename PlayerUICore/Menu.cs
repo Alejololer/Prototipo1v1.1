@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DataAccess.Entities;
 using PlayerUI.Instrumento;
 using PlayerUI.Pacientes;
 using PlayerUI.Parametros;
@@ -20,9 +21,11 @@ namespace PlayerUI
 {
     public partial class Menu : Form
     {
-        public Menu()
+        User usuario = new User();
+        public Menu(User user)
         {
-            InitializeComponent();
+            InitializeComponent(); 
+            usuario = user;
             customizeDesign();
             hideSubMenu();
         }
@@ -102,7 +105,14 @@ namespace PlayerUI
 
         private void button4_Click(object sender, EventArgs e)
         {
-            openChildForm(new ActualizarPaciente());
+            if(usuario.tipoUsuario == "Jefe de laboratorio") {
+                openChildForm(new ActualizarPaciente());
+            }
+            else
+            {
+                MessageBox.Show("Solo el Jefe de laboratorio puede acceder a esta sección", "Usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
             //..
             //your codes
             //..
@@ -252,7 +262,16 @@ namespace PlayerUI
 
         private void btnParámetros_Click(object sender, EventArgs e)
         {
-            showSubMenu(panelParámetrosSubMenu);
+            if(usuario.tipoUsuario == "Jefe de laboratorio")
+            {
+                showSubMenu(panelParámetrosSubMenu);
+            }
+            else
+            {
+                MessageBox.Show("Solo el Jefe de laboratorio puede acceder a esta sección", "Usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+
         }
 
         private void pictureBox9_Click(object sender, EventArgs e)
@@ -336,7 +355,14 @@ namespace PlayerUI
 
         private void button32_Click(object sender, EventArgs e)
         {
-            openChildForm(new ModificarFactura());
+            if(usuario.tipoUsuario == "Jefe de laboratorio") {
+                openChildForm(new ModificarFactura());
+            }
+            else
+            {
+                MessageBox.Show("Solo el Jefe de laboratorio puede acceder a esta sección", "Usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
         }
 
         private void button31_Click(object sender, EventArgs e)
@@ -397,7 +423,15 @@ namespace PlayerUI
 
         private void button13_Click_1(object sender, EventArgs e)
         {
-            openChildForm(new AnularFactura());
+            if (usuario.tipoUsuario == "Jefe de laboratorio")
+            {
+                openChildForm(new AnularFactura());
+            }
+            else
+            {
+                MessageBox.Show("Solo el Jefe de laboratorio puede acceder a esta sección", "Usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
         }
 
         private void button14_Click(object sender, EventArgs e)
@@ -427,12 +461,28 @@ namespace PlayerUI
 
         private void button5_Click_1(object sender, EventArgs e)
         {
-            showSubMenu(panel1);
+            if (usuario.tipoUsuario == "Jefe de laboratorio")
+            {
+                showSubMenu(panel1);
+            }
+            else
+            {
+                MessageBox.Show("Solo el Jefe de laboratorio puede acceder a esta sección", "Usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
         }
 
         private void button9_Click_2(object sender, EventArgs e)
         {
-            showSubMenu(panel2);
+            if (usuario.tipoUsuario == "Jefe de laboratorio")
+            {
+                showSubMenu(panel2);
+            }
+            else
+            {
+                MessageBox.Show("Solo el Jefe de laboratorio puede acceder a esta sección", "Usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
         }
     }
 }

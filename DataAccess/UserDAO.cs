@@ -10,8 +10,9 @@ namespace DataAccess
 {
     public class UserDAO : ConnectionToSQL
     {
-        public bool Login(string username, string password)
+        public User Login(string username, string password)
         {
+            User user = null;
             using(var connection = GetConnection())
             {
                 connection.Open ();
@@ -21,14 +22,23 @@ namespace DataAccess
                     command.Parameters.AddWithValue ("@user", username);
                     command.Parameters.AddWithValue("@password", password);
                     command.CommandType = System.Data.CommandType.Text;
-                    SqlDataReader reader = command.ExecuteReader ();
-                    if(reader.HasRows)
+                    using (SqlDataReader reader = command.ExecuteReader())
                     {
-                        return true;
-                    }else
-                        return false;
+                        if (reader.Read())
+                        {
+                            user = new User
+                            (
+                                reader.GetInt32(0),
+                                reader.GetString(1),
+                                reader.GetString(2),
+                                reader.GetString(3)
+                            );
+                        }
+                    }
+
                 }
             }
+            return user;
         }
         public bool checkUsuario(string username)
         {
