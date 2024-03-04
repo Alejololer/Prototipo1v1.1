@@ -37,5 +37,10 @@ namespace PlayerUI.Ventas
 
             };
         }
+
+        private void RegistrarVenta_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
