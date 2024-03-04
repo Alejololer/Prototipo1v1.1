@@ -1,6 +1,6 @@
 ﻿namespace PlayerUI.Ventas
 {
-    partial class RegistrarVenta
+    partial class GenerarVenta
     {
         /// <summary>
         /// Required designer variable.

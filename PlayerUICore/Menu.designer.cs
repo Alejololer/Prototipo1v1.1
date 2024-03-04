@@ -423,7 +423,7 @@
             button33.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             button33.Size = new System.Drawing.Size(233, 40);
             button33.TabIndex = 0;
-            button33.Text = "Registrar Venta";
+            button33.Text = "Generar Venta";
             button33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button33.UseVisualStyleBackColor = true;
             button33.Click += button33_Click;

@@ -51,7 +51,7 @@ namespace DataAccess
                 {
                     command.Connection = connection;
                     command.Connection = connection;
-                    command.CommandText = "SELECT * FROM VENTAS WHERE IDPEDIDO=@idPedido AND ESTADOVENTA = 'NO'";
+                    command.CommandText = "SELECT * FROM VENTAS WHERE IDPEDIDO=@idPedido";
                     command.Parameters.AddWithValue("@idPedido", idPedido);
                     SqlDataReader reader = command.ExecuteReader();
                     if (reader.HasRows)

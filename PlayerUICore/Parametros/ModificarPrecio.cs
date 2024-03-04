@@ -37,7 +37,7 @@ namespace PlayerUI.Parametros
                 return;
             }
             if(!EsPrecioValido(txtNuevoValor.Text)) {
-                MessageBox.Show("Costo nuevo de Tipo de examen inválido!", "Modificar precio Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Nuevo costo de Tipo de examen inválido!", "Modificar precio Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
             DialogResult result = MessageBox.Show("¿Está seguro?", "Modificar precio Tipo de Examen", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -45,7 +45,7 @@ namespace PlayerUI.Parametros
             {
                 TipoExamenModel model = new TipoExamenModel();
                 model.ActualizarPrecioTipoExamen(txtNomTipo.Text, decimal.Parse(txtNuevoValor.Text));
-                MessageBox.Show("Precio de Tipo de Examen modificado correctamente", "Modificar precio Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Costo de Tipo de Examen modificado correctamente", "Modificar precio Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtNuevoValor.Text = "";
                 obtenerPrecio();
             }

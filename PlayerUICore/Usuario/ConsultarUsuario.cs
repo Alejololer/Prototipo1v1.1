@@ -32,6 +32,8 @@ namespace PlayerUI.Usuario
             llenarDataGridView();
         }
 
+
+
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             if (dgvUsuarios.SelectedRows.Count > 0)
@@ -94,7 +96,7 @@ namespace PlayerUI.Usuario
 
                         if (dt.Rows.Count == 0)
                         {
-                            MessageBox.Show("No se encontraron usuarios con ese nombre.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("No se encontró un usuario con ese nombre.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                     }
                 }
@@ -110,12 +112,6 @@ namespace PlayerUI.Usuario
             if (string.IsNullOrWhiteSpace(nombreUsuario))
             {
                 llenarDataGridView();
-                return;
-            }
-
-            if (!ValidarSoloTexto(nombreUsuario))
-            {
-                MessageBox.Show("El nombre de usuario no es válido (debe contener solo letras).", "Verificar datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
 
@@ -155,11 +151,6 @@ namespace PlayerUI.Usuario
         }
 
 
-        private bool ValidarSoloTexto(string texto)
-        {
-            // Verificar si el texto contiene solo letras
-            return texto.All(char.IsLetter);
-        }
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -167,15 +158,18 @@ namespace PlayerUI.Usuario
 
         private void OnKeyPress(object? sender, KeyPressEventArgs e)
         {
-            e.Handled = e.KeyChar switch
+            bool isSpecialChar = e.KeyChar switch
             {
                 >= '0' and <= '9' => false, // allow numerics
                 >= 'a' and <= 'z' => false, // allow lowercase characters
                 >= 'A' and <= 'Z' => false, // allow uppercase characters
                 '\b' => false,              // allow backspace
+                '!' or '@' or '#' or '$' or '%' or '^' or '&' or '*' or '(' or ')' or '-' or '_' or '+' or '=' or '[' or ']' or '{' or '}' or ':' or ';' or ',' or '.' or '/' or '?' or '|' or '\\' or '<' or '>' or '`' or '~' or '\'' or '\"' => false, // allow special characters
+
                 _ => true
             };
 
+            e.Handled = isSpecialChar;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -200,6 +194,11 @@ namespace PlayerUI.Usuario
         private void FormularioSecundario_Cerrado(object sender, FormClosedEventArgs e)
         {
             llenarDataGridView();
+        }
+
+        private void txtNombreUsuario_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -350,7 +350,7 @@ namespace PlayerUI
 
         private void button33_Click(object sender, EventArgs e)
         {
-            openChildForm(new RegistrarVenta());
+            openChildForm(new GenerarVenta());
         }
 
         private void button32_Click(object sender, EventArgs e)

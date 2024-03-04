@@ -12,14 +12,14 @@ using System.Windows.Forms;
 
 namespace PlayerUI.Ventas
 {
-    public partial class RegistrarVenta : Form
+    public partial class GenerarVenta : Form
     {
         Pedido pedido = null;
         Venta venta = null;
         Paciente paciente = null;
         BindingList<Examen> examenes = null;
         IVA iva = null;
-        public RegistrarVenta()
+        public GenerarVenta()
         {
             InitializeComponent();
             txtCI.KeyPress += OnKeyPressNum;

@@ -141,7 +141,7 @@ namespace PlayerUI.Parametros
         {
             if(tipoExamen ==null)
             {
-                MessageBox.Show("Primero registra el tipo de examen!", "Registrar Parámetro de Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Primero registre el tipo de examen!", "Registrar Parámetro de Tipo de Examen", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
             if (!EsNumeroDecimalValido(txtValMin.Text))

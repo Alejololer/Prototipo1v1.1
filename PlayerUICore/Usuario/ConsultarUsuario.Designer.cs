@@ -77,6 +77,7 @@
             txtNombreUsuario.Name = "txtNombreUsuario";
             txtNombreUsuario.Size = new System.Drawing.Size(413, 23);
             txtNombreUsuario.TabIndex = 19;
+            txtNombreUsuario.TextChanged += txtNombreUsuario_TextChanged;
             // 
             // label2
             // 

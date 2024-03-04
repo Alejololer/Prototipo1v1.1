@@ -110,7 +110,7 @@ namespace PlayerUI
                 >= 'a' and <= 'z' => false, // allow lowercase characters
                 >= 'A' and <= 'Z' => false, // allow uppercase characters
                 '\b' => false,              // allow backspace
-                '!' or '@' or '#' or '$' or '%' or '^' or '&' or '*' or '(' or ')' or '-' or '_' or '+' or '=' or '[' or ']' or '{' or '}' or ':' or ';' or ',' or '.' or '/' or '?' or '|' or '\\' or '<' or '>' or '`' or '~' or '\'' or '\"' or ' ' => false, // allow special characters
+                '!' or '@' or '#' or '$' or '%' or '^' or '&' or '*' or '(' or ')' or '-' or '_' or '+' or '=' or '[' or ']' or '{' or '}' or ':' or ';' or ',' or '.' or '/' or '?' or '|' or '\\' or '<' or '>' or '`' or '~' or '\'' or '\"' => false, // allow special characters
 
                 _ => true
             };

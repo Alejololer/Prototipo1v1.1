@@ -40,5 +40,10 @@ namespace PlayerUI.Ventas
         {
 
         }
+
+        private void GenerarFactura_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

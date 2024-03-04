@@ -136,6 +136,7 @@
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             Name = "GenerarFactura";
             Text = "Form3";
+            Load += GenerarFactura_Load;
             ((System.ComponentModel.ISupportInitialize)dgvConsultarInstrumentos).EndInit();
             ResumeLayout(false);
             PerformLayout();
