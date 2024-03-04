@@ -32,7 +32,6 @@
             panelSideMenu = new System.Windows.Forms.Panel();
             panel2 = new System.Windows.Forms.Panel();
             button28 = new System.Windows.Forms.Button();
-            button29 = new System.Windows.Forms.Button();
             button9 = new System.Windows.Forms.Button();
             panel1 = new System.Windows.Forms.Panel();
             button19 = new System.Windows.Forms.Button();
@@ -131,11 +130,10 @@
             // 
             panel2.BackColor = System.Drawing.Color.FromArgb(35, 32, 39);
             panel2.Controls.Add(button28);
-            panel2.Controls.Add(button29);
             panel2.Dock = System.Windows.Forms.DockStyle.Top;
             panel2.Location = new System.Drawing.Point(0, 1711);
             panel2.Name = "panel2";
-            panel2.Size = new System.Drawing.Size(233, 89);
+            panel2.Size = new System.Drawing.Size(233, 49);
             panel2.TabIndex = 23;
             // 
             // button28
@@ -146,33 +144,15 @@
             button28.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
             button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button28.ForeColor = System.Drawing.Color.Silver;
-            button28.Location = new System.Drawing.Point(0, 40);
+            button28.Location = new System.Drawing.Point(0, 0);
             button28.Name = "button28";
             button28.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             button28.Size = new System.Drawing.Size(233, 40);
             button28.TabIndex = 1;
-            button28.Text = "Actualizar IVA";
+            button28.Text = "Registrar IVA";
             button28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button28.UseVisualStyleBackColor = true;
             button28.Click += button28_Click;
-            // 
-            // button29
-            // 
-            button29.Dock = System.Windows.Forms.DockStyle.Top;
-            button29.FlatAppearance.BorderSize = 0;
-            button29.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
-            button29.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(42, 38, 46);
-            button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button29.ForeColor = System.Drawing.Color.Silver;
-            button29.Location = new System.Drawing.Point(0, 0);
-            button29.Name = "button29";
-            button29.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button29.Size = new System.Drawing.Size(233, 40);
-            button29.TabIndex = 0;
-            button29.Text = "Registrar IVA";
-            button29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button29.UseVisualStyleBackColor = true;
-            button29.Click += button29_Click_1;
             // 
             // button9
             // 
@@ -792,7 +772,7 @@
             btnExit.ForeColor = System.Drawing.Color.Silver;
             btnExit.Image = (System.Drawing.Image)resources.GetObject("btnExit.Image");
             btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnExit.Location = new System.Drawing.Point(0, 1800);
+            btnExit.Location = new System.Drawing.Point(0, 1760);
             btnExit.Name = "btnExit";
             btnExit.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             btnExit.Size = new System.Drawing.Size(233, 45);
@@ -1115,7 +1095,6 @@
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button28;
-        private System.Windows.Forms.Button button29;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button19;

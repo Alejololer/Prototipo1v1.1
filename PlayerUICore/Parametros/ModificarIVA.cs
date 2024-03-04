@@ -82,10 +82,10 @@ namespace PlayerUI.Parametros
             IVA iva = model.getIVA();
             if(iva == null)
             {
-                MessageBox.Show("Primero debe registrar un valor de IVA!", "Modificar IVA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Debe registrar un valor de IVA", "Modificar IVA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtIVA.Text = "No hay valor IVA registrado";
                 return;
             }
-
             txtIVA.Text = iva.valor.ToString();
         }
     }
