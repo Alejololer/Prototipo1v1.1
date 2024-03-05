@@ -1,4 +1,5 @@
-﻿using Domain;
+﻿using DataAccess.Entities;
+using Domain;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -82,7 +83,7 @@ namespace PlayerUI.Pedidos
                 return;
             }
             PacienteModel paciente = new PacienteModel();
-            if(!paciente.Check(txtCI.Text))
+            if (!paciente.Check(txtCI.Text))
             {
                 MessageBox.Show("Paciente no encontrado!", "Registrar Pedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
@@ -92,6 +93,15 @@ namespace PlayerUI.Pedidos
             {
                 // Realizar acciones si el formato es válido
                 MessageBox.Show("¡No se ha encontrado un pedido registrado para este paciente!", "Consultar Pedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            Pedido pedido = null;
+            pedido = pedidoModel.ObtenerPedido(txtCI.Text);
+            VentaModel venta = new VentaModel();
+            if (venta.Check(pedido.Id))
+            {
+                // Realizar acciones si el formato es válido
+                MessageBox.Show("¡No puede eliminar un pedido con una venta realizada, primero anule la venta!", "Consultar Pedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
             // Enviar un mensaje

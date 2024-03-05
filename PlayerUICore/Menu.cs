@@ -403,7 +403,7 @@ namespace PlayerUI
         {
             if (usuario.tipoUsuario == "Jefe de laboratorio")
             {
-                openChildForm(new AnularFactura());
+                openChildForm(new ConsultarVentas());
             }
             else
             {

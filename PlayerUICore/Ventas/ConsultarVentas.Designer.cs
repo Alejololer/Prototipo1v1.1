@@ -31,11 +31,11 @@
             label1 = new System.Windows.Forms.Label();
             btnExit = new System.Windows.Forms.Button();
             lblNombreInstrumento = new System.Windows.Forms.Label();
-            dgvConsultarInstrumentos = new System.Windows.Forms.DataGridView();
+            dgvVentas = new System.Windows.Forms.DataGridView();
             button9 = new System.Windows.Forms.Button();
             button2 = new System.Windows.Forms.Button();
             txtCI = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)dgvConsultarInstrumentos).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvVentas).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -82,17 +82,17 @@
             lblNombreInstrumento.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             lblNombreInstrumento.Click += lblNombreInstrumento_Click;
             // 
-            // dgvConsultarInstrumentos
+            // dgvVentas
             // 
-            dgvConsultarInstrumentos.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            dgvConsultarInstrumentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvConsultarInstrumentos.Location = new System.Drawing.Point(47, 130);
-            dgvConsultarInstrumentos.Margin = new System.Windows.Forms.Padding(2);
-            dgvConsultarInstrumentos.Name = "dgvConsultarInstrumentos";
-            dgvConsultarInstrumentos.RowHeadersWidth = 51;
-            dgvConsultarInstrumentos.RowTemplate.Height = 24;
-            dgvConsultarInstrumentos.Size = new System.Drawing.Size(605, 346);
-            dgvConsultarInstrumentos.TabIndex = 21;
+            dgvVentas.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            dgvVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvVentas.Location = new System.Drawing.Point(47, 130);
+            dgvVentas.Margin = new System.Windows.Forms.Padding(2);
+            dgvVentas.Name = "dgvVentas";
+            dgvVentas.RowHeadersWidth = 51;
+            dgvVentas.RowTemplate.Height = 24;
+            dgvVentas.Size = new System.Drawing.Size(605, 346);
+            dgvVentas.TabIndex = 21;
             // 
             // button9
             // 
@@ -109,6 +109,7 @@
             button9.TabIndex = 38;
             button9.Text = "Anular Venta";
             button9.UseVisualStyleBackColor = false;
+            button9.Click += button9_Click;
             // 
             // button2
             // 
@@ -125,6 +126,7 @@
             button2.TabIndex = 37;
             button2.Text = "Consultar Ventas";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // txtCI
             // 
@@ -143,7 +145,7 @@
             Controls.Add(txtCI);
             Controls.Add(button9);
             Controls.Add(button2);
-            Controls.Add(dgvConsultarInstrumentos);
+            Controls.Add(dgvVentas);
             Controls.Add(lblNombreInstrumento);
             Controls.Add(btnExit);
             Controls.Add(label1);
@@ -152,7 +154,7 @@
             Name = "ConsultarVentas";
             Text = "Form3";
             Load += GenerarFactura_Load;
-            ((System.ComponentModel.ISupportInitialize)dgvConsultarInstrumentos).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvVentas).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -161,7 +163,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label lblNombreInstrumento;
-        private System.Windows.Forms.DataGridView dgvConsultarInstrumentos;
+        private System.Windows.Forms.DataGridView dgvVentas;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox txtCI;

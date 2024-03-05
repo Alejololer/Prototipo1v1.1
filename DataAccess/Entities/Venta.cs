@@ -14,6 +14,9 @@ namespace DataAccess.Entities
         public decimal precioFinalNoIVA { get; set; }
         public decimal precioFinalIVA { get; set; }
         public decimal ventaIVA { get; set; }
+
+        public decimal precioFinalMod {  get; set; }
+        public string fechaVenta { get; set; }
         
         public Venta(int id, int idPedido, string CIPaciente, decimal precioFinalNoIVA, decimal precioFinalIVA, decimal ventaIVA)
         {
@@ -32,6 +35,16 @@ namespace DataAccess.Entities
             this.precioFinalNoIVA = precioFinalNoIVA;
             this.precioFinalIVA = precioFinalIVA;
             this.ventaIVA = ventaIVA;
+        }
+
+        public Venta(int Id, int idPedido, string CIPaciente, decimal precioTotal, decimal precioFInal, string fecha)
+        {
+            this.Id = Id;
+            this.idPedido= idPedido;
+            this.CIPaciente= CIPaciente;
+            precioFinalIVA = precioTotal;
+            precioFinalMod = precioFInal;
+            fechaVenta = fecha; 
         }
     }
 }

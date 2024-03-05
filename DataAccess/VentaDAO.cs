@@ -1,6 +1,7 @@
 ﻿using DataAccess.Entities;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -98,6 +99,50 @@ namespace DataAccess
                     command.Parameters.AddWithValue("@precioMod", totalmod);
 
                     command.ExecuteReader();
+                }
+            }
+        }
+
+        public BindingList<Venta> ObtenerVentasCI(string ci)
+        {
+            BindingList<Venta> ventas = null;
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "SELECT * FROM VENTAS WHERE CIPACIENTE = @cipaciente ORDER BY FECHAVENTA desc";
+                    command.Parameters.AddWithValue("@cipaciente", ci);
+                    command.CommandType = System.Data.CommandType.Text;
+                    SqlDataReader reader = command.ExecuteReader();
+                    ventas = new BindingList<Venta>();
+                    while (reader.Read())
+                    {
+                        DateTime fecha = reader.GetDateTime(5);
+                        string fechaEnString = fecha.ToString("yyyy-MM-dd");
+                        Venta venta = new Venta(reader.GetInt32(0), reader.GetInt32(1), reader.GetString(2), reader.GetDecimal(3), reader.GetDecimal(4), fechaEnString);
+                        ventas.Add(venta);
+                    }
+
+                }
+            }
+            return ventas;
+        }
+
+        public void AnularVenta(int idVenta)
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "DELETE FROM VENTAS WHERE IDVENTA=@idventa";
+                    command.Parameters.AddWithValue("@idventa", idVenta);
+                    command.CommandType = System.Data.CommandType.Text;
+                    command.ExecuteNonQuery();
+
                 }
             }
         }
