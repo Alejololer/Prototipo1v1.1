@@ -57,7 +57,7 @@ namespace PlayerUI.Pacientes
                 return;
 
             }
-            if (txtTel.Text.Length <= 8)
+            if (txtTel.Text.Length <= 6)
             {
                 // Realizar acciones si el formato es válido
                 MessageBox.Show("El formato del teléfono no es válido.", "Formato no válido", MessageBoxButtons.OK, MessageBoxIcon.Information);
