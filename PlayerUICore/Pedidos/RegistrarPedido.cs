@@ -373,6 +373,7 @@ namespace PlayerUI.Pedidos
                 txtTel.ReadOnly = true;
                 txtDir.ReadOnly = true;
                 txtCI.ReadOnly = true;
+                comboBox1.Enabled = true;
                 pedido = new Pedido(txtCI.Text);
             }
 
