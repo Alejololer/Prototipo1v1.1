@@ -382,7 +382,7 @@
             btnUsuarios.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             btnUsuarios.Size = new System.Drawing.Size(233, 45);
             btnUsuarios.TabIndex = 16;
-            btnUsuarios.Text = "    Ventas y Facturación";
+            btnUsuarios.Text = "    Ventas";
             btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             btnUsuarios.UseVisualStyleBackColor = true;

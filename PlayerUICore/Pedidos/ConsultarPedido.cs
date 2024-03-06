@@ -16,6 +16,8 @@ namespace PlayerUI.Pedidos
     {
         BindingList<Examen> examenes = null;
         Pedido pedido = null;
+        List<TipoExamen> tipoExamens = new List<TipoExamen>();
+
         public ConsultarPedido()
         {
             InitializeComponent();
@@ -23,7 +25,6 @@ namespace PlayerUI.Pedidos
             comboBox1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             comboBox1.AutoCompleteSource = AutoCompleteSource.ListItems;
             TipoExamenModel tipoExamen = new TipoExamenModel();
-            List<TipoExamen> tipoExamens = new List<TipoExamen>();
             tipoExamens = tipoExamen.ObtenerTiposExamen();
             comboBox1.DataSource = tipoExamens;
             comboBox1.DisplayMember = "nombreTipoExamen";
@@ -139,6 +140,16 @@ namespace PlayerUI.Pedidos
             if (pedido == null)
             {
                 MessageBox.Show("¡Primero debe consultar un pedido!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            string userInput = comboBox1.Text;
+
+            // Verificar si el texto ingresado coincide con alguna de las propiedades de los objetos en la lista
+            bool isValid = tipoExamens.Any(item => item.nombreTipoExamen == userInput);
+
+            if (!isValid)
+            {
+                MessageBox.Show("Por favor, ingrese un valor válido de tipo de examen.");
                 return;
             }
             TipoExamen tipoExamen = (TipoExamen)comboBox1.SelectedItem;

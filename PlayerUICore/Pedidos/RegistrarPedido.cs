@@ -20,6 +20,7 @@ namespace PlayerUI.Pedidos
         Paciente paciente = null;
         Pedido pedido = null;
         BindingList<TipoExamen> tiposExamenPedido = null;
+        List<TipoExamen> tipoExamens = new List<TipoExamen>();
         public RegistrarPedido()
         {
             InitializeComponent();
@@ -32,7 +33,7 @@ namespace PlayerUI.Pedidos
             txtApe.KeyPress += OnKeyPress;
             textBox1.Visible = false;
             TipoExamenModel tipoExamen = new TipoExamenModel();
-            List<TipoExamen> tipoExamens = new List<TipoExamen>();
+            
             tipoExamens = tipoExamen.ObtenerTiposExamen();
 
             if (tipoExamens.Count == 0)
@@ -46,8 +47,8 @@ namespace PlayerUI.Pedidos
                 comboBox1.DataSource = tipoExamens;
             }
             comboBox1.DisplayMember = "nombreTipoExamen";
+            comboBox1.SelectedIndex = 0;
         }
-
 
 
         private void OnKeyPressNum(object? sender, KeyPressEventArgs e)
@@ -253,6 +254,7 @@ namespace PlayerUI.Pedidos
                 textBox1.Text = paciente.fechaNacPaciente;
                 pedido = new Pedido(txtCI.Text);
                 pedido.CIPedido = txtCI.Text;
+                comboBox1.Enabled = true;
             }
             else
             {
@@ -400,6 +402,7 @@ namespace PlayerUI.Pedidos
             txtTel.ReadOnly = false;
             txtDir.ReadOnly = false;
             txtCI.ReadOnly = false;
+            comboBox1.Enabled = false;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -415,6 +418,16 @@ namespace PlayerUI.Pedidos
                 if (tiposExamenPedido == null)
                 {
                     tiposExamenPedido = new BindingList<TipoExamen>();
+                }
+                string userInput = comboBox1.Text;
+
+                // Verificar si el texto ingresado coincide con alguna de las propiedades de los objetos en la lista
+                bool isValid = tipoExamens.Any(item => item.nombreTipoExamen == userInput);
+
+                if (!isValid)
+                {
+                    MessageBox.Show("Por favor, ingrese un valor válido de tipo de examen.");
+                    return;
                 }
                 TipoExamen tipoExamen = (TipoExamen)comboBox1.SelectedItem;
                 if (tiposExamenPedido.Contains(tipoExamen))
