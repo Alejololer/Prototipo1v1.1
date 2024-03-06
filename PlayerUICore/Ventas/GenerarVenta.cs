@@ -19,7 +19,7 @@ namespace PlayerUI.Ventas
         Paciente paciente = null;
         BindingList<Examen> examenes = null;
         IVA iva = null;
-        public GenerarVenta()
+        public GenerarVenta(User user)
         {
             InitializeComponent();
             txtCI.KeyPress += OnKeyPressCed;
@@ -29,6 +29,8 @@ namespace PlayerUI.Ventas
             txtTotalNoIVA.ReadOnly = true;
             txtIVA.ReadOnly = true;
             textBox1.KeyPress += OnKeyPressNum;
+            if(user.tipoUsuario == "Asistente de laboratorio")
+                textBox1.ReadOnly = true;
             IVAModel model = new IVAModel();
             iva = model.getIVA();
             IVA.Text = "IVA VENTA (" + iva.valor.ToString() + "%):";
