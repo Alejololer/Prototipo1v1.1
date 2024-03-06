@@ -119,7 +119,7 @@
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new System.Drawing.Size(175, 46);
             btnEliminar.TabIndex = 22;
-            btnEliminar.Text = "Eliminar";
+            btnEliminar.Text = "Eliminar Usuario";
             btnEliminar.UseVisualStyleBackColor = false;
             btnEliminar.Click += btnEliminar_Click;
             // 
@@ -136,7 +136,7 @@
             btnConsultar.Name = "btnConsultar";
             btnConsultar.Size = new System.Drawing.Size(175, 46);
             btnConsultar.TabIndex = 24;
-            btnConsultar.Text = "Consultar";
+            btnConsultar.Text = "Consultar Usuario";
             btnConsultar.UseVisualStyleBackColor = false;
             btnConsultar.Click += btnConsultar_Click;
             // 
@@ -153,7 +153,7 @@
             button1.Name = "button1";
             button1.Size = new System.Drawing.Size(175, 46);
             button1.TabIndex = 25;
-            button1.Text = "Editar";
+            button1.Text = "Editar Usuario";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 

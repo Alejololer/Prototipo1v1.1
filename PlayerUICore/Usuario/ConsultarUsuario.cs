@@ -20,7 +20,6 @@ namespace PlayerUI.Usuario
     {
         string nombreUsuario;
 
-
         public ConsultarUsuario()
         {
             InitializeComponent();
@@ -40,7 +39,12 @@ namespace PlayerUI.Usuario
             {
                 // Obtener el nombre del usuario seleccionado (ajusta esto según tu estructura de datos)
                 string nombreUsuario = dgvUsuarios.SelectedRows[0].Cells["NOMBREUSER"].Value.ToString();
-
+                if(nombreUsuario == "admin")
+                {
+                    MessageBox.Show("No puede eliminar al administrador!", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    // Cerrar el formulario actual
+                    llenarDataGridView();
+                }
                 // Mostrar mensaje de confirmación
                 DialogResult result = MessageBox.Show($"¿Está seguro de que desea eliminar al usuario '{nombreUsuario}'?", "Eliminar Usuario", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
