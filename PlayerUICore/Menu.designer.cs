@@ -785,7 +785,7 @@
             button6.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             button6.Size = new System.Drawing.Size(233, 40);
             button6.TabIndex = 2;
-            button6.Text = "Consultar Pedidos";
+            button6.Text = "Consultar Pedido";
             button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button6.UseVisualStyleBackColor = true;
             button6.Click += button6_Click;
