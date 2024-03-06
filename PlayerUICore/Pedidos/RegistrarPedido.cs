@@ -35,7 +35,7 @@ namespace PlayerUI.Pedidos
             List<TipoExamen> tipoExamens = new List<TipoExamen>();
             tipoExamens = tipoExamen.ObtenerTiposExamen();
 
-            if (tipoExamens == null)
+            if (tipoExamens.Count == 0)
             {
                 // Mostrar un mensaje de error y cancelar la operación
                 MessageBox.Show("Para registrar pedidos debe registrar tipos de examen!.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -168,6 +168,11 @@ namespace PlayerUI.Pedidos
 
         private void button9_Click(object sender, EventArgs e)
         {
+            if(paciente==null)
+            {
+                MessageBox.Show("Primero debe registrar la información del cliente para registrar un pedido!", "Registrar Pedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
             if (txtDoc.Text != "" && !ValidarFormatoNombre(txtDoc))
             {
                 MessageBox.Show("El formato del nombre del doctor es inválido", "Formato inválido", MessageBoxButtons.OK, MessageBoxIcon.Information);
