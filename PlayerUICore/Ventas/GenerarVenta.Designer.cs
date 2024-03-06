@@ -48,6 +48,7 @@
             button2 = new System.Windows.Forms.Button();
             textBox1 = new System.Windows.Forms.TextBox();
             label4 = new System.Windows.Forms.Label();
+            label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -297,9 +298,22 @@
             label4.Location = new System.Drawing.Point(51, 500);
             label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new System.Drawing.Size(170, 17);
+            label4.Size = new System.Drawing.Size(124, 17);
             label4.TabIndex = 57;
-            label4.Text = "Total Venta (Modificable):";
+            label4.Text = "Total A Registrar*:";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label5.ForeColor = System.Drawing.Color.LightGray;
+            label5.Location = new System.Drawing.Point(51, 523);
+            label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            label5.Name = "label5";
+            label5.Size = new System.Drawing.Size(53, 13);
+            label5.TabIndex = 59;
+            label5.Text = "*Opcional";
             // 
             // GenerarVenta
             // 
@@ -307,6 +321,7 @@
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.FromArgb(32, 30, 45);
             ClientSize = new System.Drawing.Size(700, 600);
+            Controls.Add(label5);
             Controls.Add(textBox1);
             Controls.Add(label4);
             Controls.Add(button2);
@@ -358,5 +373,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
