@@ -430,9 +430,9 @@
             button1.Location = new System.Drawing.Point(507, 57);
             button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             button1.Name = "button1";
-            button1.Size = new System.Drawing.Size(92, 30);
+            button1.Size = new System.Drawing.Size(105, 30);
             button1.TabIndex = 69;
-            button1.Text = "Limpiar";
+            button1.Text = "Limpiar Datos";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click_2;
             // 

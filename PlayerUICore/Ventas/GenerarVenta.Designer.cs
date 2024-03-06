@@ -93,7 +93,7 @@
             btnConsultarInstrumento.Name = "btnConsultarInstrumento";
             btnConsultarInstrumento.Size = new System.Drawing.Size(138, 46);
             btnConsultarInstrumento.TabIndex = 15;
-            btnConsultarInstrumento.Text = "Registrar";
+            btnConsultarInstrumento.Text = "Registrar Venta";
             btnConsultarInstrumento.UseVisualStyleBackColor = false;
             btnConsultarInstrumento.Click += btnConsultarInstrumento_Click;
             // 
@@ -276,7 +276,7 @@
             button2.Name = "button2";
             button2.Size = new System.Drawing.Size(138, 46);
             button2.TabIndex = 56;
-            button2.Text = "Limpiar";
+            button2.Text = "Limpiar Datos";
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
