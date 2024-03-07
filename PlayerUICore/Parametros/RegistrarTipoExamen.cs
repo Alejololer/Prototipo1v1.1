@@ -74,17 +74,20 @@ namespace PlayerUI.Parametros
         }
         private void OnKeyPress(object? sender, KeyPressEventArgs e)
         {
-            e.Handled = e.KeyChar switch
-            {
-                >= '0' and <= '9' => false, // allow numerics
-                >= 'a' and <= 'z' => false, // allow lowercase characters
-                >= 'A' and <= 'Z' => false, // allow uppercase characters
-                '\b' => false,              // allow backspace
-                '-' => false,
-                '/' => false,
-                _ => true
-            };
+            // Obtener el carácter ingresado
+            char keyPressed = e.KeyChar;
 
+            // Verificar si el carácter es un número, letra minúscula, letra mayúscula, espacio, backspace, guión o barra inclinada
+            bool isValidInput = (keyPressed >= '0' && keyPressed <= '9') ||      // Números
+                                (keyPressed >= 'a' && keyPressed <= 'z') ||      // Letras minúsculas
+                                (keyPressed >= 'A' && keyPressed <= 'Z') ||      // Letras mayúsculas
+                                (keyPressed == ' ') ||                           // Espacio
+                                (keyPressed == '\b') ||                          // Retroceso (backspace)
+                                (keyPressed == '-') ||                           // Guion
+                                (keyPressed == '/');                             // Barra inclinada
+
+            // Establecer si se manejará el evento o no
+            e.Handled = !isValidInput;
         }
 
         private void OnKeyPressNum(object? sender, KeyPressEventArgs e)

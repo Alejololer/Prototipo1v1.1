@@ -72,12 +72,12 @@
             label1.AutoSize = true;
             label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             label1.ForeColor = System.Drawing.Color.FromArgb(235, 42, 83);
-            label1.Location = new System.Drawing.Point(258, 57);
+            label1.Location = new System.Drawing.Point(264, 57);
             label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(184, 25);
+            label1.Size = new System.Drawing.Size(172, 25);
             label1.TabIndex = 60;
-            label1.Text = "ELIMINAR PEDIDO";
+            label1.Text = "ANULAR PEDIDO";
             label1.Click += label1_Click;
             // 
             // txtCI

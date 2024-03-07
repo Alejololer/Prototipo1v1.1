@@ -41,6 +41,7 @@ namespace PlayerUI.Pedidos
                 // Mostrar un mensaje de error y cancelar la operación
                 MessageBox.Show("Para registrar pedidos debe registrar tipos de examen!.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 this.Hide();
+                return;
             }
             else
             {
@@ -386,10 +387,12 @@ namespace PlayerUI.Pedidos
 
         private void Reset()
         {
+
             dateTimePicker1.Enabled = true;
             dateTimePicker1.Value = DateTime.Now;
             paciente = null;
             tiposExamenPedido = null;
+            dgvTiposExamen.Enabled = false;
             textBox1.Visible = false;
             txtCI.Text = "";
             txtNom.Text = "";
@@ -404,6 +407,8 @@ namespace PlayerUI.Pedidos
             txtDir.ReadOnly = false;
             txtCI.ReadOnly = false;
             comboBox1.Enabled = false;
+            txtDoc.Text = "";
+            llenarDGV();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -471,8 +476,8 @@ namespace PlayerUI.Pedidos
 
         private void llenarDGV()
         {
-            if(tiposExamenPedido!= null) {
-                dgvTiposExamen.DataSource = tiposExamenPedido;
+            dgvTiposExamen.DataSource = tiposExamenPedido;
+            if (tiposExamenPedido!= null) {
                 dgvTiposExamen.Columns[0].HeaderText = "ID";
                 dgvTiposExamen.Columns[0].Width = 50;
                 dgvTiposExamen.Columns[1].HeaderText = "Tipo de Examen";

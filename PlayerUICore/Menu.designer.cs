@@ -767,7 +767,7 @@
             button11.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             button11.Size = new System.Drawing.Size(233, 40);
             button11.TabIndex = 4;
-            button11.Text = "Eliminar Pedido";
+            button11.Text = "Anular Pedido";
             button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button11.UseVisualStyleBackColor = true;
             button11.Click += button11_Click;
