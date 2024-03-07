@@ -22,6 +22,9 @@ namespace PlayerUI.Pacientes
             txtNom.ReadOnly = true;
             txtApe.ReadOnly = true;
             txtFechaNac.ReadOnly = true;
+            txtDir.ReadOnly = true;
+            txtCorr.ReadOnly = true;
+            txtTel.ReadOnly = true;
             txtCed.KeyPress += OnKeyPressNum;
             txtTel.KeyPress += OnKeyPressNum;
 
@@ -100,6 +103,9 @@ namespace PlayerUI.Pacientes
             txtFechaNac.Text = paciente.fechaNacPaciente;
             txtDir.Text = paciente.direccionPaciente;
             txtTel.Text = paciente.telefonoPaciente;
+            txtTel.ReadOnly = false;
+            txtCorr.ReadOnly = false;
+            txtDir.ReadOnly = false;
 
         }
 
