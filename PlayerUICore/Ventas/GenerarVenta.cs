@@ -142,7 +142,7 @@ namespace PlayerUI.Ventas
                 VentaModel model = new VentaModel();
                 if (textBox1.Text != "" && !EsPrecioValido(textBox1.Text))
                 {
-                    MessageBox.Show("Nuevo total no váldio", "Generar Venta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Nuevo total no válido", "Generar Venta", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
                 if(textBox1.Text != "")
