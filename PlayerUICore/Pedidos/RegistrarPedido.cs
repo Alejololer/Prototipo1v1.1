@@ -39,7 +39,7 @@ namespace PlayerUI.Pedidos
             if (tipoExamens.Count == 0)
             {
                 // Mostrar un mensaje de error y cancelar la operación
-                MessageBox.Show("Para registrar pedidos debe registrar tipos de examen!.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("¡Para registrar pedidos debe registrar tipos de examen!.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 this.Hide();
                 return;
             }
@@ -172,7 +172,7 @@ namespace PlayerUI.Pedidos
         {
             if(paciente==null)
             {
-                MessageBox.Show("Primero debe registrar la información del cliente para registrar un pedido!", "Registrar Pedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("¡Primero debe registrar la información del cliente para registrar un pedido!", "Registrar Pedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
             if (txtDoc.Text != "" && !ValidarFormatoNombre(txtDoc))
@@ -229,7 +229,7 @@ namespace PlayerUI.Pedidos
             if (temp.Check(cedula))
             {
                 // Realizar acciones si el formato es válido
-                MessageBox.Show("Ya existe un pedido pendiente para este paciente!", "Registrar Pedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("¡Ya existe un pedido pendiente para este paciente!", "Registrar Pedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
             paciente = tp.obtenerPacienteCI(txtCI.Text);
@@ -260,7 +260,7 @@ namespace PlayerUI.Pedidos
             else
             {
                 // Realizar acciones si el formato es válido
-                MessageBox.Show("Paciente no encontrado!.", "Registrar Pedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("¡Paciente no encontrado!.", "Registrar Pedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
         }
@@ -289,7 +289,7 @@ namespace PlayerUI.Pedidos
         {
             if (paciente != null)
             {
-                MessageBox.Show("Un paciente ya ha sido consultado, no puede registrar uno!", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("¡Un paciente ya ha sido consultado, no puede registrar uno!", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
             else
