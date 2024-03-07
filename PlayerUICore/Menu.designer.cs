@@ -130,7 +130,7 @@
             panel2.Dock = System.Windows.Forms.DockStyle.Top;
             panel2.Location = new System.Drawing.Point(0, 1582);
             panel2.Name = "panel2";
-            panel2.Size = new System.Drawing.Size(233, 49);
+            panel2.Size = new System.Drawing.Size(229, 49);
             panel2.TabIndex = 23;
             // 
             // button28
@@ -144,7 +144,7 @@
             button28.Location = new System.Drawing.Point(0, 0);
             button28.Name = "button28";
             button28.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button28.Size = new System.Drawing.Size(233, 40);
+            button28.Size = new System.Drawing.Size(229, 40);
             button28.TabIndex = 1;
             button28.Text = "Registrar IVA";
             button28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -163,7 +163,7 @@
             button9.Location = new System.Drawing.Point(0, 1537);
             button9.Name = "button9";
             button9.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            button9.Size = new System.Drawing.Size(233, 45);
+            button9.Size = new System.Drawing.Size(229, 45);
             button9.TabIndex = 22;
             button9.Text = "    Parámetros";
             button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -178,7 +178,7 @@
             panel1.Dock = System.Windows.Forms.DockStyle.Top;
             panel1.Location = new System.Drawing.Point(0, 1448);
             panel1.Name = "panel1";
-            panel1.Size = new System.Drawing.Size(233, 89);
+            panel1.Size = new System.Drawing.Size(229, 89);
             panel1.TabIndex = 21;
             // 
             // button19
@@ -192,7 +192,7 @@
             button19.Location = new System.Drawing.Point(0, 40);
             button19.Name = "button19";
             button19.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button19.Size = new System.Drawing.Size(233, 40);
+            button19.Size = new System.Drawing.Size(229, 40);
             button19.TabIndex = 1;
             button19.Text = "Consultar Usuarios";
             button19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -210,7 +210,7 @@
             button24.Location = new System.Drawing.Point(0, 0);
             button24.Name = "button24";
             button24.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button24.Size = new System.Drawing.Size(233, 40);
+            button24.Size = new System.Drawing.Size(229, 40);
             button24.TabIndex = 0;
             button24.Text = "Registrar Usuario";
             button24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -229,7 +229,7 @@
             button5.Location = new System.Drawing.Point(0, 1403);
             button5.Name = "button5";
             button5.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            button5.Size = new System.Drawing.Size(233, 45);
+            button5.Size = new System.Drawing.Size(229, 45);
             button5.TabIndex = 20;
             button5.Text = "    Usuarios";
             button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -244,7 +244,7 @@
             panelParámetrosSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             panelParámetrosSubMenu.Location = new System.Drawing.Point(0, 1318);
             panelParámetrosSubMenu.Name = "panelParámetrosSubMenu";
-            panelParámetrosSubMenu.Size = new System.Drawing.Size(233, 85);
+            panelParámetrosSubMenu.Size = new System.Drawing.Size(229, 85);
             panelParámetrosSubMenu.TabIndex = 19;
             // 
             // button36
@@ -258,7 +258,7 @@
             button36.Location = new System.Drawing.Point(0, 40);
             button36.Name = "button36";
             button36.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button36.Size = new System.Drawing.Size(233, 40);
+            button36.Size = new System.Drawing.Size(229, 40);
             button36.TabIndex = 1;
             button36.Text = "Consultar Tipos de Examen";
             button36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -276,7 +276,7 @@
             button37.Location = new System.Drawing.Point(0, 0);
             button37.Name = "button37";
             button37.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button37.Size = new System.Drawing.Size(233, 40);
+            button37.Size = new System.Drawing.Size(229, 40);
             button37.TabIndex = 0;
             button37.Text = "Registrar Tipo de Examen";
             button37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -295,7 +295,7 @@
             btnParámetros.Location = new System.Drawing.Point(0, 1273);
             btnParámetros.Name = "btnParámetros";
             btnParámetros.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            btnParámetros.Size = new System.Drawing.Size(233, 45);
+            btnParámetros.Size = new System.Drawing.Size(229, 45);
             btnParámetros.TabIndex = 18;
             btnParámetros.Text = "    Tipos de Examen";
             btnParámetros.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -311,7 +311,7 @@
             panelUsuariosSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             panelUsuariosSubMenu.Location = new System.Drawing.Point(0, 1146);
             panelUsuariosSubMenu.Name = "panelUsuariosSubMenu";
-            panelUsuariosSubMenu.Size = new System.Drawing.Size(233, 127);
+            panelUsuariosSubMenu.Size = new System.Drawing.Size(229, 127);
             panelUsuariosSubMenu.TabIndex = 17;
             // 
             // button14
@@ -325,7 +325,7 @@
             button14.Location = new System.Drawing.Point(0, 80);
             button14.Name = "button14";
             button14.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button14.Size = new System.Drawing.Size(233, 40);
+            button14.Size = new System.Drawing.Size(229, 40);
             button14.TabIndex = 4;
             button14.Text = "Consultar Informe de Ventas";
             button14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -343,7 +343,7 @@
             button13.Location = new System.Drawing.Point(0, 40);
             button13.Name = "button13";
             button13.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button13.Size = new System.Drawing.Size(233, 40);
+            button13.Size = new System.Drawing.Size(229, 40);
             button13.TabIndex = 3;
             button13.Text = "Consultar Ventas";
             button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -361,7 +361,7 @@
             button33.Location = new System.Drawing.Point(0, 0);
             button33.Name = "button33";
             button33.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button33.Size = new System.Drawing.Size(233, 40);
+            button33.Size = new System.Drawing.Size(229, 40);
             button33.TabIndex = 0;
             button33.Text = "Generar Venta";
             button33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -380,7 +380,7 @@
             btnUsuarios.Location = new System.Drawing.Point(0, 1101);
             btnUsuarios.Name = "btnUsuarios";
             btnUsuarios.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            btnUsuarios.Size = new System.Drawing.Size(233, 45);
+            btnUsuarios.Size = new System.Drawing.Size(229, 45);
             btnUsuarios.TabIndex = 16;
             btnUsuarios.Text = "    Ventas";
             btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -398,7 +398,7 @@
             panelVentasSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             panelVentasSubMenu.Location = new System.Drawing.Point(0, 933);
             panelVentasSubMenu.Name = "panelVentasSubMenu";
-            panelVentasSubMenu.Size = new System.Drawing.Size(233, 168);
+            panelVentasSubMenu.Size = new System.Drawing.Size(229, 168);
             panelVentasSubMenu.TabIndex = 15;
             // 
             // button23
@@ -412,7 +412,7 @@
             button23.Location = new System.Drawing.Point(0, 120);
             button23.Name = "button23";
             button23.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button23.Size = new System.Drawing.Size(233, 40);
+            button23.Size = new System.Drawing.Size(229, 40);
             button23.TabIndex = 5;
             button23.Text = "Eliminar Instrumento";
             button23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -430,7 +430,7 @@
             button25.Location = new System.Drawing.Point(0, 80);
             button25.Name = "button25";
             button25.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button25.Size = new System.Drawing.Size(233, 40);
+            button25.Size = new System.Drawing.Size(229, 40);
             button25.TabIndex = 3;
             button25.Text = "Actualizar Stock Instrumento";
             button25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -448,7 +448,7 @@
             button26.Location = new System.Drawing.Point(0, 40);
             button26.Name = "button26";
             button26.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button26.Size = new System.Drawing.Size(233, 40);
+            button26.Size = new System.Drawing.Size(229, 40);
             button26.TabIndex = 2;
             button26.Text = "Consultar Instrumento";
             button26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -466,7 +466,7 @@
             button27.Location = new System.Drawing.Point(0, 0);
             button27.Name = "button27";
             button27.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button27.Size = new System.Drawing.Size(233, 40);
+            button27.Size = new System.Drawing.Size(229, 40);
             button27.TabIndex = 0;
             button27.Text = "Registrar Instrumento";
             button27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -485,7 +485,7 @@
             btnVentas.Location = new System.Drawing.Point(0, 888);
             btnVentas.Name = "btnVentas";
             btnVentas.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            btnVentas.Size = new System.Drawing.Size(233, 45);
+            btnVentas.Size = new System.Drawing.Size(229, 45);
             btnVentas.TabIndex = 14;
             btnVentas.Text = "    Instrumentos";
             btnVentas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -502,7 +502,7 @@
             panelInstrumentosSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             panelInstrumentosSubMenu.Location = new System.Drawing.Point(0, 720);
             panelInstrumentosSubMenu.Name = "panelInstrumentosSubMenu";
-            panelInstrumentosSubMenu.Size = new System.Drawing.Size(233, 168);
+            panelInstrumentosSubMenu.Size = new System.Drawing.Size(229, 168);
             panelInstrumentosSubMenu.TabIndex = 13;
             // 
             // button22
@@ -516,7 +516,7 @@
             button22.Location = new System.Drawing.Point(0, 126);
             button22.Name = "button22";
             button22.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button22.Size = new System.Drawing.Size(233, 35);
+            button22.Size = new System.Drawing.Size(229, 35);
             button22.TabIndex = 3;
             button22.Text = "Eliminar Reactivo";
             button22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -534,7 +534,7 @@
             button15.Location = new System.Drawing.Point(0, 80);
             button15.Name = "button15";
             button15.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button15.Size = new System.Drawing.Size(233, 46);
+            button15.Size = new System.Drawing.Size(229, 46);
             button15.TabIndex = 2;
             button15.Text = "Actualizar Stock Reactivo";
             button15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -552,7 +552,7 @@
             button20.Location = new System.Drawing.Point(0, 40);
             button20.Name = "button20";
             button20.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button20.Size = new System.Drawing.Size(233, 40);
+            button20.Size = new System.Drawing.Size(229, 40);
             button20.TabIndex = 1;
             button20.Text = "Consultar Reactivo";
             button20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -570,7 +570,7 @@
             button21.Location = new System.Drawing.Point(0, 0);
             button21.Name = "button21";
             button21.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button21.Size = new System.Drawing.Size(233, 40);
+            button21.Size = new System.Drawing.Size(229, 40);
             button21.TabIndex = 0;
             button21.Text = "Registrar Reactivo";
             button21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -589,7 +589,7 @@
             btnInstrumentos.Location = new System.Drawing.Point(0, 675);
             btnInstrumentos.Name = "btnInstrumentos";
             btnInstrumentos.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            btnInstrumentos.Size = new System.Drawing.Size(233, 45);
+            btnInstrumentos.Size = new System.Drawing.Size(229, 45);
             btnInstrumentos.TabIndex = 12;
             btnInstrumentos.Text = "    Reactivos";
             btnInstrumentos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -607,7 +607,7 @@
             panelReactivosSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             panelReactivosSubMenu.Location = new System.Drawing.Point(0, 515);
             panelReactivosSubMenu.Name = "panelReactivosSubMenu";
-            panelReactivosSubMenu.Size = new System.Drawing.Size(233, 160);
+            panelReactivosSubMenu.Size = new System.Drawing.Size(229, 160);
             panelReactivosSubMenu.TabIndex = 11;
             // 
             // button10
@@ -621,7 +621,7 @@
             button10.Location = new System.Drawing.Point(0, 115);
             button10.Name = "button10";
             button10.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button10.Size = new System.Drawing.Size(233, 35);
+            button10.Size = new System.Drawing.Size(229, 35);
             button10.TabIndex = 3;
             button10.Text = "Generar Informe Resultado";
             button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -639,7 +639,7 @@
             button16.Location = new System.Drawing.Point(0, 80);
             button16.Name = "button16";
             button16.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button16.Size = new System.Drawing.Size(233, 35);
+            button16.Size = new System.Drawing.Size(229, 35);
             button16.TabIndex = 2;
             button16.Text = "Actualizar Resultado";
             button16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -657,7 +657,7 @@
             button17.Location = new System.Drawing.Point(0, 40);
             button17.Name = "button17";
             button17.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button17.Size = new System.Drawing.Size(233, 40);
+            button17.Size = new System.Drawing.Size(229, 40);
             button17.TabIndex = 1;
             button17.Text = "Consultar Resultado";
             button17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -675,7 +675,7 @@
             button18.Location = new System.Drawing.Point(0, 0);
             button18.Name = "button18";
             button18.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button18.Size = new System.Drawing.Size(233, 40);
+            button18.Size = new System.Drawing.Size(229, 40);
             button18.TabIndex = 0;
             button18.Text = "Registrar Resultado";
             button18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -694,7 +694,7 @@
             btnReactivos.Location = new System.Drawing.Point(0, 470);
             btnReactivos.Name = "btnReactivos";
             btnReactivos.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            btnReactivos.Size = new System.Drawing.Size(233, 45);
+            btnReactivos.Size = new System.Drawing.Size(229, 45);
             btnReactivos.TabIndex = 10;
             btnReactivos.Text = "    Resultados";
             btnReactivos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -715,7 +715,7 @@
             btnExit.Location = new System.Drawing.Point(0, 1631);
             btnExit.Name = "btnExit";
             btnExit.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            btnExit.Size = new System.Drawing.Size(233, 45);
+            btnExit.Size = new System.Drawing.Size(229, 45);
             btnExit.TabIndex = 9;
             btnExit.Text = "  Cerrar Sesión";
             btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -733,7 +733,7 @@
             panelPedidosSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             panelPedidosSubMenu.Location = new System.Drawing.Point(0, 300);
             panelPedidosSubMenu.Name = "panelPedidosSubMenu";
-            panelPedidosSubMenu.Size = new System.Drawing.Size(233, 170);
+            panelPedidosSubMenu.Size = new System.Drawing.Size(229, 170);
             panelPedidosSubMenu.TabIndex = 4;
             // 
             // button7
@@ -747,7 +747,7 @@
             button7.Location = new System.Drawing.Point(0, 120);
             button7.Name = "button7";
             button7.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button7.Size = new System.Drawing.Size(233, 40);
+            button7.Size = new System.Drawing.Size(229, 40);
             button7.TabIndex = 5;
             button7.Text = "Estadísticas de Pedidos";
             button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -765,7 +765,7 @@
             button11.Location = new System.Drawing.Point(0, 80);
             button11.Name = "button11";
             button11.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button11.Size = new System.Drawing.Size(233, 40);
+            button11.Size = new System.Drawing.Size(229, 40);
             button11.TabIndex = 4;
             button11.Text = "Anular Pedido";
             button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -783,7 +783,7 @@
             button6.Location = new System.Drawing.Point(0, 40);
             button6.Name = "button6";
             button6.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button6.Size = new System.Drawing.Size(233, 40);
+            button6.Size = new System.Drawing.Size(229, 40);
             button6.TabIndex = 2;
             button6.Text = "Consultar Pedido";
             button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -801,7 +801,7 @@
             button8.Location = new System.Drawing.Point(0, 0);
             button8.Name = "button8";
             button8.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button8.Size = new System.Drawing.Size(233, 40);
+            button8.Size = new System.Drawing.Size(229, 40);
             button8.TabIndex = 0;
             button8.Text = "Registrar Pedido";
             button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -820,7 +820,7 @@
             btnPedidos.Location = new System.Drawing.Point(0, 255);
             btnPedidos.Name = "btnPedidos";
             btnPedidos.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            btnPedidos.Size = new System.Drawing.Size(233, 45);
+            btnPedidos.Size = new System.Drawing.Size(229, 45);
             btnPedidos.TabIndex = 3;
             btnPedidos.Text = "    Pedidos";
             btnPedidos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -837,7 +837,7 @@
             panelPacientesSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             panelPacientesSubMenu.Location = new System.Drawing.Point(0, 129);
             panelPacientesSubMenu.Name = "panelPacientesSubMenu";
-            panelPacientesSubMenu.Size = new System.Drawing.Size(233, 126);
+            panelPacientesSubMenu.Size = new System.Drawing.Size(229, 126);
             panelPacientesSubMenu.TabIndex = 2;
             panelPacientesSubMenu.Paint += panelPacientesSubPacientes_Paint;
             // 
@@ -852,7 +852,7 @@
             button4.Location = new System.Drawing.Point(0, 80);
             button4.Name = "button4";
             button4.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button4.Size = new System.Drawing.Size(233, 40);
+            button4.Size = new System.Drawing.Size(229, 40);
             button4.TabIndex = 2;
             button4.Text = "Actualizar Paciente";
             button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -870,7 +870,7 @@
             button3.Location = new System.Drawing.Point(0, 40);
             button3.Name = "button3";
             button3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button3.Size = new System.Drawing.Size(233, 40);
+            button3.Size = new System.Drawing.Size(229, 40);
             button3.TabIndex = 1;
             button3.Text = "Consultar Paciente";
             button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -888,7 +888,7 @@
             button2.Location = new System.Drawing.Point(0, 0);
             button2.Name = "button2";
             button2.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            button2.Size = new System.Drawing.Size(233, 40);
+            button2.Size = new System.Drawing.Size(229, 40);
             button2.TabIndex = 0;
             button2.Text = "Registrar Paciente";
             button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -907,7 +907,7 @@
             btnPacientes.Location = new System.Drawing.Point(0, 84);
             btnPacientes.Name = "btnPacientes";
             btnPacientes.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            btnPacientes.Size = new System.Drawing.Size(233, 45);
+            btnPacientes.Size = new System.Drawing.Size(229, 45);
             btnPacientes.TabIndex = 1;
             btnPacientes.Text = "     Pacientes";
             btnPacientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -923,7 +923,7 @@
             panelLogo.Location = new System.Drawing.Point(0, 0);
             panelLogo.Name = "panelLogo";
             panelLogo.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            panelLogo.Size = new System.Drawing.Size(233, 84);
+            panelLogo.Size = new System.Drawing.Size(229, 84);
             panelLogo.TabIndex = 0;
             panelLogo.Paint += panelLogo_Paint;
             // 
@@ -954,7 +954,7 @@
             // 
             // Menu
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.FromArgb(11, 7, 17);
             ClientSize = new System.Drawing.Size(950, 600);
