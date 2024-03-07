@@ -97,7 +97,7 @@ namespace PlayerUI.Pedidos
             PacienteModel paciente = new PacienteModel();
             if (!paciente.Check(txtCI.Text))
             {
-                MessageBox.Show("¡Paciente no encontrado!", "Registrar Pedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Paciente no encontrado!", "Registrar Pedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
             PedidoModel pedidoModel = new PedidoModel();
